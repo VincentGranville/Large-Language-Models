@@ -1,0 +1,695 @@
+https://mathworld.wolfram.com/topics/ProbabilityandStatistics.html	Parsed	Probability and Statistics	1
+https://mathworld.wolfram.com/topics/BayesianAnalysis.html	Queued	Bayesian Analysis 	2
+https://mathworld.wolfram.com/topics/DescriptiveStatistics.html	Queued	Descriptive Statistics 	2
+https://mathworld.wolfram.com/topics/ErrorAnalysis.html	Queued	Error Analysis 	2
+https://mathworld.wolfram.com/topics/Estimators.html	Queued	Estimators 	2
+https://mathworld.wolfram.com/topics/MarkovProcesses.html	Queued	Markov Processes 	2
+https://mathworld.wolfram.com/topics/Moments.html	Queued	Moments 	2
+https://mathworld.wolfram.com/topics/MultivariateStatistics.html	Queued	Multivariate Statistics 	2
+https://mathworld.wolfram.com/topics/NonparametricStatistics.html	Queued	Nonparametric Statistics 	2
+https://mathworld.wolfram.com/topics/Probability.html	Queued	Probability 	2
+https://mathworld.wolfram.com/topics/RandomNumbers.html	Queued	Random Numbers 	2
+https://mathworld.wolfram.com/topics/RandomWalks.html	Queued	Random Walks 	2
+https://mathworld.wolfram.com/topics/RankStatistics.html	Queued	Rank Statistics 	2
+https://mathworld.wolfram.com/topics/Regression.html	Queued	Regression 	2
+https://mathworld.wolfram.com/topics/Runs.html	Queued	Runs 	2
+https://mathworld.wolfram.com/topics/StatisticalAsymptoticExpansions.html	Queued	Statistical Asymptotic Expansions 	2
+https://mathworld.wolfram.com/topics/StatisticalDistributions.html	Queued	Statistical Distributions 	2
+https://mathworld.wolfram.com/topics/StatisticalIndices.html	Queued	Statistical Indices 	2
+https://mathworld.wolfram.com/topics/StatisticalPlots.html	Queued	Statistical Plots 	2
+https://mathworld.wolfram.com/topics/StatisticalTests.html	Queued	Statistical Tests 	2
+https://mathworld.wolfram.com/topics/Time-SeriesAnalysis.html	Queued	Time-Series Analysis 	2
+https://mathworld.wolfram.com/topics/Trials.html	Queued	Trials 	2
+https://mathworld.wolfram.com/topics/BayesianAnalysis.html	Parsed	Bayesian Analysis 	2
+https://mathworld.wolfram.com/BayesianAnalysis.html	EndNode	Bayesian Analysis	3
+https://mathworld.wolfram.com/topics/DescriptiveStatistics.html	Parsed	Descriptive Statistics 	2
+https://mathworld.wolfram.com/AbsoluteFrequency.html	EndNode	Absolute Frequency	3
+https://mathworld.wolfram.com/AdjacentValue.html	EndNode	Adjacent Value	3
+https://mathworld.wolfram.com/AlmostSurely.html	EndNode	Almost Surely	3
+https://mathworld.wolfram.com/AnomalousNumber.html	EndNode	Anomalous Number	3
+https://mathworld.wolfram.com/Batch.html	EndNode	Batch	3
+https://mathworld.wolfram.com/BenfordsLaw.html	EndNode	Benford's Law	3
+https://mathworld.wolfram.com/Bimodal.html	EndNode	Bimodal	3
+https://mathworld.wolfram.com/BimodalDistribution.html	EndNode	Bimodal Distribution	3
+https://mathworld.wolfram.com/Bin.html	EndNode	Bin	3
+https://mathworld.wolfram.com/BowleySkewness.html	EndNode	Bowley Skewness	3
+https://mathworld.wolfram.com/Clarity.html	EndNode	Clarity	3
+https://mathworld.wolfram.com/Class.html	EndNode	Class	3
+https://mathworld.wolfram.com/ClassBoundaries.html	EndNode	Class Boundaries	3
+https://mathworld.wolfram.com/ClassInterval.html	EndNode	Class Interval	3
+https://mathworld.wolfram.com/ClassLimits.html	EndNode	Class Limits	3
+https://mathworld.wolfram.com/ClassMark.html	EndNode	Class Mark	3
+https://mathworld.wolfram.com/ContingencyTable.html	EndNode	Contingency Table	3
+https://mathworld.wolfram.com/CumulativeFrequency.html	EndNode	Cumulative Frequency	3
+https://mathworld.wolfram.com/ExpectedFrequency.html	EndNode	Expected Frequency	3
+https://mathworld.wolfram.com/FactorLevel.html	EndNode	Factor Level	3
+https://mathworld.wolfram.com/FarOut.html	EndNode	Far Out	3
+https://mathworld.wolfram.com/Fence.html	EndNode	Fence	3
+https://mathworld.wolfram.com/FisherInformationMatrix.html	EndNode	Fisher Information Matrix	3
+https://mathworld.wolfram.com/FrequencyDistribution.html	EndNode	Frequency Distribution	3
+https://mathworld.wolfram.com/FrequencyPolygon.html	EndNode	Frequency Polygon	3
+https://mathworld.wolfram.com/FullWidthatHalfMaximum.html	EndNode	Full Width at Half Maximum	3
+https://mathworld.wolfram.com/GausssInequality.html	EndNode	Gauss's Inequality	3
+https://mathworld.wolfram.com/GiniCoefficient.html	EndNode	Gini Coefficient	3
+https://mathworld.wolfram.com/H-Spread.html	EndNode	H-Spread	3
+https://mathworld.wolfram.com/High-WaterMark.html	EndNode	High-Water Mark	3
+https://mathworld.wolfram.com/Hinge.html	EndNode	Hinge	3
+https://mathworld.wolfram.com/HomogeneityofProportionsTest.html	EndNode	Homogeneity of Proportions Test	3
+https://mathworld.wolfram.com/InterquartileRange.html	EndNode	Interquartile Range	3
+https://mathworld.wolfram.com/LorenzAsymmetryCoefficient.html	EndNode	Lorenz Asymmetry Coefficient	3
+https://mathworld.wolfram.com/LorenzCurve.html	EndNode	Lorenz Curve	3
+https://mathworld.wolfram.com/MeanAbsoluteDeviation.html	EndNode	Mean Absolute Deviation	3
+https://mathworld.wolfram.com/Mesokurtic.html	EndNode	Mesokurtic	3
+https://mathworld.wolfram.com/Midrange.html	EndNode	Midrange	3
+https://mathworld.wolfram.com/Mode.html	EndNode	Mode	3
+https://mathworld.wolfram.com/Multimodal.html	EndNode	Multimodal	3
+https://mathworld.wolfram.com/Outlier.html	EndNode	Outlier	3
+https://mathworld.wolfram.com/Percentile.html	EndNode	Percentile	3
+https://mathworld.wolfram.com/PlottingPosition.html	EndNode	Plotting Position	3
+https://mathworld.wolfram.com/Population.html	EndNode	Population	3
+https://mathworld.wolfram.com/Quantile.html	EndNode	Quantile	3
+https://mathworld.wolfram.com/Quartile.html	EndNode	Quartile	3
+https://mathworld.wolfram.com/QuartileDeviation.html	EndNode	Quartile Deviation	3
+https://mathworld.wolfram.com/QuartileVariationCoefficient.html	EndNode	Quartile Variation Coefficient	3
+https://mathworld.wolfram.com/RecordSetting.html	EndNode	Record Setting	3
+https://mathworld.wolfram.com/RegressiontotheMean.html	EndNode	Regression to the Mean	3
+https://mathworld.wolfram.com/RelativeCumulativeFrequency.html	EndNode	Relative Cumulative Frequency	3
+https://mathworld.wolfram.com/RelativeFrequency.html	EndNode	Relative Frequency	3
+https://mathworld.wolfram.com/ReversiontotheMean.html	EndNode	Reversion to the Mean	3
+https://mathworld.wolfram.com/RunningMaximum.html	EndNode	Running Maximum	3
+https://mathworld.wolfram.com/ScoreFunction.html	EndNode	Score Function	3
+https://mathworld.wolfram.com/SignedDeviation.html	EndNode	Signed Deviation	3
+https://mathworld.wolfram.com/StatisticalDepth.html	EndNode	Statistical Depth	3
+https://mathworld.wolfram.com/StatisticalDispersion.html	EndNode	Statistical Dispersion	3
+https://mathworld.wolfram.com/StatisticalMedian.html	EndNode	Statistical Median	3
+https://mathworld.wolfram.com/StatisticalRange.html	EndNode	Statistical Range	3
+https://mathworld.wolfram.com/Step.html	EndNode	Step	3
+https://mathworld.wolfram.com/Tail.html	EndNode	Tail	3
+https://mathworld.wolfram.com/Trimodal.html	EndNode	Trimodal	3
+https://mathworld.wolfram.com/U-Statistic.html	EndNode	U-Statistic	3
+https://mathworld.wolfram.com/Unimodal.html	EndNode	Unimodal	3
+https://mathworld.wolfram.com/ZipfsLaw.html	EndNode	Zipf's Law	3
+https://mathworld.wolfram.com/topics/ErrorAnalysis.html	Parsed	Error Analysis 	2
+https://mathworld.wolfram.com/AbsoluteError.html	EndNode	Absolute Error	3
+https://mathworld.wolfram.com/Accuracy.html	EndNode	Accuracy	3
+https://mathworld.wolfram.com/ArbitraryPrecision.html	EndNode	Arbitrary Precision	3
+https://mathworld.wolfram.com/ConfidenceInterval.html	EndNode	Confidence Interval	3
+https://mathworld.wolfram.com/ConfidenceLimits.html	EndNode	Confidence Limits	3
+https://mathworld.wolfram.com/Deviation.html	EndNode	Deviation	3
+https://mathworld.wolfram.com/Equiripple.html	EndNode	Equiripple	3
+https://mathworld.wolfram.com/Error.html	EndNode	Error	3
+https://mathworld.wolfram.com/ErrorPropagation.html	EndNode	Error Propagation	3
+https://mathworld.wolfram.com/Estimate.html	EndNode	Estimate	3
+https://mathworld.wolfram.com/MarginofError.html	EndNode	Margin of Error	3
+https://mathworld.wolfram.com/MinimaxApproximation.html	EndNode	Minimax Approximation	3
+https://mathworld.wolfram.com/Outlier.html	EndNode	Outlier	3
+https://mathworld.wolfram.com/PercentageError.html	EndNode	Percentage Error	3
+https://mathworld.wolfram.com/Precision.html	EndNode	Precision	3
+https://mathworld.wolfram.com/RelativeError.html	EndNode	Relative Error	3
+https://mathworld.wolfram.com/SignificanceArithmetic.html	EndNode	Significance Arithmetic	3
+https://mathworld.wolfram.com/SignificantDigits.html	EndNode	Significant Digits	3
+https://mathworld.wolfram.com/topics/Estimators.html	Parsed	Estimators 	2
+https://mathworld.wolfram.com/BiasedEstimator.html	EndNode	Biased Estimator	3
+https://mathworld.wolfram.com/Estimator.html	EndNode	Estimator	3
+https://mathworld.wolfram.com/EstimatorBias.html	EndNode	Estimator Bias	3
+https://mathworld.wolfram.com/ExpectationValue.html	EndNode	Expectation Value	3
+https://mathworld.wolfram.com/ExpectedValue.html	EndNode	Expected Value	3
+https://mathworld.wolfram.com/FishersEstimatorInequality.html	EndNode	Fisher's Estimator Inequality	3
+https://mathworld.wolfram.com/h-Statistic.html	EndNode	h-Statistic	3
+https://mathworld.wolfram.com/k-Statistic.html	EndNode	k-Statistic	3
+https://mathworld.wolfram.com/L-Estimate.html	EndNode	L-Estimate	3
+https://mathworld.wolfram.com/M-Estimate.html	EndNode	M-Estimate	3
+https://mathworld.wolfram.com/MaximumLikelihood.html	EndNode	Maximum Likelihood	3
+https://mathworld.wolfram.com/MaximumLikelihoodEstimator.html	EndNode	Maximum Likelihood Estimator	3
+https://mathworld.wolfram.com/MaximumLikelihoodMethod.html	EndNode	Maximum Likelihood Method	3
+https://mathworld.wolfram.com/PointEstimator.html	EndNode	Point Estimator	3
+https://mathworld.wolfram.com/Polyache.html	EndNode	Polyache	3
+https://mathworld.wolfram.com/Polykay.html	EndNode	Polykay	3
+https://mathworld.wolfram.com/R-Estimate.html	EndNode	R-Estimate	3
+https://mathworld.wolfram.com/RobustEstimation.html	EndNode	Robust Estimation	3
+https://mathworld.wolfram.com/SampleCentralMoment.html	EndNode	Sample Central Moment	3
+https://mathworld.wolfram.com/SampleMean.html	EndNode	Sample Mean	3
+https://mathworld.wolfram.com/SampleVariance.html	EndNode	Sample Variance	3
+https://mathworld.wolfram.com/UnbiasedEstimator.html	EndNode	Unbiased Estimator	3
+https://mathworld.wolfram.com/WaldsEquation.html	EndNode	Wald's Equation	3
+https://mathworld.wolfram.com/topics/MarkovProcesses.html	Parsed	Markov Processes 	2
+https://mathworld.wolfram.com/Chapman-KolmogorovEquation.html	EndNode	Chapman-Kolmogorov Equation	3
+https://mathworld.wolfram.com/MarkoffChain.html	EndNode	Markoff Chain	3
+https://mathworld.wolfram.com/MarkovChain.html	EndNode	Markov Chain	3
+https://mathworld.wolfram.com/MarkovProcess.html	EndNode	Markov Process	3
+https://mathworld.wolfram.com/MarkovSequence.html	EndNode	Markov Sequence	3
+https://mathworld.wolfram.com/SmithsMarkovProcessTheorem.html	EndNode	Smith's Markov Process Theorem	3
+https://mathworld.wolfram.com/StochasticMatrix.html	EndNode	Stochastic Matrix	3
+https://mathworld.wolfram.com/topics/Moments.html	Parsed	Moments 	2
+https://mathworld.wolfram.com/AbsoluteDeviation.html	EndNode	Absolute Deviation	3
+https://mathworld.wolfram.com/AbsoluteMoment.html	EndNode	Absolute Moment	3
+https://mathworld.wolfram.com/AverageAbsoluteDeviation.html	EndNode	Average Absolute Deviation	3
+https://mathworld.wolfram.com/Berry-EsseenTheorem.html	EndNode	Berry-Ess&#233;en Theorem	3
+https://mathworld.wolfram.com/BesselsCorrection.html	EndNode	Bessel's Correction	3
+https://mathworld.wolfram.com/CentralMoment.html	EndNode	Central Moment	3
+https://mathworld.wolfram.com/CharacteristicFunction.html	EndNode	Characteristic Function	3
+https://mathworld.wolfram.com/CharliersCheck.html	EndNode	Charlier's Check	3
+https://mathworld.wolfram.com/Covariance.html	EndNode	Covariance	3
+https://mathworld.wolfram.com/Cumulant.html	EndNode	Cumulant	3
+https://mathworld.wolfram.com/Cumulant-GeneratingFunction.html	EndNode	Cumulant-Generating Function	3
+https://mathworld.wolfram.com/Excess.html	EndNode	Excess	3
+https://mathworld.wolfram.com/FactorialMoment.html	EndNode	Factorial Moment	3
+https://mathworld.wolfram.com/GammaStatistic.html	EndNode	Gamma Statistic	3
+https://mathworld.wolfram.com/h-Statistic.html	EndNode	h-Statistic	3
+https://mathworld.wolfram.com/Heteroscedastic.html	EndNode	Heteroscedastic	3
+https://mathworld.wolfram.com/Homoscedastic.html	EndNode	Homoscedastic	3
+https://mathworld.wolfram.com/k-Statistic.html	EndNode	k-Statistic	3
+https://mathworld.wolfram.com/KendallOperator.html	EndNode	Kendall Operator	3
+https://mathworld.wolfram.com/Kurtosis.html	EndNode	Kurtosis	3
+https://mathworld.wolfram.com/L-Moment.html	EndNode	L-Moment	3
+https://mathworld.wolfram.com/Leptokurtic.html	EndNode	Leptokurtic	3
+https://mathworld.wolfram.com/Mean.html	EndNode	Mean	3
+https://mathworld.wolfram.com/MeanDeviation.html	EndNode	Mean Deviation	3
+https://mathworld.wolfram.com/MeanSquareDisplacement.html	EndNode	Mean Square Displacement	3
+https://mathworld.wolfram.com/Mesokurtic.html	EndNode	Mesokurtic	3
+https://mathworld.wolfram.com/Moment.html	EndNode	Moment	3
+https://mathworld.wolfram.com/Moment-GeneratingFunction.html	EndNode	Moment-Generating Function	3
+https://mathworld.wolfram.com/MomentProblem.html	EndNode	Moment Problem	3
+https://mathworld.wolfram.com/MomentSequence.html	EndNode	Moment Sequence	3
+https://mathworld.wolfram.com/MomentalSkewness.html	EndNode	Momental Skewness	3
+https://mathworld.wolfram.com/MSD.html	EndNode	MSD	3
+https://mathworld.wolfram.com/PearsonModeSkewness.html	EndNode	Pearson Mode Skewness	3
+https://mathworld.wolfram.com/PearsonsSkewnessCoefficients.html	EndNode	Pearson's Skewness Coefficients	3
+https://mathworld.wolfram.com/Polyache.html	EndNode	Polyache	3
+https://mathworld.wolfram.com/Polykay.html	EndNode	Polykay	3
+https://mathworld.wolfram.com/PopulationMean.html	EndNode	Population Mean	3
+https://mathworld.wolfram.com/RawMoment.html	EndNode	Raw Moment	3
+https://mathworld.wolfram.com/RelativeDeviation.html	EndNode	Relative Deviation	3
+https://mathworld.wolfram.com/RMS.html	EndNode	RMS	3
+https://mathworld.wolfram.com/RobbinsInequality.html	EndNode	Robbin's Inequality	3
+https://mathworld.wolfram.com/Root-Mean-Square.html	EndNode	Root-Mean-Square	3
+https://mathworld.wolfram.com/SampleCentralMoment.html	EndNode	Sample Central Moment	3
+https://mathworld.wolfram.com/SampleMean.html	EndNode	Sample Mean	3
+https://mathworld.wolfram.com/SampleRawMoment.html	EndNode	Sample Raw Moment	3
+https://mathworld.wolfram.com/SampleVariance.html	EndNode	Sample Variance	3
+https://mathworld.wolfram.com/SampleVarianceComputation.html	EndNode	Sample Variance Computation	3
+https://mathworld.wolfram.com/SampleVarianceDistribution.html	EndNode	Sample Variance Distribution	3
+https://mathworld.wolfram.com/SheppardsCorrection.html	EndNode	Sheppard's Correction	3
+https://mathworld.wolfram.com/Skewness.html	EndNode	Skewness	3
+https://mathworld.wolfram.com/StandardDeviation.html	EndNode	Standard Deviation	3
+https://mathworld.wolfram.com/StandardDeviationDistribution.html	EndNode	Standard Deviation Distribution	3
+https://mathworld.wolfram.com/StandardError.html	EndNode	Standard Error	3
+https://mathworld.wolfram.com/StandardizedMoment.html	EndNode	Standardized Moment	3
+https://mathworld.wolfram.com/Variance.html	EndNode	Variance	3
+https://mathworld.wolfram.com/VariationCoefficient.html	EndNode	Variation Coefficient	3
+https://mathworld.wolfram.com/topics/MultivariateStatistics.html	Parsed	Multivariate Statistics 	2
+https://mathworld.wolfram.com/Bivariate.html	EndNode	Bivariate	3
+https://mathworld.wolfram.com/BivariateNormalDistribution.html	EndNode	Bivariate Normal Distribution	3
+https://mathworld.wolfram.com/ClusterAnalysis.html	EndNode	Cluster Analysis	3
+https://mathworld.wolfram.com/FindClusters.html	EndNode	FindClusters	3
+https://mathworld.wolfram.com/HawkesProcess.html	EndNode	Hawkes Process	3
+https://mathworld.wolfram.com/KendallOperator.html	EndNode	Kendall Operator	3
+https://mathworld.wolfram.com/MultinormalDistribution.html	EndNode	Multinormal Distribution	3
+https://mathworld.wolfram.com/Multivariate.html	EndNode	Multivariate	3
+https://mathworld.wolfram.com/MultivariateNormalDistribution.html	EndNode	Multivariate Normal Distribution	3
+https://mathworld.wolfram.com/TrivariateNormalDistribution.html	EndNode	Trivariate Normal Distribution	3
+https://mathworld.wolfram.com/Univariate.html	EndNode	Univariate	3
+https://mathworld.wolfram.com/WishartDistribution.html	EndNode	Wishart Distribution	3
+https://mathworld.wolfram.com/topics/NonparametricStatistics.html	Parsed	Nonparametric Statistics 	2
+https://mathworld.wolfram.com/BootstrapMethods.html	EndNode	Bootstrap Methods	3
+https://mathworld.wolfram.com/FisherSignTest.html	EndNode	Fisher Sign Test	3
+https://mathworld.wolfram.com/LoessLocalRegression.html	EndNode	Loess Local Regression	3
+https://mathworld.wolfram.com/NonparametricEstimation.html	EndNode	Nonparametric Estimation	3
+https://mathworld.wolfram.com/OrderStatistic.html	EndNode	Order Statistic	3
+https://mathworld.wolfram.com/SlovinsFormula.html	EndNode	Slovin's Formula	3
+https://mathworld.wolfram.com/SpearmanRankCorrelationCoefficient.html	EndNode	Spearman Rank Correlation Coefficient	3
+https://mathworld.wolfram.com/WilcoxonSignedRankTest.html	EndNode	Wilcoxon Signed Rank Test	3
+https://mathworld.wolfram.com/topics/Probability.html	Parsed	Probability 	2
+https://mathworld.wolfram.com/AlgebraofRandomVariables.html	EndNode	Algebra of Random Variables	3
+https://mathworld.wolfram.com/BayesTheorem.html	EndNode	Bayes' Theorem	3
+https://mathworld.wolfram.com/BirthdayProblem.html	EndNode	Birthday Problem	3
+https://mathworld.wolfram.com/BonferroniInequalities.html	EndNode	Bonferroni Inequalities	3
+https://mathworld.wolfram.com/BoolesInequality.html	EndNode	Boole's Inequality	3
+https://mathworld.wolfram.com/Borel-CantelliLemma.html	EndNode	Borel-Cantelli Lemma	3
+https://mathworld.wolfram.com/Buffon-LaplaceNeedleProblem.html	EndNode	Buffon-Laplace Needle Problem	3
+https://mathworld.wolfram.com/BuffonsNeedleProblem.html	EndNode	Buffon's Needle Problem	3
+https://mathworld.wolfram.com/Chuck-a-Luck.html	EndNode	Chuck-a-Luck	3
+https://mathworld.wolfram.com/CleanTileProblem.html	EndNode	Clean Tile Problem	3
+https://mathworld.wolfram.com/CoinFlipping.html	EndNode	Coin Flipping	3
+https://mathworld.wolfram.com/CoinTossing.html	EndNode	Coin Tossing	3
+https://mathworld.wolfram.com/Coincidence.html	EndNode	Coincidence	3
+https://mathworld.wolfram.com/ConditionalIntensityFunction.html	EndNode	Conditional Intensity Function	3
+https://mathworld.wolfram.com/ConditionalProbability.html	EndNode	Conditional Probability	3
+https://mathworld.wolfram.com/CountingProcess.html	EndNode	Counting Process	3
+https://mathworld.wolfram.com/CouponCollectorsProblem.html	EndNode	Coupon Collector's Problem	3
+https://mathworld.wolfram.com/deMeresProblem.html	EndNode	de M&#233;r&#233;'s Problem	3
+https://mathworld.wolfram.com/Domain.html	EndNode	Domain	3
+https://mathworld.wolfram.com/EventSpace.html	EndNode	Event Space	3
+https://mathworld.wolfram.com/ExcitationFunction.html	EndNode	Excitation Function	3
+https://mathworld.wolfram.com/ExcitingFunction.html	EndNode	Exciting Function	3
+https://mathworld.wolfram.com/FailureRate.html	EndNode	Failure Rate	3
+https://mathworld.wolfram.com/FermatsPrincipleofConjunctiveProbability.html	EndNode	Fermat's Principle of Conjunctive Probability	3
+https://mathworld.wolfram.com/ForceofMortality.html	EndNode	Force of Mortality	3
+https://mathworld.wolfram.com/GamblersRuin.html	EndNode	Gambler's Ruin	3
+https://mathworld.wolfram.com/HawkesProcess.html	EndNode	Hawkes Process	3
+https://mathworld.wolfram.com/HazardFunction.html	EndNode	Hazard Function	3
+https://mathworld.wolfram.com/HazardRate.html	EndNode	Hazard Rate	3
+https://mathworld.wolfram.com/Immigrant.html	EndNode	Immigrant	3
+https://mathworld.wolfram.com/IndependentStatistics.html	EndNode	Independent Statistics	3
+https://mathworld.wolfram.com/IntensityFunction.html	EndNode	Intensity Function	3
+https://mathworld.wolfram.com/IntensityMeasure.html	EndNode	Intensity Measure	3
+https://mathworld.wolfram.com/IntervalStationaryPointProcess.html	EndNode	Interval Stationary Point Process	3
+https://mathworld.wolfram.com/IrrelevantMark.html	EndNode	Irrelevant Mark	3
+https://mathworld.wolfram.com/KolmogorovsAxioms.html	EndNode	Kolmogorov's Axioms	3
+https://mathworld.wolfram.com/Likelihood.html	EndNode	Likelihood	3
+https://mathworld.wolfram.com/LikelihoodFunction.html	EndNode	Likelihood Function	3
+https://mathworld.wolfram.com/Log-LikelihoodFunction.html	EndNode	Log-Likelihood Function	3
+https://mathworld.wolfram.com/MarginalProbability.html	EndNode	Marginal Probability	3
+https://mathworld.wolfram.com/MarkSpace.html	EndNode	Mark Space	3
+https://mathworld.wolfram.com/MarkedPointProcess.html	EndNode	Marked Point Process	3
+https://mathworld.wolfram.com/MarkovsInequality.html	EndNode	Markov's Inequality	3
+https://mathworld.wolfram.com/MillsRatio.html	EndNode	Mills Ratio	3
+https://mathworld.wolfram.com/MultidimensionalPointProcess.html	EndNode	Multidimensional Point Process	3
+https://mathworld.wolfram.com/MultiplicationPrinciple.html	EndNode	Multiplication Principle	3
+https://mathworld.wolfram.com/MutuallyExclusiveEvents.html	EndNode	Mutually Exclusive Events	3
+https://mathworld.wolfram.com/Newton-PepysProblem.html	EndNode	Newton-Pepys Problem	3
+https://mathworld.wolfram.com/Odds.html	EndNode	Odds	3
+https://mathworld.wolfram.com/P-Value.html	EndNode	P-Value	3
+https://mathworld.wolfram.com/PointProbability.html	EndNode	Point Probability	3
+https://mathworld.wolfram.com/PointProcess.html	EndNode	Point Process	3
+https://mathworld.wolfram.com/PossibilitySpace.html	EndNode	Possibility Space	3
+https://mathworld.wolfram.com/PrincipleofInsufficientReason.html	EndNode	Principle of Insufficient Reason	3
+https://mathworld.wolfram.com/Probability.html	EndNode	Probability	3
+https://mathworld.wolfram.com/ProbabilityAxioms.html	EndNode	Probability Axioms	3
+https://mathworld.wolfram.com/ProbabilityDensityFunction.html	EndNode	Probability Density Function	3
+https://mathworld.wolfram.com/ProbabilityDomain.html	EndNode	Probability Domain	3
+https://mathworld.wolfram.com/ProbabilityInequality.html	EndNode	Probability Inequality	3
+https://mathworld.wolfram.com/ProbabilityMeasure.html	EndNode	Probability Measure	3
+https://mathworld.wolfram.com/ProbabilitySpace.html	EndNode	Probability Space	3
+https://mathworld.wolfram.com/ProofreadingMistakes.html	EndNode	Proofreading Mistakes	3
+https://mathworld.wolfram.com/QuantileFunction.html	EndNode	Quantile Function	3
+https://mathworld.wolfram.com/RandomClosedSet.html	EndNode	Random Closed Set	3
+https://mathworld.wolfram.com/RussianRoulette.html	EndNode	Russian Roulette	3
+https://mathworld.wolfram.com/SaintPetersburgParadox.html	EndNode	Saint Petersburg Paradox	3
+https://mathworld.wolfram.com/SampleSpace.html	EndNode	Sample Space	3
+https://mathworld.wolfram.com/ScoreFunction.html	EndNode	Score Function	3
+https://mathworld.wolfram.com/Self-CorrectingPointProcess.html	EndNode	Self-Correcting Point Process	3
+https://mathworld.wolfram.com/Self-ExcitingPointProcess.html	EndNode	Self-Exciting Point Process	3
+https://mathworld.wolfram.com/SimplePointProcess.html	EndNode	Simple Point Process	3
+https://mathworld.wolfram.com/SimpsonsParadox.html	EndNode	Simpson's Paradox	3
+https://mathworld.wolfram.com/SmallWorldProblem.html	EndNode	Small World Problem	3
+https://mathworld.wolfram.com/SpatialPointProcess.html	EndNode	Spatial Point Process	3
+https://mathworld.wolfram.com/Spatial-TemporalPointProcess.html	EndNode	Spatial-Temporal Point Process	3
+https://mathworld.wolfram.com/StationaryPointProcess.html	EndNode	Stationary Point Process	3
+https://mathworld.wolfram.com/Statistics.html	EndNode	Statistics	3
+https://mathworld.wolfram.com/TailProbability.html	EndNode	Tail Probability	3
+https://mathworld.wolfram.com/TemporalPointProcess.html	EndNode	Temporal Point Process	3
+https://mathworld.wolfram.com/TotalProbabilityTheorem.html	EndNode	Total Probability Theorem	3
+https://mathworld.wolfram.com/TransylvaniaLottery.html	EndNode	Transylvania Lottery	3
+https://mathworld.wolfram.com/topics/RandomNumbers.html	Parsed	Random Numbers 	2
+https://mathworld.wolfram.com/BaysShuffle.html	EndNode	Bays' Shuffle	3
+https://mathworld.wolfram.com/Box-MullerTransformation.html	EndNode	Box-Muller Transformation	3
+https://mathworld.wolfram.com/CliffRandomNumberGenerator.html	EndNode	Cliff Random Number Generator	3
+https://mathworld.wolfram.com/Discrepancy.html	EndNode	Discrepancy	3
+https://mathworld.wolfram.com/DiscreteDiscrepancy.html	EndNode	Discrete Discrepancy	3
+https://mathworld.wolfram.com/ExchangeShuffle.html	EndNode	Exchange Shuffle	3
+https://mathworld.wolfram.com/GirkosCircularLaw.html	EndNode	Girko's Circular Law	3
+https://mathworld.wolfram.com/HammersleyPointSet.html	EndNode	Hammersley Point Set	3
+https://mathworld.wolfram.com/KacFormula.html	EndNode	Kac Formula	3
+https://mathworld.wolfram.com/LinearCongruenceMethod.html	EndNode	Linear Congruence Method	3
+https://mathworld.wolfram.com/LocalDiscrepancy.html	EndNode	Local Discrepancy	3
+https://mathworld.wolfram.com/LogitTransformation.html	EndNode	Logit Transformation	3
+https://mathworld.wolfram.com/Martingale.html	EndNode	Martingale	3
+https://mathworld.wolfram.com/MatrixVariate.html	EndNode	Matrix Variate	3
+https://mathworld.wolfram.com/Net.html	EndNode	Net	3
+https://mathworld.wolfram.com/NoiseSphere.html	EndNode	Noise Sphere	3
+https://mathworld.wolfram.com/PseudorandomNumber.html	EndNode	Pseudorandom Number	3
+https://mathworld.wolfram.com/QuasirandomNumber.html	EndNode	Quasirandom Number	3
+https://mathworld.wolfram.com/QuasirandomSequence.html	EndNode	Quasirandom Sequence	3
+https://mathworld.wolfram.com/RandomDistribution.html	EndNode	Random Distribution	3
+https://mathworld.wolfram.com/RandomMatrix.html	EndNode	Random Matrix	3
+https://mathworld.wolfram.com/RandomNumber.html	EndNode	Random Number	3
+https://mathworld.wolfram.com/RandomVariable.html	EndNode	Random Variable	3
+https://mathworld.wolfram.com/RandomVariate.html	EndNode	Random Variate	3
+https://mathworld.wolfram.com/Seed.html	EndNode	Seed	3
+https://mathworld.wolfram.com/Shuffle.html	EndNode	Shuffle	3
+https://mathworld.wolfram.com/StarDiscrepancy.html	EndNode	Star Discrepancy	3
+https://mathworld.wolfram.com/Statistic.html	EndNode	Statistic	3
+https://mathworld.wolfram.com/Stochastic.html	EndNode	Stochastic	3
+https://mathworld.wolfram.com/StochasticProcess.html	EndNode	Stochastic Process	3
+https://mathworld.wolfram.com/UniformDistributionTheory.html	EndNode	Uniform Distribution Theory	3
+https://mathworld.wolfram.com/UniformVariate.html	EndNode	Uniform Variate	3
+https://mathworld.wolfram.com/vanderCorputSequence.html	EndNode	van der Corput Sequence	3
+https://mathworld.wolfram.com/Variate.html	EndNode	Variate	3
+https://mathworld.wolfram.com/WignersSemicircleLaw.html	EndNode	Wigner's Semicircle Law	3
+https://mathworld.wolfram.com/topics/RandomWalks.html	Parsed	Random Walks 	2
+https://mathworld.wolfram.com/AbsolutelyFair.html	EndNode	Absolutely Fair	3
+https://mathworld.wolfram.com/Borel-TannerDistribution.html	EndNode	Borel-Tanner Distribution	3
+https://mathworld.wolfram.com/BrownianMotion.html	EndNode	Brownian Motion	3
+https://mathworld.wolfram.com/ItosLemma.html	EndNode	Ito's Lemma	3
+https://mathworld.wolfram.com/LevyFlight.html	EndNode	L&#233;vy Flight	3
+https://mathworld.wolfram.com/LevyWalk.html	EndNode	L&#233;vy Walk	3
+https://mathworld.wolfram.com/MeanSquareDisplacement.html	EndNode	Mean Square Displacement	3
+https://mathworld.wolfram.com/MSD.html	EndNode	MSD	3
+https://mathworld.wolfram.com/PolyasRandomWalkConstants.html	EndNode	P&#243;lya's Random Walk Constants	3
+https://mathworld.wolfram.com/QuantumStochasticCalculus.html	EndNode	Quantum Stochastic Calculus	3
+https://mathworld.wolfram.com/RandomWalk.html	EndNode	Random Walk	3
+https://mathworld.wolfram.com/RandomWalk1-Dimensional.html	EndNode	Random Walk--1-Dimensional	3
+https://mathworld.wolfram.com/RandomWalk2-Dimensional.html	EndNode	Random Walk--2-Dimensional	3
+https://mathworld.wolfram.com/RandomWalk3-Dimensional.html	EndNode	Random Walk--3-Dimensional	3
+https://mathworld.wolfram.com/Self-AvoidingWalk.html	EndNode	Self-Avoiding Walk	3
+https://mathworld.wolfram.com/Self-AvoidingWalkConnectiveConstant.html	EndNode	Self-Avoiding Walk Connective Constant	3
+https://mathworld.wolfram.com/Wiener-LevyProcess.html	EndNode	Wiener-L&#233;vy Process	3
+https://mathworld.wolfram.com/WienerMeasure.html	EndNode	Wiener Measure	3
+https://mathworld.wolfram.com/WienerProcess.html	EndNode	Wiener Process	3
+https://mathworld.wolfram.com/WienerSausage.html	EndNode	Wiener Sausage	3
+https://mathworld.wolfram.com/topics/RankStatistics.html	Parsed	Rank Statistics 	2
+https://mathworld.wolfram.com/Median.html	EndNode	Median	3
+https://mathworld.wolfram.com/Midrange.html	EndNode	Midrange	3
+https://mathworld.wolfram.com/Mode.html	EndNode	Mode	3
+https://mathworld.wolfram.com/OrderStatistic.html	EndNode	Order Statistic	3
+https://mathworld.wolfram.com/RankTest.html	EndNode	Rank Test	3
+https://mathworld.wolfram.com/SpearmanRankCorrelationCoefficient.html	EndNode	Spearman Rank Correlation Coefficient	3
+https://mathworld.wolfram.com/StatisticalMedian.html	EndNode	Statistical Median	3
+https://mathworld.wolfram.com/StatisticalRank.html	EndNode	Statistical Rank	3
+https://mathworld.wolfram.com/Trimean.html	EndNode	Trimean	3
+https://mathworld.wolfram.com/TukeysTrimean.html	EndNode	Tukey's Trimean	3
+https://mathworld.wolfram.com/WeightedInversionStatistic.html	EndNode	Weighted Inversion Statistic	3
+https://mathworld.wolfram.com/topics/Regression.html	Parsed	Regression 	2
+https://mathworld.wolfram.com/ConditionalLogitRegression.html	EndNode	Conditional Logit Regression	3
+https://mathworld.wolfram.com/Correlation.html	EndNode	Correlation	3
+https://mathworld.wolfram.com/CorrelationCoefficient.html	EndNode	Correlation Coefficient	3
+https://mathworld.wolfram.com/CorrelationCoefficientBivariateNormalDistribution.html	EndNode	Correlation Coefficient--Bivariate Normal Distribution	3
+https://mathworld.wolfram.com/CorrelationIndex.html	EndNode	Correlation Index	3
+https://mathworld.wolfram.com/CorrelationRatio.html	EndNode	Correlation Ratio	3
+https://mathworld.wolfram.com/Figure-of-MeritFunction.html	EndNode	Figure-of-Merit Function	3
+https://mathworld.wolfram.com/Gasser-MuellerTechnique.html	EndNode	Gasser-M&#252;ller Technique	3
+https://mathworld.wolfram.com/LeastSquaresFitting.html	EndNode	Least Squares Fitting	3
+https://mathworld.wolfram.com/LeastSquaresFittingExponential.html	EndNode	Least Squares Fitting--Exponential	3
+https://mathworld.wolfram.com/LeastSquaresFittingLogarithmic.html	EndNode	Least Squares Fitting--Logarithmic	3
+https://mathworld.wolfram.com/LeastSquaresFittingPerpendicularOffsets.html	EndNode	Least Squares Fitting--Perpendicular Offsets	3
+https://mathworld.wolfram.com/LeastSquaresFittingPolynomial.html	EndNode	Least Squares Fitting--Polynomial	3
+https://mathworld.wolfram.com/LeastSquaresFittingPowerLaw.html	EndNode	Least Squares Fitting--Power Law	3
+https://mathworld.wolfram.com/LinearRegression.html	EndNode	Linear Regression	3
+https://mathworld.wolfram.com/LoessLocalRegression.html	EndNode	Loess Local Regression	3
+https://mathworld.wolfram.com/Matrix1-Inverse.html	EndNode	Matrix 1-Inverse	3
+https://mathworld.wolfram.com/MeritFunction.html	EndNode	Merit Function	3
+https://mathworld.wolfram.com/MinimaxPolynomial.html	EndNode	Minimax Polynomial	3
+https://mathworld.wolfram.com/Moore-PenroseMatrixInverse.html	EndNode	Moore-Penrose Matrix Inverse	3
+https://mathworld.wolfram.com/MultipleRegression.html	EndNode	Multiple Regression	3
+https://mathworld.wolfram.com/NonlinearLeastSquaresFitting.html	EndNode	Nonlinear Least Squares Fitting	3
+https://mathworld.wolfram.com/NormalEquation.html	EndNode	Normal Equation	3
+https://mathworld.wolfram.com/Pseudoinverse.html	EndNode	Pseudoinverse	3
+https://mathworld.wolfram.com/Regression.html	EndNode	Regression	3
+https://mathworld.wolfram.com/RegressionCoefficient.html	EndNode	Regression Coefficient	3
+https://mathworld.wolfram.com/Residual.html	EndNode	Residual	3
+https://mathworld.wolfram.com/StatisticalCorrelation.html	EndNode	Statistical Correlation	3
+https://mathworld.wolfram.com/topics/Runs.html	Parsed	Runs 	2
+https://mathworld.wolfram.com/KolakoskiSequence.html	EndNode	Kolakoski Sequence	3
+https://mathworld.wolfram.com/Run.html	EndNode	Run	3
+https://mathworld.wolfram.com/Run-LengthEncoding.html	EndNode	Run-Length Encoding	3
+https://mathworld.wolfram.com/s-Cluster.html	EndNode	s-Cluster	3
+https://mathworld.wolfram.com/s-Run.html	EndNode	s-Run	3
+https://mathworld.wolfram.com/topics/StatisticalAsymptoticExpansions.html	Parsed	Statistical Asymptotic Expansions 	2
+https://mathworld.wolfram.com/CharlierSeries.html	EndNode	Charlier Series	3
+https://mathworld.wolfram.com/Cornish-FisherAsymptoticExpansion.html	EndNode	Cornish-Fisher Asymptotic Expansion	3
+https://mathworld.wolfram.com/deMoivre-LaplaceTheorem.html	EndNode	de Moivre-Laplace Theorem	3
+https://mathworld.wolfram.com/EdgeworthSeries.html	EndNode	Edgeworth Series	3
+https://mathworld.wolfram.com/PoissonTheorem.html	EndNode	Poisson Theorem	3
+https://mathworld.wolfram.com/topics/StatisticalDistributions.html	Parsed	Statistical Distributions 	2
+https://mathworld.wolfram.com/topics/ContinuousDistributions.html	Queued	Continuous Distributions 	3
+https://mathworld.wolfram.com/topics/DiscreteDistributions.html	Queued	Discrete Distributions 	3
+https://mathworld.wolfram.com/topics/GeneralDistributions.html	Queued	General Distributions 	3
+https://mathworld.wolfram.com/topics/LimitTheorems.html	Queued	Limit Theorems 	3
+https://mathworld.wolfram.com/topics/StatisticalIndices.html	Parsed	Statistical Indices 	2
+https://mathworld.wolfram.com/BowleyIndex.html	EndNode	Bowley Index	3
+https://mathworld.wolfram.com/FisherIndex.html	EndNode	Fisher Index	3
+https://mathworld.wolfram.com/GeometricMeanIndex.html	EndNode	Geometric Mean Index	3
+https://mathworld.wolfram.com/HarmonicMeanIndex.html	EndNode	Harmonic Mean Index	3
+https://mathworld.wolfram.com/IndexNumber.html	EndNode	Index Number	3
+https://mathworld.wolfram.com/LaspeyresIndex.html	EndNode	Laspeyres' Index	3
+https://mathworld.wolfram.com/Marshall-EdgeworthIndex.html	EndNode	Marshall-Edgeworth Index	3
+https://mathworld.wolfram.com/MitchellIndex.html	EndNode	Mitchell Index	3
+https://mathworld.wolfram.com/PaaschesIndex.html	EndNode	Paasche's Index	3
+https://mathworld.wolfram.com/WalshIndex.html	EndNode	Walsh Index	3
+https://mathworld.wolfram.com/topics/StatisticalPlots.html	Parsed	Statistical Plots 	2
+https://mathworld.wolfram.com/BarChart.html	EndNode	Bar Chart	3
+https://mathworld.wolfram.com/Bland-AltmanPlot.html	EndNode	Bland-Altman Plot	3
+https://mathworld.wolfram.com/Box-and-WhiskerPlot.html	EndNode	Box-and-Whisker Plot	3
+https://mathworld.wolfram.com/ChernoffFace.html	EndNode	Chernoff Face	3
+https://mathworld.wolfram.com/CumulativeFrequencyPolygon.html	EndNode	Cumulative Frequency Polygon	3
+https://mathworld.wolfram.com/DifferencePlot.html	EndNode	Difference Plot	3
+https://mathworld.wolfram.com/DotPlot.html	EndNode	Dot Plot	3
+https://mathworld.wolfram.com/FrequencyCurve.html	EndNode	Frequency Curve	3
+https://mathworld.wolfram.com/Histogram.html	EndNode	Histogram	3
+https://mathworld.wolfram.com/Letter-ValueDisplay.html	EndNode	Letter-Value Display	3
+https://mathworld.wolfram.com/Mean-DifferencePlot.html	EndNode	Mean-Difference Plot	3
+https://mathworld.wolfram.com/Ogive.html	EndNode	Ogive	3
+https://mathworld.wolfram.com/Outlier.html	EndNode	Outlier	3
+https://mathworld.wolfram.com/ParetoPlot.html	EndNode	Pareto Plot	3
+https://mathworld.wolfram.com/PieChart.html	EndNode	Pie Chart	3
+https://mathworld.wolfram.com/q-qPlot.html	EndNode	q-q Plot	3
+https://mathworld.wolfram.com/Quantile-QuantilePlot.html	EndNode	Quantile-Quantile Plot	3
+https://mathworld.wolfram.com/Stem-and-LeafDiagram.html	EndNode	Stem-and-Leaf Diagram	3
+https://mathworld.wolfram.com/StemLeafPlot.html	EndNode	StemLeafPlot	3
+https://mathworld.wolfram.com/TukeyMean-DifferencePlot.html	EndNode	Tukey Mean-Difference Plot	3
+https://mathworld.wolfram.com/topics/StatisticalTests.html	Parsed	Statistical Tests 	2
+https://mathworld.wolfram.com/AlphaValue.html	EndNode	Alpha Value	3
+https://mathworld.wolfram.com/AlternativeHypothesis.html	EndNode	Alternative Hypothesis	3
+https://mathworld.wolfram.com/AnalysisofVariance.html	EndNode	Analysis of Variance	3
+https://mathworld.wolfram.com/Anderson-DarlingStatistic.html	EndNode	Anderson-Darling Statistic	3
+https://mathworld.wolfram.com/ANOVA.html	EndNode	ANOVA	3
+https://mathworld.wolfram.com/BalancedANOVA.html	EndNode	Balanced ANOVA	3
+https://mathworld.wolfram.com/BesselsStatisticalFormula.html	EndNode	Bessel's Statistical Formula	3
+https://mathworld.wolfram.com/BonferroniCorrection.html	EndNode	Bonferroni Correction	3
+https://mathworld.wolfram.com/BootstrapMethods.html	EndNode	Bootstrap Methods	3
+https://mathworld.wolfram.com/Chi-SquaredTest.html	EndNode	Chi-Squared Test	3
+https://mathworld.wolfram.com/ContingencyTable.html	EndNode	Contingency Table	3
+https://mathworld.wolfram.com/ExpectedFrequency.html	EndNode	Expected Frequency	3
+https://mathworld.wolfram.com/Fisher-BehrensProblem.html	EndNode	Fisher-Behrens Problem	3
+https://mathworld.wolfram.com/FishersExactTest.html	EndNode	Fisher's Exact Test	3
+https://mathworld.wolfram.com/FisherSignTest.html	EndNode	Fisher Sign Test	3
+https://mathworld.wolfram.com/HomogeneityofProportionsTest.html	EndNode	Homogeneity of Proportions Test	3
+https://mathworld.wolfram.com/HotellingsT-SquaredTest.html	EndNode	Hotelling's T^2 Test	3
+https://mathworld.wolfram.com/Hypothesis.html	EndNode	Hypothesis	3
+https://mathworld.wolfram.com/HypothesisTesting.html	EndNode	Hypothesis Testing	3
+https://mathworld.wolfram.com/Kolmogorov-SmirnovTest.html	EndNode	Kolmogorov-Smirnov Test	3
+https://mathworld.wolfram.com/KuiperStatistic.html	EndNode	Kuiper Statistic	3
+https://mathworld.wolfram.com/LikelihoodRatio.html	EndNode	Likelihood Ratio	3
+https://mathworld.wolfram.com/LogLikelihoodProcedure.html	EndNode	Log Likelihood Procedure	3
+https://mathworld.wolfram.com/MANOVA.html	EndNode	MANOVA	3
+https://mathworld.wolfram.com/NegativeLikelihoodRatio.html	EndNode	Negative Likelihood Ratio	3
+https://mathworld.wolfram.com/NestedHypothesis.html	EndNode	Nested Hypothesis	3
+https://mathworld.wolfram.com/Neyman-PearsonLemma.html	EndNode	Neyman-Pearson Lemma	3
+https://mathworld.wolfram.com/NonparametricEstimation.html	EndNode	Nonparametric Estimation	3
+https://mathworld.wolfram.com/NullHypothesis.html	EndNode	Null Hypothesis	3
+https://mathworld.wolfram.com/Pairedt-Test.html	EndNode	Paired t-Test	3
+https://mathworld.wolfram.com/ParametricTest.html	EndNode	Parametric Test	3
+https://mathworld.wolfram.com/PopulationComparison.html	EndNode	Population Comparison	3
+https://mathworld.wolfram.com/PredictiveValue.html	EndNode	Predictive Value	3
+https://mathworld.wolfram.com/RankTest.html	EndNode	Rank Test	3
+https://mathworld.wolfram.com/ResidualvsPredictorPlot.html	EndNode	Residual vs. Predictor Plot	3
+https://mathworld.wolfram.com/Sensitivity.html	EndNode	Sensitivity	3
+https://mathworld.wolfram.com/Significance.html	EndNode	Significance	3
+https://mathworld.wolfram.com/SignificanceTest.html	EndNode	Significance Test	3
+https://mathworld.wolfram.com/SignificanceValue.html	EndNode	Significance Value	3
+https://mathworld.wolfram.com/Specificity.html	EndNode	Specificity	3
+https://mathworld.wolfram.com/StatisticalHypothesis.html	EndNode	Statistical Hypothesis	3
+https://mathworld.wolfram.com/StatisticalPower.html	EndNode	Statistical Power	3
+https://mathworld.wolfram.com/StatisticalTest.html	EndNode	Statistical Test	3
+https://mathworld.wolfram.com/TypeIError.html	EndNode	Type I Error	3
+https://mathworld.wolfram.com/TypeIIError.html	EndNode	Type II Error	3
+https://mathworld.wolfram.com/WilcoxonSignedRankTest.html	EndNode	Wilcoxon Signed Rank Test	3
+https://mathworld.wolfram.com/z-Score.html	EndNode	z-Score	3
+https://mathworld.wolfram.com/topics/Time-SeriesAnalysis.html	Parsed	Time-Series Analysis 	2
+https://mathworld.wolfram.com/ConditionalIntensityFunction.html	EndNode	Conditional Intensity Function	3
+https://mathworld.wolfram.com/CountingProcess.html	EndNode	Counting Process	3
+https://mathworld.wolfram.com/ExcitationFunction.html	EndNode	Excitation Function	3
+https://mathworld.wolfram.com/ExcitingFunction.html	EndNode	Exciting Function	3
+https://mathworld.wolfram.com/ExponentialMovingAverage.html	EndNode	Exponential Moving Average	3
+https://mathworld.wolfram.com/HawkesProcess.html	EndNode	Hawkes Process	3
+https://mathworld.wolfram.com/Immigrant.html	EndNode	Immigrant	3
+https://mathworld.wolfram.com/IntensityFunction.html	EndNode	Intensity Function	3
+https://mathworld.wolfram.com/IntensityMeasure.html	EndNode	Intensity Measure	3
+https://mathworld.wolfram.com/IntervalStationaryPointProcess.html	EndNode	Interval Stationary Point Process	3
+https://mathworld.wolfram.com/IrrelevantMark.html	EndNode	Irrelevant Mark	3
+https://mathworld.wolfram.com/MarkSpace.html	EndNode	Mark Space	3
+https://mathworld.wolfram.com/MarkedPointProcess.html	EndNode	Marked Point Process	3
+https://mathworld.wolfram.com/MovingAverage.html	EndNode	Moving Average	3
+https://mathworld.wolfram.com/MultidimensionalPointProcess.html	EndNode	Multidimensional Point Process	3
+https://mathworld.wolfram.com/NonstationaryTimeSeries.html	EndNode	Nonstationary Time Series	3
+https://mathworld.wolfram.com/PointProcess.html	EndNode	Point Process	3
+https://mathworld.wolfram.com/Predictability.html	EndNode	Predictability	3
+https://mathworld.wolfram.com/PredictionTheory.html	EndNode	Prediction Theory	3
+https://mathworld.wolfram.com/RandomClosedSet.html	EndNode	Random Closed Set	3
+https://mathworld.wolfram.com/Redundancy.html	EndNode	Redundancy	3
+https://mathworld.wolfram.com/RunningAverage.html	EndNode	Running Average	3
+https://mathworld.wolfram.com/SamplingTheory.html	EndNode	Sampling Theory	3
+https://mathworld.wolfram.com/Self-CorrectingPointProcess.html	EndNode	Self-Correcting Point Process	3
+https://mathworld.wolfram.com/Self-ExcitingPointProcess.html	EndNode	Self-Exciting Point Process	3
+https://mathworld.wolfram.com/SimplePointProcess.html	EndNode	Simple Point Process	3
+https://mathworld.wolfram.com/Slutzky-YuleEffect.html	EndNode	Slutzky-Yule Effect	3
+https://mathworld.wolfram.com/Smoothing.html	EndNode	Smoothing	3
+https://mathworld.wolfram.com/Spatial-TemporalPointProcess.html	EndNode	Spatial-Temporal Point Process	3
+https://mathworld.wolfram.com/Spencers15-PointMovingAverage.html	EndNode	Spencer's 15-Point Moving Average	3
+https://mathworld.wolfram.com/SpencersFormula.html	EndNode	Spencer's Formula	3
+https://mathworld.wolfram.com/StationaryPointProcess.html	EndNode	Stationary Point Process	3
+https://mathworld.wolfram.com/TemporalPointProcess.html	EndNode	Temporal Point Process	3
+https://mathworld.wolfram.com/TimeSeriesAnalysis.html	EndNode	Time Series Analysis	3
+https://mathworld.wolfram.com/Uncorrelated.html	EndNode	Uncorrelated	3
+https://mathworld.wolfram.com/UncorrelatedNumbers.html	EndNode	Uncorrelated Numbers	3
+https://mathworld.wolfram.com/WienerNumbers.html	EndNode	Wiener Numbers	3
+https://mathworld.wolfram.com/topics/Trials.html	Parsed	Trials 	2
+https://mathworld.wolfram.com/BernoulliTrial.html	EndNode	Bernoulli Trial	3
+https://mathworld.wolfram.com/Event.html	EndNode	Event	3
+https://mathworld.wolfram.com/Experiment.html	EndNode	Experiment	3
+https://mathworld.wolfram.com/IndependentEvents.html	EndNode	Independent Events	3
+https://mathworld.wolfram.com/Jitter.html	EndNode	Jitter	3
+https://mathworld.wolfram.com/LexisRatio.html	EndNode	Lexis Ratio	3
+https://mathworld.wolfram.com/LexisTrials.html	EndNode	Lexis Trials	3
+https://mathworld.wolfram.com/LongitudinalData.html	EndNode	Longitudinal Data	3
+https://mathworld.wolfram.com/Outcome.html	EndNode	Outcome	3
+https://mathworld.wolfram.com/PoissonTrials.html	EndNode	Poisson Trials	3
+https://mathworld.wolfram.com/PrincipleofInsufficientReason.html	EndNode	Principle of Insufficient Reason	3
+https://mathworld.wolfram.com/ProbabilisticExperiment.html	EndNode	Probabilistic Experiment	3
+https://mathworld.wolfram.com/Replicate.html	EndNode	Replicate	3
+https://mathworld.wolfram.com/Sample.html	EndNode	Sample	3
+https://mathworld.wolfram.com/SampleProportion.html	EndNode	Sample Proportion	3
+https://mathworld.wolfram.com/SampleSize.html	EndNode	Sample Size	3
+https://mathworld.wolfram.com/Sampling.html	EndNode	Sampling	3
+https://mathworld.wolfram.com/Subnormal.html	EndNode	Subnormal	3
+https://mathworld.wolfram.com/Supernormal.html	EndNode	Supernormal	3
+https://mathworld.wolfram.com/Trial.html	EndNode	Trial	3
+https://mathworld.wolfram.com/topics/ContinuousDistributions.html	Parsed	Continuous Distributions 	3
+https://mathworld.wolfram.com/BetaDistribution.html	EndNode	Beta Distribution	4
+https://mathworld.wolfram.com/BetaPrimeDistribution.html	EndNode	Beta Prime Distribution	4
+https://mathworld.wolfram.com/BinormalDistribution.html	EndNode	Binormal Distribution	4
+https://mathworld.wolfram.com/BivariateNormalDistribution.html	EndNode	Bivariate Normal Distribution	4
+https://mathworld.wolfram.com/Borel-TannerDistribution.html	EndNode	Borel-Tanner Distribution	4
+https://mathworld.wolfram.com/Bose-EinsteinDistribution.html	EndNode	Bose-Einstein Distribution	4
+https://mathworld.wolfram.com/Box-MullerTransformation.html	EndNode	Box-Muller Transformation	4
+https://mathworld.wolfram.com/CauchyDistribution.html	EndNode	Cauchy Distribution	4
+https://mathworld.wolfram.com/ChiDistribution.html	EndNode	Chi Distribution	4
+https://mathworld.wolfram.com/Chi-SquaredDistribution.html	EndNode	Chi-Squared Distribution	4
+https://mathworld.wolfram.com/ContinuityCorrection.html	EndNode	Continuity Correction	4
+https://mathworld.wolfram.com/ContinuousDistribution.html	EndNode	Continuous Distribution	4
+https://mathworld.wolfram.com/Copula.html	EndNode	Copula	4
+https://mathworld.wolfram.com/Cross-CorrelationCoefficient.html	EndNode	Cross-Correlation Coefficient	4
+https://mathworld.wolfram.com/DifferenceofSuccesses.html	EndNode	Difference of Successes	4
+https://mathworld.wolfram.com/DoobsTheorem.html	EndNode	Doob's Theorem	4
+https://mathworld.wolfram.com/ErlangDistribution.html	EndNode	Erlang Distribution	4
+https://mathworld.wolfram.com/ErrorDistribution.html	EndNode	Error Distribution	4
+https://mathworld.wolfram.com/ErrorFunctionDistribution.html	EndNode	Error Function Distribution	4
+https://mathworld.wolfram.com/ExponentialDistribution.html	EndNode	Exponential Distribution	4
+https://mathworld.wolfram.com/ExtremeValueDistribution.html	EndNode	Extreme Value Distribution	4
+https://mathworld.wolfram.com/F-Distribution.html	EndNode	F-Distribution	4
+https://mathworld.wolfram.com/F-Ratio.html	EndNode	F-Ratio	4
+https://mathworld.wolfram.com/Fermi-DiracDistribution.html	EndNode	Fermi-Dirac Distribution	4
+https://mathworld.wolfram.com/Fisher-TippettDistribution.html	EndNode	Fisher-Tippett Distribution	4
+https://mathworld.wolfram.com/Fishersz-Distribution.html	EndNode	Fisher's z-Distribution	4
+https://mathworld.wolfram.com/GammaDistribution.html	EndNode	Gamma Distribution	4
+https://mathworld.wolfram.com/GaussianDifferenceDistribution.html	EndNode	Gaussian Difference Distribution	4
+https://mathworld.wolfram.com/GaussianDistribution.html	EndNode	Gaussian Distribution	4
+https://mathworld.wolfram.com/GaussianJointVariableTheorem.html	EndNode	Gaussian Joint Variable Theorem	4
+https://mathworld.wolfram.com/GaussianProductDistribution.html	EndNode	Gaussian Product Distribution	4
+https://mathworld.wolfram.com/GaussianRatioDistribution.html	EndNode	Gaussian Ratio Distribution	4
+https://mathworld.wolfram.com/GaussianSumDistribution.html	EndNode	Gaussian Sum Distribution	4
+https://mathworld.wolfram.com/GibratsDistribution.html	EndNode	Gibrat's Distribution	4
+https://mathworld.wolfram.com/GumbelDistribution.html	EndNode	Gumbel Distribution	4
+https://mathworld.wolfram.com/Half-NormalDistribution.html	EndNode	Half-Normal Distribution	4
+https://mathworld.wolfram.com/HotellingT-SquaredDistribution.html	EndNode	Hotelling T^2 Distribution	4
+https://mathworld.wolfram.com/InverseGaussianDistribution.html	EndNode	Inverse Gaussian Distribution	4
+https://mathworld.wolfram.com/LaplaceDistribution.html	EndNode	Laplace Distribution	4
+https://mathworld.wolfram.com/LevyDistribution.html	EndNode	L&#233;vy Distribution	4
+https://mathworld.wolfram.com/LogNormalDistribution.html	EndNode	Log Normal Distribution	4
+https://mathworld.wolfram.com/LogarithmicDistribution.html	EndNode	Logarithmic Distribution	4
+https://mathworld.wolfram.com/LogisticDistribution.html	EndNode	Logistic Distribution	4
+https://mathworld.wolfram.com/LorentzDistribution.html	EndNode	Lorentz Distribution	4
+https://mathworld.wolfram.com/LorentzianDistribution.html	EndNode	Lorentzian Distribution	4
+https://mathworld.wolfram.com/Map-AiryDistribution.html	EndNode	Map-Airy Distribution	4
+https://mathworld.wolfram.com/MaxwellDistribution.html	EndNode	Maxwell Distribution	4
+https://mathworld.wolfram.com/MultinormalDistribution.html	EndNode	Multinormal Distribution	4
+https://mathworld.wolfram.com/MultivariateNormalDistribution.html	EndNode	Multivariate Normal Distribution	4
+https://mathworld.wolfram.com/NoncentralChi-SquaredDistribution.html	EndNode	Noncentral Chi-Squared Distribution	4
+https://mathworld.wolfram.com/NoncentralF-Distribution.html	EndNode	Noncentral F-Distribution	4
+https://mathworld.wolfram.com/NoncentralStudentst-Distribution.html	EndNode	Noncentral Student's t-Distribution	4
+https://mathworld.wolfram.com/NormalDifferenceDistribution.html	EndNode	Normal Difference Distribution	4
+https://mathworld.wolfram.com/NormalDistribution.html	EndNode	Normal Distribution	4
+https://mathworld.wolfram.com/NormalDistributionFunction.html	EndNode	Normal Distribution Function	4
+https://mathworld.wolfram.com/NormalProductDistribution.html	EndNode	Normal Product Distribution	4
+https://mathworld.wolfram.com/NormalRatioDistribution.html	EndNode	Normal Ratio Distribution	4
+https://mathworld.wolfram.com/NormalSumDistribution.html	EndNode	Normal Sum Distribution	4
+https://mathworld.wolfram.com/ParetoDistribution.html	EndNode	Pareto Distribution	4
+https://mathworld.wolfram.com/PearsonSystem.html	EndNode	Pearson System	4
+https://mathworld.wolfram.com/PearsonTypeIIIDistribution.html	EndNode	Pearson Type III Distribution	4
+https://mathworld.wolfram.com/PlancksRadiationFunction.html	EndNode	Planck's Radiation Function	4
+https://mathworld.wolfram.com/PricesTheorem.html	EndNode	Price's Theorem	4
+https://mathworld.wolfram.com/ProbableError.html	EndNode	Probable Error	4
+https://mathworld.wolfram.com/RayleighDistribution.html	EndNode	Rayleigh Distribution	4
+https://mathworld.wolfram.com/RiceDistribution.html	EndNode	Rice Distribution	4
+https://mathworld.wolfram.com/SDistribution.html	EndNode	S Distribution	4
+https://mathworld.wolfram.com/SnedecorsF-Distribution.html	EndNode	Snedecor's F-Distribution	4
+https://mathworld.wolfram.com/StandardNormalDistribution.html	EndNode	Standard Normal Distribution	4
+https://mathworld.wolfram.com/Studentst-Distribution.html	EndNode	Student's t-Distribution	4
+https://mathworld.wolfram.com/Studentsz-Distribution.html	EndNode	Student's z-Distribution	4
+https://mathworld.wolfram.com/TriangularDistribution.html	EndNode	Triangular Distribution	4
+https://mathworld.wolfram.com/TrivariateNormalDistribution.html	EndNode	Trivariate Normal Distribution	4
+https://mathworld.wolfram.com/UniformDifferenceDistribution.html	EndNode	Uniform Difference Distribution	4
+https://mathworld.wolfram.com/UniformDistribution.html	EndNode	Uniform Distribution	4
+https://mathworld.wolfram.com/UniformProductDistribution.html	EndNode	Uniform Product Distribution	4
+https://mathworld.wolfram.com/UniformRatioDistribution.html	EndNode	Uniform Ratio Distribution	4
+https://mathworld.wolfram.com/UniformSumDistribution.html	EndNode	Uniform Sum Distribution	4
+https://mathworld.wolfram.com/UniformVariate.html	EndNode	Uniform Variate	4
+https://mathworld.wolfram.com/vonMisesDistribution.html	EndNode	von Mises Distribution	4
+https://mathworld.wolfram.com/WaldDistribution.html	EndNode	Wald Distribution	4
+https://mathworld.wolfram.com/WeibullDistribution.html	EndNode	Weibull Distribution	4
+https://mathworld.wolfram.com/WishartDistribution.html	EndNode	Wishart Distribution	4
+https://mathworld.wolfram.com/topics/DiscreteDistributions.html	Parsed	Discrete Distributions 	3
+https://mathworld.wolfram.com/BeanMachine.html	EndNode	Bean Machine	4
+https://mathworld.wolfram.com/BernoulliDistribution.html	EndNode	Bernoulli Distribution	4
+https://mathworld.wolfram.com/BetaBinomialDistribution.html	EndNode	Beta Binomial Distribution	4
+https://mathworld.wolfram.com/BinomialDistribution.html	EndNode	Binomial Distribution	4
+https://mathworld.wolfram.com/CochransTheorem.html	EndNode	Cochran's Theorem	4
+https://mathworld.wolfram.com/ContinuityCorrection.html	EndNode	Continuity Correction	4
+https://mathworld.wolfram.com/DiscreteDistribution.html	EndNode	Discrete Distribution	4
+https://mathworld.wolfram.com/DiscreteUniformDistribution.html	EndNode	Discrete Uniform Distribution	4
+https://mathworld.wolfram.com/EquallyLikelyOutcomesDistribution.html	EndNode	Equally Likely Outcomes Distribution	4
+https://mathworld.wolfram.com/GaltonBoard.html	EndNode	Galton Board	4
+https://mathworld.wolfram.com/GeometricDistribution.html	EndNode	Geometric Distribution	4
+https://mathworld.wolfram.com/Heads-Minus-TailsDistribution.html	EndNode	Heads-Minus-Tails Distribution	4
+https://mathworld.wolfram.com/HypergeometricDistribution.html	EndNode	Hypergeometric Distribution	4
+https://mathworld.wolfram.com/LatticeDistribution.html	EndNode	Lattice Distribution	4
+https://mathworld.wolfram.com/Log-SeriesDistribution.html	EndNode	Log-Series Distribution	4
+https://mathworld.wolfram.com/MeanDistribution.html	EndNode	Mean Distribution	4
+https://mathworld.wolfram.com/MultinomialDistribution.html	EndNode	Multinomial Distribution	4
+https://mathworld.wolfram.com/NegativeBinomialDistribution.html	EndNode	Negative Binomial Distribution	4
+https://mathworld.wolfram.com/PoissonDistribution.html	EndNode	Poisson Distribution	4
+https://mathworld.wolfram.com/PoissonProcess.html	EndNode	Poisson Process	4
+https://mathworld.wolfram.com/ZetaDistribution.html	EndNode	Zeta Distribution	4
+https://mathworld.wolfram.com/ZipfDistribution.html	EndNode	Zipf Distribution	4
+https://mathworld.wolfram.com/topics/GeneralDistributions.html	Parsed	General Distributions 	3
+https://mathworld.wolfram.com/CumulativeDistributionFunction.html	EndNode	Cumulative Distribution Function	4
+https://mathworld.wolfram.com/DistributionFunction.html	EndNode	Distribution Function	4
+https://mathworld.wolfram.com/FrechetBounds.html	EndNode	Fr&#233;chet Bounds	4
+https://mathworld.wolfram.com/JointDistributionFunction.html	EndNode	Joint Distribution Function	4
+https://mathworld.wolfram.com/Memoryless.html	EndNode	Memoryless	4
+https://mathworld.wolfram.com/Platykurtic.html	EndNode	Platykurtic	4
+https://mathworld.wolfram.com/RandomDistribution.html	EndNode	Random Distribution	4
+https://mathworld.wolfram.com/Range.html	EndNode	Range	4
+https://mathworld.wolfram.com/RatioDistribution.html	EndNode	Ratio Distribution	4
+https://mathworld.wolfram.com/RenyisParkingConstants.html	EndNode	R&#233;nyi's Parking Constants	4
+https://mathworld.wolfram.com/SklarsTheorem.html	EndNode	Sklar's Theorem	4
+https://mathworld.wolfram.com/StableDistribution.html	EndNode	Stable Distribution	4
+https://mathworld.wolfram.com/StatisticalDistribution.html	EndNode	Statistical Distribution	4
+https://mathworld.wolfram.com/Surrogate.html	EndNode	Surrogate	4
+https://mathworld.wolfram.com/SurvivalFunction.html	EndNode	Survival Function	4
+https://mathworld.wolfram.com/UnimodalDistribution.html	EndNode	Unimodal Distribution	4
+https://mathworld.wolfram.com/topics/LimitTheorems.html	Parsed	Limit Theorems 	3
+https://mathworld.wolfram.com/CentralLimitTheorem.html	EndNode	Central Limit Theorem	4
+https://mathworld.wolfram.com/CramersTheorem.html	EndNode	Cram&#233;r's Theorem	4
+https://mathworld.wolfram.com/Feller-LevyCondition.html	EndNode	Feller-L&#233;vy Condition	4
+https://mathworld.wolfram.com/FishersTheorem.html	EndNode	Fisher's Theorem	4
+https://mathworld.wolfram.com/Fishersz-Transformation.html	EndNode	Fisher's z^'-Transformation	4
+https://mathworld.wolfram.com/LawofLargeNumbers.html	EndNode	Law of Large Numbers	4
+https://mathworld.wolfram.com/LawofTrulyLargeNumbers.html	EndNode	Law of Truly Large Numbers	4
+https://mathworld.wolfram.com/LeCamsInequality.html	EndNode	Le Cam's Inequality	4
+https://mathworld.wolfram.com/LindebergCondition.html	EndNode	Lindeberg Condition	4
+https://mathworld.wolfram.com/Lindeberg-FellerCentralLimitTheorem.html	EndNode	Lindeberg-Feller Central Limit Theorem	4
+https://mathworld.wolfram.com/LyapunovCondition.html	EndNode	Lyapunov Condition	4
+https://mathworld.wolfram.com/StrongLawofLargeNumbers.html	EndNode	Strong Law of Large Numbers	4
+https://mathworld.wolfram.com/WeakLawofLargeNumbers.html	EndNode	Weak Law of Large Numbers	4
