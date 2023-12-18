@@ -5,6 +5,8 @@ import time
 # [ToDo] search: https://mathworld.wolfram.com/search/?query=falling+factorial
 # [Done] categories: https://mathworld.wolfram.com/topics/
 # [ToDo] for final URLs: check "see also" links
+#
+# crawling using proxy server: https://www.scrapingbee.com/blog/python-requests-proxy/
 
 URL_list = []
 URL_parent_Category = {}
@@ -157,7 +159,8 @@ for line in Lines:
     category = line[2]
     category.replace('\n','')
     print("Page count: %d/%d %s" %(count, n, URL))
- 
+    time.sleep(2.5)  #  slow down crawling to avoid being blocked
+
     resp = requests.get(URL, timeout=5)
 
     if resp.status_code == 200:
