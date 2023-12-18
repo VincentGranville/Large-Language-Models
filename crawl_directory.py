@@ -10,7 +10,7 @@ URL_list = []
 URL_parent_Category = {}
 categoryLevel = {}
 history = {}
-final_URL = {}
+final_URLs = {}
 
 URL_base1 = "https://mathworld.wolfram.com/topics/"  # for directory pages (root)
 URL_base2 = "https://mathworld.wolfram.com/"         # for final pages
@@ -28,7 +28,7 @@ URL_parent_Category[seed_URL] = seed_category
 
 parsed = 0       # number of URLs already parsed
 n_URLs = 1       # total number of URLs in the queue 
-max_URLs = 5000  # do not crawl more than max_URLs pages 
+max_URLs = 5000  # do not crawl more than max_URLs directory pages 
 
 def validate(string):
     Ignore = ['about/','classroom/','contact/','whatsnew/','letters/']
@@ -39,13 +39,18 @@ def validate(string):
 
 def update_lists(new_URL, new_category, parent_category, file):
     URL_parent_Category[new_URL] = new_category
+    # if new_category was encountered before, special processing required 
+    #   --> in this case, not a one-to-one mapping (ignore here)
     categoryLevel[new_category] = 1 + categoryLevel[parent_category]
     level = str(categoryLevel[new_category])
     file.write(level+"\t"+new_category+"\t"+parent_category+"\n")
     file.flush()
     return()
 
-#--- Creating category structure and list of webpages
+
+#---[1] Creating category structure and list of webpages
+
+# file1 allows you to resume from where it stopped in case of crash
 
 file1 = open("crawl_log.txt","w",encoding="utf-8")
 file2 = open("crawl_categories.txt","w",encoding="utf-8")
@@ -115,30 +120,55 @@ while parsed < min(max_URLs, n_URLs):
                         update_lists(new_URL, new_category, parent_category, file2)
                         file1.write(new_URL+"\tEndNode\t"+new_category+"\t"+str(level+1)+"\n")
                         file1.flush()
-                        final_URL[new_URL] = (new_category, parent_category, level+1)
+                        final_URLs[new_URL] = (new_category, parent_category, level+1)
 
 file1.close()
 file2.close()
+
+# save list of final URLs to use in step [2]
+
+count = 0
+file = open("list_final_URLs.txt","w",encoding="utf-8")
+for URL in final_URLs:
+    count += 1
+    file.write(str(count)+"\t"+URL+"\t"+str(final_URLs[URL])+"\t\n")
+file.close()
 print()
 
-#--- Extracting content from final URLs
 
-n = len(final_URL)
-count = 0
-file = open("crawl_final.txt","w",encoding="utf-8")
+#---[2] Extracting content from final URLs
+
+# file_log + file_input allows you to resume from where it stopped (in case of crash)
+
+file_input = open("list_final_URLs.txt","r",encoding="utf-8")
+file_log = open("crawl_content_log.txt","w",encoding="utf-8")
+file_output = open("crawl_final.txt","w",encoding="utf-8")
 separator = "\t~"
 
-for URL in final_URL:
+Lines = file_input.readlines()
+file_input.close()
+n = len(Lines)      # number of final URLs (final pages)
 
-    count += 1
-    print("Page: count %d/%d %s" %(count, n, URL))
+for line in Lines:
+
+    line = line.split("\t")
+    count = int(line[0])
+    URL = line[1]
+    category = line[2]
+    category.replace('\n','')
+    print("Page count: %d/%d %s" %(count, n, URL))
+ 
     resp = requests.get(URL, timeout=5)
 
     if resp.status_code == 200:
-        category = str(final_URL[URL])
+        # add page content: one line per page in the output file
         page = resp.text
         page = page.replace('\n', ' ')
-        file.write(URL+"\t"+category+separator+page+"\n")
-        file.flush()
+        file_output.write(URL+"\t"+category+separator+page+"\t\n")
+        file_output.flush()
 
-file.close()
+    file_log.write(str(count)+"\t"+URL+"\t\n")
+    file_log.flush()
+
+file_log.close()
+file_output.close()
