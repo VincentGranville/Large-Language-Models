@@ -144,7 +144,10 @@ print()
 
 file_input = open("list_final_URLs.txt","r",encoding="utf-8")
 file_log = open("crawl_content_log.txt","w",encoding="utf-8")
-file_output = open("crawl_final.txt","w",encoding="utf-8")
+
+begin = 1
+end = 500
+file_output = open("crawl_final_"+str(begin)+"_"+str(end)+".txt","w",encoding="utf-8")
 separator = "\t~"
 
 Lines = file_input.readlines()
@@ -158,20 +161,21 @@ for line in Lines:
     URL = line[1]
     category = line[2]
     category.replace('\n','')
-    print("Page count: %d/%d %s" %(count, n, URL))
-    time.sleep(2.5)  #  slow down crawling to avoid being blocked
 
-    resp = requests.get(URL, timeout=5)
-
-    if resp.status_code == 200:
-        # add page content: one line per page in the output file
-        page = resp.text
-        page = page.replace('\n', ' ')
-        file_output.write(URL+"\t"+category+separator+page+"\t\n")
-        file_output.flush()
-
-    file_log.write(str(count)+"\t"+URL+"\t\n")
-    file_log.flush()
+    if count >= begin and count <= end:
+        print("Page count: %d/%d %s" %(count, n, URL))
+        resp = requests.get(URL, timeout=5)
+        if resp.status_code == 200:
+            # add page content: one line per page in the output file
+            page = resp.text
+            page = page.replace('\n', ' ')
+            file_output.write(URL+"\t"+category+separator+page+"\t\n")
+            file_output.flush()
+        else:
+            print("Error:", resp.status_code)
+        file_log.write(str(count)+"\t"+URL+"\t\n")
+        file_log.flush()
+        time.sleep(2.5)  #  slow down crawling to avoid being blocked
 
 file_log.close()
 file_output.close()
