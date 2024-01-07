@@ -44,7 +44,19 @@ utf_map = { "&nbsp;"   : " ",
             "'s"       : "",   # example: Feller's --> Feller
           }
 
+
 #--- some util functions
+
+def text_to_dictionary(string):
+    string = string.replace("'","").split(', ')
+    hash = {}
+    for word in string:
+        word = word.replace("{","").replace("}","")
+        if word != "":
+            word = word.split(": ")
+            hash[word[0]] = float(word[1])
+    return(hash)
+
 
 def text_to_list(string):
     if ', ' in string:
@@ -57,6 +69,7 @@ def text_to_list(string):
         if word != "":
             list = (*list, word)
     return(list)
+
 
 #--- functions to read the tables
 
@@ -102,4 +115,15 @@ def read_dictionary(filename, path = pwd):
         if len(line) > 1:
             dictionary[line[0]] = int(line[1])
     return(dictionary)
+
+
+def read_embeddings(filename, path = pwd):
+    embeddings = {}
+    response = requests.get(path + filename)
+    data = (response.text).replace('\r','').split("\n")
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            embeddings[line[0]] = text_to_dictionary(line[1])
+    return(embeddings)
 
