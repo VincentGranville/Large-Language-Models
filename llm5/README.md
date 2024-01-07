@@ -7,4 +7,4 @@ LLM-6 will cover all the math-related categories, with one set of tables per cat
   <li>All other lll5_xxxx.txt files are input files containing the minimum information for LL5_short.py (the short version of the script) to perform all the necessary tasks.</li>
 </ul>
 
-I am finishing the scripts LLM5.py and LL<5_short.py. I will upload them when they are sufficiently improved.
+I am finishing the scripts LLM5.py and LLM5_short.py. I will upload them when they are sufficiently improved. I will also add some documentation.
