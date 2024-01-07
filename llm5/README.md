@@ -4,7 +4,7 @@ LLM-6 will cover all the math-related categories, with one set of tables per cat
 
 <ul>
   <li> The <code>llm5_results.txt</code> file is an example of search results for a sample question. The <code>llm5_dump.txt</code> file contains the results for all potential queries with words up to 4 tokens, found in the crawling dictionary.</li>
-  <li>All other <code>llm5_xxxx.txt</code> files are input files containing the minimum information for LL5_short.py (the short version of the script) to perform all the necessary tasks.</li>
+  <li>All other <code>llm5_xxxx.txt</code> files are input files containing the minimum information for <code>LL5_short.py</code> (the short version of the script) to perform all the necessary tasks.</li>
 </ul>
 
 I am finishing the scripts LLM5.py and LLM5_short.py. I will upload them when they are sufficiently improved. I will also add some documentation.
