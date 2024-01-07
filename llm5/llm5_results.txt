@@ -1,0 +1,353 @@
+Found: ['test']
+Found:test
+----------------------------------------------
+test 170
+
+URLs
+
+6 https://mathworld.wolfram.com/ContingencyTable.html
+1 https://mathworld.wolfram.com/ExpectedFrequency.html
+2 https://mathworld.wolfram.com/HomogeneityofProportionsTest.html
+2 https://mathworld.wolfram.com/R-Estimate.html
+1 https://mathworld.wolfram.com/RobustEstimation.html
+2 https://mathworld.wolfram.com/BootstrapMethods.html
+5 https://mathworld.wolfram.com/FisherSignTest.html
+1 https://mathworld.wolfram.com/NonparametricEstimation.html
+8 https://mathworld.wolfram.com/WilcoxonSignedRankTest.html
+1 https://mathworld.wolfram.com/Statistics.html
+1 https://mathworld.wolfram.com/CliffRandomNumberGenerator.html
+8 https://mathworld.wolfram.com/RankTest.html
+3 https://mathworld.wolfram.com/StatisticalRank.html
+7 https://mathworld.wolfram.com/Bland-AltmanPlot.html
+1 https://mathworld.wolfram.com/AlphaValue.html
+1 https://mathworld.wolfram.com/AlternativeHypothesis.html
+1 https://mathworld.wolfram.com/AnalysisofVariance.html
+3 https://mathworld.wolfram.com/Anderson-DarlingStatistic.html
+3 https://mathworld.wolfram.com/ANOVA.html
+1 https://mathworld.wolfram.com/BalancedANOVA.html
+1 https://mathworld.wolfram.com/BesselsStatisticalFormula.html
+5 https://mathworld.wolfram.com/BonferroniCorrection.html
+4 https://mathworld.wolfram.com/Chi-SquaredTest.html
+4 https://mathworld.wolfram.com/Fisher-BehrensProblem.html
+9 https://mathworld.wolfram.com/FishersExactTest.html
+2 https://mathworld.wolfram.com/HotellingsT-SquaredTest.html
+1 https://mathworld.wolfram.com/Hypothesis.html
+8 https://mathworld.wolfram.com/HypothesisTesting.html
+6 https://mathworld.wolfram.com/Kolmogorov-SmirnovTest.html
+2 https://mathworld.wolfram.com/KuiperStatistic.html
+3 https://mathworld.wolfram.com/LikelihoodRatio.html
+1 https://mathworld.wolfram.com/LogLikelihoodProcedure.html
+2 https://mathworld.wolfram.com/MANOVA.html
+2 https://mathworld.wolfram.com/NegativeLikelihoodRatio.html
+1 https://mathworld.wolfram.com/NestedHypothesis.html
+1 https://mathworld.wolfram.com/Neyman-PearsonLemma.html
+1 https://mathworld.wolfram.com/NullHypothesis.html
+5 https://mathworld.wolfram.com/Pairedt-Test.html
+3 https://mathworld.wolfram.com/ParametricTest.html
+1 https://mathworld.wolfram.com/PopulationComparison.html
+4 https://mathworld.wolfram.com/PredictiveValue.html
+1 https://mathworld.wolfram.com/ResidualvsPredictorPlot.html
+3 https://mathworld.wolfram.com/Sensitivity.html
+3 https://mathworld.wolfram.com/Significance.html
+4 https://mathworld.wolfram.com/SignificanceTest.html
+1 https://mathworld.wolfram.com/SignificanceValue.html
+3 https://mathworld.wolfram.com/Specificity.html
+1 https://mathworld.wolfram.com/StatisticalHypothesis.html
+3 https://mathworld.wolfram.com/StatisticalPower.html
+17 https://mathworld.wolfram.com/StatisticalTest.html
+3 https://mathworld.wolfram.com/TypeIError.html
+3 https://mathworld.wolfram.com/TypeIIError.html
+1 https://mathworld.wolfram.com/z-Score.html
+3 https://mathworld.wolfram.com/NormalDistribution.html
+
+CATEGORIES & LEVELS
+
+6 ('Contingency Table', 'Statistical Tests ', 3)
+1 ('Expected Frequency', 'Statistical Tests ', 3)
+2 ('Homogeneity of Proportions Test', 'Statistical Tests ', 3)
+2 ('R-Estimate', 'Estimators ', 3)
+1 ('Robust Estimation', 'Estimators ', 3)
+2 ('Bootstrap Methods', 'Statistical Tests ', 3)
+5 ('Fisher Sign Test', 'Statistical Tests ', 3)
+1 ('Nonparametric Estimation', 'Statistical Tests ', 3)
+8 ('Wilcoxon Signed Rank Test', 'Statistical Tests ', 3)
+1 ('Statistics', 'Probability ', 3)
+1 ('Cliff Random Number Generator', 'Random Numbers ', 3)
+8 ('Rank Test', 'Statistical Tests ', 3)
+3 ('Statistical Rank', 'Rank Statistics ', 3)
+7 ('Bland-Altman Plot', 'Statistical Plots ', 3)
+1 ('Alpha Value', 'Statistical Tests ', 3)
+1 ('Alternative Hypothesis', 'Statistical Tests ', 3)
+1 ('Analysis of Variance', 'Statistical Tests ', 3)
+3 ('Anderson-Darling Statistic', 'Statistical Tests ', 3)
+3 ('ANOVA', 'Statistical Tests ', 3)
+1 ('Balanced ANOVA', 'Statistical Tests ', 3)
+1 ("Bessel Statistical Formula", 'Statistical Tests ', 3)
+5 ('Bonferroni Correction', 'Statistical Tests ', 3)
+4 ('Chi-Squared Test', 'Statistical Tests ', 3)
+4 ('Fisher-Behrens Problem', 'Statistical Tests ', 3)
+9 ("Fisher Exact Test", 'Statistical Tests ', 3)
+2 ("Hotelling T^2 Test", 'Statistical Tests ', 3)
+1 ('Hypothesis', 'Statistical Tests ', 3)
+8 ('Hypothesis Testing', 'Statistical Tests ', 3)
+6 ('Kolmogorov-Smirnov Test', 'Statistical Tests ', 3)
+2 ('Kuiper Statistic', 'Statistical Tests ', 3)
+3 ('Likelihood Ratio', 'Statistical Tests ', 3)
+1 ('Log Likelihood Procedure', 'Statistical Tests ', 3)
+2 ('MANOVA', 'Statistical Tests ', 3)
+2 ('Negative Likelihood Ratio', 'Statistical Tests ', 3)
+1 ('Nested Hypothesis', 'Statistical Tests ', 3)
+1 ('Neyman-Pearson Lemma', 'Statistical Tests ', 3)
+1 ('Null Hypothesis', 'Statistical Tests ', 3)
+5 ('Paired t-Test', 'Statistical Tests ', 3)
+3 ('Parametric Test', 'Statistical Tests ', 3)
+1 ('Population Comparison', 'Statistical Tests ', 3)
+4 ('Predictive Value', 'Statistical Tests ', 3)
+1 ('Residual vs. Predictor Plot', 'Statistical Tests ', 3)
+3 ('Sensitivity', 'Statistical Tests ', 3)
+3 ('Significance', 'Statistical Tests ', 3)
+4 ('Significance Test', 'Statistical Tests ', 3)
+1 ('Significance Value', 'Statistical Tests ', 3)
+3 ('Specificity', 'Statistical Tests ', 3)
+1 ('Statistical Hypothesis', 'Statistical Tests ', 3)
+3 ('Statistical Power', 'Statistical Tests ', 3)
+17 ('Statistical Test', 'Statistical Tests ', 3)
+3 ('Type I Error', 'Statistical Tests ', 3)
+3 ('Type II Error', 'Statistical Tests ', 3)
+1 ('z-Score', 'Statistical Tests ', 3)
+3 ('Normal Distribution', 'Continuous Distributions ', 4)
+
+RELATED
+
+1 Categorical Variable
+1 Chi-Squared Test
+1 Conditional Probability
+1 Frequency Distribution
+1 Independent Events
+1 Probability
+1 Sample
+1 Statistics
+1 Variable
+1 L-Estimate
+1 M-Estimate
+1 Rank Test
+1 Robust Estimation
+1 R-Estimate
+1 ANOVA
+1 Jackknife
+1 Permutation Tests
+1 Resampling Statistics
+1 Hypothesis Testing
+1 Nonparametric Statistics
+1 Fisher Sign Test
+1 Paired 
+1 Parametric Test
+1 Wilcoxon Test Statistic
+1 Box-and-Whisker Plot
+1 Buffon-Laplace Needle Problem
+1 Buffon Needle Problem
+1 Chernoff Face
+1 Coin Tossing
+1 de Mere Problem
+1 Dice
+1 Gambler Ruin
+1 Index
+1 Likelihood
+1 Moving Average
+1 P-Value
+1 Population Comparison
+1 Residual vs. Predictor Plot
+1 Run
+1 Sharing Problem
+1 Statistical Distribution
+1 Statistical Power
+1 Statistical Test
+1 Tail Probability
+1 Random Number
+1 Seed
+1 Kolmogorov-Smirnov Test
+1 Spearman Rank Correlation Coefficient
+1 Statistical Rank
+1 Wilcoxon Signed Rank Test
+1 Wilcoxon Rank Sum Test
+1 Zipf Law
+1 Arithmetic Mean
+1 Correlation
+1 Correlation Coefficient
+1 Difference
+1 Method
+1 Confidence Interval
+1 Significance
+1 Hypothesis
+1 Null Hypothesis
+1 Kuiper Statistic
+1 Factor Level
+1 Least Squares Fitting
+1 MANOVA
+1 Replicate
+1 Variance
+1 Student'
+1 Alpha Value
+1 Chi-Squared Distribution
+1 Significance Test
+1 Normal Distribution
+1 Hotelling T2 Distribution
+1 Alternative Hypothesis
+1 Bourget Hypothesis
+1 Chinese Hypothesis
+1 Conjecture
+1 Continuum Hypothesis
+1 Monster-Barring
+1 Nested Hypothesis
+1 Postulate
+1 Proposition
+1 Riemann Hypothesis
+1 Schinzel Hypothesis
+1 Souslin Hypothesis
+1 Bonferroni Correction
+1 Estimate
+1 Test Statistic
+1 Type I Error
+1 Type II Error
+1 Anderson-Darling Statistic
+1 D-Statistic
+1 Negative Likelihood Ratio
+1 Sensitivity
+1 Specificity
+1 Likelihood Ratio
+1 Log Likelihood Procedure
+1 Estimator
+1 Coincidence
+1 Probable Error
+1 Significance Arithmetic
+1 Predictive Value
+1 Fisher Exact Test
+1 Binomial Distribution
+1 Bivariate Normal Distribution
+1 Box-Muller Transformation
+1 Central Limit Theorem
+1 Erf
+1 Error Function Distribution
+1 Fisher-Behrens Problem
+1 Galton Board
+1 Gaussian Function
+1 Half-Normal Distribution
+1 Inverse Gaussian Distribution
+1 Logit Transformation
+1 Normal Deviate
+1 Normal Distribution Function
+1 Normal Product Distribution
+1 Normal Ratio Distribution
+1 Normal Sum Distribution
+1 Owen T-Function
+1 Pearson System
+1 Ratio Distribution
+1 Standard Normal Distribution
+1 Tetrachoric Function
+
+ALSO SEE
+
+3 ('Contingency Table',)
+1 ('ANOVA',)
+1 ('Alpha Value',)
+1 ('Alternative Hypothesis', 'Hypothesis', 'Hypothesis Testing', 'Null Hypothesis')
+
+SORTED EMBEDDING
+
+   pmi weight    prod token
+
+  6.32     32  202.38 statistical
+  6.84     10   68.38 rank
+  8.54      7   59.76 wilcoxon
+  8.31      6   49.88 sign
+  9.19      5   45.94 smirnov
+  7.60      5   38.02 anova
+  6.93      5   34.63 significance
+  6.60      5   33.02 negative
+  5.49      6   32.93 hypothesis
+  8.02      4   32.07 exact
+  6.94      4   27.76 alternative
+  4.41      6   26.44 statistic
+  8.77      3   26.32 parametric
+  6.49      4   25.95 alpha
+  5.98      4   23.92 fisher
+  5.36      4   21.42 type
+  7.07      3   21.22 kolmogorov
+  6.31      3   18.94 squared
+  9.19      2   18.38 nonnested
+  8.60      2   17.21 proportions
+  8.60      2   17.21 determination
+  8.60      2   17.21 medicine
+  8.19      2   16.38 anderson
+  7.87      2   15.73 predictive
+  7.38      2   14.76 robust
+  7.38      2   14.76 hotelling
+  7.19      2   14.38 performed
+  6.87      2   13.73 equality
+  6.73      2   13.46 nonparametric
+  6.60      2   13.21 contingency
+  6.60      2   13.21 sensitivity
+  6.60      2   13.21 specificity
+  6.38      2   12.76 paired
+  4.17      3   12.52 sum
+  6.02      2   12.04 false
+  5.87      2   11.73 r
+  5.73      2   11.46 several
+  5.60      2   11.21 null
+  5.33      2   10.66 positive
+  5.14      2   10.29 true
+  3.38      3   10.14 two
+  5.02      2   10.04 common
+  2.32      4    9.27 probability
+  9.19      1    9.19 ability
+  9.19      1    9.19 resampling
+  9.19      1    9.19 heterogeneity
+  9.19      1    9.19 nonrandom
+  9.19      1    9.19 attributes
+  8.19      1    8.19 randomness
+  8.19      1    8.19 identify
+  8.19      1    8.19 goodness-of-fit
+  4.00      2    8.00 likelihood
+  7.60      1    7.60 determining
+  3.80      2    7.59 form
+  7.19      1    7.19 basic
+  7.19      1    7.19 making
+  7.19      1    7.19 kuiper
+  6.87      1    6.87 agreement
+  6.87      1    6.87 bland
+  6.60      1    6.60 sphere
+  6.60      1    6.60 easier
+  6.60      1    6.60 logit
+  6.38      1    6.38 hypotheses
+  6.38      1    6.38 nested
+  6.38      1    6.38 should
+  6.02      1    6.02 zipf
+  5.73      1    5.73 spearman
+  5.73      1    5.73 critical
+  5.73      1    5.73 p-value
+  5.28      1    5.28 associated
+  5.28      1    5.28 calculate
+  5.19      1    5.19 factor
+  5.19      1    5.19 individual
+  5.19      1    5.19 either
+  4.87      1    4.87 chi
+  4.80      1    4.80 fact
+  4.80      1    4.80 log
+  4.73      1    4.73 chi-squared
+  4.43      1    4.43 assume
+  4.43      1    4.43 fit
+  4.38      1    4.38 tail
+  4.38      1    4.38 student
+  4.28      1    4.28 single
+  4.14      1    4.14 confidence
+  4.10      1    4.10 computed
+  3.90      1    3.90 conditional
+  3.87      1    3.87 observed
+  3.80      1    3.80 use
+  3.63      1    3.63 quantity
+  3.57      1    3.57 most
+  3.21      1    3.21 table
+  3.19      1    3.19 using
+  3.10      1    3.10 result
+  2.43      1    2.43 estimator
+  1.19      1    1.19 normal
