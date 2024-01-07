@@ -1,4 +1,4 @@
-Currently, LLM-5.1 is a script (LLM5.py) processing all the webpages found in the Probability & Statistics category, on https://mathworld.wolfram.com/, to answer scientific questions in this field. The plan is to add other data sources in LLM5-5.2, and offer a Web API or PyPi library. 
+Currently, LLM-5.1 is a script (LLM5.py) processing all the webpages found in the Probability & Statistics category, on https://mathworld.wolfram.com/, to answer scientific questions in this field. The plan is to add other data sources in LLM-5.2, and offer a Web API or PyPi library. 
 
 LLM-6 will cover all the math-related categories, with one set of tables per category. Regardless of the version, the following applies:
 
