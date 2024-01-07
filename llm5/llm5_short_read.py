@@ -71,12 +71,22 @@ def text_to_list(string):
     return(list)
 
 
+def get_data(filename, path):
+    if 'http' in path: 
+        response = requests.get(path + filename)
+        data = (response.text).replace('\r','').split("\n")
+    else:
+        file = open(filename, "r")
+        data = [line.rstrip() for line in file.readlines()]
+        file.close()
+    return(data)
+
+
 #--- functions to read the tables
 
 def read_arr_url(filename, path = pwd):
     arr_url = []
-    response = requests.get(path + filename)
-    data = (response.text).replace('\r','').split("\n")
+    data = get_data(filename, path)
     for line in data:
         line = line.split('\t')
         if len(line) > 1:
@@ -86,8 +96,7 @@ def read_arr_url(filename, path = pwd):
 
 def read_compressed_ngrams_table(filename, path = pwd):
     compressed_ngrams_table = {}
-    response = requests.get(path + filename)
-    data = (response.text).replace('\r','').split("\n")
+    data = get_data(filename, path)
     for line in data:
         line = line.split('\t')
         if len(line) > 1:
@@ -97,8 +106,7 @@ def read_compressed_ngrams_table(filename, path = pwd):
 
 def read_word_list(filename, path = pwd):
     word_list = {}
-    response = requests.get(path + filename)
-    data = (response.text).replace('\r','').split("\n")
+    data = get_data(filename, path)
     for line in data:
         line = line.split('\t')
         if len(line) > 1:
@@ -108,8 +116,7 @@ def read_word_list(filename, path = pwd):
 
 def read_dictionary(filename, path = pwd):
     dictionary = {}
-    response = requests.get(path + filename)
-    data = (response.text).replace('\r','').split("\n")
+    data = get_data(filename, path)
     for line in data:
         line = line.split('\t')
         if len(line) > 1:
@@ -119,8 +126,7 @@ def read_dictionary(filename, path = pwd):
 
 def read_embeddings(filename, path = pwd):
     embeddings = {}
-    response = requests.get(path + filename)
-    data = (response.text).replace('\r','').split("\n")
+    data = get_data(filename, path)
     for line in data:
         line = line.split('\t')
         if len(line) > 1:
