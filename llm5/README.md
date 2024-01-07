@@ -1,1 +1,10 @@
+Currently, LLM-5.1 is a script (LLM5.py) processing all the webpages found in the Probability & Statistics category, on https://mathworld.wolfram.com/, to answer scientific questions in this field. The plan is to add other data sources in LLM5-5.2, and offer a Web API or PyPi library. 
 
+LLM-6 will cover all the math-related categories, with one set of tables per category. Regardless of the version, the following applies:
+
+<ul>
+  <li> The file llm5_results.txt is an example of search results for a sample question. The file llm5_dump.txt contains the results for all potential queries with words up to 4 tokens, found in the crawling dictionary.</li>
+  <li>All other lll5_xxxx.txt files are input files containing the minimum information for LL5_short.py (the short version of the script) to perform all the necessary tasks.</li>
+</ul>
+
+I am finishing the scripts LLM5.py and LL<5_short.py. I will upload them when they are sufficiently improved.
