@@ -75,7 +75,7 @@ def text_to_list(string):
 
 
 def text_to_list_of_list(string):
-    string = string.replace("'","").split('), ')
+    string = string.replace("'","").replace("\",","").replace("\"","").split('), ')
     list = ()
     for word in string:
         word = word.replace("(","").replace(")","")
@@ -156,4 +156,14 @@ def read_hash_related(filename, path = pwd):
         if len(line) > 1:
             hash_related[line[0]] = text_to_list_of_list(line[1])
     return(hash_related)
+
+
+def read_hash_category(filename, path = pwd):
+    hash_category = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            hash_category[line[0]] = text_to_list_of_list(line[1])
+    return(hash_category)
 
