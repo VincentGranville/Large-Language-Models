@@ -40,11 +40,12 @@ from pattern.text.en import singularize
 
 #--- [1] install llm5_short_read.py and read tables
 
-overwrite = False 
+path = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm5/"
+
+overwrite = False
 
 if overwrite:
 
-    path = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm5/"
     response = requests.get(path + "llm5_short_read.py")
     python_code = response.text
 
@@ -63,7 +64,8 @@ if overwrite:
               'llm5_hash_related.txt',
               'llm5_hash_category.txt',
               'llm5_hash_see.txt',
-              'llm5_url_map.txt'
+              'llm5_url_map.txt',
+              'stopwords.txt'
             ]
 
     for name in files:
@@ -73,11 +75,11 @@ if overwrite:
         file.write(content)
         file.close()  
 
-# from llm5_short_read import *
+#from llm5_short_read import *
 from llm5_util import * 
 
-# if path argument absent, read from GitHub
-# if path = "", read from local copy
+# if path argument absent in read_xxx(), read from GitHub
+# if path = "" or path = path, read from local copy
 
 arr_url = read_arr_url("llm5_arr_url.txt", path = "")
 compressed_ngrams_table = read_compressed_ngrams_table( \
@@ -89,6 +91,7 @@ hash_related = read_hash_related("llm5_hash_related.txt", path = "")
 hash_category = read_hash_category("llm5_hash_category.txt", path = "") 
 hash_see = read_hash_see("llm5_hash_see.txt", path = "")
 url_map = read_url_map("llm5_url_map.txt", path = "")
+stopwords = read_stopwords("stopwords.txt", path = "")
 
 
 #--- [2] some utilities
@@ -233,6 +236,10 @@ def word_summary(word, ccnt1, ccnt2, threshold, output_file):
         cprint("RELATED", related_list, output_file)
         cprint("ALSO SEE", hash_see[word], output_file)
             ############### do not print empty list () !! #########################
+            ############### see all I can remove from this script
+            ############## stop word: load table
+            ############# path : read path from fct
+            ############ same with utf_map
 
         if word in word_list and word in embeddings:
 
