@@ -175,5 +175,5 @@ def read_hash_see(filename, path = pwd):
         line = line.split('\t')
         if len(line) > 1:
             hash_see[line[0]] = text_to_list_of_list(line[1])
-    return(hash_category)
+    return(hash_see)
 
