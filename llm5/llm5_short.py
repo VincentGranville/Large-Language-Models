@@ -236,10 +236,7 @@ def word_summary(word, ccnt1, ccnt2, threshold, output_file):
         cprint("RELATED", related_list, output_file)
         cprint("ALSO SEE", hash_see[word], output_file)
             ############### do not print empty list () !! #########################
-            ############### see all I can remove from this script
-            ############## stop word: load table
-            ############# path : read path from fct
-            ############ same with utf_map
+            ############### see all I can remove (unused) from this script
 
         if word in word_list and word in embeddings:
 
