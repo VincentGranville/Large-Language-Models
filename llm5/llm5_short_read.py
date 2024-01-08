@@ -87,15 +87,14 @@ def text_to_intlist(string):
     return(list)
 
 
-def text_to_list_of_list(string):
-    string = string.replace("'","").replace("\",","").replace("\"","").split('), ')
+def text_to_list_of_list(string): 
+    string = string.replace("\"","").replace("'","").split('), ')
     list = ()
     for word in string:
-        word = word.replace("(","").replace(")","")
+        word = word.replace("(","").replace(")","").replace("\\","")
         if word != "":
             sublist = text_to_list(word)
             list = (*list, sublist) 
-    return(list)
 
 
 def get_data(filename, path):
@@ -177,7 +176,7 @@ def read_hash_related(filename, path = pwd):
     for line in data:
         line = line.split('\t')
         if len(line) > 1:
-            hash_related[line[0]] = text_to_list_of_list(line[1])
+            hash_related[line[0]] = text_to_list_of_list(line[1]) 
     return(hash_related)
 
 
@@ -187,7 +186,7 @@ def read_hash_category(filename, path = pwd):
     for line in data:
         line = line.split('\t')
         if len(line) > 1:
-            hash_category[line[0]] = text_to_list_of_list(line[1])
+            hash_category[line[0]] = text_to_list_of_list(line[1]) 
     return(hash_category)
 
 
@@ -197,9 +196,6 @@ def read_hash_see(filename, path = pwd):
     for line in data:
         line = line.split('\t')
         if len(line) > 1:
-            hash_see[line[0]] = text_to_list_of_list(line[1])
+            hash_see[line[0]] = text_to_list_of_list(line[1]) 
     return(hash_see)
-
-
-
 
