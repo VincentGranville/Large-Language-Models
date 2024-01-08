@@ -95,6 +95,7 @@ def text_to_list_of_list(string):
         if word != "":
             sublist = text_to_list(word)
             list = (*list, sublist) 
+    return(list)
 
 
 def get_data(filename, path):
