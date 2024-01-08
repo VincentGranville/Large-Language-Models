@@ -167,3 +167,13 @@ def read_hash_category(filename, path = pwd):
             hash_category[line[0]] = text_to_list_of_list(line[1])
     return(hash_category)
 
+
+def read_hash_see(filename, path = pwd):
+    hash_see = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            hash_see[line[0]] = text_to_list_of_list(line[1])
+    return(hash_category)
+
