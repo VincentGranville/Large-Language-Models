@@ -74,6 +74,19 @@ def text_to_list(string):
     return(list)
 
 
+def text_to_intlist(string):
+    if ', ' in string:
+        string = string.replace("'","").split(', ')
+    else:
+        string = string.replace("'","").split(',')
+    list = ()
+    for word in string:
+        word = word.replace("(","").replace(")","")
+        if word != "":
+            list = (*list, int(word))
+    return(list)
+
+
 def text_to_list_of_list(string):
     string = string.replace("'","").replace("\",","").replace("\"","").split('), ')
     list = ()
@@ -106,6 +119,16 @@ def read_arr_url(filename, path = pwd):
         if len(line) > 1:
             arr_url.append(line[1])
     return(arr_url)
+
+
+def read_url_map(filename, path = pwd):
+    url_map = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            url_map[line[0]] = text_to_intlist(line[1])
+    return(url_map)
 
 
 def read_compressed_ngrams_table(filename, path = pwd):
@@ -176,4 +199,7 @@ def read_hash_see(filename, path = pwd):
         if len(line) > 1:
             hash_see[line[0]] = text_to_list_of_list(line[1])
     return(hash_see)
+
+
+
 
