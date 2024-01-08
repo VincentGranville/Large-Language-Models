@@ -1,5 +1,8 @@
 import requests
 
+
+#--- global variables
+
 pwd = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm5/"
 
 # words can not be any of these words
@@ -71,6 +74,17 @@ def text_to_list(string):
     return(list)
 
 
+def text_to_list_of_list(string):
+    string = string.replace("'","").split('), ')
+    list = ()
+    for word in string:
+        word = word.replace("(","").replace(")","")
+        if word != "":
+            sublist = text_to_list(word)
+            list = (*list, sublist) 
+    return(list)
+
+
 def get_data(filename, path):
     if 'http' in path: 
         response = requests.get(path + filename)
@@ -132,4 +146,14 @@ def read_embeddings(filename, path = pwd):
         if len(line) > 1:
             embeddings[line[0]] = text_to_dictionary(line[1])
     return(embeddings)
+
+
+def read_hash_related(filename, path = pwd):
+    hash_related = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            hash_related[line[0]] = text_to_list_of_list(line[1])
+    return(hash_related)
 
