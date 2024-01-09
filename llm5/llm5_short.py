@@ -75,7 +75,7 @@ if overwrite:
         file.write(content)
         file.close()  
 
-#from llm5_short_read import *
+# from llm5_short_read import *
 from llm5_util import * 
 
 # if path argument absent in read_xxx(), read from GitHub
@@ -146,18 +146,6 @@ def stem_data(data, mode = 'Internal'):
     return(stem_table)
 
 
-def list_to_text(list):
-
-    text = " " + str(list) + " "
-    text = text.replace("'", " ")
-    text = text.replace("\"", " ")
-    text = text.replace("-", " ")
-    text = text.replace("(", "( ")
-    text = text.replace(")", ". )")
-    text = text.lower()
-    return(text)
-
-
 def reject(word):
 
     # words can not contain any of these
@@ -191,7 +179,7 @@ def merge_list_of_lists(list):
            if item in clist:
                clist[item] += 1 
            elif item != '': 
-            clist[item] = 1
+               clist[item] = 1
    return(clist)
 
 
@@ -209,7 +197,7 @@ def cprint(title, list, output_file, labels = ""):
             url = arr_url[item]  
             print(clist[item], url)
             output_file.write(str(clist[item]) + " " + url + "\n")
-        else:
+        elif str(item) != '()':
             print(clist[item], item)
             output_file.write(str(clist[item]) + " " + str(item) + "\n")
     return()
@@ -235,8 +223,6 @@ def word_summary(word, ccnt1, ccnt2, threshold, output_file):
         related_list = merge_list_of_lists(hash_related[word])
         cprint("RELATED", related_list, output_file)
         cprint("ALSO SEE", hash_see[word], output_file)
-            ############### do not print empty list () !! #########################
-            ############### see all I can remove (unused) from this script
 
         if word in word_list and word in embeddings:
 
