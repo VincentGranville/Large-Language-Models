@@ -75,23 +75,22 @@ if overwrite:
         file.write(content)
         file.close()  
 
-# from llm5_short_read import *
-from llm5_util import * 
+import llm5_util as llm5
 
 # if path argument absent in read_xxx(), read from GitHub
 # if path = "" or path = path, read from local copy
 
-arr_url = read_arr_url("llm5_arr_url.txt", path = "")
-compressed_ngrams_table = read_compressed_ngrams_table( \
+arr_url       = llm5.read_arr_url("llm5_arr_url.txt", path = "")
+compressed_ngrams_table = llm5.read_compressed_ngrams_table( \
           "llm5_compressed_ngrams_table.txt", path ="")
-word_list = read_word_list("llm5_word_list.txt", path ="")
-dictionary = read_dictionary("llm5_dictionary.txt", path ="")
-embeddings = read_embeddings("llm5_embeddings.txt", path ="") 
-hash_related = read_hash_related("llm5_hash_related.txt", path = "")
-hash_category = read_hash_category("llm5_hash_category.txt", path = "") 
-hash_see = read_hash_see("llm5_hash_see.txt", path = "")
-url_map = read_url_map("llm5_url_map.txt", path = "")
-stopwords = read_stopwords("stopwords.txt", path = "")
+word_list     = llm5.read_word_list("llm5_word_list.txt", path ="")
+dictionary    = llm5.read_dictionary("llm5_dictionary.txt", path ="")
+embeddings    = llm5.read_embeddings("llm5_embeddings.txt", path ="") 
+hash_related  = llm5.read_hash_related("llm5_hash_related.txt", path = "")
+hash_category = llm5.read_hash_category("llm5_hash_category.txt", path = "") 
+hash_see      = llm5.read_hash_see("llm5_hash_see.txt", path = "")
+url_map       = llm5.read_url_map("llm5_url_map.txt", path = "")
+stopwords     = llm5.read_stopwords("stopwords.txt", path = "")
 
 
 #--- [3] some utilities
