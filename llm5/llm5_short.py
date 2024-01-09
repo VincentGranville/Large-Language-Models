@@ -38,7 +38,7 @@ from pattern.text.en import singularize
 # utf_map = {}         map accented characters to non-accented version
 # stopwords = ()       1-token words not accepted in dictionary
 
-#--- [1] install llm5_short_read.py and read tables
+#--- [2] install llm5_short_read.py and read tables
 
 path = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm5/"
 
@@ -94,7 +94,7 @@ url_map = read_url_map("llm5_url_map.txt", path = "")
 stopwords = read_stopwords("stopwords.txt", path = "")
 
 
-#--- [2] some utilities
+#--- [3] some utilities
 
 def collapse_list(list):
     # group by item and get count for each item
@@ -170,7 +170,7 @@ def reject(word):
     return(rejected)
 
 
-#--- [3] print some stats (utilities)
+#--- [4] print some stats (utilities)
 
 def merge_list_of_lists(list):
    clist = {}
@@ -256,7 +256,7 @@ def word_summary(word, ccnt1, ccnt2, threshold, output_file):
     return()
 
 
-#--- [4] main loop 
+#--- [5] main loop 
 
 dump = False  
  
@@ -277,7 +277,7 @@ print("1-token words with a list:", len(word_list))
 print("1-token words with an embedding:", len(embeddings))
 
 
-#--- [5] process sample user queries
+#--- [6] process sample user queries
 
 def process_query(query, ccnt1, ccnt2, threshold, output_file = ""):
     # query is a sorted word, each token is in dictionary
