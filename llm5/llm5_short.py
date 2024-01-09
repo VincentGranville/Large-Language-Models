@@ -38,7 +38,7 @@ from pattern.text.en import singularize
 # utf_map = {}         map accented characters to non-accented version
 # stopwords = ()       1-token words not accepted in dictionary
 
-#--- [2] install llm5_short_read.py and read tables
+#--- [2] install llm5_util.py and read tables
 
 path = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm5/"
 
@@ -46,7 +46,7 @@ overwrite = False
 
 if overwrite:
 
-    response = requests.get(path + "llm5_short_read.py")
+    response = requests.get(path + "llm5_util.py")
     python_code = response.text
 
     local_copy = "llm5_util"
