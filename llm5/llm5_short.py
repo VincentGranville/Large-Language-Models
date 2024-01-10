@@ -7,7 +7,7 @@ from pattern.text.en import singularize
 
 #--- [1] get tables if not present already
 
-# First, get llm5_short_read.py from GitHub and save it locally as llm5_util.py
+# First, get llm5_util.py from GitHub and save it locally as llm5_util.py
 #     note: this python code does that automatically for  you
 # Then import everything from that library with 'from llm5_util import *'
 # Now you can call the read_xxx() functions from that library
