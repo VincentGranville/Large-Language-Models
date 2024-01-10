@@ -290,6 +290,7 @@ while query != "":
         tokens = query.split(' ')
         for token in tokens:
             # note: spell('feller') = 'seller', should not be autocorrected
+            token = token.lower()
             if token not in dictionary:
                 token = spell(token) 
             token_list.append(token)
