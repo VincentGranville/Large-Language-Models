@@ -5,7 +5,7 @@ from pattern.text.en import singularize
 # Unlike llm5.py, llm5_short.py does not process the (huge) crawled data.
 # Instead, it uses the much smaller summary tables produced by llm5.py
 
-#--- [1] get tables, including stopwords and utf_map
+#--- [1] get tables if not present already
 
 # First, get llm5_short_read.py from GitHub and save it locally as llm5_util.py
 #     note: this python code does that automatically for  you
@@ -37,8 +37,6 @@ from pattern.text.en import singularize
 # compressed_ngrams_table = {}     only keep ngram with highest count
 # utf_map = {}         map accented characters to non-accented version
 # stopwords = ()       1-token words not accepted in dictionary
-
-#--- [2] install llm5_util.py and read tables
 
 path = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm5/"
 
@@ -78,7 +76,7 @@ if overwrite:
 import llm5_util as llm5
 
 # if path argument absent in read_xxx(), read from GitHub
-# if path = "" or path = path, read from local copy
+# otherwise, read from copy found in path
 
 arr_url       = llm5.read_arr_url("llm5_arr_url.txt", path = "")
 compressed_ngrams_table = llm5.read_compressed_ngrams_table( \
@@ -93,7 +91,7 @@ url_map       = llm5.read_url_map("llm5_url_map.txt", path = "")
 stopwords     = llm5.read_stopwords("stopwords.txt", path = "")
 
 
-#--- [3] some utilities
+#--- [2] some utilities
 
 def collapse_list(list):
     # group by item and get count for each item
@@ -106,26 +104,11 @@ def collapse_list(list):
     return(clist)
 
 
-def trim(word):
-    return(word.replace(".", "").replace(",",""))
-
-
-def stem_data(data, mode = 'Internal'):
-
-    # input: raw page (array containing the 1-token words)
-    # output: words found both in singular and plural: we only keep the former
-    # if mode = 'Singularize', use singularize library
-    # if mode = 'Internal', use home-made (better)
+def singular(data, mode = 'Internal'):
 
     stem_table = {}
-    temp_dictionary = {}
 
     for word in data:
-        if not reject(word):
-            trim_word = trim(word)  
-            temp_dictionary[trim_word] = 1
-
-    for word in temp_dictionary:
         if mode == 'Internal': 
             n = len(word)
             if n > 2 and "~" not in word and \
@@ -139,37 +122,13 @@ def stem_data(data, mode = 'Internal'):
 
             # the instruction below changes 'hypothesi' back to 'hypothesis'
             # however it changes 'feller' to 'seller' 
-            # solution: create 'do not singularize' and 'd not autocorrect' lists
+            # solution: create 'do not singularize' and 'do not autocorrect' lists
             stem_table[word] = spell(word) 
 
     return(stem_table)
 
 
-def reject(word):
-
-    # words can not contain any of these
-    # note: "&" and ";" used in utf processing, we keep them 
-    flaglist = ( "=", "\"", "(", ")", "<", ">", "}", "|", "&quot;", 
-                 "{", "[", "]", "^", "/", "%", ":", "_", 
-                )
-
-    # words can not start with any of these chars
-    bad_start = ("-",)
-
-    rejected = False
-    for string in flaglist:
-        if string in word:
-            rejected = True
-    if len(word) == 0:
-        rejected = True
-    elif word[0].isdigit() or word[0] in bad_start:
-        rejected = True
-    if word.lower() in stopwords:
-        rejected = True
-    return(rejected)
-
-
-#--- [4] print some stats (utilities)
+#--- [3] print some stats (utilities)
 
 def merge_list_of_lists(list):
    clist = {}
@@ -255,7 +214,7 @@ def word_summary(word, ccnt1, ccnt2, threshold, output_file):
     return()
 
 
-#--- [5] main loop 
+#--- [4] main loop 
 
 dump = False  
  
@@ -276,7 +235,7 @@ print("1-token words with a list:", len(word_list))
 print("1-token words with an embedding:", len(embeddings))
 
 
-#--- [6] process sample user queries
+#--- [5] process sample user queries
 
 def process_query(query, ccnt1, ccnt2, threshold, output_file = ""):
     # query is a sorted word, each token is in dictionary
@@ -334,7 +293,7 @@ while query != "":
             if token not in dictionary:
                 token = spell(token) 
             token_list.append(token)
-        stemmed = stem_data(token_list, mode = 'Internal')   
+        stemmed = singular(token_list, mode = 'Internal')   
 
         for old_token in stemmed:
             token = stemmed[old_token]
@@ -352,5 +311,3 @@ while query != "":
             process_query(token_clean_list, ccnt1, ccnt2, threshold, output_file)
 
 output_file.close()
-
-
