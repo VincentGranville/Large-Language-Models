@@ -1,5 +1,8 @@
 import numpy as np
 import requests
+from autocorrect import Speller
+from pattern.text.en import singularize
+spell = Speller(lang='en')
 
 #--- [1] functions to read core tables (if not produced by you script)
 
