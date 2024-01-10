@@ -195,7 +195,6 @@ def word_summary(word, ccnt1, ccnt2, threshold, output_file):
                    pmi = embedding_list[word2]
                    count = wlist[word2]
                    product = pmi * count
-                   product = pmi * count
                    string = "%6.2f %6d %7.2f %s" % (pmi, count, product, word2)
                    print_embeddings[string] = (product, count)
  
