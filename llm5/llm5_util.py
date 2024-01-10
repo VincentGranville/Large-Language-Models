@@ -1,177 +1,258 @@
-import requests
-
-
-#--- global variables
-
-pwd = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm5/"
-
-# map below to deal with some accented / non-standard characters
-#utf_map = { "&nbsp;"   : " ", 
-#            "&oacute;" : "e",
-#            "&eacute;" : "e",
-#            "&ouml;"   : "o",
-#            "&ocirc;"  : "o",
-#            "&#233;"   : "e",
-#            "  "       : " ",
-#            "'s"       : "",   # example: Feller's --> Feller
-#          }
-
-
-#--- some util functions
-
-def text_to_dictionary(string):
-    string = string.replace("'","").split(', ')
-    hash = {}
-    for word in string:
-        word = word.replace("{","").replace("}","")
-        if word != "":
-            word = word.split(": ")
-            hash[word[0]] = float(word[1])
-    return(hash)
-
-
-def text_to_list(string):
-    if ', ' in string:
-        string = string.replace("'","").split(', ')
-    else:
-        string = string.replace("'","").split(',')
-    list = ()
-    for word in string:
-        word = word.replace("(","").replace(")","")
-        if word != "":
-            list = (*list, word)
-    return(list)
-
-
-def text_to_intlist(string):
-    if ', ' in string:
-        string = string.replace("'","").split(', ')
-    else:
-        string = string.replace("'","").split(',')
-    list = ()
-    for word in string:
-        word = word.replace("(","").replace(")","")
-        if word != "":
-            list = (*list, int(word))
-    return(list)
-
-
-def text_to_list_of_list(string): 
-    string = string.replace("\"","").replace("'","").split('), ')
-    list = ()
-    for word in string:
-        word = word.replace("(","").replace(")","").replace("\\","")
-        if word != "":
-            sublist = text_to_list(word)
-            list = (*list, sublist) 
-    return(list)
-
-
-def get_data(filename, path):
-    if 'http' in path: 
-        response = requests.get(path + filename)
-        data = (response.text).replace('\r','').split("\n")
-    else:
-        file = open(filename, "r")
-        data = [line.rstrip() for line in file.readlines()]
-        file.close()
-    return(data)
-
-
-#--- functions to read the tables
-
-def read_arr_url(filename, path = pwd):
-    arr_url = []
-    data = get_data(filename, path)
-    for line in data:
-        line = line.split('\t')
-        if len(line) > 1:
-            arr_url.append(line[1])
-    return(arr_url)
-
-
-def read_url_map(filename, path = pwd):
-    url_map = {}
-    data = get_data(filename, path)
-    for line in data:
-        line = line.split('\t')
-        if len(line) > 1:
-            url_map[line[0]] = text_to_intlist(line[1])
-    return(url_map)
-
-
-def read_compressed_ngrams_table(filename, path = pwd):
-    compressed_ngrams_table = {}
-    data = get_data(filename, path)
-    for line in data:
-        line = line.split('\t')
-        if len(line) > 1:
-            compressed_ngrams_table[line[0]] = text_to_list(line[1])
-    return(compressed_ngrams_table)
-
-
-def read_word_list(filename, path = pwd):
-    word_list = {}
-    data = get_data(filename, path)
-    for line in data:
-        line = line.split('\t')
-        if len(line) > 1:
-            word_list[line[0]] = text_to_list(line[1])
-    return(word_list)
-
-
-def read_stopwords(filename, path = pwd):
-    data = get_data(filename, path)
-    stopwords = text_to_list(data[0])
-    return(stopwords)
-
-
-def read_dictionary(filename, path = pwd):
-    dictionary = {}
-    data = get_data(filename, path)
-    for line in data:
-        line = line.split('\t')
-        if len(line) > 1:
-            dictionary[line[0]] = int(line[1])
-    return(dictionary)
-
-
-def read_embeddings(filename, path = pwd):
-    embeddings = {}
-    data = get_data(filename, path)
-    for line in data:
-        line = line.split('\t')
-        if len(line) > 1:
-            embeddings[line[0]] = text_to_dictionary(line[1])
-    return(embeddings)
-
-
-def read_hash_related(filename, path = pwd):
-    hash_related = {}
-    data = get_data(filename, path)
-    for line in data:
-        line = line.split('\t')
-        if len(line) > 1:
-            hash_related[line[0]] = text_to_list_of_list(line[1]) 
-    return(hash_related)
-
-
-def read_hash_category(filename, path = pwd):
-    hash_category = {}
-    data = get_data(filename, path)
-    for line in data:
-        line = line.split('\t')
-        if len(line) > 1:
-            hash_category[line[0]] = text_to_list_of_list(line[1]) 
-    return(hash_category)
-
-
-def read_hash_see(filename, path = pwd):
-    hash_see = {}
-    data = get_data(filename, path)
-    for line in data:
-        line = line.split('\t')
-        if len(line) > 1:
-            hash_see[line[0]] = text_to_list_of_list(line[1]) 
-    return(hash_see)
-
+import numpy as np
+import requests
+
+#--- [1] functions to read core tables (if not produced by you script)
+
+pwd = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm5/"
+
+#--- [1.1] auxiliary functions
+
+def text_to_dictionary(string):
+    string = string.replace("'","").split(', ')
+    hash = {}
+    for word in string:
+        word = word.replace("{","").replace("}","")
+        if word != "":
+            word = word.split(": ")
+            hash[word[0]] = float(word[1])
+    return(hash)
+
+
+def text_to_list(string):
+    if ', ' in string:
+        string = string.replace("'","").split(', ')
+    else:
+        string = string.replace("'","").split(',')
+    list = ()
+    for word in string:
+        word = word.replace("(","").replace(")","")
+        if word != "":
+            list = (*list, word)
+    return(list)
+
+
+def text_to_intlist(string):
+    if ', ' in string:
+        string = string.replace("'","").split(', ')
+    else:
+        string = string.replace("'","").split(',')
+    list = ()
+    for word in string:
+        word = word.replace("(","").replace(")","")
+        if word != "":
+            list = (*list, int(word))
+    return(list)
+
+
+def text_to_list_of_list(string): 
+    string = string.replace("\"","").replace("'","").split('), ')
+    list = ()
+    for word in string:
+        word = word.replace("(","").replace(")","").replace("\\","")
+        if word != "":
+            sublist = text_to_list(word)
+            list = (*list, sublist) 
+    return(list)
+
+
+def get_data(filename, path):
+    if 'http' in path: 
+        response = requests.get(path + filename)
+        data = (response.text).replace('\r','').split("\n")
+    else:
+        file = open(filename, "r")
+        data = [line.rstrip() for line in file.readlines()]
+        file.close()
+    return(data)
+
+
+#--- [1.2] functions to read the tables
+
+def read_arr_url(filename, path = pwd):
+    arr_url = []
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            arr_url.append(line[1])
+    return(arr_url)
+
+
+def read_url_map(filename, path = pwd):
+    url_map = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            url_map[line[0]] = text_to_intlist(line[1])
+    return(url_map)
+
+
+def read_compressed_ngrams_table(filename, path = pwd):
+    compressed_ngrams_table = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            compressed_ngrams_table[line[0]] = text_to_list(line[1])
+    return(compressed_ngrams_table)
+
+
+def read_word_list(filename, path = pwd):
+    word_list = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            word_list[line[0]] = text_to_list(line[1])
+    return(word_list)
+
+
+def read_stopwords(filename, path = pwd):
+    data = get_data(filename, path)
+    stopwords = text_to_list(data[0])
+    return(stopwords)
+
+
+def read_dictionary(filename, path = pwd):
+    dictionary = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            dictionary[line[0]] = int(line[1])
+    return(dictionary)
+
+
+def read_embeddings(filename, path = pwd):
+    embeddings = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            embeddings[line[0]] = text_to_dictionary(line[1])
+    return(embeddings)
+
+
+def read_hash_related(filename, path = pwd):
+    hash_related = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            hash_related[line[0]] = text_to_list_of_list(line[1]) 
+    return(hash_related)
+
+
+def read_hash_category(filename, path = pwd):
+    hash_category = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            hash_category[line[0]] = text_to_list_of_list(line[1]) 
+    return(hash_category)
+
+
+def read_hash_see(filename, path = pwd):
+    hash_see = {}
+    data = get_data(filename, path)
+    for line in data:
+        line = line.split('\t')
+        if len(line) > 1:
+            hash_see[line[0]] = text_to_list_of_list(line[1]) 
+    return(hash_see)
+
+
+#--- [2]
+
+
+#--- [3] simple text processsing
+
+def collapse_list(list):
+    # group by item and get count for each item
+    clist = {}
+    for item in list:
+        if item in clist:
+            clist[item] += 1
+        elif item != '': 
+            clist[item] = 1
+    return(clist)
+
+
+#--- [4] create embeddings and ngrams tables, once all sources are parsed
+
+def create_pmi_table(word_pairs, dictionary):
+
+    pmi_table  = {}     # pointwise mutual information 
+    exponent = 1.0
+
+    for pair in word_pairs:
+
+        word1 = pair[0]
+        word2 = pair[1]
+        f1 = dictionary[word1] / len(dictionary)
+        f2 = dictionary[word2] / len(dictionary)
+        f12 = word_pairs[pair] / len(word_pairs) 
+        pmi = np.log2(f12 / (f1 * f2)**exponent) 
+        word2_weight =  word_pairs[pair] / dictionary[word1]
+        pmi_table[pair] = pmi 
+
+    return(pmi_table)
+
+
+def create_embeddings(word_list, pmi_table): 
+
+    embeddings = {}
+
+    for word in word_list:
+
+        list = word_list[word]
+        clist = collapse_list(list)
+        embedding_list = {}
+
+        for word2 in clist:
+            count = clist[word2] 
+            pair =  (word, word2)
+
+            if pair in pmi_table:
+
+                pmi = pmi_table[pair]
+                embedding_list[word2] = pmi
+
+        embeddings[word] = embedding_list
+
+    return(embeddings)
+
+
+def build_ngrams(dictionary):
+
+    ngrams_table = {}
+    for word in dictionary:
+        tokens = word.split("~")
+        tokens.sort()
+        sorted_word = tokens[0]
+        for k in range(1, len(tokens)):
+            sorted_word += "~" + tokens[k] 
+        if sorted_word in ngrams_table:
+            ngrams_table[sorted_word] = (*ngrams_table[sorted_word], word,)
+        else:
+            ngrams_table[sorted_word] = (word,) 
+    return(ngrams_table)
+
+
+def compress_ngrams(dictionary, ngrams_table):
+    # for each sorted_word, keep most popular ngram only
+
+    compressed_ngrams_table = {}
+    for sorted_word in ngrams_table:
+        ngrams = ngrams_table[sorted_word]
+        max_count = 0
+        for ngram in ngrams:
+            if dictionary[ngram] > max_count:
+                max_count = dictionary[ngram]
+                best_ngram = ngram
+        compressed_ngrams_table[sorted_word] = (best_ngram, )
+    return(compressed_ngrams_table) 
+
+
