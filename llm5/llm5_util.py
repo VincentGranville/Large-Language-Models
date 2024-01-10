@@ -164,7 +164,174 @@ def read_hash_see(filename, path = pwd):
     return(hash_see)
 
 
-#--- [2]
+#--- [2] core function to create/update dictionary and satellite tables
+
+def trim(word):
+    return(word.replace(".", "").replace(",",""))
+
+def reject(word, stopwords):
+
+    # words can not contain any of these
+    # note: "&" and ";" used in utf processing, we keep them 
+    flaglist = ( "=", "\"", "(", ")", "<", ">", "}", "|", "&quot;", 
+                 "{", "[", "]", "^", "/", "%", ":", "_", 
+                )
+
+    # words can not start with any of these chars
+    bad_start = ("-",)
+
+    rejected = False
+    for string in flaglist:
+        if string in word:
+            rejected = True
+    if len(word) == 0:
+        rejected = True
+    elif word[0].isdigit() or word[0] in bad_start:
+        rejected = True
+    if word.lower() in stopwords:
+        rejected = True
+    return(rejected)
+
+
+def add_word(word, url_ID, category, dictionary, url_map, hash_category, 
+             hash_related, hash_see, related, see, word_pairs, word_list):
+
+    if word in dictionary:
+
+        dictionary[word] += 1
+        url_map[word] = (*url_map[word], url_ID,)
+        hash_category[word] = (*hash_category[word], category,)
+        hash_related[word] = (*hash_related[word], related,)
+        hash_see[word] = (*hash_see[word], see,)
+
+    else: 
+
+        dictionary[word] = 1 
+        url_map[word] = (url_ID,)
+        hash_category[word] = (category,)
+        hash_related[word] = (related,)
+        hash_see[word] = (see, )
+
+    # generate association between 2 tokens of a 2-token word 
+    # this is the starting point to create word embeddings
+ 
+    if word.count('~') == 1:
+
+        # word consists of 2 tokens word1 and word2
+        string = word.split('~')
+        word1 = string[0]
+        word2 = string[1]
+
+        pair = (word1, word2)
+        if pair in word_pairs:
+            word_pairs[pair] += 1
+        else:
+            word_pairs[pair] = 1
+        pair = (word2, word1)
+        if pair in word_pairs:
+            word_pairs[pair] += 1
+        else:
+            word_pairs[pair] = 1
+
+        if word1 in word_list:
+            word_list[word1] = (*word_list[word1], word2)
+        else:
+            word_list[word1] = (word2,)
+        if word2 in word_list:
+            word_list[word2] = (*word_list[word2], word1)
+        else:
+            word_list[word2] = (word1,)
+
+    return()
+
+
+def stem_data(data, stopwords, dictionary, mode = 'Internal'):
+
+    # input: raw page (array containing the 1-token words)
+    # output: words found both in singular and plural: we only keep the former
+    # if mode = 'Singularize', use singularize library
+    # if mode = 'Internal', use home-made (better)
+
+    stem_table = {}
+    temp_dictionary = {}
+
+    for word in data:
+        if not reject(word, stopwords):
+            trim_word = trim(word)  
+            temp_dictionary[trim_word] = 1
+
+    for word in temp_dictionary:
+        if mode == 'Internal': 
+            n = len(word)
+            if n > 2 and "~" not in word and \
+                  word[0:n-1] in dictionary and word[n-1] == "s":
+                stem_table[word] = word[0:n-1]
+            else:
+                stem_table[word] = word
+        else:
+            # the instruction below changes 'hypothesis' to 'hypothesi'
+            word = singularize(word)
+
+            # the instruction below changes 'hypothesi' back to 'hypothesis'
+            # however it changes 'feller' to 'seller' 
+            # solution: create 'do not singularize' and 'do not autocorrect' lists
+            stem_table[word] = spell(word) 
+
+    return(stem_table)
+
+
+def update_core_tables(data, dictionary, url_map, arr_url, hash_category, hash_related, 
+                       hash_see, stem_table, category, url, url_ID, stopwords, related, 
+                       see, word_pairs, word_list):
+
+    # data is a word array built on crawled data (one webpage, the url)
+    # url_ID is incremented at each call of update_core_tables(xx)
+    # I/O: dictionary, url_map, word_list, word_pairs, 
+    #       hash_see, hash_related, hash_category
+    # these tables are updated when calling add_word(xxx)
+    
+    arr_word = []  # list of words (1 to 4 tokens) found on this page, local array
+    k = 0
+
+    for word in data:
+
+        if not reject(word, stopwords):
+
+            raw_word = word
+            trim_word = trim(word) 
+            trim_word = stem_table[trim_word]
+
+            if not reject(trim_word, stopwords):
+
+                arr_word.append(trim_word)  
+                add_word(trim_word, url_ID, category, dictionary, url_map, hash_category, 
+                         hash_related, hash_see, related, see, word_pairs, word_list)
+
+                if k > 0 and trim_word == raw_word:
+                    # 2-token word
+                    if arr_word[k-1] not in trim_word:
+                        word = arr_word[k-1] + "~" + trim_word
+                        add_word(word, url_ID, category, dictionary, url_map, hash_category, 
+                                 hash_related, hash_see, related, see, word_pairs, word_list)
+
+                if k > 1  and trim_word == raw_word:
+                    # 3-token word
+                    if arr_word[k-2] not in word:
+                        word = arr_word[k-2] + "~" + word
+                        add_word(word, url_ID, category, dictionary, url_map, hash_category, 
+                                 hash_related, hash_see, related, see, word_pairs, word_list)
+
+                if k > 2  and trim_word == raw_word:
+                    # 4-token word
+                    if arr_word[k-3] not in word:
+                        word = arr_word[k-3] + "~" + word      
+                        add_word(word, url_ID, category, dictionary, url_map, hash_category, 
+                                 hash_related, hash_see, related, see, word_pairs, word_list)
+                k += 1
+
+    arr_url.append(url)
+    url_ID += 1   
+    return(url_ID)
 
 
 #--- [3] simple text processsing
