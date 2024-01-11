@@ -30,9 +30,6 @@ from pattern.text.en import singularize
 # hash_related = {}    related topics attached to a word
 # hash_see = {}        topics from "see also" section, attached to word
 # word_list = {}       list of 1-token words associated to a 1-token word 
-# hash_see = {}        'see also' topics associated to word
-# hash_related = {}    related topics associated to word 
-# hash_category = {}   category, parent category and level attached to word 
 # ngrams_table = {}    ngrams of word found when crawling
 # compressed_ngrams_table = {}     only keep ngram with highest count
 # utf_map = {}         map accented characters to non-accented version
