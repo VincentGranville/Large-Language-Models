@@ -88,6 +88,11 @@ url_map       = llm5.read_url_map("llm5_url_map.txt", path = "")
 stopwords     = llm5.read_stopwords("stopwords.txt", path = "")
 
 
+########print("NNNNNNNNNNNNNN",hash_see['maximum']) ##################
+##########uuuuuuuuuuuuuuu ('', ('Maximum Likelihood',), ('Maximum Likelihood',))
+###########NNNNNNNNNNNNNN (('Maximum Likelihood,',), ('Maximum Likelihood',))
+
+
 #--- [2] some utilities
 
 def collapse_list(list):
@@ -140,6 +145,8 @@ def merge_list_of_lists(list):
 
 def cprint(title, list, output_file, labels = ""):
 
+    if title == "ALSO SEE": ############################
+                print("***", list) ##########################3
     clist = collapse_list(list)
     print("\n%s\n" %(title))
     output_file.write("\n%s\n\n" %(title))

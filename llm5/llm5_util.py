@@ -64,7 +64,7 @@ def get_data(filename, path):
         data = (response.text).replace('\r','').split("\n")
     else:
         file = open(filename, "r")
-        data = [line.rstrip() for line in file.readlines()]
+        data = [line.rstrip() for line in file.readlines()] 
         file.close()
     return(data)
 
@@ -202,18 +202,21 @@ def add_word(word, url_ID, category, dictionary, url_map, hash_category,
     if word in dictionary:
 
         dictionary[word] += 1
-        url_map[word] = (*url_map[word], url_ID,)
-        hash_category[word] = (*hash_category[word], category,)
-        hash_related[word] = (*hash_related[word], related,)
-        hash_see[word] = (*hash_see[word], see,)
+        url_map[word] = (*url_map[word], url_ID, ) 
+        if category != "":
+            hash_category[word] = (*hash_category[word], category, ) 
+        if related != "":
+            hash_related[word] = (*hash_related[word], related, )
+        if see != "":
+            hash_see[word] = (*hash_see[word], see) 
 
     else: 
 
         dictionary[word] = 1 
-        url_map[word] = (url_ID,)
-        hash_category[word] = (category,)
-        hash_related[word] = (related,)
-        hash_see[word] = (see, )
+        url_map[word] = (url_ID, ) 
+        hash_category[word] = (category, )
+        hash_related[word] = (related, )
+        hash_see[word] = (see,)
 
     # generate association between 2 tokens of a 2-token word 
     # this is the starting point to create word embeddings
