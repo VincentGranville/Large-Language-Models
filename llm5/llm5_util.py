@@ -47,8 +47,8 @@ def text_to_intlist(string):
     return(list)
 
 
-def text_to_list_of_list(string): 
-    string = string.replace("\"","").replace("'","").split('), ')
+def text_to_list_of_list(string):
+    string = string.replace("\"","").replace("'","").replace(",)",")").split('), ')
     list = ()
     for word in string:
         word = word.replace("(","").replace(")","").replace("\\","")
@@ -208,7 +208,7 @@ def add_word(word, url_ID, category, dictionary, url_map, hash_category,
         if related != "":
             hash_related[word] = (*hash_related[word], related, )
         if see != "":
-            hash_see[word] = (*hash_see[word], see) 
+            hash_see[word] = (*hash_see[word], see, ) 
 
     else: 
 
@@ -342,14 +342,15 @@ def update_core_tables(data, dictionary, url_map, arr_url, hash_category, hash_r
 
 #--- [3] simple text processsing
 
-def collapse_list(list):
+def collapse_list(list, mode = 1):
     # group by item and get count for each item
     clist = {}
-    for item in list:
-        if item in clist:
-            clist[item] += 1
-        elif item != '': 
-            clist[item] = 1
+    if mode == 1:
+        for item in list:
+            if item in clist:
+                clist[item] += 1
+            elif item != '': 
+                clist[item] = 1
     return(clist)
 
 

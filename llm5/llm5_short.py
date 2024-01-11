@@ -88,23 +88,7 @@ url_map       = llm5.read_url_map("llm5_url_map.txt", path = "")
 stopwords     = llm5.read_stopwords("stopwords.txt", path = "")
 
 
-########print("NNNNNNNNNNNNNN",hash_see['maximum']) ##################
-##########uuuuuuuuuuuuuuu ('', ('Maximum Likelihood',), ('Maximum Likelihood',))
-###########NNNNNNNNNNNNNN (('Maximum Likelihood,',), ('Maximum Likelihood',))
-
-
 #--- [2] some utilities
-
-def collapse_list(list):
-    # group by item and get count for each item
-    clist = {}
-    for item in list:
-        if item in clist:
-            clist[item] += 1
-        elif item != '': 
-            clist[item] = 1
-    return(clist)
-
 
 def singular(data, mode = 'Internal'):
 
@@ -145,9 +129,7 @@ def merge_list_of_lists(list):
 
 def cprint(title, list, output_file, labels = ""):
 
-    if title == "ALSO SEE": ############################
-                print("***", list) ##########################3
-    clist = collapse_list(list)
+    clist = llm5.collapse_list(list)
     print("\n%s\n" %(title))
     output_file.write("\n%s\n\n" %(title))
     if labels != "":
@@ -191,7 +173,7 @@ def word_summary(word, ccnt1, ccnt2, threshold, output_file):
             # print embedding attached to word
 
             print_embeddings = {}
-            wlist = collapse_list(word_list[word])
+            wlist = llm5.collapse_list(word_list[word])
             embedding_list = embeddings[word]
 
             for word2 in embedding_list:
