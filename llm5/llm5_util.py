@@ -342,16 +342,23 @@ def update_core_tables(data, dictionary, url_map, arr_url, hash_category, hash_r
 
 #--- [3] simple text processsing
 
-def collapse_list(list, mode = 1):
+def collapse_list(list):
     # group by item and get count for each item
     clist = {}
-    if mode == 1:
-        for item in list:
-            if item in clist:
-                clist[item] += 1
-            elif item != '': 
-                clist[item] = 1
+    for item in list:
+        if item in clist:
+            clist[item] += 1
+        elif item != '': 
+            clist[item] = 1
     return(clist)
+
+
+def merge_list_of_lists(list):
+   clist = ()
+   for item_list in list:
+       for item in item_list:
+           clist = (*clist, item)
+   return(clist)
 
 
 #--- [4] create embeddings and ngrams tables, once all sources are parsed
