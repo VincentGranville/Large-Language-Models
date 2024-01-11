@@ -199,6 +199,8 @@ def reject(word, stopwords):
 def add_word(word, url_ID, category, dictionary, url_map, hash_category, 
              hash_related, hash_see, related, see, word_pairs, word_list):
 
+    # word is either 1-token, or multiple tokens separated by ~
+
     if word in dictionary:
 
         dictionary[word] += 1
