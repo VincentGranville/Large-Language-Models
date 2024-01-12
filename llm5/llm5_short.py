@@ -116,17 +116,6 @@ def singular(data, mode = 'Internal'):
 
 #--- [3] print some stats (utilities)
 
-def merge_list_of_lists(list):
-   clist = {}
-   for item_list in list:
-       for item in item_list:
-           if item in clist:
-               clist[item] += 1 
-           elif item != '': 
-               clist[item] = 1
-   return(clist)
-
-
 def cprint(title, list, output_file, labels = ""):
 
     clist = llm5.collapse_list(list)
@@ -164,7 +153,7 @@ def word_summary(word, ccnt1, ccnt2, threshold, output_file):
         output_file.write(word + " " + str(dictionary[word]) + "\n")
         cprint("URLs", url_map[word], output_file)
         cprint("CATEGORIES & LEVELS", hash_category[word], output_file) 
-        related_list = merge_list_of_lists(hash_related[word])
+        related_list = llm5.merge_list_of_lists(hash_related[word])
         cprint("RELATED", related_list, output_file)
         cprint("ALSO SEE", hash_see[word], output_file)
 
