@@ -1,4 +1,4 @@
-XLLM5 (Extreme LLM) has faster execution, smaller tables, simplified architecture, and better results, compared to the material in the <a href="https://github.com/VincentGranville/Large-Language-Models/tree/main/llm5">LLM5 folder</a>. 
+XLLM5 (Extreme LLM) has faster execution, smaller tables, simplified architecture, and better results, compared to <a href="https://github.com/VincentGranville/Large-Language-Models/tree/main/llm5">LLM5</a>. 
 
 Python code:
 <ul>
