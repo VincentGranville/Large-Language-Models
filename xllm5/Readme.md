@@ -1,4 +1,4 @@
-XLLM stands for <b>Extreme LLM</b>, with faster execution, smaller tables, simplified architecture, and better results.
+XLLM stands for <b>Extreme LLM</b>, with faster execution, smaller tables, simplified architecture, and better results, compared to the material in the <a href="https://github.com/VincentGranville/Large-Language-Models/tree/main/llm5">LLM5 folder</a>.
 
 Python code:
 <ul>
