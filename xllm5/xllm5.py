@@ -46,7 +46,7 @@ stopwords = ( "of", "now", "have", "so", "since", "but", "and",
 
 # map below to deal with some accented / non-standard characters
 utf_map = { "&nbsp;"   : " ", 
-            "&oacute;" : "e",
+            "&oacute;" : "o",
             "&eacute;" : "e",
             "&ouml;"   : "o",
             "&ocirc;"  : "o",
