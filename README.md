@@ -3,3 +3,4 @@ Large language Models (LLM). Browse the <a href="https://mathworld.wolfram.com/"
 <p>
 Documentation is in my project textbook <code>Projects4.pdf</code>, <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/Projects4.pdf">here</a> in this folder. I strongly encourage you to download the document and browse your local copy with Chrome, Edge, or other viewers. Unlike on GitHub, you will be able to click on all the links and follow the internal navigation features. Look for projects related to NLP and LLM / xLLM. The best starting point is project 7.2.2. It's the core project on this topic, with references to all satellite projects.  
 </p>
+The project textbook (with my solutions to all projects) is the core document needed to participate in the free course (deep tech dive) called <b>GenAI Fellowship</b>. For details about the fellowhip, <a href="https://mltblog.com/48GebAG">follow this link</a>.
