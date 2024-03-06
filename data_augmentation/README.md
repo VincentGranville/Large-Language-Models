@@ -1,1 +1,1 @@
-
+This folder contains additional input sources to augment the Wolfram crawl in xLLM5. For details, see project 7.2.3 in the project textbook available <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/Projects4.pdf">here</a>. In addition to the textbook itself in PDF format, you can now leverage the LaTeX sources used to produce the PDF. These sources might be easier to parse than the PDF, to reconstruct the taxonomy (using the table of contents), retrieve tables, images, index and glossary keywords, and so on.  
