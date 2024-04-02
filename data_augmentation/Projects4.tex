@@ -6833,7 +6833,8 @@ rather than vectors. Also, there are many other summary tables besides embedding
 \hline
 
 Creating \& updating tables (embeddings and so on), processing user queries & Project~\ref{bernoc}. Main program, for developers: 
-\texttt{xllm5.py}, also on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm5/xllm5.py}{here}. \\
+\texttt{xllm5.py}, also on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm5/xllm5.py}{here}. 
+See section~\ref{porctupues} for details about embeddings and cosine distance.\\
 \hline
 
 Adding other sources (Wikipedia, books), processing user queries & Project~\ref{beurreblanc}. Based on 
@@ -7406,10 +7407,22 @@ output_file.close()
 \subsection{RAG: retrieval augmented generation using book catalogs}\label{beurreblanc}
 
 Under construction. It will leverage the code listed here. 
+xxx fusion of multiple LLMs~\cite{serg24}.
 The \texttt{xllm5\_short.py} program is also on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm5/xllm5_short.py}{here}.  
 \vspace{1ex}
 
+% add to refstat.bib: Merging LLMs: https://shchegrikovich.substack.com/p/how-do-you-create-your-own-llm-and
+
+% add tables/diagram from Nathan / datacam (minuses) data leakage, latency, low energy
+%smart grid search for optimal parameters based on usage
+%synonyms
+% see pink paper on evaluation metrics // pdf latex // augmentation + weights
+
+%Gen AI Felloship: new xLLM project added, more datasets #genaifellowhip
+%   allow user to choose category and source / how to do self-tuning with smart grif search
+% rheye.py
 %xxxyyy 
+%mathword ML, Wiki ML see previous section, my books [pdf.py or Latex], multi LLM
 
 \begin{comment}
 %latex files
@@ -7893,7 +7906,7 @@ Figure~\ref{fig:wasfmlp9ut} shows the dataset used in Figure~\ref{fig:gmlp9ut}, 
 
 The methodology presented here is useful in several contexts. Now, I describe how to leverage my algorithm in various applications, ranging from traditional to GenAI and LLM. 
 
-\subsubsection{Embeddings and large language models}
+\subsubsection{Embeddings and large language models}\label{porctupues}
 
 In large language models, embeddings are lists of tokens attached to a keyword.  For instance, Table~\ref{de2pufd1re} is based on my specialized xLLM that answers research questions about statistics and probability: see section~\ref{sxllm5}. The table features embeddings, for 7 one-token keywords. For each keyword, the top row 
  shows the top 10 tokens. The bottom one shows the importance of each token: the numbers represent the 
@@ -9064,6 +9077,104 @@ def compress_ngrams(dictionary, ngrams_table):
     return(compressed_ngrams_table) 
 
 \end{lstlisting}
+
+\section{Comparing xLLM with standard LLMs}
+
+The xLLM architecture is so different in so many foundational respects that it is almost a different animal. Here, I highlight some important differences. 
+Figure~\ref{fig:log1frdiag} shows that embeddings are just one of the many summary tables needed  to generate answers to user prompts. Each table is unique to each sub-LLM, though redundancy is allowed. Even for embeddings, the storage is non-standard, based on variable-length and key-values or graph databases, rather than vector databases.   Not the least, xLLM is energy friendly, as it does not need GPU, neural networks, training (self-tuned instead), or trillions of weights.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.77\textwidth]{xLLM-diagram.png}
+\caption{xLLM: Satellite tables and variable-length embeddings (one set per sub-LLM)}
+\label{fig:log1frdiag}
+\end{figure}
+
+%xxx 
+%---
+
+\begin{center}
+\begin{longtblr}{|p{\dimexpr8.3cm-2\tabcolsep}|p{\dimexpr8.3cm-2\tabcolsep}|}
+\hline 
+xLLM
+& 
+Standard LLM
+\\
+\hline
+\hline
+Multiple specialized LLMs: one per category to increase accuracy and relevance as well as latency while mitigating hallucination and therefore liability &
+One monolithic LLM, all users get same output; prompt engineering (front-end) needed to fix the resulting back-end problems
+\\
+\hline
+Raw input + reconstructed (or discoverable) taxonomy to potentially provide a knowledge graph; UI navigation feature to further increase accuracy and relevancy &
+Based on raw input only
+\\
+\hline
+Embeddings is just one of the main summary tables to increase accuracy and relevancy while reducing latency and cost &
+Embeddings is the core summary table; no effort to discover or leverage internal structure of the corpus (input sources)
+\\
+\hline
+User enters prompt and selected categories to increase accuracy and relevancy &
+User enters prompt only; results in slower response (latency) as data retrieval is not targeted to specific tables
+\\
+\hline
+Internal relevancy score attached to each item displayed to the user &
+No relevancy score provided to the user
+\\
+\hline
+Output broken down into sections, links, categories, related concepts, internal versus external sources to reduce liability, increase explainability and observability while mitigating hallucinations &
+In many instances, links not provided (input sources kept secret resulting in liability issues)
+
+\\
+\hline
+User can customize hyperparameters and relevancy metrics to provide customized calibration &
+Hyperparameters not accessible to user resulting in training issues
+
+\\
+\hline
+Fast and variable-length embeddings to reduce latency, mitigate hallucination and reduce liability &
+Massive tables, trillions of weights, fixed-length embeddings slowing down vector search, delicate and time consuming training with deep neural networks
+
+\\
+\hline
+Inexpensive, lightweight, energy-efficient, ideal for implementation to increase user customization and diverse user scalability &
+Needs lots of GPU and cloud time, thus expensive especially if hosted externally; not eco-friendly
+
+\\
+\hline
+Self-tuned with reinforcement learning based on user preferences &
+There is no universal evaluation metric because satisfaction depends on type of user
+
+\\
+\hline
+Explainable AI (meaningful parameters) &
+Neural networks are blockboxes, notorious for lack of explainability
+
+\\
+\hline
+Consise output targeted to professional users, faithful representation of input text elements &
+Excessive stemming and glitches in standard libraries (autocorrect, singularize, stopwords) leads to hallucinations, prompt engineering needed tofix issues
+
+\\
+\hline
+Ability to orchestrate outcomes employing a multi-agent architecture &
+One LLM: no top layer to manage multiple LLMs
+
+\\
+\hline
+Ability to process outcomes from multiple prompts in parallel or sequentially &
+Bulk processing only available in paid version via API
+
+
+\\
+\hline
+Secure, reduced risk of hallucination or data leakage, especially in local implementations &
+Hallucinations may lead to errors and liability; confidential input data in prompts may not be protected
+\\
+\hline
+\end{longtblr}
+\end{center}
 
 
 %------------------------------------------------------------------
