@@ -7406,22 +7406,31 @@ output_file.close()
 %-------------------------------------
 \subsection{RAG: retrieval augmented generation using book catalogs}\label{beurreblanc}
 
+The purpose is to augment the \textcolor{index}{xLLM}\index{xLLM} system introduced in section~\ref{bernoc}, with external input data consisting of books. 
+The focus is still on one particular
+ sub-LLM: the ``probability \& statistics" category, initially built on the Wolfram crawl.  The additional input (the books) leads to an alternate taxonomy, 
+ complementing sub-categories that don't have much coverage in Wolfram, such as ``Bayesian analysis". 
+The alternate taxonomy based on the books may lead to a separate sub-LLM, or used for fusion with the existing one built earlier. For more on LLM fusion, see~\cite{serg24}.
+
+In the process,  I also create a synonyms table built on glossaries and other structure found in the books, to further enhance output results to user prompts. Then, I  introduce double-tokens and scores: the latter measures the relevancy of the results returned to the user, for a specific query. 
+Finally, I further investigate self-tuning, a better alternative to standard LLM evaluation metrics described in~\cite{24erw2}.
+
+%smart search
+%bayesian analysis
+%global score to prompt
 Under construction. It will leverage the code listed here. 
-xxx fusion of multiple LLMs~\cite{serg24}.
-evaluating LLms~\cite{24erw2}
+%link to new appendix
+%xxx fusion of multiple LLMs~\cite{serg24}.
+%evaluating LLms~\cite{24erw2}
 The \texttt{xllm5\_short.py} program is also on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm5/xllm5_short.py}{here}.  
 \vspace{1ex}
 
-%
+% use prompts as input sources; use metadata/agent as a coach, draft 0.7.4
 %Evaluating LLMs and LLM Systems: Pragmatic approach
-% Andrei Lopatenko, PhD, VP Engineering [2024] put it on github
-%link: https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm5/LLM-evaluation.pdf
 
-
+%bayes -> bayesian ; double-tokens, synonyms [write MLT article] use glossary/abbreviations
 % add RAG to index
 %reconstruct structure / taxonomy; blend with existing taxonomy
-
-% add tables/diagram from Nathan / datacam (minuses) data leakage, latency, low energy
 %smart grid search for optimal parameters based on usage
 %synonyms
 % see pink paper on evaluation metrics // pdf latex // augmentation + weights
