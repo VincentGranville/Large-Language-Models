@@ -5,5 +5,7 @@ Documentation is in my project textbook <code>Projects4.pdf</code>, <a href="htt
 <p>
 The project textbook (with my solutions to all projects) is the core document needed to participate in the free course (deep tech dive) called <b>GenAI Fellowship</b>. For details about the fellowhip, <a href="https://mltblog.com/48GebAG">follow this link</a>.
 <p>
-<b>Note:</b> An uncompressed version of <code>crawl_final_stats.txt.gz</code> is available on my Google drive, <a href="https://drive.google.com/file/d/1H_xhfhzIPnO8oe9xlwCDWWM9OR5m81wd/view?usp=sharing">here</a>. This file contains all the crawled data needed as input to the Python scripts in the XLLM5 and XLLM6 folders.   
+<b>Note:</b> 
+  
+An uncompressed version of <code>crawl_final_stats.txt.gz</code> is available on my Google drive, <a href="https://drive.google.com/file/d/1H_xhfhzIPnO8oe9xlwCDWWM9OR5m81wd/view?usp=sharing">here</a>. This file contains all the crawled data needed as input to the Python scripts in the XLLM5 and XLLM6 folders.   
 </p>
