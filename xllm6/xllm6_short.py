@@ -43,7 +43,7 @@ from pattern.text.en import singularize
 # embeddings2 = {}     key is a word; value is hash of word:weight
   
 
-path = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm6/"
+path = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/xllm6/"
 
 overwrite = False
 
@@ -61,9 +61,10 @@ if overwrite:
 
     files = [ 'xllm6_arr_url.txt', 
               'xllm6_compressed_ngrams_table.txt',
-              'xllm6_word_list.txt',
+              'xllm6_compressed_word2_hash.txt',
               'xllm6_dictionary.txt',
               'xllm6_embeddings.txt',
+              'xllm6_embeddings2.txt',
               'xllm6_hash_related.txt',
               'xllm6_hash_category.txt',
               'xllm6_hash_see.txt',

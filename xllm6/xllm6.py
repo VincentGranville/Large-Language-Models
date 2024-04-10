@@ -125,9 +125,9 @@ arr_url = []                 # maps URL IDs to URLs (one-to-one)
 hash_category = {}           # categories attached to a word
 hash_related = {}            # related topics attached to a word
 hash_see = {}                # topics from "see also" section, attached to a word
-word_hash = {}               # list of 1-token words associated to a 1-token word ###################################### was word_list
-word2_hash = {}              # list of multi-token words associated to a multi-token word ############################
-word2_pairs = {}             # pairs of multi-token words found on same URL, with count    #######################
+word_hash = {}               # list of 1-token words associated to a 1-token word 
+word2_hash = {}              # list of multi-token words associated to a multi-token word 
+word2_pairs = {}             # pairs of multi-token words found on same URL, with count    
 
 url_ID = 0  # init for first crawled page
 
@@ -204,12 +204,12 @@ for row in Lines:
 #--- [3] create embeddings and ngrams tables, once all sources are parsed
 
 pmi_table               = llm6.create_pmi_table(word_pairs, dictionary)  
-pmi_table2              = llm6.create_pmi_table(word2_pairs, dictionary) ###############################################33
+pmi_table2              = llm6.create_pmi_table(word2_pairs, dictionary) 
 embeddings              = llm6.create_embeddings(word_hash, pmi_table)
 ngrams_table            = llm6.build_ngrams(dictionary)
 compressed_ngrams_table = llm6.compress_ngrams(dictionary, ngrams_table)
-compressed_word2_hash   = llm6.compress_word2_hash(dictionary, word2_hash) ########################################
-embeddings2             = llm6.create_embeddings(compressed_word2_hash, pmi_table2) ##################################3
+compressed_word2_hash   = llm6.compress_word2_hash(dictionary, word2_hash) 
+embeddings2             = llm6.create_embeddings(compressed_word2_hash, pmi_table2) 
 
 
 
@@ -272,9 +272,9 @@ def save_tables():
     list = { "dictionary" : dictionary,
              "ngrams_table" : ngrams_table,
              "compressed_ngrams_table" : compressed_ngrams_table,
-             "word_hash" : word_hash, ####################################################
+             "word_hash" : word_hash, 
              "embeddings" : embeddings,
-             "embeddings2" : embeddings2, ###############################################
+             "embeddings2" : embeddings2, 
              "url_map" : url_map,
              "hash_category" : hash_category,
              "hash_related" : hash_related,
@@ -289,7 +289,7 @@ def save_tables():
             file.write(word + "\t" + str(table[word]) + "\n")
         file.close()
 
-    file = open("xllm6_word2_pairs.txt", "w") ############################
+    file = open("xllm6_word2_pairs.txt", "w") 
     for key in word2_pairs:
         word2A = key[0]
         word2B = key[1]
