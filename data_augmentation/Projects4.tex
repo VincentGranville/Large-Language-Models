@@ -5002,7 +5002,7 @@ print("Avg correlation distance: %5.3f" % (g_dist))
 print("Based on epoch number: %5d" % (best_epoch))
 \end{lstlisting}
 
-\subsubsection{Smart grid search}
+\subsubsection{Smart grid search}\label{smartgs}
 
 The Python code below is also on GitHub, \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/ZetaGeom.py}{here},
  with a Jupyter notebook version available \href{https://github.com/VincentGranville/Notebooks/blob/main/copula_insurance_nogroup.ipynb}{here} (see section 10 in the notebook in question). It illustrates the smart grid search algorithm to optimize the parameters associated to the
@@ -6115,12 +6115,12 @@ Using OpenAI, I found the answer I was looking for, even with more details than 
 ``what is the asymptotic variance of the range for Gaussian distributions". More general prompts on specific websites, such as ``asymptotic distribution of sample variance" lead to a number of articles which in turn lead to some focusing on Gaussian distributions. Even today, 
  automatically getting a good answer in little time, with a link, is still a challenge.
 
-In this chapter, one project focuses on this issue. Smart, optimized crawling is part of the solution, combined with using OpenAI output or trying to reverse-engineer OpenAI to identify input sources.
-But the goal is not to create a new version of OpenAI. Rather, do what it can't do, or what it refuses to do for legal reasons. The other projects
- involve making predictions or synthetizations based on unstructured data repositories, mostly consisting of text, while scoring the input sources and
- the output. This is a less well-known aspect of large language models (\textcolor{index}{LLM}\index{LLM}), with a focus on structuring 
-\textcolor{index}{unstructured data}\index{unstructured data}, scoring content, and creating \textcolor{index}{taxonomies}\index{taxonomy creation}.
-
+In this chapter, I focus on building better \textcolor{index}{LLMs}\index{LLM} to address the issues in question. Project~\ref{dnalove} is peculiar in the sense
+ that the alphabet consists of 4 symbols. The goal is to synthesize sequences that exhibit the same autocorrelation structure as found in the original data, and then evaluate the results. Then, in projects~\ref{oudopre}, \ref{bernoc}, and~\ref{beurreblanc}, 
+I discuss in details a new multi-LLM app based on crawled data and reconstructed taxonomies, with specialized sub-LLMs (one per top category), self-tuning,
+ variable-length embeddings with multi-token words, and much smaller tables. The material covers the core components of this new, energy-efficient 
+\textcolor{index}{RAG}\index{RAG} architecture,
+ including smart crawling. There is no neural network involved. 
 
 \section{Synthesizing DNA sequences with LLM techniques}\label{dnalove}
 
@@ -6879,7 +6879,7 @@ The goal here is not to create an LLM from scratch, but to understand the differ
  stopwords, auto-correct, and singularize. The problems arise due to the specialization of my xLLM, but is otherwise minor in generic
  applications targeted to non-experts. Suggest workarounds.
 \vspace{1ex}
-\item[] {\bf Step 3: Improving xLLM}.  I implemented several enhancements, for instance: ignoring \textcolor{index}{$N$-grams}\index{$N$-gram} (permutations of $N$ tokens) 
+\item[] {\bf Step 3: Improving xLLM}.  I implemented several enhancements, for instance: ignoring \textcolor{index}{$N$-grams}\index{$n$-gram} (permutations of $N$ tokens) 
 [\href{https://en.wikipedia.org/wiki/N-gram}{Wiki}] not found in the crawled data, 
  using normalized \textcolor{index}{PMI}\index{pointwise mutual information (PMI)} in embeddings as the association metric or weight between two 
 \textcolor{index}{tokens}\index{token}, working with \textcolor{index}{variable-length embeddings}\index{embeddings!variable length} (VLE) rather than vectors, 
@@ -6914,7 +6914,7 @@ To process a user query, see the code starting at line \textcolor{gray}{371} in 
  is \texttt{process\_query} (line \textcolor{gray}{330}). First, I \textcolor{index}{transform}\index{transformer} the query in the same way the crawled data was originally transformed (auto-correct, removing stopwords, and so on), and then sort it by token: the query ``normal and Poisson distributions" becomes ``distribution normal poisson".
 I ignore tokens not in \texttt{dictionary}, and then generate all token combinations (lines \textcolor{gray}{337-346}). In this case:
 distribution, normal,  poisson,  distribution normal, distribution poisson, normal poisson, distribution normal poisson. 
-I then match these combinations with keys in the compressed \textcolor{index}{$N$-gram}\index{$N$-gram} table. For instance, ``distribution normal" has an entry (key) and the corresponding value 
+I then match these combinations with keys in the compressed \textcolor{index}{$N$-gram}\index{$n$-gram} table. For instance, ``distribution normal" has an entry (key) and the corresponding value 
  is ``normal distribution" (the most common $N$-gram for this word, as found when crawling the data). That is, ``normal distribution" is also a key in the summary tables (at least some of them). In particular, I can retrieve links, embeddings, categories,  and related content associated to ``normal distribution", 
 respectively in the tables \texttt{url\_map}, \texttt{hash\_embeddings}, \texttt{hash\_category}, and \texttt{hash\_related}. 
 
@@ -7410,36 +7410,94 @@ The purpose is to augment the \textcolor{index}{xLLM}\index{xLLM} system introdu
 The focus is still on one particular
  sub-LLM: the ``probability \& statistics" category, initially built on the Wolfram crawl.  The additional input (the books) leads to an alternate taxonomy, 
  complementing sub-categories that don't have much coverage in Wolfram, such as ``Bayesian analysis". 
-The alternate taxonomy based on the books may lead to a separate sub-LLM, or used for fusion with the existing one built earlier. For more on LLM fusion, see~\cite{serg24}.
+The alternate taxonomy based on the books may lead to a separate sub-LLM, or used for fusion with the existing one built earlier. Other input sources to augment the back-end tables include the metadata attached to crawled documents, and the front-end user prompts. For more on LLM fusion, see~\cite{serg24}.
 
 In the process,  I also create a synonyms table built on glossaries and other structure found in the books, to further enhance output results to user prompts. Then, I  introduce double-tokens and scores: the latter measures the relevancy of the results returned to the user, for a specific query. 
 Finally, I further investigate self-tuning, a better alternative to standard LLM evaluation metrics described in~\cite{24erw2}.
 
-%smart search
-%bayesian analysis
-%global score to prompt
-Under construction. It will leverage the code listed here. 
-%link to new appendix
-%xxx fusion of multiple LLMs~\cite{serg24}.
-%evaluating LLms~\cite{24erw2}
-The \texttt{xllm5\_short.py} program is also on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm5/xllm5_short.py}{here}.  
+\noindent The project consists of the following steps:
+\vspace{1ex}
+\begin{itemize}
+\item[] {\bf Step 1:  xLLM pluses and minuses}. The benefits of xLLM are listed and contrasted to standard LLMs in appendix~\ref{ruipof}. What are the potential negatives?
+ \vspace{1ex}
+\item[] {\bf Step 2: Data augmentation}. How to incorporate additional input sources  such as PDFs? In short, explain how to reconstruct the 
+underlying \textcolor{index}{taxonomy}\index{taxonomy creation} of a PDF repository, and blend the augmented data with the existing summary tables built in Step 1 in project~\ref{bernoc}. What other sources could be used? The \LaTeX \, sources
+ of my books are on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/tree/main/data_augmentation}{here}. The PDF version of this document can be found \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/Projects4.pdf}{here}. In these documents, what elements would you use to create / update the summary tables such as categories or \textcolor{index}{embeddings}\index{embeddings}? These additional input sources (PDFs and so on) 
+ are referred to as \textcolor{index}{augmented data}\index{augmented data}, corresponding to the letter {\bf A} in the \textcolor{index}{RAG}\index{RAG}  architecture
+ (retrieval-augmentation-generation).
+\vspace{1ex}
+\item[] {\bf Step 3: Scoring, evaluation, self-tuning}. The results displayed to the user, broken down per section (URLs, categories, tokens, related items and so on 
+ as in Figure~\ref{fig:log10trmt}) are sorted according to relevancy: see the numbers on the left column, attached to each item in Figure~\ref{fig:log10trmt}. Lines \textcolor{gray}{131-147} in the Python
+ script \texttt{xllm5\_short.py} at the end of this section, take care of this. 
+
+How to create a global quality score attached to the output displayed to the user, based on the various relevancy scores assigned to each returned item? How do you weight the various sources (original crawl, augmented data such as PDFs)? Finally, if you allow the user to play with the 
+\textcolor{index}{hyperparameters}\index{hyperparameter} (see Step 5 
+ in project~\ref{bernoc}), you can deliver customized results: two users with the same query get different outputs. Discuss the challenges of creating
+ a universal evaluation metric to compare various LLMs such as OpenAI, Mistral, Claude, xLLM and so on. How would you identify the optimum set of parameters and set it as default, based on user preferences? That is, based on the individual favorite hyperparameter sets selected by the users. 
+\vspace{1ex}
+\item[] {\bf Step 4: Enhancements}.  Some queries such as ``Bayes" or ``Anova" return very little, while ``Bayesian" or ``analysis of variance" return a lot more. How to address this issue? How do you improve or build a good stopwords list for a specific top category? Finally, what are the benefits of double tokens such as ``Gaussian+distribution", in addition to the simple tokens ``Gaussian" and ``distribution"? How to implement double tokens in embeddings and other tables?
+\vspace{1ex}
+\item[] {\bf Step 5: Combining multiple specialized LLMs}. How do you manage multiple LLMs, one per top category? The solution here is known as 
+\textcolor{index}{multi-agent system}\index{multi-agent system}. 
+\vspace{1ex}
+\end{itemize}
+
+\noindent I now offer my answers, starting with \textcolor{red}{Step 1}. Not working with the right in-house experts (people who know~your repository very well and what users are looking for) may result in poor design. Not enough testing may lead~to many bugs. You must create a list of who can access what to avoid data leaks and security issues.
+Other issues: poor documentation; the expert engineer who knows all the details leaves your company.  
+
+Now my answer to \textcolor{red}{Step 2}. To augment the Wolfram
+``Probability \& Statistics" top category (the specialized sub-LLM of interest here),  you can parse my statistics books:
+ either the PDF documents, or the \LaTeX \, sources that I share on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/tree/main/data_augmentation}{here}. For PDF documents, you can use Python libraries to retrieve tables, images, and content: 
+ see my sample code \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/data_augmentation/pdf.py}{here}, based on the 
+\textcolor{index}{PyPDF2} library\index{Python library!PyPDF2}. But I recommend working with the \LaTeX \, sources, for two reasons. First, the process that
+ produces the PDFs may result in information loss. Then, it may~be easier to retrieve the hidden structure from the original sources: index keywords, glossary terms, 
+table of contents, bibliography items and references, formatting including color (for instance to separate standard text from Python code elements) as well as 
+titles, sections and subsections to help build a taxonomy. 
+
+With the newest version of xLLM, it is easier to reconstruct the underlying taxonomy, or build one from scratch. See details in section~\ref{xllm6tr}. You may use the existing Wolfram taxonomy
+ to match multi-token words or some \textcolor{index}{$n$-gram} permutation found in the \LaTeX \, sources, with related Wolfram-based \textcolor{index}{x-embeddings} entries in the \texttt{embeddings2} table, and their corresponding category
+ in the \texttt{hash\_category} table.  More specifically, for \texttt{word$_1$} found in the source text, look for all
+ \texttt{word$_2$} found in \texttt{embedding2[word$_1$]}, and then look for 
+\texttt{hash\_category[word$_1$]} and  \texttt{hash\_category[word$_2$]}. Note that x-embeddings (the \texttt{embeddings2} table) are available
+ in xLLM6 discussed in section~\ref{xllm6tr}, not in the xLLM5 code in this section. Words with high count and not found in Wolfram-based tables may lead to new categories or sub-categories.  The \texttt{compressed\_ngrams\_table} indexed by sorted $n$-grams, helps you retrieve existing token permutations
+ found in Wolfram tables, when the original word is not present in these tables.  
+
+Finally, other input sources for data augmentation include metadata, synonyms dictionaries, Wikipedia (featuring a taxonomy like Wolfram, 
+see \href{https://en.wikipedia.org/wiki/Category:Machine_learning}{here}) and the prompts entered by the users.
+Some Wikipedia sub-categories are irrelevant and should be skipped, otherwise it will add noise in the back-end tables. Some are missing. 
+
+Regarding \textcolor{red}{Step 3}, different types of users (expert versus layman) may rate the results differently. To build a default set of hyperparameters, look at all
+ the values favored by your users. This assumes that users can select hyperparameters to fine-tune results according to their liking. 
+Based on these choices, perform \textcolor{index}{smart grid search}\index{grid search!smart grid search} using the technique described in section~\ref{smartgs}.
+
+As for evaluating the results, in the output displayed to the user, each item in each section has a relevancy scored $z$ shown on the left: see example in Figure~\ref{fig:xembeddings}.
+The first step is to normalize these scores, for instance with the transform $z\mapsto 1-\exp(-\lambda z)$ where $\lambda>0 $ is an hyperparameter.  The normalized score
+ is then between 0 and 1. Compute an aggregate score per section, also taking into account the total number of items returned for a specific section. Then compute a global score for each query, as a weighted average over the sections. Use a different weight for each section. More about
+ LLM evaluation can be found in~\cite{24erw2} and~\cite{eval34edr}. See also the GitHub repository in this topic,
+ \href{https://github.com/aishwaryanr/awesome-generative-ai-guide/blob/main/free_courses/Applied_LLMs_Mastery_2024/week6_llm_evaluation.md}{here}. 
+
+
+Now moving to \textcolor{red}{Step 4} and \textcolor{red}{Step 5}. Several major enhancements are discussed in section~\ref{xllm6tr}, 
+featuring the differences between xLLM5 (the Python code in this section) and xLLM6. To deal with multiple specialized LLMs -- one per top category -- do the same
+ separately  for 
+ each of the 15 top categories on Wolfram. Here I focused on just one of them. Allow the user to specify a category along with his query, so that
+ retrieving the content from the backend tables (x-embeddings and so on) is focused and fast, boosting relevancy. There will be redundancy among the various LLMs. 
+Also, a top layer can be added to jointly manage the separate LLMs. This is accomplished with a 
+\textcolor{index}{multi-agent system}\index{multi-agent system} architecture.  
+
+% add related and so on unto data to compute word2_pairs
+% use dictionary of recognized kw to eliminate 'procedure endeavors', 'theorem asymptotic' and the like
+% yellowpages restaurant user queries as input source
+
+You may use the \texttt{xllm5\_short.py} program below to do various testing and implement the enhancements discussed in this section. 
+The code is also on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm5/xllm5_short.py}{here}.  For
+the most recent version \texttt{xllm6\_short.py}, see section~\ref{xllm6tr}. 
 \vspace{1ex}
 
-% use prompts as input sources; use metadata/agent as a coach, draft 0.7.4
-%Evaluating LLMs and LLM Systems: Pragmatic approach
-
-%bayes -> bayesian ; double-tokens, synonyms [write MLT article] use glossary/abbreviations
-% add RAG to index
-%reconstruct structure / taxonomy; blend with existing taxonomy
-%smart grid search for optimal parameters based on usage
-%synonyms
-% see pink paper on evaluation metrics // pdf latex // augmentation + weights
-
+% gent as a coach, draft 0.7.4
 %Gen AI Felloship: new xLLM project added, more datasets #genaifellowhip
-%   allow user to choose category and source / how to do self-tuning with smart grif search
 % rheye.py
-%xxxyyy 
-%mathword ML, Wiki ML see previous section, my books [pdf.py or Latex], multi LLM
+
 
 \begin{comment}
 %latex files
@@ -7775,19 +7833,7 @@ output_file.close()
 \end{lstlisting}
 
 
-\section{Scoring content with hidden decision trees}
 
-Under construction.
-
-%xxxyyy
-%xxxCaprixxx.xlsx  see Google drive
-
- % include scoring content / hidden decision trees / KW correls / smart crawling
-
-%If you need massive amounts of text data for text generation, DMOZ (see \href{https://dmoz-odp.org/}{here}) and Wikipedia are two starting points. I run a webcrawler against DMOZ using hundreds of seed keywords to eventually crawl dozens of millions of webpages over several months and detect keyword associations and more. How do do it efficiently is discussed in my book and in many places on the Internet. There are Python libraries that help with this. I also recursively crawled Google search results to complement my source of data -- in short acting as a human doing searches on Google, except that it was on a large scale and automated. Maybe a precursor to ChatGPT?
-
-%Note that you can also search images, images similar to some image, search the news, videos and so on. 
-%----------------------------------------------------------------------
 
 \chapter{Miscellaneous Projects}
 
@@ -7862,7 +7908,7 @@ And frequently, to be admissible as a solution,
  a function $\sigma$ must satisfy $x_k \neq y_{\sigma(k)}$ for $1\leq k\leq n$. 
 
 The oldest application in recent times, also the origin for the  abbreviation ANN, is the 
-$K$-NN problem, or \textcolor{index}{$K$ nearest neighbors}\index{$K$-NN}. 
+$K$-NN problem, or \textcolor{index}{$K$ nearest neighbors}\index{$k$-NN}. 
 In this case, $S$ consists of $K$ copies of $T$. As we shall see, my algorithm results in a different solution,
  with a variable number of neighbors per observation, rather than the fixed value $K$. Also, when $K=1$,
  the trivial solution is $\sigma(k) = k$ for $1\leq k \leq n$. That is, the closest neighbor to $x_k$ is $x_k$ itself. 
@@ -8151,6 +8197,8 @@ The code is also on GitHub, \href{https://github.com/VincentGranville/Statistica
 
 
 
+
+
 \begin{lstlisting}[numbers=left]
 # Probabilistic ANN, can be used for clustering / classification
 
@@ -8378,7 +8426,31 @@ plt.show()
 
 
 
+%------------------------------
 
+\section{Building a taxonomy on crawled data}
+
+%xxxyyyy
+
+\section{Scoring unstructured text with hidden decision trees}
+
+Under construction. %move to special project; replace by taxomoy creation wolfram
+
+%xxxyyy
+%xxxCaprixxx.xlsx  see Google drive
+
+ % include scoring content / hidden decision trees / KW correls / smart crawling
+
+%If you need massive amounts of text data for text generation, DMOZ (see \href{https://dmoz-odp.org/}{here}) and Wikipedia are two starting points. I run a webcrawler against DMOZ using hundreds of seed keywords to eventually crawl dozens of millions of webpages over several months and detect keyword associations and more. How do do it efficiently is discussed in my book and in many places on the Internet. There are Python libraries that help with this. I also recursively crawled Google search results to complement my source of data -- in short acting as a human doing searches on Google, except that it was on a large scale and automated. Maybe a precursor to ChatGPT?
+
+%Note that you can also search images, images similar to some image, search the news, videos and so on. 
+%----------------------------------------------------------------------}
+
+The goal here is to make predictions or synthetizations based on unstructured data repositories, mostly consisting of text, while scoring the input sources and
+ the output. This is a less well-known aspect of large language models (\textcolor{index}{LLM}\index{LLM}), with a focus on structuring 
+\textcolor{index}{unstructured data}\index{unstructured data}, scoring content, and creating \textcolor{index}{taxonomies}\index{taxonomy creation}.
+
+%xxxyyyy
 
 
 
@@ -8498,7 +8570,7 @@ enabling the system to self-learn via trial and error.\\
 
 \begin{center}
 \begin{longtblr}{p{\dimexpr3.5cm-2\tabcolsep}p{\dimexpr12cm-2\tabcolsep}}
-\hline ANN & Approximate nearest neighbor. Similar to the \textcolor{index}{$K$-NN}\index{$K$-NN} algorithm used in supervised classification, but faster and applied to retrieving information in vector databases, such as LLM embeddings stored as vectors. I designed a probabilistic version called \textcolor{index}{pANN}\index{ANN (approximate nearest neighbors)!probabilistic ANN (pANN)}, especially useful for model evaluation and improvement, with applications to GenAI, synthetic data, and LLMs. See section~\ref{f8v2koyuy}. \\
+\hline ANN & Approximate nearest neighbor. Similar to the \textcolor{index}{$K$-NN}\index{$k$-NN} algorithm used in supervised classification, but faster and applied to retrieving information in vector databases, such as LLM embeddings stored as vectors. I designed a probabilistic version called \textcolor{index}{pANN}\index{ANN (approximate nearest neighbors)!probabilistic ANN (pANN)}, especially useful for model evaluation and improvement, with applications to GenAI, synthetic data, and LLMs. See section~\ref{f8v2koyuy}. \\
 \hline
 diffusion & \textcolor{index}{Diffusion models}\index{diffusion} 
 use a Markov chain with diffusion steps to slowly add random noise to data and then learn to reverse the diffusion process to construct desired data samples from the noise. The output is usually a dataset or image similar but different from the original ones. Unlike 
@@ -9095,7 +9167,7 @@ def compress_ngrams(dictionary, ngrams_table):
 
 \end{lstlisting}
 
-\section{Comparing xLLM with standard LLMs}
+\section{Comparing xLLM with standard LLMs}\label{ruipof}
 
 The xLLM architecture is so different in so many foundational respects that it is almost a different animal. Here, I highlight some important differences. 
 Figure~\ref{fig:log1frdiag} shows that embeddings are just one of the many summary tables needed  to generate answers to user prompts. Each table is unique to each sub-LLM, though redundancy is allowed. Even for embeddings, the storage is non-standard, based on variable-length and key-values or graph databases, rather than vector databases.   Not the least, xLLM is energy friendly, as it does not need GPU, neural networks, training (self-tuned instead), or trillions of weights.
@@ -9192,6 +9264,104 @@ Hallucinations may lead to errors and liability; confidential input data in prom
 \hline
 \end{longtblr}
 \end{center}
+
+\section{Comparing xLLM5 with xLLM6}\label{xllm6tr}
+
+Unless otherwise specified, all LLM projects in this textbook -- \ref{bernoc} and \ref{beurreblanc} in particular -- are based on xLLM5. The code and datasets are also on GitHub, 
+\href{https://github.com/VincentGranville/Large-Language-Models/tree/main/xllm5}{here}. 
+A new version, namely xLLM6, is now available and still 
+being further developed. I did not include the code in this book, but you can find it on GitHub, 
+\href{https://github.com/VincentGranville/Large-Language-Models/tree/main/xllm6}{here}.  The overall architecture is similar, with the following main differences:
+\vspace{1ex}
+
+\begin{itemize}
+\item The introduction of multi-token words in embedding tables. The new embeddings, called
+\textcolor{index}{x-embeddings}\index{embeddings!x-embeddings}, are stored in a key-value table named \texttt{embeddings2} in the Python code.
+The key is a multi-token word, and the value is a key-value table itself. 
+The old embeddings are still stored in the
+ \texttt{embeddings} table with the same data structure; they may be discarded moving forward. 
+See the x-embeddings on GitHub, \href{https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/xllm6/xllm6_embeddings2.txt}{here}, compared to the old embeddings, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/xllm6_embeddings2.txt}{here}. 
+\vspace{1ex}
+\item A new counter named \texttt{paragraph} in the function \texttt{update\_core\_tables2} in \texttt{xllm6\_util.py}. This new function replaces the old version
+\texttt{update\_core\_tables} in xLLM5. Most of the main upgrades are implemented there, including a call to new functions 
+\texttt{update\_word2\_hash} and 
+\texttt{update\_word2\_pairs}.
+
+\noindent Words need to be in a same paragraph to appear jointly in x-embeddings. Long-range dependencies are still included, via categories,
+ breadcrumbs, metadata, and other navigation features. The \texttt{word2\_hash} table, a precursor to the x-embeddings, replaces the old 
+\texttt{world\_list} table: not only the format is streamlined (key-value hash rather than list), but it now handles multi-token words. Due to the
+ potential explosion in size, the shorter version \texttt{compressed\_word2\_hash} is the central table. 
+The \texttt{word2\_pairs} table contains similar content, but organized in a different way to facilitate taxonomy creation. All these tables are local to a
+ specific top category, in other words, to a sub-LLM in a multi-LLM architecture. 
+
+\noindent See on GitHub the \texttt{compressed\_word2\_hash}, 
+\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/xllm6_compressed_word2_hash.txt}{here}, and the  \texttt{word2\_pairs}, 
+\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/xllm6_word2_pairs.txt}{here}.
+\vspace{1ex}
+
+\item I also added two sections to the output results delivered to user prompts: ``x-Embeddings", and ``Linked Words". The former is based
+ on \textcolor{index}{pmi}\index{pointwise mutual information (pmi)} (pointwise mutual information) just like in the old ``Embeddings" section, and the latter on raw word counts.  
+\vspace{1ex}
+\item The stopwords list, again specific to each sub-LLM, can now handle multiple-token words, with tokens separated by the tilde character ``$\sim$" within a same word.
+These lists are built by looking at meaningless or useless words with highest counts in the \texttt{dictionary} table. They significantly contribute to
+ improving the quality of embeddings, and need to be built from scratch. Do not use stopwords from Python libraries unless you blend them with
+ customized do-not-exclude lists. 
+
+\vspace{1ex}
+\end{itemize}
+
+
+
+\subsection{Conclusion}
+
+The x-embeddings, made up of multi-token words, is a significant improvement over standard single-token embeddings.
+They can dramatically increase the number of weights, from $\num{5000}$ to over 1 million for a specialized sub-LLM
+ corresponding to a top category. Applied to the whole human knowledge, it would result in a few trillion weights.   
+
+%-----------------------------vince/riemann2and3.mp4
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{xembeddings2.png}
+\caption{xLLM6, top results for ``hypothesis"}
+\label{fig:xembeddings}
+\end{figure}
+%imgpy9979_2and3.PNG
+%-------------------------
+
+
+However, much of it is garbage and never fetched during similarity search 
+to match front-end user prompts with back-end x-embeddings built on crawls. In short, there is a waste of space, computer time,  and bandwidth. In addition, it can result in hallucinations in standard LLMs (OpenAI and the likes). Compressed tables extract the essence and are much smaller. Compression is
+ achieved via stopwords and by not linking words together unless they are found in a same, short paragraph. Of course, besides x-embeddings,
+ xLLM uses many other small tables that take care of long-range word dependencies, such as taxonomies. Much of the compression results from using 
+ a separate LLM for each top category, allowing the user to select categories. 
+
+While Figure~\ref{fig:xembeddings} mostly shows 1-token words in the x-embeddings, you can change the parameters to favor multi-token words. For instance, ignoring single-token words, doubling the count (weight) attached to multi-token words, or doubling the count when a word is found in the title, taxonomy, or metadata as opposed to the main text. The latter approach also favors natural \textcolor{index}{$n$-grams}\index{$n$-gram}: those with highest occurrences among all permutations of a same multi-token word. For instance, ``statistical hypothesis" favored over ``hypothesis statistical". To further boost natural $n$-grams, consider the following two options: 
+\vspace{1ex}
+\begin{itemize}
+\item Return to the front-end user prompt the most common $n$-gram permutation attached to any multi-token word, based on counts stored in the \texttt{dictionary} table. 
+\item Or  normalize $n$-grams to their most common permutation, in the various back-end tables. To perform this task, the hash table
+ \texttt{compressed\_ngrams\_table} is very useful. Its key is a sorted $n$-gram, while the corresponding value is a vector 
+ featuring the permutations of the $n$-gram in question, each with its own count. Normalized $n$-grams further reduces the size 
+of the largest summary tables such as \texttt{word2\_pairs}. 
+\end{itemize}
+\vspace{1ex}
+Finally, you can use the \texttt{dictionary} and \texttt{word2\_pairs} tables to create a \textcolor{index}{taxonomy}\index{taxonomy creation}, if you don't already have one. Top multi-token dictionary entries, say \texttt{word$_1$} and \texttt{word$_2$},  where \texttt{(word$_1$, word$_2$)} is not a key of \texttt{word2\_pairs},  correspond to different categories. To the contrary,
+if \texttt{word2\_pairs[(word$_1$, word$_2$)]} is a large integer (counting the simultaneous occurrences of both words across many paragraphs), it means that
+\texttt{word$_1$} and \texttt{word$_2$} belong to the same category. Based on this, you can reconstruct the underlying taxonomy. The first step is to ignore top
+words not representing any category. Also, words found in titles should be given extra weight. 
+
+It is interesting to note that despite not using a synonyms or abbreviations dictionary yet, some of the issues in xLLM5, such 
+as ``ANOVA" and
+``analysis of variance", or ``Bayes" and ``Bayesian" not returning similar results, are not present in xLLM6. 
+Other improvements not yet implemented consist of handling capital letters separately, and treating words such as
+``Saint Petersburg" as one token. To conclude, Figure~\ref{fig:xembeddings} displays only the top 10 entries in each section,
+ordered by relevancy. Some entries not shown because not in the top 10, are quite relevant. Fine-tuning the
+ \textcolor{index}{hyperparameters}\index{hyperparameter} may result in a different ordering, better or worse depending on the user.
+
+
+
+
+
 
 
 %------------------------------------------------------------------
