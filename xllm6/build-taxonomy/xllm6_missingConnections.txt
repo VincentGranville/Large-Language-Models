@@ -1,0 +1,14 @@
+parameter	1
+example	1
+skewness	1
+wolfram	1
+language	1
+size	1
+characteristic	1
+median	1
+theorem	1
+kurtosis	1
+excess	1
+regression	1
+trial	1
+beta	1
