@@ -1,1 +1,1 @@
-Coming soon as project 8.3 in the project textbook (download the book <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/Projects4.pdf">here</a>). Taxonomy creation when none can easily be detected in the corpus. 
+Coming soon as project 8.2 in the project textbook (download the book <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/Projects4.pdf">here</a>). Taxonomy creation when none can easily be detected in the corpus. 
