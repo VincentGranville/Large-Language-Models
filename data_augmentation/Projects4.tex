@@ -196,7 +196,7 @@
 \rule{0.90\textwidth}{.4pt}
 \end{center}
 \begin{center}
-Vincent Granville, Ph.D. $|$ \href{https://mltechniques.com/}{www.MLTechniques.com} $|$ Version 4.0, March 2024 
+Vincent Granville, Ph.D. $|$ \href{https://mltechniques.com/}{www.MLTechniques.com} $|$ Version 4.1, April 2024 
 \end{center}
 %\hrulefill
 
@@ -8431,7 +8431,7 @@ plt.show()
 \section{Taxonomy generation and evaluation for LLMs}
 
 Section~\ref{sxllm5} and appendix~\ref{aasdaaqw} discuss \textcolor{index}{xLLM}\index{xLLM}, my multi-LLM architecture to deal with knowledge retrieval, referencing,  and summarization. It heavily relies on structures found in the corpus,
- such as taxonomies. I tested it on the Wolfram website, with a specialized sub-LLM for the ``Probability \& Statistics" section. The  root directory is accessible  
+ such as taxonomies. I tested it on the Wolfram website, to create a specialized sub-LLM for the ``Probability \& Statistics" section. The  root directory is accessible  
 \href{https://mathworld.wolfram.com/topics/ProbabilityandStatistics.html}{here} on Wolfram. This is the starting point for crawling all the content. 
 
 
@@ -8502,6 +8502,16 @@ Equal / Unequal Samples	&	Sample Size	&	Outliers		\\
 \caption{\label{tabtax1sub} ``Sampling Methods" sub-categories based on parsed content}
 \end{table}
 
+%-----------------------------vince/riemann2and3.mp4
+\begin{figure}[H]
+\centering
+\fbox{\includegraphics[width=0.96\textwidth]{detectedCategories.png}}  
+\caption{Wolfram true vs re-assigned categories based on content (extract from full table)}
+\label{fig:lot89c29}
+\end{figure}
+%imgpy9979_2and3.PNG
+%------------------------- 
+
 \noindent The Wolfram ``Probability \& Statistics" ontology has about 600 categories, subcategories and so on. Here we want to accomplish three goals:
 \vspace{1ex}
 \begin{itemize}
@@ -8520,43 +8530,108 @@ This last step allows you to evaluate the quality of your LLM.
 %mention the code / excel spreadsheet / semi manual
 
 The goal is not to write code from scratch to solve the problem, but to look at my implementation in section~\ref{pyucd}, understand the different tables and components,
- test it, and see how it works. It is a bonus if you can improve my algorithms.  
-   
+ test it, and see how it works. It is a bonus if you can improve my algorithms. 
 
-under construction.
 
-%xxxx  %explain my little tool
 
-% explain word-to-category relevancy
-%threshold param set to 30/ thresh2
-% 500 categories
-%\renewcommand{\arraystretch}{1.2} %%%
-%\renewcommand{\arraystretch}{1.2} %%%
+My code is significantly shorter than it appears at first glance. First, lines \textcolor{gray}{1--105} reads all the tables produced by 
+ \texttt{xLLM6.py}, described in appendix~\ref{xllm6tr} and in the solution to Step 1 in project~\ref{beurreblanc}. You won't need all~of them, but they are there for convenience and
+ consistency with the main xLLM architecture.  Then, lines \textcolor{gray}{240--352} allows you to understand and play with some of the new tables built to facilitate 
+ the creation of the taxonomy.  The core of the code is split in two sections. First, lines  \textcolor{gray}{108--237} to create the new tables needed to create a taxonomy from scratch: see description in the 
+ comments in lines  \textcolor{gray}{116-124}. Once produced, you can load them in memory next time you run the code, to boost speed. 
+Then, lines \textcolor{gray}{355--432} deals with integrating an external taxonomy into xLLM. All these tables are also on GitHub, 
+\href{https://github.com/VincentGranville/Large-Language-Models/tree/main/xllm6/build-taxonomy}{here}. 
+The code also requires the \texttt{xllm6\_util.py} library, available \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/xllm6_util.py}{here}. 
+\vspace{1ex}
+The project consists of the following steps:
+
+\begin{itemize}
+\item[] {\bf Step 1:  Build taxonomy from scratch}. Using only the \texttt{dictionary} table in the code in section~\ref{pyucd},
+ see how I build the \texttt{topWords} table, and then \texttt{connectedTopWords}, in lines \textcolor{gray}{126--168}.
+ How can you use \texttt{topWords} to create categories, and \texttt{connectedTopWords} to create subcategories? The solution requires
+ human intelligence to assign a meaningful label or name to each category and subcategory, and to discard non-valid entries. Thus, the process is 
+semi-automated.  
+
+\noindent Do not use the Wolfram category. That is, do no use the \texttt{hash\_category} table featuring the Wolfram taxonomy. The goal here is to create an alternate taxonomy from scratch.
+See what I came up with in Tables~\ref{tabtax1} and~\ref{tabtax1sub}. Your solution will be different.
+ \vspace{1ex}
+\item[] {\bf Step 2:  Leverage external taxonomy}. In line \textcolor{gray}{402}, I retrieve a list of categories from \texttt{hash\_category}. 
+While these are actually Wolfram categories, let's pretend that they are external. Now,  in lines \textcolor{gray}{407--427}, see how I assign a category from that list, to
+ each word found in \texttt{dictionary}. For that purpose, I use a similarity metric  that compares two text elements: a dictionary word on one side, and a category entry on the other 
+side; see lines \textcolor{gray}{380--400}.
+ Try with different similarity metrics, or allow for multiple categories per word.   
+My results are stored in the \texttt{assignedCategories} table, available 
+\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/build-taxonomy/xllm6_assignedCategories.txt}{here}. 
+The relevancy score is included. Note that some words are uncategorized.
+\vspace{1ex}
+
+\item[] {\bf Step 3:  LLM evaluation}. Assign a category to each crawled webpage using \texttt{assignedCategories} built in \textcolor{red}{Step 2}. This table
+ available 
+\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/build-taxonomy/xllm6_assignedCategories.txt}{here}
+plays the role of an ontology based on the crawled content augmented with the Wolfram taxonomy, 
+while ignoring how categories are assigned to webpages by Wolfram. 
+Then, look at the Wolfram categories assigned to webpages, 
+ using \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/list_final_URLs_stats.txt}{this table}. Note that in this table, each URL is 
+ linked to two categories:  the actual category on the left in the parentheses, and the parent category on the right (one level above). In the rare instances where 
+a category has multiple parent categories, only one is kept. Each webpage is assigned to just one category.   
+
+\noindent You will need: the \texttt{arr\_url} table (\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/xllm6_arr_url.txt}{here}) mapping URL IDs to URLs, and also the \texttt{url\_map} table 
+(\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/xllm6_url_map.txt}{here}) indexed by \texttt{dictionary} words. 
+The latter helps you retrieve the list of webpages (URL IDs) containing any word in the dictionary. By inverting it, you can retrieve, for each URL, all the 
+ dictionary words that it contains. Note that the 
+Wolfram category table (\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/list_final_URLs_stats.txt}{here}) is indexed by URL, while
+\texttt{assignedCategories} 
+is  indexed by words from the \texttt{dictionary} table (both use the same ``word" index). To evaluate the~LLM, for each webpage, compare the two 
+category assignments: one coming from 
+\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/list_final_URLs_stats.txt}{here} versus the other one derived from \texttt{assignedCategories}. The former is supposed to be the correct one. Quantify the~amount of mismatch. 
+
+\noindent In the end,  content-based categories found in \texttt{assignedCategories} also come from Wolfram (indirectly as if using an external taxonomy). But they may be assigned to webpages differently, compared to the real Wolfram taxonomy. The fewer mismatches
+ between the two assignments (across all the webpages),  the better your algorithm. In short, this step reallocates Wolfram categories to webpages, not knowing 
+how Wolfram does the allocation.
+\vspace{1ex}
+\item[] {\bf Step 4: Taxonomy augmentation}. How would you create an augmented taxonomy, by blending two different ones? For instance, the Wolfram taxonomy with
+ the one obtained in \textcolor{red}{Step 1}.
+\vspace{1ex}
+\end{itemize}
+
+\noindent In addition to the code in section~\ref{pyucd}, the Excel spreadsheet \texttt{Wolfram-stats2.xlsx}, available 
+\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/build-taxonomy/Wolfram-stats2.xlsx}{here}, illustrates some of the steps. 
+The \texttt{TopWords} and \texttt{TopWord Pairs} tabs are related to \textcolor{red}{Step 1}. Then, I also use~a~list of words to ignore when
+ building the fundamental \texttt{TopWords} table: see the man-made \texttt{ignoredWords} list in lines \textcolor{gray}{110--112} in the Python code.
+
+To answer \textcolor{red}{Step 2} and \textcolor{red}{Step 3}, I produced a separate piece of code \texttt{reallocate.py}, available on GitHub, 
+\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/build-taxonomy/reallocate.py}{here}. 
+Figure~\ref{fig:lot89c29} shows an extract from the output. The full table \texttt{detectedCategories.txt} is on GitHub,
+\href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/build-taxonomy/detectedCategories.txt}{here}.
+In essence, this Python script uses the Wolfram taxonomy as external data to the crawled content, and assigns a category to each URL based on words
+ found on the webpage in question. 
+
+Actually, for each page, the script assigns multiple categories, each with its relevancy score. In the end,
+the candidate category with the highest score is selected as the target category. Two different scoring mechanisms are offered, 
+ determined by the tuning parameter \texttt{mode}. The best fit is obtained with \texttt{mode='depth'}, favoring deeper over general sub-categories 
+ to better mimic the way Wolfram assigns categories to pages.  Even then, only 141 URLs are perfectly
+ matched to their true Wolfram category. However, mismatch does not mean error: it means a close but not perfect match. Indeed, the
+ reconstructed taxonomy may be superior to the true one, in the sense that the Wolfram page categorization is too granular.
+It also illustrates how evaluation metrics are subject to argumentation.
+
+ 
+
+
+
+
+% title: knowledge organization with RAG, taxonomy-based LLMs, and model evaluation
+
+
 
 
 % evaluation: faifthfulness to content [wolfram] or to the topic [proba / stats]
-% mathematical statistics
-% page assigned multiple categories
-%tite: building and evaluating taxonomy-based xLLMs
-% distance between categories
-%We are working on the following:
-%1) assign a category from a taxonomy table, to a piece of content (web page), pretending you don't know the underlying category assigned to that page
-%2) compare with the actual category, and see how frequently the assignment is correct or not. The corpus consists of 500 web pages, a subset of 15,000 pages, each one with its own LLM / taxonomy. 
-%Note: wrong assignment means mismatch with real taxonomy; it could be either better or worse then the real category assignment in the training data. Wrong can be a little wrong or very wrong depending on how close the real and guessed category are. 
-
-%xxxyyyy
-% compare wolfram with home-made taxonomy
 % boost with wilipedia taxonomy / my glossary, indexes [bigger weights given to these entries]
-%evaluation: compare category assignment: reconstructed vs. real one
 % improve results by using a real dictionary: words found in crawled page, also in real dictionary, get double weight
 % use synonyms for linkage
 
 \subsection{Python code}\label{pyucd}
 
-%xxx
-% code on github
-
-xxx The code is also on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/build-taxonomy/taxonomy.py}{here}.
+The code is also on GitHub, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/build-taxonomy/taxonomy.py}{here}.
 \vspace{1ex}
 
 \begin{lstlisting}[numbers=left]
