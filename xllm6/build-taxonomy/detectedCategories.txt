@@ -1,0 +1,2332 @@
+https://mathworld.wolfram.com/BayesianAnalysis.html
+Detected category: binormal~distribution (score: 224)
+Wolfram  category: bayesian~analysis
+
+https://mathworld.wolfram.com/MaximumLikelihood.html
+Detected category: likelihood (score: 108)
+Wolfram  category: maximum~likelihood
+
+https://mathworld.wolfram.com/Probability.html
+Detected category: probability (score: 248)
+Wolfram  category: probability
+
+https://mathworld.wolfram.com/BetaDistribution.html
+Detected category: binormal~distribution (score: 192)
+Wolfram  category: beta~distribution
+
+https://mathworld.wolfram.com/AbsoluteError.html
+Detected category: error (score: 99)
+Wolfram  category: absolute~error
+
+https://mathworld.wolfram.com/Accuracy.html
+Detected category: accuracy (score: 99)
+Wolfram  category: accuracy
+
+https://mathworld.wolfram.com/ArbitraryPrecision.html
+Detected category: anomalous~number (score: 279)
+Wolfram  category: arbitrary~precision
+
+https://mathworld.wolfram.com/ConfidenceInterval.html
+Detected category: confidence~interval (score: 414)
+Wolfram  category: confidence~interval
+
+https://mathworld.wolfram.com/ConfidenceLimits.html
+Detected category: confidence~limits (score: 36)
+Wolfram  category: confidence~limits
+
+https://mathworld.wolfram.com/Deviation.html
+Detected category: deviation (score: 54)
+Wolfram  category: deviation
+
+https://mathworld.wolfram.com/Equiripple.html
+Detected category: error~distribution (score: 64)
+Wolfram  category: equiripple
+
+https://mathworld.wolfram.com/Error.html
+Detected category: error (score: 54)
+Wolfram  category: error
+
+https://mathworld.wolfram.com/ErrorPropagation.html
+Detected category: error (score: 81)
+Wolfram  category: error~propagation
+
+https://mathworld.wolfram.com/Estimate.html
+Detected category: estimate (score: 279)
+Wolfram  category: estimate
+
+https://mathworld.wolfram.com/MarginofError.html
+Detected category: margin~of~error (score: 144)
+Wolfram  category: margin~of~error
+
+https://mathworld.wolfram.com/MinimaxApproximation.html
+Detected category: minimax~approximation (score: 63)
+Wolfram  category: minimax~approximation
+
+https://mathworld.wolfram.com/PercentageError.html
+Detected category: error (score: 63)
+Wolfram  category: percentage~error
+
+https://mathworld.wolfram.com/Precision.html
+Detected category: anomalous~number (score: 81)
+Wolfram  category: precision
+
+https://mathworld.wolfram.com/RelativeError.html
+Detected category: alpha~value (score: 126)
+Wolfram  category: relative~error
+
+https://mathworld.wolfram.com/SignificanceArithmetic.html
+Detected category: significance~arithmetic (score: 270)
+Wolfram  category: significance~arithmetic
+
+https://mathworld.wolfram.com/SignificantDigits.html
+Detected category: index~number (score: 243)
+Wolfram  category: significant~digits
+
+https://mathworld.wolfram.com/ClusterAnalysis.html
+Detected category: longitudinal~data (score: 351)
+Wolfram  category: cluster~analysis
+
+https://mathworld.wolfram.com/FindClusters.html
+Detected category: statistic (score: 18)
+Wolfram  category: findclusters
+
+https://mathworld.wolfram.com/HawkesProcess.html
+Detected category: point~estimator (score: 747)
+Wolfram  category: hawkes~process
+
+https://mathworld.wolfram.com/Multivariate.html
+Detected category: multivariate (score: 180)
+Wolfram  category: multivariate
+
+https://mathworld.wolfram.com/BuffonsNeedleProblem.html
+Detected category: buffon~needle~problem (score: 981)
+Wolfram  category: buffons~needle~problem
+
+https://mathworld.wolfram.com/ConditionalIntensityFunction.html
+Detected category: point~estimator (score: 90)
+Wolfram  category: conditional~intensity~function
+
+https://mathworld.wolfram.com/CountingProcess.html
+Detected category: point~estimator (score: 18)
+Wolfram  category: counting~process
+
+https://mathworld.wolfram.com/ExcitationFunction.html
+Detected category: excitation~function (score: 27)
+Wolfram  category: excitation~function
+
+https://mathworld.wolfram.com/ExcitingFunction.html
+Detected category: exciting~function (score: 18)
+Wolfram  category: exciting~function
+
+https://mathworld.wolfram.com/Immigrant.html
+Detected category: time-series~analysis (score: 16)
+Wolfram  category: immigrant
+
+https://mathworld.wolfram.com/IntensityFunction.html
+Detected category: intensity~measure (score: 126)
+Wolfram  category: intensity~function
+
+https://mathworld.wolfram.com/IntensityMeasure.html
+Detected category: intensity~measure (score: 99)
+Wolfram  category: intensity~measure
+
+https://mathworld.wolfram.com/IntervalStationaryPointProcess.html
+Detected category: confidence~interval (score: 225)
+Wolfram  category: interval~stationary~point~process
+
+https://mathworld.wolfram.com/IrrelevantMark.html
+Detected category: irrelevant~mark (score: 36)
+Wolfram  category: irrelevant~mark
+
+https://mathworld.wolfram.com/MarkSpace.html
+Detected category: point~estimator (score: 72)
+Wolfram  category: mark~space
+
+https://mathworld.wolfram.com/MarkedPointProcess.html
+Detected category: point~estimator (score: 306)
+Wolfram  category: marked~point~process
+
+https://mathworld.wolfram.com/MultidimensionalPointProcess.html
+Detected category: hammersley~point~set (score: 135)
+Wolfram  category: multidimensional~point~process
+
+https://mathworld.wolfram.com/Newton-PepysProblem.html
+Detected category: hammersley~point~set (score: 117)
+Wolfram  category: newton-pepys~problem
+
+https://mathworld.wolfram.com/PointProcess.html
+Detected category: point~estimator (score: 333)
+Wolfram  category: point~process
+
+https://mathworld.wolfram.com/RandomClosedSet.html
+Detected category: random~closed~set (score: 171)
+Wolfram  category: random~closed~set
+
+https://mathworld.wolfram.com/Self-CorrectingPointProcess.html
+Detected category: point~estimator (score: 225)
+Wolfram  category: self-correcting~point~process
+
+https://mathworld.wolfram.com/Self-ExcitingPointProcess.html
+Detected category: point~estimator (score: 261)
+Wolfram  category: self-exciting~point~process
+
+https://mathworld.wolfram.com/SimplePointProcess.html
+Detected category: point~estimator (score: 324)
+Wolfram  category: simple~point~process
+
+https://mathworld.wolfram.com/Spatial-TemporalPointProcess.html
+Detected category: point~estimator (score: 351)
+Wolfram  category: spatial-temporal~point~process
+
+https://mathworld.wolfram.com/StationaryPointProcess.html
+Detected category: stationary~point~process (score: 270)
+Wolfram  category: stationary~point~process
+
+https://mathworld.wolfram.com/TemporalPointProcess.html
+Detected category: point~estimator (score: 342)
+Wolfram  category: temporal~point~process
+
+https://mathworld.wolfram.com/Net.html
+Detected category: net (score: 927)
+Wolfram  category: net
+
+https://mathworld.wolfram.com/MultipleRegression.html
+Detected category: random~variable (score: 81)
+Wolfram  category: multiple~regression
+
+https://mathworld.wolfram.com/AnalysisofVariance.html
+Detected category: analysis~of~variance (score: 18)
+Wolfram  category: analysis~of~variance
+
+https://mathworld.wolfram.com/ANOVA.html
+Detected category: factor~level (score: 99)
+Wolfram  category: anova
+
+https://mathworld.wolfram.com/MANOVA.html
+Detected category: reversion~to~the~mean (score: 117)
+Wolfram  category: manova
+
+https://mathworld.wolfram.com/ExponentialMovingAverage.html
+Detected category: moving~average (score: 261)
+Wolfram  category: exponential~moving~average
+
+https://mathworld.wolfram.com/MovingAverage.html
+Detected category: moving~average (score: 99)
+Wolfram  category: moving~average
+
+https://mathworld.wolfram.com/NonstationaryTimeSeries.html
+Detected category: nonstationary~time~series (score: 54)
+Wolfram  category: nonstationary~time~series
+
+https://mathworld.wolfram.com/Predictability.html
+Detected category: predictability (score: 27)
+Wolfram  category: predictability
+
+https://mathworld.wolfram.com/PredictionTheory.html
+Detected category: newton-pepys~problem (score: 45)
+Wolfram  category: prediction~theory
+
+https://mathworld.wolfram.com/Redundancy.html
+Detected category: redundancy (score: 27)
+Wolfram  category: redundancy
+
+https://mathworld.wolfram.com/RunningAverage.html
+Detected category: running~average (score: 36)
+Wolfram  category: running~average
+
+https://mathworld.wolfram.com/SamplingTheory.html
+Detected category: sampling (score: 18)
+Wolfram  category: sampling~theory
+
+https://mathworld.wolfram.com/Slutzky-YuleEffect.html
+Detected category: moving~average (score: 90)
+Wolfram  category: slutzky-yule~effect
+
+https://mathworld.wolfram.com/Smoothing.html
+Detected category: longitudinal~data (score: 117)
+Wolfram  category: smoothing
+
+https://mathworld.wolfram.com/Spencers15-PointMovingAverage.html
+Detected category: moving~average (score: 45)
+Wolfram  category: spencers~15-point~moving~average
+
+https://mathworld.wolfram.com/SpencersFormula.html
+Detected category: difference~of~successes (score: 48)
+Wolfram  category: spencers~formula
+
+https://mathworld.wolfram.com/TimeSeriesAnalysis.html
+Detected category: longitudinal~data (score: 234)
+Wolfram  category: time~series~analysis
+
+https://mathworld.wolfram.com/Uncorrelated.html
+Detected category: uncorrelated (score: 54)
+Wolfram  category: uncorrelated
+
+https://mathworld.wolfram.com/UncorrelatedNumbers.html
+Detected category: anomalous~number (score: 36)
+Wolfram  category: uncorrelated~numbers
+
+https://mathworld.wolfram.com/WienerNumbers.html
+Detected category: anomalous~number (score: 144)
+Wolfram  category: wiener~numbers
+
+https://mathworld.wolfram.com/Sampling.html
+Detected category: sampling (score: 144)
+Wolfram  category: sampling
+
+https://mathworld.wolfram.com/NormalDistribution.html
+Detected category: normal~distribution (score: 1056)
+Wolfram  category: normal~distribution
+
+https://mathworld.wolfram.com/WeibullDistribution.html
+Detected category: weibull~distribution (score: 160)
+Wolfram  category: weibull~distribution
+
+https://mathworld.wolfram.com/BimodalDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: bimodal~distribution
+
+https://mathworld.wolfram.com/ContingencyTable.html
+Detected category: contingency~table (score: 1278)
+Wolfram  category: contingency~table
+
+https://mathworld.wolfram.com/ExpectedFrequency.html
+Detected category: expected~frequency (score: 18)
+Wolfram  category: expected~frequency
+
+https://mathworld.wolfram.com/Hinge.html
+Detected category: hinge (score: 81)
+Wolfram  category: hinge
+
+https://mathworld.wolfram.com/HomogeneityofProportionsTest.html
+Detected category: homogeneity~of~proportions~test (score: 36)
+Wolfram  category: homogeneity~of~proportions~test
+
+https://mathworld.wolfram.com/InterquartileRange.html
+Detected category: longitudinal~data (score: 171)
+Wolfram  category: interquartile~range
+
+https://mathworld.wolfram.com/Midrange.html
+Detected category: sample (score: 36)
+Wolfram  category: midrange
+
+https://mathworld.wolfram.com/Mode.html
+Detected category: hammersley~point~set (score: 270)
+Wolfram  category: mode
+
+https://mathworld.wolfram.com/Outlier.html
+Detected category: outlier (score: 288)
+Wolfram  category: outlier
+
+https://mathworld.wolfram.com/Quartile.html
+Detected category: quartile (score: 162)
+Wolfram  category: quartile
+
+https://mathworld.wolfram.com/ReversiontotheMean.html
+Detected category: reversion~to~the~mean (score: 288)
+Wolfram  category: reversion~to~the~mean
+
+https://mathworld.wolfram.com/ScoreFunction.html
+Detected category: score~function (score: 108)
+Wolfram  category: score~function
+
+https://mathworld.wolfram.com/SignedDeviation.html
+Detected category: deviation (score: 81)
+Wolfram  category: signed~deviation
+
+https://mathworld.wolfram.com/StatisticalDepth.html
+Detected category: statistical~rank (score: 27)
+Wolfram  category: statistical~depth
+
+https://mathworld.wolfram.com/StatisticalDispersion.html
+Detected category: absolute~frequency (score: 18)
+Wolfram  category: statistical~dispersion
+
+https://mathworld.wolfram.com/StatisticalMedian.html
+Detected category: statistical~distribution (score: 208)
+Wolfram  category: statistical~median
+
+https://mathworld.wolfram.com/StatisticalRange.html
+Detected category: range (score: 96)
+Wolfram  category: statistical~range
+
+https://mathworld.wolfram.com/Tail.html
+Detected category: tail (score: 36)
+Wolfram  category: tail
+
+https://mathworld.wolfram.com/ZipfsLaw.html
+Detected category: probability (score: 112)
+Wolfram  category: zipfs~law
+
+https://mathworld.wolfram.com/k-Statistic.html
+Detected category: unbiased~estimator (score: 189)
+Wolfram  category: k-statistic
+
+https://mathworld.wolfram.com/L-Estimate.html
+Detected category: robust~estimation (score: 18)
+Wolfram  category: l-estimate
+
+https://mathworld.wolfram.com/RobustEstimation.html
+Detected category: small~world~problem (score: 81)
+Wolfram  category: robust~estimation
+
+https://mathworld.wolfram.com/SampleMean.html
+Detected category: sample (score: 171)
+Wolfram  category: sample~mean
+
+https://mathworld.wolfram.com/CharacteristicFunction.html
+Detected category: characteristic~function (score: 297)
+Wolfram  category: characteristic~function
+
+https://mathworld.wolfram.com/Covariance.html
+Detected category: covariance (score: 324)
+Wolfram  category: covariance
+
+https://mathworld.wolfram.com/Heteroscedastic.html
+Detected category: variance (score: 18)
+Wolfram  category: heteroscedastic
+
+https://mathworld.wolfram.com/Homoscedastic.html
+Detected category: binormal~distribution (score: 16)
+Wolfram  category: homoscedastic
+
+https://mathworld.wolfram.com/Mean.html
+Detected category: reversion~to~the~mean (score: 540)
+Wolfram  category: mean
+
+https://mathworld.wolfram.com/MeanDeviation.html
+Detected category: binormal~distribution (score: 464)
+Wolfram  category: mean~deviation
+
+https://mathworld.wolfram.com/Moment.html
+Detected category: moment (score: 171)
+Wolfram  category: moment
+
+https://mathworld.wolfram.com/PearsonModeSkewness.html
+Detected category: reversion~to~the~mean (score: 81)
+Wolfram  category: pearson~mode~skewness
+
+https://mathworld.wolfram.com/PearsonsSkewnessCoefficients.html
+Detected category: pearson~system (score: 80)
+Wolfram  category: pearsons~skewness~coefficients
+
+https://mathworld.wolfram.com/Root-Mean-Square.html
+Detected category: index~number (score: 153)
+Wolfram  category: root-mean-square
+
+https://mathworld.wolfram.com/StandardDeviationDistribution.html
+Detected category: sample (score: 117)
+Wolfram  category: standard~deviation~distribution
+
+https://mathworld.wolfram.com/Variance.html
+Detected category: beta~distribution (score: 240)
+Wolfram  category: variance
+
+https://mathworld.wolfram.com/BivariateNormalDistribution.html
+Detected category: normal~equation (score: 432)
+Wolfram  category: bivariate~normal~distribution
+
+https://mathworld.wolfram.com/BootstrapMethods.html
+Detected category: linear~congruence~method (score: 171)
+Wolfram  category: bootstrap~methods
+
+https://mathworld.wolfram.com/FisherSignTest.html
+Detected category: homogeneity~of~proportions~test (score: 126)
+Wolfram  category: fisher~sign~test
+
+https://mathworld.wolfram.com/NonparametricEstimation.html
+Detected category: nonparametric~estimation (score: 270)
+Wolfram  category: nonparametric~estimation
+
+https://mathworld.wolfram.com/OrderStatistic.html
+Detected category: sample (score: 72)
+Wolfram  category: order~statistic
+
+https://mathworld.wolfram.com/SpearmanRankCorrelationCoefficient.html
+Detected category: cross-correlation~coefficient (score: 256)
+Wolfram  category: spearman~rank~correlation~coefficient
+
+https://mathworld.wolfram.com/WilcoxonSignedRankTest.html
+Detected category: paired~t-test (score: 135)
+Wolfram  category: wilcoxon~signed~rank~test
+
+https://mathworld.wolfram.com/Domain.html
+Detected category: domain (score: 216)
+Wolfram  category: domain
+
+https://mathworld.wolfram.com/SimpsonsParadox.html
+Detected category: simpson~paradox (score: 225)
+Wolfram  category: simpsons~paradox
+
+https://mathworld.wolfram.com/Statistics.html
+Detected category: statistic (score: 126)
+Wolfram  category: statistics
+
+https://mathworld.wolfram.com/RandomDistribution.html
+Detected category: binormal~distribution (score: 80)
+Wolfram  category: random~distribution
+
+https://mathworld.wolfram.com/Statistic.html
+Detected category: statistic (score: 36)
+Wolfram  category: statistic
+
+https://mathworld.wolfram.com/QuantumStochasticCalculus.html
+Detected category: brownian~motion (score: 792)
+Wolfram  category: quantum~stochastic~calculus
+
+https://mathworld.wolfram.com/Median.html
+Detected category: median (score: 171)
+Wolfram  category: median
+
+https://mathworld.wolfram.com/RankTest.html
+Detected category: parametric~test (score: 72)
+Wolfram  category: rank~test
+
+https://mathworld.wolfram.com/StatisticalRank.html
+Detected category: rank~statistics (score: 56)
+Wolfram  category: statistical~rank
+
+https://mathworld.wolfram.com/Trimean.html
+Detected category: trimean (score: 27)
+Wolfram  category: trimean
+
+https://mathworld.wolfram.com/Correlation.html
+Detected category: correlation (score: 126)
+Wolfram  category: correlation
+
+https://mathworld.wolfram.com/StatisticalCorrelation.html
+Detected category: variance (score: 45)
+Wolfram  category: statistical~correlation
+
+https://mathworld.wolfram.com/CharlierSeries.html
+Detected category: class (score: 225)
+Wolfram  category: charlier~series
+
+https://mathworld.wolfram.com/Cornish-FisherAsymptoticExpansion.html
+Detected category: cornish-fisher~asymptotic~expansion (score: 108)
+Wolfram  category: cornish-fisher~asymptotic~expansion
+
+https://mathworld.wolfram.com/deMoivre-LaplaceTheorem.html
+Detected category: cornish-fisher~asymptotic~expansion (score: 135)
+Wolfram  category: de~moivre-laplace~theorem
+
+https://mathworld.wolfram.com/EdgeworthSeries.html
+Detected category: weibull~distribution (score: 208)
+Wolfram  category: edgeworth~series
+
+https://mathworld.wolfram.com/PoissonTheorem.html
+Detected category: poisson~theorem (score: 45)
+Wolfram  category: poisson~theorem
+
+https://mathworld.wolfram.com/BowleyIndex.html
+Detected category: laspeyres~index (score: 45)
+Wolfram  category: bowley~index
+
+https://mathworld.wolfram.com/FisherIndex.html
+Detected category: laspeyres~index (score: 45)
+Wolfram  category: fisher~index
+
+https://mathworld.wolfram.com/GeometricMeanIndex.html
+Detected category: price~theorem (score: 32)
+Wolfram  category: geometric~mean~index
+
+https://mathworld.wolfram.com/HarmonicMeanIndex.html
+Detected category: price~theorem (score: 48)
+Wolfram  category: harmonic~mean~index
+
+https://mathworld.wolfram.com/IndexNumber.html
+Detected category: laspeyres~index (score: 288)
+Wolfram  category: index~number
+
+https://mathworld.wolfram.com/LaspeyresIndex.html
+Detected category: laspeyres~index (score: 36)
+Wolfram  category: laspeyres~index
+
+https://mathworld.wolfram.com/Marshall-EdgeworthIndex.html
+Detected category: price~theorem (score: 32)
+Wolfram  category: marshall-edgeworth~index
+
+https://mathworld.wolfram.com/MitchellIndex.html
+Detected category: price~theorem (score: 32)
+Wolfram  category: mitchell~index
+
+https://mathworld.wolfram.com/PaaschesIndex.html
+Detected category: price~theorem (score: 32)
+Wolfram  category: paasches~index
+
+https://mathworld.wolfram.com/WalshIndex.html
+Detected category: price~theorem (score: 32)
+Wolfram  category: walsh~index
+
+https://mathworld.wolfram.com/BarChart.html
+Detected category: index~number (score: 81)
+Wolfram  category: bar~chart
+
+https://mathworld.wolfram.com/Bland-AltmanPlot.html
+Detected category: longitudinal~data (score: 351)
+Wolfram  category: bland-altman~plot
+
+https://mathworld.wolfram.com/Box-and-WhiskerPlot.html
+Detected category: box-and-whisker~plot (score: 225)
+Wolfram  category: box-and-whisker~plot
+
+https://mathworld.wolfram.com/ChernoffFace.html
+Detected category: sample~size (score: 126)
+Wolfram  category: chernoff~face
+
+https://mathworld.wolfram.com/CumulativeFrequencyPolygon.html
+Detected category: frequency~polygon (score: 144)
+Wolfram  category: cumulative~frequency~polygon
+
+https://mathworld.wolfram.com/DifferencePlot.html
+Detected category: q-q~plot (score: 27)
+Wolfram  category: difference~plot
+
+https://mathworld.wolfram.com/DotPlot.html
+Detected category: dot~plot (score: 198)
+Wolfram  category: dot~plot
+
+https://mathworld.wolfram.com/FrequencyCurve.html
+Detected category: beta~distribution (score: 64)
+Wolfram  category: frequency~curve
+
+https://mathworld.wolfram.com/Histogram.html
+Detected category: longitudinal~data (score: 117)
+Wolfram  category: histogram
+
+https://mathworld.wolfram.com/Letter-ValueDisplay.html
+Detected category: linear~congruence~method (score: 36)
+Wolfram  category: letter-value~display
+
+https://mathworld.wolfram.com/Mean-DifferencePlot.html
+Detected category: q-q~plot (score: 27)
+Wolfram  category: mean-difference~plot
+
+https://mathworld.wolfram.com/Ogive.html
+Detected category: frequency~curve (score: 45)
+Wolfram  category: ogive
+
+https://mathworld.wolfram.com/ParetoPlot.html
+Detected category: bland-altman~plot (score: 108)
+Wolfram  category: pareto~plot
+
+https://mathworld.wolfram.com/PieChart.html
+Detected category: pie~chart (score: 117)
+Wolfram  category: pie~chart
+
+https://mathworld.wolfram.com/q-qPlot.html
+Detected category: q-q~plot (score: 36)
+Wolfram  category: q-q~plot
+
+https://mathworld.wolfram.com/Quantile-QuantilePlot.html
+Detected category: q-q~plot (score: 81)
+Wolfram  category: quantile-quantile~plot
+
+https://mathworld.wolfram.com/Stem-and-LeafDiagram.html
+Detected category: longitudinal~data (score: 405)
+Wolfram  category: stem-and-leaf~diagram
+
+https://mathworld.wolfram.com/StemLeafPlot.html
+Detected category: stem-and-leaf~diagram (score: 18)
+Wolfram  category: stemleafplot
+
+https://mathworld.wolfram.com/TukeyMean-DifferencePlot.html
+Detected category: q-q~plot (score: 27)
+Wolfram  category: tukey~mean-difference~plot
+
+https://mathworld.wolfram.com/AlphaValue.html
+Detected category: alpha~value (score: 54)
+Wolfram  category: alpha~value
+
+https://mathworld.wolfram.com/AlternativeHypothesis.html
+Detected category: hypothesis (score: 99)
+Wolfram  category: alternative~hypothesis
+
+https://mathworld.wolfram.com/Anderson-DarlingStatistic.html
+Detected category: statistic (score: 36)
+Wolfram  category: anderson-darling~statistic
+
+https://mathworld.wolfram.com/BalancedANOVA.html
+Detected category: anova (score: 36)
+Wolfram  category: balanced~anova
+
+https://mathworld.wolfram.com/BesselsStatisticalFormula.html
+Detected category: reversion~to~the~mean (score: 180)
+Wolfram  category: bessels~statistical~formula
+
+https://mathworld.wolfram.com/BonferroniCorrection.html
+Detected category: bonferroni~correction (score: 207)
+Wolfram  category: bonferroni~correction
+
+https://mathworld.wolfram.com/Chi-SquaredTest.html
+Detected category: beta~distribution (score: 144)
+Wolfram  category: chi-squared~test
+
+https://mathworld.wolfram.com/Fisher-BehrensProblem.html
+Detected category: reversion~to~the~mean (score: 63)
+Wolfram  category: fisher-behrens~problem
+
+https://mathworld.wolfram.com/FishersExactTest.html
+Detected category: fisher~z-distribution (score: 576)
+Wolfram  category: fishers~exact~test
+
+https://mathworld.wolfram.com/HotellingsT-SquaredTest.html
+Detected category: hotelling~t^2~test (score: 45)
+Wolfram  category: hotellings~t^2~test
+
+https://mathworld.wolfram.com/Hypothesis.html
+Detected category: hypothesis (score: 216)
+Wolfram  category: hypothesis
+
+https://mathworld.wolfram.com/HypothesisTesting.html
+Detected category: hypothesis~testing (score: 189)
+Wolfram  category: hypothesis~testing
+
+https://mathworld.wolfram.com/Kolmogorov-SmirnovTest.html
+Detected category: statistical~distribution (score: 176)
+Wolfram  category: kolmogorov-smirnov~test
+
+https://mathworld.wolfram.com/KuiperStatistic.html
+Detected category: statistic (score: 36)
+Wolfram  category: kuiper~statistic
+
+https://mathworld.wolfram.com/LikelihoodRatio.html
+Detected category: likelihood (score: 72)
+Wolfram  category: likelihood~ratio
+
+https://mathworld.wolfram.com/LogLikelihoodProcedure.html
+Detected category: log~likelihood~procedure (score: 81)
+Wolfram  category: log~likelihood~procedure
+
+https://mathworld.wolfram.com/NegativeLikelihoodRatio.html
+Detected category: negative~likelihood~ratio (score: 63)
+Wolfram  category: negative~likelihood~ratio
+
+https://mathworld.wolfram.com/NestedHypothesis.html
+Detected category: hammersley~point~set (score: 90)
+Wolfram  category: nested~hypothesis
+
+https://mathworld.wolfram.com/Neyman-PearsonLemma.html
+Detected category: sample~size (score: 36)
+Wolfram  category: neyman-pearson~lemma
+
+https://mathworld.wolfram.com/NullHypothesis.html
+Detected category: hypothesis (score: 108)
+Wolfram  category: null~hypothesis
+
+https://mathworld.wolfram.com/Pairedt-Test.html
+Detected category: hammersley~point~set (score: 108)
+Wolfram  category: paired~t-test
+
+https://mathworld.wolfram.com/ParametricTest.html
+Detected category: parametric~test (score: 36)
+Wolfram  category: parametric~test
+
+https://mathworld.wolfram.com/PopulationComparison.html
+Detected category: difference~of~successes (score: 32)
+Wolfram  category: population~comparison
+
+https://mathworld.wolfram.com/PredictiveValue.html
+Detected category: predictive~value (score: 108)
+Wolfram  category: predictive~value
+
+https://mathworld.wolfram.com/ResidualvsPredictorPlot.html
+Detected category: newton-pepys~problem (score: 36)
+Wolfram  category: residual~vs.~predictor~plot
+
+https://mathworld.wolfram.com/Sensitivity.html
+Detected category: statistical~test (score: 36)
+Wolfram  category: sensitivity
+
+https://mathworld.wolfram.com/Significance.html
+Detected category: alpha~value (score: 261)
+Wolfram  category: significance
+
+https://mathworld.wolfram.com/SignificanceTest.html
+Detected category: parametric~test (score: 45)
+Wolfram  category: significance~test
+
+https://mathworld.wolfram.com/SignificanceValue.html
+Detected category: predictive~value (score: 18)
+Wolfram  category: significance~value
+
+https://mathworld.wolfram.com/Specificity.html
+Detected category: statistical~test (score: 36)
+Wolfram  category: specificity
+
+https://mathworld.wolfram.com/StatisticalHypothesis.html
+Detected category: hypothesis (score: 45)
+Wolfram  category: statistical~hypothesis
+
+https://mathworld.wolfram.com/StatisticalPower.html
+Detected category: homogeneity~of~proportions~test (score: 81)
+Wolfram  category: statistical~power
+
+https://mathworld.wolfram.com/StatisticalTest.html
+Detected category: type~ii~error (score: 270)
+Wolfram  category: statistical~test
+
+https://mathworld.wolfram.com/TypeIError.html
+Detected category: null~hypothesis (score: 72)
+Wolfram  category: type~i~error
+
+https://mathworld.wolfram.com/TypeIIError.html
+Detected category: null~hypothesis (score: 72)
+Wolfram  category: type~ii~error
+
+https://mathworld.wolfram.com/z-Score.html
+Detected category: random~variable (score: 36)
+Wolfram  category: z-score
+
+https://mathworld.wolfram.com/Sample.html
+Detected category: sample (score: 414)
+Wolfram  category: sample
+
+https://mathworld.wolfram.com/CauchyDistribution.html
+Detected category: cauchy~distribution (score: 336)
+Wolfram  category: cauchy~distribution
+
+https://mathworld.wolfram.com/Chi-SquaredDistribution.html
+Detected category: binormal~distribution (score: 320)
+Wolfram  category: chi-squared~distribution
+
+https://mathworld.wolfram.com/ContinuousDistribution.html
+Detected category: binormal~distribution (score: 496)
+Wolfram  category: continuous~distribution
+
+https://mathworld.wolfram.com/F-Distribution.html
+Detected category: statistical~distribution (score: 176)
+Wolfram  category: f-distribution
+
+https://mathworld.wolfram.com/GammaDistribution.html
+Detected category: binormal~distribution (score: 480)
+Wolfram  category: gamma~distribution
+
+https://mathworld.wolfram.com/Map-AiryDistribution.html
+Detected category: binormal~distribution (score: 80)
+Wolfram  category: map-airy~distribution
+
+https://mathworld.wolfram.com/MaxwellDistribution.html
+Detected category: binormal~distribution (score: 176)
+Wolfram  category: maxwell~distribution
+
+https://mathworld.wolfram.com/Studentst-Distribution.html
+Detected category: student~t-distribution (score: 272)
+Wolfram  category: students~t-distribution
+
+https://mathworld.wolfram.com/DiscreteDistribution.html
+Detected category: binormal~distribution (score: 240)
+Wolfram  category: discrete~distribution
+
+https://mathworld.wolfram.com/GaltonBoard.html
+Detected category: galton~board (score: 1104)
+Wolfram  category: galton~board
+
+https://mathworld.wolfram.com/Range.html
+Detected category: range (score: 144)
+Wolfram  category: range
+
+https://mathworld.wolfram.com/StatisticalDistribution.html
+Detected category: binormal~distribution (score: 176)
+Wolfram  category: statistical~distribution
+
+https://mathworld.wolfram.com/Surrogate.html
+Detected category: longitudinal~data (score: 315)
+Wolfram  category: surrogate
+
+https://mathworld.wolfram.com/UnimodalDistribution.html
+Detected category: binormal~distribution (score: 80)
+Wolfram  category: unimodal~distribution
+
+https://mathworld.wolfram.com/LyapunovCondition.html
+Detected category: lyapunov~condition (score: 144)
+Wolfram  category: lyapunov~condition
+
+https://mathworld.wolfram.com/KendallOperator.html
+Detected category: kendall~operator (score: 153)
+Wolfram  category: kendall~operator
+
+https://mathworld.wolfram.com/LeastSquaresFitting.html
+Detected category: mean~square~displacement (score: 720)
+Wolfram  category: least~squares~fitting
+
+https://mathworld.wolfram.com/NonlinearLeastSquaresFitting.html
+Detected category: conditional~intensity~function (score: 315)
+Wolfram  category: nonlinear~least~squares~fitting
+
+https://mathworld.wolfram.com/KolakoskiSequence.html
+Detected category: kolakoski~sequence (score: 585)
+Wolfram  category: kolakoski~sequence
+
+https://mathworld.wolfram.com/Quantile.html
+Detected category: quantile (score: 504)
+Wolfram  category: quantile
+
+https://mathworld.wolfram.com/Estimator.html
+Detected category: estimator (score: 171)
+Wolfram  category: estimator
+
+https://mathworld.wolfram.com/SampleVariance.html
+Detected category: sample (score: 261)
+Wolfram  category: sample~variance
+
+https://mathworld.wolfram.com/StandardError.html
+Detected category: standard~deviation (score: 90)
+Wolfram  category: standard~error
+
+https://mathworld.wolfram.com/SlovinsFormula.html
+Detected category: slovin~formula (score: 252)
+Wolfram  category: slovins~formula
+
+https://mathworld.wolfram.com/RandomMatrix.html
+Detected category: random~matrix (score: 288)
+Wolfram  category: random~matrix
+
+https://mathworld.wolfram.com/CorrelationIndex.html
+Detected category: correlation (score: 81)
+Wolfram  category: correlation~index
+
+https://mathworld.wolfram.com/LeastSquaresFittingPerpendicularOffsets.html
+Detected category: minimax~polynomial (score: 117)
+Wolfram  category: least~squares~fitting--perpendicular~offsets
+
+https://mathworld.wolfram.com/F-Ratio.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: f-ratio
+
+https://mathworld.wolfram.com/AbsoluteFrequency.html
+Detected category: longitudinal~data (score: 54)
+Wolfram  category: absolute~frequency
+
+https://mathworld.wolfram.com/BenfordsLaw.html
+Detected category: zipf~law (score: 1269)
+Wolfram  category: benfords~law
+
+https://mathworld.wolfram.com/Bimodal.html
+Detected category: mode (score: 99)
+Wolfram  category: bimodal
+
+https://mathworld.wolfram.com/Class.html
+Detected category: class (score: 360)
+Wolfram  category: class
+
+https://mathworld.wolfram.com/ClassInterval.html
+Detected category: class (score: 126)
+Wolfram  category: class~interval
+
+https://mathworld.wolfram.com/CumulativeFrequency.html
+Detected category: frequency~polygon (score: 108)
+Wolfram  category: cumulative~frequency
+
+https://mathworld.wolfram.com/FisherInformationMatrix.html
+Detected category: fisher~information~matrix (score: 54)
+Wolfram  category: fisher~information~matrix
+
+https://mathworld.wolfram.com/FrequencyDistribution.html
+Detected category: longitudinal~data (score: 198)
+Wolfram  category: frequency~distribution
+
+https://mathworld.wolfram.com/FrequencyPolygon.html
+Detected category: uniform~variate (score: 112)
+Wolfram  category: frequency~polygon
+
+https://mathworld.wolfram.com/GausssInequality.html
+Detected category: binormal~distribution (score: 16)
+Wolfram  category: gausss~inequality
+
+https://mathworld.wolfram.com/LorenzCurve.html
+Detected category: lorenz~curve (score: 495)
+Wolfram  category: lorenz~curve
+
+https://mathworld.wolfram.com/Mesokurtic.html
+Detected category: kurtosis (score: 18)
+Wolfram  category: mesokurtic
+
+https://mathworld.wolfram.com/PlottingPosition.html
+Detected category: plotting~position (score: 117)
+Wolfram  category: plotting~position
+
+https://mathworld.wolfram.com/RelativeCumulativeFrequency.html
+Detected category: frequency~polygon (score: 63)
+Wolfram  category: relative~cumulative~frequency
+
+https://mathworld.wolfram.com/RelativeFrequency.html
+Detected category: frequency~polygon (score: 63)
+Wolfram  category: relative~frequency
+
+https://mathworld.wolfram.com/Unimodal.html
+Detected category: unimodal~distribution (score: 64)
+Wolfram  category: unimodal
+
+https://mathworld.wolfram.com/h-Statistic.html
+Detected category: central~moment (score: 81)
+Wolfram  category: h-statistic
+
+https://mathworld.wolfram.com/WaldsEquation.html
+Detected category: kolakoski~sequence (score: 81)
+Wolfram  category: walds~equation
+
+https://mathworld.wolfram.com/MarkovSequence.html
+Detected category: markov~chain (score: 63)
+Wolfram  category: markov~sequence
+
+https://mathworld.wolfram.com/SmithsMarkovProcessTheorem.html
+Detected category: beta~distribution (score: 64)
+Wolfram  category: smiths~markov~process~theorem
+
+https://mathworld.wolfram.com/Berry-EsseenTheorem.html
+Detected category: beta~distribution (score: 80)
+Wolfram  category: berry-esseen~theorem
+
+https://mathworld.wolfram.com/Excess.html
+Detected category: beta~distribution (score: 96)
+Wolfram  category: excess
+
+https://mathworld.wolfram.com/Kurtosis.html
+Detected category: kurtosis (score: 522)
+Wolfram  category: kurtosis
+
+https://mathworld.wolfram.com/Leptokurtic.html
+Detected category: weibull~distribution (score: 32)
+Wolfram  category: leptokurtic
+
+https://mathworld.wolfram.com/Moment-GeneratingFunction.html
+Detected category: figure-of-merit~function (score: 72)
+Wolfram  category: moment-generating~function
+
+https://mathworld.wolfram.com/PopulationMean.html
+Detected category: mean (score: 90)
+Wolfram  category: population~mean
+
+https://mathworld.wolfram.com/SampleVarianceComputation.html
+Detected category: sample (score: 270)
+Wolfram  category: sample~variance~computation
+
+https://mathworld.wolfram.com/SampleVarianceDistribution.html
+Detected category: sample (score: 342)
+Wolfram  category: sample~variance~distribution
+
+https://mathworld.wolfram.com/SheppardsCorrection.html
+Detected category: moment (score: 90)
+Wolfram  category: sheppards~correction
+
+https://mathworld.wolfram.com/Skewness.html
+Detected category: binormal~distribution (score: 384)
+Wolfram  category: skewness
+
+https://mathworld.wolfram.com/StandardDeviation.html
+Detected category: beta~distribution (score: 368)
+Wolfram  category: standard~deviation
+
+https://mathworld.wolfram.com/Bivariate.html
+Detected category: random~variable (score: 90)
+Wolfram  category: bivariate
+
+https://mathworld.wolfram.com/MultinormalDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: multinormal~distribution
+
+https://mathworld.wolfram.com/MultivariateNormalDistribution.html
+Detected category: binormal~distribution (score: 208)
+Wolfram  category: multivariate~normal~distribution
+
+https://mathworld.wolfram.com/TrivariateNormalDistribution.html
+Detected category: normal~equation (score: 144)
+Wolfram  category: trivariate~normal~distribution
+
+https://mathworld.wolfram.com/WishartDistribution.html
+Detected category: binormal~distribution (score: 128)
+Wolfram  category: wishart~distribution
+
+https://mathworld.wolfram.com/BirthdayProblem.html
+Detected category: far~out (score: 423)
+Wolfram  category: birthday~problem
+
+https://mathworld.wolfram.com/Borel-CantelliLemma.html
+Detected category: kolakoski~sequence (score: 99)
+Wolfram  category: borel-cantelli~lemma
+
+https://mathworld.wolfram.com/Buffon-LaplaceNeedleProblem.html
+Detected category: buffon-laplace~needle~problem (score: 657)
+Wolfram  category: buffon-laplace~needle~problem
+
+https://mathworld.wolfram.com/CoinTossing.html
+Detected category: coin~tossing (score: 657)
+Wolfram  category: coin~tossing
+
+https://mathworld.wolfram.com/HazardFunction.html
+Detected category: hazard~rate (score: 72)
+Wolfram  category: hazard~function
+
+https://mathworld.wolfram.com/MarginalProbability.html
+Detected category: beta~distribution (score: 64)
+Wolfram  category: marginal~probability
+
+https://mathworld.wolfram.com/MillsRatio.html
+Detected category: figure-of-merit~function (score: 81)
+Wolfram  category: mills~ratio
+
+https://mathworld.wolfram.com/PointProbability.html
+Detected category: beta~distribution (score: 64)
+Wolfram  category: point~probability
+
+https://mathworld.wolfram.com/ProbabilityDensityFunction.html
+Detected category: binormal~distribution (score: 256)
+Wolfram  category: probability~density~function
+
+https://mathworld.wolfram.com/ProbabilityDomain.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: probability~domain
+
+https://mathworld.wolfram.com/QuantileFunction.html
+Detected category: binormal~distribution (score: 96)
+Wolfram  category: quantile~function
+
+https://mathworld.wolfram.com/SaintPetersburgParadox.html
+Detected category: bernoulli~trial (score: 450)
+Wolfram  category: saint~petersburg~paradox
+
+https://mathworld.wolfram.com/Box-MullerTransformation.html
+Detected category: normal~equation (score: 117)
+Wolfram  category: box-muller~transformation
+
+https://mathworld.wolfram.com/Discrepancy.html
+Detected category: beta~distribution (score: 96)
+Wolfram  category: discrepancy
+
+https://mathworld.wolfram.com/GirkosCircularLaw.html
+Detected category: binormal~distribution (score: 64)
+Wolfram  category: girkos~circular~law
+
+https://mathworld.wolfram.com/HammersleyPointSet.html
+Detected category: hammersley~point~set (score: 315)
+Wolfram  category: hammersley~point~set
+
+https://mathworld.wolfram.com/LogitTransformation.html
+Detected category: excitation~function (score: 36)
+Wolfram  category: logit~transformation
+
+https://mathworld.wolfram.com/QuasirandomSequence.html
+Detected category: kolakoski~sequence (score: 432)
+Wolfram  category: quasirandom~sequence
+
+https://mathworld.wolfram.com/RandomNumber.html
+Detected category: anomalous~number (score: 495)
+Wolfram  category: random~number
+
+https://mathworld.wolfram.com/RandomVariable.html
+Detected category: random~variable (score: 99)
+Wolfram  category: random~variable
+
+https://mathworld.wolfram.com/UniformDistributionTheory.html
+Detected category: hammersley~point~set (score: 144)
+Wolfram  category: uniform~distribution~theory
+
+https://mathworld.wolfram.com/UniformVariate.html
+Detected category: binormal~distribution (score: 32)
+Wolfram  category: uniform~variate
+
+https://mathworld.wolfram.com/WignersSemicircleLaw.html
+Detected category: law~of~large~numbers (score: 96)
+Wolfram  category: wigners~semicircle~law
+
+https://mathworld.wolfram.com/Borel-TannerDistribution.html
+Detected category: continuous~distributions (score: 153)
+Wolfram  category: borel-tanner~distribution
+
+https://mathworld.wolfram.com/BrownianMotion.html
+Detected category: brownian~motion (score: 324)
+Wolfram  category: brownian~motion
+
+https://mathworld.wolfram.com/LevyFlight.html
+Detected category: levy~flight (score: 54)
+Wolfram  category: levy~flight
+
+https://mathworld.wolfram.com/RandomWalk1-Dimensional.html
+Detected category: step (score: 693)
+Wolfram  category: random~walk--1-dimensional
+
+https://mathworld.wolfram.com/RandomWalk2-Dimensional.html
+Detected category: gaussian~sum~distribution (score: 320)
+Wolfram  category: random~walk--2-dimensional
+
+https://mathworld.wolfram.com/CorrelationCoefficient.html
+Detected category: cross-correlation~coefficient (score: 752)
+Wolfram  category: correlation~coefficient
+
+https://mathworld.wolfram.com/CorrelationCoefficientBivariateNormalDistribution.html
+Detected category: cross-correlation~coefficient (score: 144)
+Wolfram  category: correlation~coefficient--bivariate~normal~distribution
+
+https://mathworld.wolfram.com/Run.html
+Detected category: kolakoski~sequence (score: 666)
+Wolfram  category: run
+
+https://mathworld.wolfram.com/BernoulliTrial.html
+Detected category: trial (score: 36)
+Wolfram  category: bernoulli~trial
+
+https://mathworld.wolfram.com/SampleProportion.html
+Detected category: far~out (score: 54)
+Wolfram  category: sample~proportion
+
+https://mathworld.wolfram.com/BetaPrimeDistribution.html
+Detected category: variate (score: 81)
+Wolfram  category: beta~prime~distribution
+
+https://mathworld.wolfram.com/BinormalDistribution.html
+Detected category: binormal~distribution (score: 64)
+Wolfram  category: binormal~distribution
+
+https://mathworld.wolfram.com/Bose-EinsteinDistribution.html
+Detected category: binormal~distribution (score: 64)
+Wolfram  category: bose-einstein~distribution
+
+https://mathworld.wolfram.com/ChiDistribution.html
+Detected category: binormal~distribution (score: 208)
+Wolfram  category: chi~distribution
+
+https://mathworld.wolfram.com/ContinuityCorrection.html
+Detected category: binormal~distribution (score: 112)
+Wolfram  category: continuity~correction
+
+https://mathworld.wolfram.com/Copula.html
+Detected category: excitation~function (score: 72)
+Wolfram  category: copula
+
+https://mathworld.wolfram.com/Cross-CorrelationCoefficient.html
+Detected category: cross-correlation~coefficient (score: 64)
+Wolfram  category: cross-correlation~coefficient
+
+https://mathworld.wolfram.com/DifferenceofSuccesses.html
+Detected category: sample~proportion (score: 45)
+Wolfram  category: difference~of~successes
+
+https://mathworld.wolfram.com/DoobsTheorem.html
+Detected category: doob~theorem (score: 80)
+Wolfram  category: doobs~theorem
+
+https://mathworld.wolfram.com/ErlangDistribution.html
+Detected category: binormal~distribution (score: 192)
+Wolfram  category: erlang~distribution
+
+https://mathworld.wolfram.com/ErrorDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: error~distribution
+
+https://mathworld.wolfram.com/ErrorFunctionDistribution.html
+Detected category: binormal~distribution (score: 64)
+Wolfram  category: error~function~distribution
+
+https://mathworld.wolfram.com/ExponentialDistribution.html
+Detected category: binormal~distribution (score: 192)
+Wolfram  category: exponential~distribution
+
+https://mathworld.wolfram.com/ExtremeValueDistribution.html
+Detected category: binormal~distribution (score: 368)
+Wolfram  category: extreme~value~distribution
+
+https://mathworld.wolfram.com/Fermi-DiracDistribution.html
+Detected category: binormal~distribution (score: 64)
+Wolfram  category: fermi-dirac~distribution
+
+https://mathworld.wolfram.com/Fisher-TippettDistribution.html
+Detected category: extreme~value~distribution (score: 80)
+Wolfram  category: fisher-tippett~distribution
+
+https://mathworld.wolfram.com/Fishersz-Distribution.html
+Detected category: binormal~distribution (score: 176)
+Wolfram  category: fishers~z-distribution
+
+https://mathworld.wolfram.com/GaussianDifferenceDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: gaussian~difference~distribution
+
+https://mathworld.wolfram.com/GaussianDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: gaussian~distribution
+
+https://mathworld.wolfram.com/GaussianJointVariableTheorem.html
+Detected category: gaussian~joint~variable~theorem (score: 224)
+Wolfram  category: gaussian~joint~variable~theorem
+
+https://mathworld.wolfram.com/GaussianProductDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: gaussian~product~distribution
+
+https://mathworld.wolfram.com/GaussianRatioDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: gaussian~ratio~distribution
+
+https://mathworld.wolfram.com/GaussianSumDistribution.html
+Detected category: gaussian~sum~distribution (score: 64)
+Wolfram  category: gaussian~sum~distribution
+
+https://mathworld.wolfram.com/GibratsDistribution.html
+Detected category: binormal~distribution (score: 128)
+Wolfram  category: gibrats~distribution
+
+https://mathworld.wolfram.com/GumbelDistribution.html
+Detected category: binormal~distribution (score: 336)
+Wolfram  category: gumbel~distribution
+
+https://mathworld.wolfram.com/Half-NormalDistribution.html
+Detected category: binormal~distribution (score: 96)
+Wolfram  category: half-normal~distribution
+
+https://mathworld.wolfram.com/HotellingT-SquaredDistribution.html
+Detected category: f-distribution (score: 144)
+Wolfram  category: hotelling~t^2~distribution
+
+https://mathworld.wolfram.com/InverseGaussianDistribution.html
+Detected category: binormal~distribution (score: 128)
+Wolfram  category: inverse~gaussian~distribution
+
+https://mathworld.wolfram.com/LaplaceDistribution.html
+Detected category: exponential~distribution (score: 144)
+Wolfram  category: laplace~distribution
+
+https://mathworld.wolfram.com/LevyDistribution.html
+Detected category: binormal~distribution (score: 128)
+Wolfram  category: levy~distribution
+
+https://mathworld.wolfram.com/LogNormalDistribution.html
+Detected category: binormal~distribution (score: 256)
+Wolfram  category: log~normal~distribution
+
+https://mathworld.wolfram.com/LogarithmicDistribution.html
+Detected category: binormal~distribution (score: 176)
+Wolfram  category: logarithmic~distribution
+
+https://mathworld.wolfram.com/LogisticDistribution.html
+Detected category: binormal~distribution (score: 112)
+Wolfram  category: logistic~distribution
+
+https://mathworld.wolfram.com/LorentzDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: lorentz~distribution
+
+https://mathworld.wolfram.com/LorentzianDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: lorentzian~distribution
+
+https://mathworld.wolfram.com/NoncentralChi-SquaredDistribution.html
+Detected category: noncentral~f-distribution (score: 96)
+Wolfram  category: noncentral~chi-squared~distribution
+
+https://mathworld.wolfram.com/NoncentralF-Distribution.html
+Detected category: noncentral~f-distribution (score: 256)
+Wolfram  category: noncentral~f-distribution
+
+https://mathworld.wolfram.com/NoncentralStudentst-Distribution.html
+Detected category: student~t-distribution (score: 144)
+Wolfram  category: noncentral~students~t-distribution
+
+https://mathworld.wolfram.com/NormalDifferenceDistribution.html
+Detected category: binormal~distribution (score: 112)
+Wolfram  category: normal~difference~distribution
+
+https://mathworld.wolfram.com/NormalDistributionFunction.html
+Detected category: normal~distribution (score: 160)
+Wolfram  category: normal~distribution~function
+
+https://mathworld.wolfram.com/NormalProductDistribution.html
+Detected category: gaussian~product~distribution (score: 224)
+Wolfram  category: normal~product~distribution
+
+https://mathworld.wolfram.com/NormalRatioDistribution.html
+Detected category: binormal~distribution (score: 192)
+Wolfram  category: normal~ratio~distribution
+
+https://mathworld.wolfram.com/NormalSumDistribution.html
+Detected category: gaussian~sum~distribution (score: 352)
+Wolfram  category: normal~sum~distribution
+
+https://mathworld.wolfram.com/ParetoDistribution.html
+Detected category: beta~distribution (score: 80)
+Wolfram  category: pareto~distribution
+
+https://mathworld.wolfram.com/PearsonSystem.html
+Detected category: pearson~system (score: 192)
+Wolfram  category: pearson~system
+
+https://mathworld.wolfram.com/PearsonTypeIIIDistribution.html
+Detected category: binormal~distribution (score: 96)
+Wolfram  category: pearson~type~iii~distribution
+
+https://mathworld.wolfram.com/PlancksRadiationFunction.html
+Detected category: planck~radiation~function (score: 336)
+Wolfram  category: plancks~radiation~function
+
+https://mathworld.wolfram.com/PricesTheorem.html
+Detected category: normal~equation (score: 72)
+Wolfram  category: prices~theorem
+
+https://mathworld.wolfram.com/ProbableError.html
+Detected category: reversion~to~the~mean (score: 135)
+Wolfram  category: probable~error
+
+https://mathworld.wolfram.com/RayleighDistribution.html
+Detected category: binormal~distribution (score: 80)
+Wolfram  category: rayleigh~distribution
+
+https://mathworld.wolfram.com/RiceDistribution.html
+Detected category: binormal~distribution (score: 64)
+Wolfram  category: rice~distribution
+
+https://mathworld.wolfram.com/SDistribution.html
+Detected category: beta~distribution (score: 176)
+Wolfram  category: s~distribution
+
+https://mathworld.wolfram.com/SnedecorsF-Distribution.html
+Detected category: binormal~distribution (score: 96)
+Wolfram  category: snedecors~f-distribution
+
+https://mathworld.wolfram.com/StandardNormalDistribution.html
+Detected category: binormal~distribution (score: 128)
+Wolfram  category: standard~normal~distribution
+
+https://mathworld.wolfram.com/Studentsz-Distribution.html
+Detected category: probability~density~function (score: 63)
+Wolfram  category: students~z-distribution
+
+https://mathworld.wolfram.com/TriangularDistribution.html
+Detected category: binormal~distribution (score: 128)
+Wolfram  category: triangular~distribution
+
+https://mathworld.wolfram.com/UniformDifferenceDistribution.html
+Detected category: uniform~variate (score: 112)
+Wolfram  category: uniform~difference~distribution
+
+https://mathworld.wolfram.com/UniformDistribution.html
+Detected category: uniform~variate (score: 288)
+Wolfram  category: uniform~distribution
+
+https://mathworld.wolfram.com/UniformProductDistribution.html
+Detected category: uniform~variate (score: 224)
+Wolfram  category: uniform~product~distribution
+
+https://mathworld.wolfram.com/UniformRatioDistribution.html
+Detected category: uniform~variate (score: 192)
+Wolfram  category: uniform~ratio~distribution
+
+https://mathworld.wolfram.com/UniformSumDistribution.html
+Detected category: uniform~variate (score: 368)
+Wolfram  category: uniform~sum~distribution
+
+https://mathworld.wolfram.com/vonMisesDistribution.html
+Detected category: binormal~distribution (score: 96)
+Wolfram  category: von~mises~distribution
+
+https://mathworld.wolfram.com/WaldDistribution.html
+Detected category: continuous~distribution (score: 64)
+Wolfram  category: wald~distribution
+
+https://mathworld.wolfram.com/BeanMachine.html
+Detected category: bean~machine (score: 32)
+Wolfram  category: bean~machine
+
+https://mathworld.wolfram.com/BernoulliDistribution.html
+Detected category: binormal~distribution (score: 304)
+Wolfram  category: bernoulli~distribution
+
+https://mathworld.wolfram.com/BetaBinomialDistribution.html
+Detected category: binormal~distribution (score: 144)
+Wolfram  category: beta~binomial~distribution
+
+https://mathworld.wolfram.com/BinomialDistribution.html
+Detected category: binomial~distribution (score: 592)
+Wolfram  category: binomial~distribution
+
+https://mathworld.wolfram.com/CochransTheorem.html
+Detected category: sklar~theorem (score: 32)
+Wolfram  category: cochrans~theorem
+
+https://mathworld.wolfram.com/DiscreteUniformDistribution.html
+Detected category: binormal~distribution (score: 176)
+Wolfram  category: discrete~uniform~distribution
+
+https://mathworld.wolfram.com/EquallyLikelyOutcomesDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: equally~likely~outcomes~distribution
+
+https://mathworld.wolfram.com/GeometricDistribution.html
+Detected category: binormal~distribution (score: 224)
+Wolfram  category: geometric~distribution
+
+https://mathworld.wolfram.com/Heads-Minus-TailsDistribution.html
+Detected category: binormal~distribution (score: 64)
+Wolfram  category: heads-minus-tails~distribution
+
+https://mathworld.wolfram.com/HypergeometricDistribution.html
+Detected category: far~out (score: 108)
+Wolfram  category: hypergeometric~distribution
+
+https://mathworld.wolfram.com/LatticeDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: lattice~distribution
+
+https://mathworld.wolfram.com/Log-SeriesDistribution.html
+Detected category: logarithmic~distribution (score: 192)
+Wolfram  category: log-series~distribution
+
+https://mathworld.wolfram.com/MeanDistribution.html
+Detected category: binormal~distribution (score: 64)
+Wolfram  category: mean~distribution
+
+https://mathworld.wolfram.com/MultinomialDistribution.html
+Detected category: binormal~distribution (score: 80)
+Wolfram  category: multinomial~distribution
+
+https://mathworld.wolfram.com/NegativeBinomialDistribution.html
+Detected category: binomial~distribution (score: 176)
+Wolfram  category: negative~binomial~distribution
+
+https://mathworld.wolfram.com/PoissonDistribution.html
+Detected category: binormal~distribution (score: 336)
+Wolfram  category: poisson~distribution
+
+https://mathworld.wolfram.com/PoissonProcess.html
+Detected category: poisson~process (score: 144)
+Wolfram  category: poisson~process
+
+https://mathworld.wolfram.com/ZetaDistribution.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: zeta~distribution
+
+https://mathworld.wolfram.com/ZipfDistribution.html
+Detected category: binormal~distribution (score: 128)
+Wolfram  category: zipf~distribution
+
+https://mathworld.wolfram.com/CumulativeDistributionFunction.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: cumulative~distribution~function
+
+https://mathworld.wolfram.com/DistributionFunction.html
+Detected category: cumulative~distribution~function (score: 464)
+Wolfram  category: distribution~function
+
+https://mathworld.wolfram.com/FrechetBounds.html
+Detected category: distribution~function (score: 64)
+Wolfram  category: frechet~bounds
+
+https://mathworld.wolfram.com/JointDistributionFunction.html
+Detected category: binormal~distribution (score: 96)
+Wolfram  category: joint~distribution~function
+
+https://mathworld.wolfram.com/Memoryless.html
+Detected category: memoryless (score: 224)
+Wolfram  category: memoryless
+
+https://mathworld.wolfram.com/Platykurtic.html
+Detected category: binormal~distribution (score: 32)
+Wolfram  category: platykurtic
+
+https://mathworld.wolfram.com/RatioDistribution.html
+Detected category: binormal~distribution (score: 224)
+Wolfram  category: ratio~distribution
+
+https://mathworld.wolfram.com/RenyisParkingConstants.html
+Detected category: confidence~interval (score: 351)
+Wolfram  category: renyis~parking~constants
+
+https://mathworld.wolfram.com/SklarsTheorem.html
+Detected category: distribution~function (score: 112)
+Wolfram  category: sklars~theorem
+
+https://mathworld.wolfram.com/StableDistribution.html
+Detected category: stable~distribution (score: 208)
+Wolfram  category: stable~distribution
+
+https://mathworld.wolfram.com/SurvivalFunction.html
+Detected category: survival~function (score: 192)
+Wolfram  category: survival~function
+
+https://mathworld.wolfram.com/CentralLimitTheorem.html
+Detected category: hammersley~point~set (score: 144)
+Wolfram  category: central~limit~theorem
+
+https://mathworld.wolfram.com/CramersTheorem.html
+Detected category: binormal~distribution (score: 48)
+Wolfram  category: cramers~theorem
+
+https://mathworld.wolfram.com/FishersTheorem.html
+Detected category: sklar~theorem (score: 80)
+Wolfram  category: fishers~theorem
+
+https://mathworld.wolfram.com/LeCamsInequality.html
+Detected category: binormal~distribution (score: 32)
+Wolfram  category: le~cams~inequality
+
+https://mathworld.wolfram.com/LindebergCondition.html
+Detected category: lyapunov~condition (score: 160)
+Wolfram  category: lindeberg~condition
+
+https://mathworld.wolfram.com/Lindeberg-FellerCentralLimitTheorem.html
+Detected category: sklar~theorem (score: 64)
+Wolfram  category: lindeberg-feller~central~limit~theorem
+
+https://mathworld.wolfram.com/AbsoluteDeviation.html
+Detected category: deviation (score: 63)
+Wolfram  category: absolute~deviation
+
+https://mathworld.wolfram.com/AverageAbsoluteDeviation.html
+Detected category: deviation (score: 45)
+Wolfram  category: average~absolute~deviation
+
+https://mathworld.wolfram.com/RelativeDeviation.html
+Detected category: deviation (score: 63)
+Wolfram  category: relative~deviation
+
+https://mathworld.wolfram.com/BowleySkewness.html
+Detected category: skewness (score: 81)
+Wolfram  category: bowley~skewness
+
+https://mathworld.wolfram.com/ClassBoundaries.html
+Detected category: class (score: 144)
+Wolfram  category: class~boundaries
+
+https://mathworld.wolfram.com/GiniCoefficient.html
+Detected category: gini~coefficient (score: 261)
+Wolfram  category: gini~coefficient
+
+https://mathworld.wolfram.com/H-Spread.html
+Detected category: interquartile~range (score: 36)
+Wolfram  category: h-spread
+
+https://mathworld.wolfram.com/QuartileDeviation.html
+Detected category: quartile (score: 36)
+Wolfram  category: quartile~deviation
+
+https://mathworld.wolfram.com/QuartileVariationCoefficient.html
+Detected category: quartile (score: 36)
+Wolfram  category: quartile~variation~coefficient
+
+https://mathworld.wolfram.com/Variate.html
+Detected category: variate (score: 135)
+Wolfram  category: variate
+
+https://mathworld.wolfram.com/Self-AvoidingWalkConnectiveConstant.html
+Detected category: lattice~distribution (score: 336)
+Wolfram  category: self-avoiding~walk~connective~constant
+
+https://mathworld.wolfram.com/NormalEquation.html
+Detected category: normal~equation (score: 126)
+Wolfram  category: normal~equation
+
+https://mathworld.wolfram.com/Bin.html
+Detected category: point~estimator (score: 36)
+Wolfram  category: bin
+
+https://mathworld.wolfram.com/FarOut.html
+Detected category: longitudinal~data (score: 27)
+Wolfram  category: far~out
+
+https://mathworld.wolfram.com/LorenzAsymmetryCoefficient.html
+Detected category: lorenz~asymmetry~coefficient (score: 306)
+Wolfram  category: lorenz~asymmetry~coefficient
+
+https://mathworld.wolfram.com/CharliersCheck.html
+Detected category: charlier~check (score: 207)
+Wolfram  category: charliers~check
+
+https://mathworld.wolfram.com/SpatialPointProcess.html
+Detected category: point~estimator (score: 198)
+Wolfram  category: spatial~point~process
+
+https://mathworld.wolfram.com/MeritFunction.html
+Detected category: merit~function (score: 225)
+Wolfram  category: merit~function
+
+https://mathworld.wolfram.com/LongitudinalData.html
+Detected category: longitudinal~data (score: 90)
+Wolfram  category: longitudinal~data
+
+https://mathworld.wolfram.com/ExpectationValue.html
+Detected category: expectation~value (score: 90)
+Wolfram  category: expectation~value
+
+https://mathworld.wolfram.com/M-Estimate.html
+Detected category: robust~estimation (score: 18)
+Wolfram  category: m-estimate
+
+https://mathworld.wolfram.com/MaximumLikelihoodEstimator.html
+Detected category: maximum~likelihood~estimator (score: 54)
+Wolfram  category: maximum~likelihood~estimator
+
+https://mathworld.wolfram.com/MaximumLikelihoodMethod.html
+Detected category: maximum~likelihood~estimator (score: 27)
+Wolfram  category: maximum~likelihood~method
+
+https://mathworld.wolfram.com/Likelihood.html
+Detected category: likelihood (score: 171)
+Wolfram  category: likelihood
+
+https://mathworld.wolfram.com/LikelihoodFunction.html
+Detected category: probability~density~function (score: 72)
+Wolfram  category: likelihood~function
+
+https://mathworld.wolfram.com/Log-LikelihoodFunction.html
+Detected category: log-likelihood~function (score: 81)
+Wolfram  category: log-likelihood~function
+
+https://mathworld.wolfram.com/TailProbability.html
+Detected category: point~estimator (score: 45)
+Wolfram  category: tail~probability
+
+https://mathworld.wolfram.com/FullWidthatHalfMaximum.html
+Detected category: full~width~at~half~maximum (score: 297)
+Wolfram  category: full~width~at~half~maximum
+
+https://mathworld.wolfram.com/AbsoluteMoment.html
+Detected category: moment (score: 54)
+Wolfram  category: absolute~moment
+
+https://mathworld.wolfram.com/CentralMoment.html
+Detected category: moment (score: 189)
+Wolfram  category: central~moment
+
+https://mathworld.wolfram.com/Cumulant.html
+Detected category: characteristic~function (score: 63)
+Wolfram  category: cumulant
+
+https://mathworld.wolfram.com/Cumulant-GeneratingFunction.html
+Detected category: moment-generating~function (score: 63)
+Wolfram  category: cumulant-generating~function
+
+https://mathworld.wolfram.com/MomentProblem.html
+Detected category: moment (score: 144)
+Wolfram  category: moment~problem
+
+https://mathworld.wolfram.com/MomentSequence.html
+Detected category: moment (score: 54)
+Wolfram  category: moment~sequence
+
+https://mathworld.wolfram.com/RawMoment.html
+Detected category: moment (score: 126)
+Wolfram  category: raw~moment
+
+https://mathworld.wolfram.com/Univariate.html
+Detected category: random~variable (score: 63)
+Wolfram  category: univariate
+
+https://mathworld.wolfram.com/FailureRate.html
+Detected category: failure~rate (score: 18)
+Wolfram  category: failure~rate
+
+https://mathworld.wolfram.com/ForceofMortality.html
+Detected category: force~of~mortality (score: 18)
+Wolfram  category: force~of~mortality
+
+https://mathworld.wolfram.com/HazardRate.html
+Detected category: hazard~rate (score: 18)
+Wolfram  category: hazard~rate
+
+https://mathworld.wolfram.com/StochasticProcess.html
+Detected category: stochastic~process (score: 90)
+Wolfram  category: stochastic~process
+
+https://mathworld.wolfram.com/PolyasRandomWalkConstants.html
+Detected category: polya~random~walk~constants (score: 153)
+Wolfram  category: polyas~random~walk~constants
+
+https://mathworld.wolfram.com/Self-AvoidingWalk.html
+Detected category: self-avoiding~walk (score: 504)
+Wolfram  category: self-avoiding~walk
+
+https://mathworld.wolfram.com/WienerMeasure.html
+Detected category: continuous~distributions (score: 54)
+Wolfram  category: wiener~measure
+
+https://mathworld.wolfram.com/WeightedInversionStatistic.html
+Detected category: weighted~inversion~statistic (score: 153)
+Wolfram  category: weighted~inversion~statistic
+
+https://mathworld.wolfram.com/CorrelationRatio.html
+Detected category: correlation (score: 90)
+Wolfram  category: correlation~ratio
+
+https://mathworld.wolfram.com/Figure-of-MeritFunction.html
+Detected category: figure-of-merit~function (score: 27)
+Wolfram  category: figure-of-merit~function
+
+https://mathworld.wolfram.com/LeastSquaresFittingExponential.html
+Detected category: least~squares~fitting--polynomial (score: 72)
+Wolfram  category: least~squares~fitting--exponential
+
+https://mathworld.wolfram.com/LeastSquaresFittingLogarithmic.html
+Detected category: mean~square~displacement (score: 54)
+Wolfram  category: least~squares~fitting--logarithmic
+
+https://mathworld.wolfram.com/LeastSquaresFittingPowerLaw.html
+Detected category: least~squares~fitting--polynomial (score: 45)
+Wolfram  category: least~squares~fitting--power~law
+
+https://mathworld.wolfram.com/MinimaxPolynomial.html
+Detected category: deviation (score: 90)
+Wolfram  category: minimax~polynomial
+
+https://mathworld.wolfram.com/Regression.html
+Detected category: least~squares~fitting (score: 99)
+Wolfram  category: regression
+
+https://mathworld.wolfram.com/AlmostSurely.html
+Detected category: wiener~measure (score: 27)
+Wolfram  category: almost~surely
+
+https://mathworld.wolfram.com/MarkovChain.html
+Detected category: markov~chain (score: 180)
+Wolfram  category: markov~chain
+
+https://mathworld.wolfram.com/StochasticMatrix.html
+Detected category: matrix~1-inverse (score: 243)
+Wolfram  category: stochastic~matrix
+
+https://mathworld.wolfram.com/AlgebraofRandomVariables.html
+Detected category: random~variable (score: 18)
+Wolfram  category: algebra~of~random~variables
+
+https://mathworld.wolfram.com/BayesTheorem.html
+Detected category: total~probability~theorem (score: 36)
+Wolfram  category: bayes~theorem
+
+https://mathworld.wolfram.com/BonferroniInequalities.html
+Detected category: probability (score: 84)
+Wolfram  category: bonferroni~inequalities
+
+https://mathworld.wolfram.com/BoolesInequality.html
+Detected category: boole~inequality (score: 18)
+Wolfram  category: booles~inequality
+
+https://mathworld.wolfram.com/Chuck-a-Luck.html
+Detected category: anomalous~number (score: 99)
+Wolfram  category: chuck-a-luck
+
+https://mathworld.wolfram.com/CleanTileProblem.html
+Detected category: clean~tile~problem (score: 1719)
+Wolfram  category: clean~tile~problem
+
+https://mathworld.wolfram.com/CoinFlipping.html
+Detected category: coin~flipping (score: 27)
+Wolfram  category: coin~flipping
+
+https://mathworld.wolfram.com/Coincidence.html
+Detected category: event (score: 135)
+Wolfram  category: coincidence
+
+https://mathworld.wolfram.com/ConditionalProbability.html
+Detected category: fermat~principle~of~conjunctive~probability (score: 63)
+Wolfram  category: conditional~probability
+
+https://mathworld.wolfram.com/CouponCollectorsProblem.html
+Detected category: least~squares~fitting--polynomial (score: 36)
+Wolfram  category: coupon~collectors~problem
+
+https://mathworld.wolfram.com/deMeresProblem.html
+Detected category: de~mere~problem (score: 234)
+Wolfram  category: de~meres~problem
+
+https://mathworld.wolfram.com/EventSpace.html
+Detected category: possibility~space (score: 18)
+Wolfram  category: event~space
+
+https://mathworld.wolfram.com/FermatsPrincipleofConjunctiveProbability.html
+Detected category: probability (score: 60)
+Wolfram  category: fermats~principle~of~conjunctive~probability
+
+https://mathworld.wolfram.com/GamblersRuin.html
+Detected category: anomalous~number (score: 162)
+Wolfram  category: gamblers~ruin
+
+https://mathworld.wolfram.com/IndependentStatistics.html
+Detected category: independent~events (score: 45)
+Wolfram  category: independent~statistics
+
+https://mathworld.wolfram.com/KolmogorovsAxioms.html
+Detected category: gaussian~sum~distribution (score: 96)
+Wolfram  category: kolmogorovs~axioms
+
+https://mathworld.wolfram.com/MarkovsInequality.html
+Detected category: sklar~theorem (score: 16)
+Wolfram  category: markovs~inequality
+
+https://mathworld.wolfram.com/MultiplicationPrinciple.html
+Detected category: event~space (score: 36)
+Wolfram  category: multiplication~principle
+
+https://mathworld.wolfram.com/MutuallyExclusiveEvents.html
+Detected category: mutually~exclusive~events (score: 90)
+Wolfram  category: mutually~exclusive~events
+
+https://mathworld.wolfram.com/Odds.html
+Detected category: probability (score: 16)
+Wolfram  category: odds
+
+https://mathworld.wolfram.com/P-Value.html
+Detected category: alpha~value (score: 81)
+Wolfram  category: p-value
+
+https://mathworld.wolfram.com/PossibilitySpace.html
+Detected category: possibility~space (score: 27)
+Wolfram  category: possibility~space
+
+https://mathworld.wolfram.com/ProbabilityAxioms.html
+Detected category: sample (score: 63)
+Wolfram  category: probability~axioms
+
+https://mathworld.wolfram.com/ProbabilityInequality.html
+Detected category: boole~inequality (score: 9)
+Wolfram  category: probability~inequality
+
+https://mathworld.wolfram.com/ProbabilityMeasure.html
+Detected category: wiener~measure (score: 63)
+Wolfram  category: probability~measure
+
+https://mathworld.wolfram.com/ProbabilitySpace.html
+Detected category: possibility~space (score: 36)
+Wolfram  category: probability~space
+
+https://mathworld.wolfram.com/ProofreadingMistakes.html
+Detected category: proofreading~mistakes (score: 153)
+Wolfram  category: proofreading~mistakes
+
+https://mathworld.wolfram.com/RussianRoulette.html
+Detected category: russian~roulette (score: 225)
+Wolfram  category: russian~roulette
+
+https://mathworld.wolfram.com/SampleSpace.html
+Detected category: hammersley~point~set (score: 198)
+Wolfram  category: sample~space
+
+https://mathworld.wolfram.com/SmallWorldProblem.html
+Detected category: small~world~problem (score: 126)
+Wolfram  category: small~world~problem
+
+https://mathworld.wolfram.com/TotalProbabilityTheorem.html
+Detected category: event (score: 63)
+Wolfram  category: total~probability~theorem
+
+https://mathworld.wolfram.com/TransylvaniaLottery.html
+Detected category: anomalous~number (score: 54)
+Wolfram  category: transylvania~lottery
+
+https://mathworld.wolfram.com/RandomWalk3-Dimensional.html
+Detected category: levy~walk (score: 81)
+Wolfram  category: random~walk--3-dimensional
+
+https://mathworld.wolfram.com/s-Cluster.html
+Detected category: probability (score: 80)
+Wolfram  category: s-cluster
+
+https://mathworld.wolfram.com/s-Run.html
+Detected category: run (score: 63)
+Wolfram  category: s-run
+
+https://mathworld.wolfram.com/Event.html
+Detected category: event (score: 90)
+Wolfram  category: event
+
+https://mathworld.wolfram.com/Experiment.html
+Detected category: probabilistic~experiment (score: 63)
+Wolfram  category: experiment
+
+https://mathworld.wolfram.com/LexisTrials.html
+Detected category: trial (score: 45)
+Wolfram  category: lexis~trials
+
+https://mathworld.wolfram.com/Outcome.html
+Detected category: outcome (score: 90)
+Wolfram  category: outcome
+
+https://mathworld.wolfram.com/PoissonTrials.html
+Detected category: trial (score: 72)
+Wolfram  category: poisson~trials
+
+https://mathworld.wolfram.com/StrongLawofLargeNumbers.html
+Detected category: strong~law~of~large~numbers (score: 240)
+Wolfram  category: strong~law~of~large~numbers
+
+https://mathworld.wolfram.com/WeakLawofLargeNumbers.html
+Detected category: law~of~large~numbers (score: 160)
+Wolfram  category: weak~law~of~large~numbers
+
+https://mathworld.wolfram.com/Multimodal.html
+Detected category: mode (score: 72)
+Wolfram  category: multimodal
+
+https://mathworld.wolfram.com/Trimodal.html
+Detected category: mode (score: 18)
+Wolfram  category: trimodal
+
+https://mathworld.wolfram.com/GammaStatistic.html
+Detected category: standard~deviation (score: 9)
+Wolfram  category: gamma~statistic
+
+https://mathworld.wolfram.com/VariationCoefficient.html
+Detected category: cross-correlation~coefficient (score: 32)
+Wolfram  category: variation~coefficient
+
+https://mathworld.wolfram.com/WienerSausage.html
+Detected category: random~numbers (score: 84)
+Wolfram  category: wiener~sausage
+
+https://mathworld.wolfram.com/High-WaterMark.html
+Detected category: alpha~value (score: 252)
+Wolfram  category: high-water~mark
+
+https://mathworld.wolfram.com/RunningMaximum.html
+Detected category: alpha~value (score: 108)
+Wolfram  category: running~maximum
+
+https://mathworld.wolfram.com/AnomalousNumber.html
+Detected category: anomalous~number (score: 54)
+Wolfram  category: anomalous~number
+
+https://mathworld.wolfram.com/Population.html
+Detected category: index~number (score: 135)
+Wolfram  category: population
+
+https://mathworld.wolfram.com/BaysShuffle.html
+Detected category: class (score: 27)
+Wolfram  category: bays~shuffle
+
+https://mathworld.wolfram.com/CliffRandomNumberGenerator.html
+Detected category: anomalous~number (score: 63)
+Wolfram  category: cliff~random~number~generator
+
+https://mathworld.wolfram.com/DiscreteDiscrepancy.html
+Detected category: local~discrepancy (score: 63)
+Wolfram  category: discrete~discrepancy
+
+https://mathworld.wolfram.com/ExchangeShuffle.html
+Detected category: plotting~position (score: 108)
+Wolfram  category: exchange~shuffle
+
+https://mathworld.wolfram.com/KacFormula.html
+Detected category: index~number (score: 135)
+Wolfram  category: kac~formula
+
+https://mathworld.wolfram.com/LinearCongruenceMethod.html
+Detected category: linear~congruence~method (score: 72)
+Wolfram  category: linear~congruence~method
+
+https://mathworld.wolfram.com/LocalDiscrepancy.html
+Detected category: discrepancy (score: 27)
+Wolfram  category: local~discrepancy
+
+https://mathworld.wolfram.com/Martingale.html
+Detected category: random~variate (score: 81)
+Wolfram  category: martingale
+
+https://mathworld.wolfram.com/MatrixVariate.html
+Detected category: uniform~variate (score: 48)
+Wolfram  category: matrix~variate
+
+https://mathworld.wolfram.com/NoiseSphere.html
+Detected category: anomalous~number (score: 81)
+Wolfram  category: noise~sphere
+
+https://mathworld.wolfram.com/PseudorandomNumber.html
+Detected category: anomalous~number (score: 54)
+Wolfram  category: pseudorandom~number
+
+https://mathworld.wolfram.com/QuasirandomNumber.html
+Detected category: anomalous~number (score: 90)
+Wolfram  category: quasirandom~number
+
+https://mathworld.wolfram.com/RandomVariate.html
+Detected category: random~variate (score: 126)
+Wolfram  category: random~variate
+
+https://mathworld.wolfram.com/Seed.html
+Detected category: anomalous~number (score: 81)
+Wolfram  category: seed
+
+https://mathworld.wolfram.com/Shuffle.html
+Detected category: bays~shuffle (score: 153)
+Wolfram  category: shuffle
+
+https://mathworld.wolfram.com/StarDiscrepancy.html
+Detected category: discrepancy (score: 54)
+Wolfram  category: star~discrepancy
+
+https://mathworld.wolfram.com/Stochastic.html
+Detected category: stochastic (score: 234)
+Wolfram  category: stochastic
+
+https://mathworld.wolfram.com/vanderCorputSequence.html
+Detected category: van~der~corput~sequence (score: 342)
+Wolfram  category: van~der~corput~sequence
+
+https://mathworld.wolfram.com/Run-LengthEncoding.html
+Detected category: run-length~encoding (score: 72)
+Wolfram  category: run-length~encoding
+
+https://mathworld.wolfram.com/SampleSize.html
+Detected category: sample (score: 117)
+Wolfram  category: sample~size
+
+https://mathworld.wolfram.com/Subnormal.html
+Detected category: trial (score: 36)
+Wolfram  category: subnormal
+
+https://mathworld.wolfram.com/Trial.html
+Detected category: probabilistic~experiment (score: 126)
+Wolfram  category: trial
+
+https://mathworld.wolfram.com/LawofLargeNumbers.html
+Detected category: law~of~large~numbers (score: 96)
+Wolfram  category: law~of~large~numbers
+
+https://mathworld.wolfram.com/LawofTrulyLargeNumbers.html
+Detected category: equally~likely~outcomes~distribution (score: 192)
+Wolfram  category: law~of~truly~large~numbers
+
+https://mathworld.wolfram.com/ClassLimits.html
+Detected category: class (score: 45)
+Wolfram  category: class~limits
+
+https://mathworld.wolfram.com/ClassMark.html
+Detected category: class (score: 117)
+Wolfram  category: class~mark
+
+https://mathworld.wolfram.com/Percentile.html
+Detected category: percentile (score: 36)
+Wolfram  category: percentile
+
+https://mathworld.wolfram.com/MeanAbsoluteDeviation.html
+Detected category: reversion~to~the~mean (score: 27)
+Wolfram  category: mean~absolute~deviation
+
+https://mathworld.wolfram.com/AdjacentValue.html
+Detected category: predictive~value (score: 27)
+Wolfram  category: adjacent~value
+
+https://mathworld.wolfram.com/Batch.html
+Detected category: alpha~value (score: 27)
+Wolfram  category: batch
+
+https://mathworld.wolfram.com/Clarity.html
+Detected category: sample~size (score: 27)
+Wolfram  category: clarity
+
+https://mathworld.wolfram.com/FactorLevel.html
+Detected category: statistics (score: 18)
+Wolfram  category: factor~level
+
+https://mathworld.wolfram.com/Fence.html
+Detected category: step (score: 81)
+Wolfram  category: fence
+
+https://mathworld.wolfram.com/RecordSetting.html
+Detected category: record~setting (score: 18)
+Wolfram  category: record~setting
+
+https://mathworld.wolfram.com/RegressiontotheMean.html
+Detected category: reversion~to~the~mean (score: 27)
+Wolfram  category: regression~to~the~mean
+
+https://mathworld.wolfram.com/Step.html
+Detected category: h-spread (score: 18)
+Wolfram  category: step
+
+https://mathworld.wolfram.com/U-Statistic.html
+Detected category: statistic (score: 9)
+Wolfram  category: u-statistic
+
+https://mathworld.wolfram.com/ExpectedValue.html
+Detected category: predictive~value (score: 18)
+Wolfram  category: expected~value
+
+https://mathworld.wolfram.com/PointEstimator.html
+Detected category: point~estimator (score: 54)
+Wolfram  category: point~estimator
+
+https://mathworld.wolfram.com/SampleCentralMoment.html
+Detected category: sample (score: 180)
+Wolfram  category: sample~central~moment
+
+https://mathworld.wolfram.com/MarkovProcess.html
+Detected category: doob~theorem (score: 48)
+Wolfram  category: markov~process
+
+https://mathworld.wolfram.com/BesselsCorrection.html
+Detected category: variance (score: 90)
+Wolfram  category: bessels~correction
+
+https://mathworld.wolfram.com/PrincipleofInsufficientReason.html
+Detected category: principle~of~insufficient~reason (score: 216)
+Wolfram  category: principle~of~insufficient~reason
+
+https://mathworld.wolfram.com/IndependentEvents.html
+Detected category: event (score: 36)
+Wolfram  category: independent~events
+
+https://mathworld.wolfram.com/WienerProcess.html
+Detected category: reversion~to~the~mean (score: 90)
+Wolfram  category: wiener~process
+
+https://mathworld.wolfram.com/MeanSquareDisplacement.html
+Detected category: mean~square~displacement (score: 117)
+Wolfram  category: mean~square~displacement
+
+https://mathworld.wolfram.com/RandomWalk.html
+Detected category: levy~walk (score: 180)
+Wolfram  category: random~walk
+
+https://mathworld.wolfram.com/ConditionalLogitRegression.html
+Detected category: conditional~logit~regression (score: 99)
+Wolfram  category: conditional~logit~regression
+
+https://mathworld.wolfram.com/Residual.html
+Detected category: deviation (score: 81)
+Wolfram  category: residual
+
+https://mathworld.wolfram.com/LexisRatio.html
+Detected category: trial (score: 63)
+Wolfram  category: lexis~ratio
+
+https://mathworld.wolfram.com/Replicate.html
+Detected category: hammersley~point~set (score: 63)
+Wolfram  category: replicate
+
+https://mathworld.wolfram.com/Supernormal.html
+Detected category: trial (score: 54)
+Wolfram  category: supernormal
+
+https://mathworld.wolfram.com/Jitter.html
+Detected category: confidence~interval (score: 45)
+Wolfram  category: jitter
+
+https://mathworld.wolfram.com/LeastSquaresFittingPolynomial.html
+Detected category: minimax~polynomial (score: 117)
+Wolfram  category: least~squares~fitting--polynomial
+
+https://mathworld.wolfram.com/Polyache.html
+Detected category: statistic (score: 81)
+Wolfram  category: polyache
+
+https://mathworld.wolfram.com/SampleRawMoment.html
+Detected category: sample (score: 144)
+Wolfram  category: sample~raw~moment
+
+https://mathworld.wolfram.com/Feller-LevyCondition.html
+Detected category: kolakoski~sequence (score: 108)
+Wolfram  category: feller-levy~condition
+
+https://mathworld.wolfram.com/Fishersz-Transformation.html
+Detected category: correlation (score: 36)
+Wolfram  category: fishers~z^-transformation
+
+https://mathworld.wolfram.com/MSD.html
+Detected category: mean~square~displacement (score: 45)
+Wolfram  category: msd
+
+https://mathworld.wolfram.com/AbsolutelyFair.html
+Detected category: absolutely~fair (score: 36)
+Wolfram  category: absolutely~fair
+
+https://mathworld.wolfram.com/ItosLemma.html
+Detected category: ito~lemma (score: 72)
+Wolfram  category: itos~lemma
+
+https://mathworld.wolfram.com/LevyWalk.html
+Detected category: levy~walk (score: 27)
+Wolfram  category: levy~walk
+
+https://mathworld.wolfram.com/Wiener-LevyProcess.html
+Detected category: wiener-levy~process (score: 27)
+Wolfram  category: wiener-levy~process
+
+https://mathworld.wolfram.com/L-Moment.html
+Detected category: order~statistic (score: 72)
+Wolfram  category: l-moment
+
+https://mathworld.wolfram.com/Polykay.html
+Detected category: statistic (score: 63)
+Wolfram  category: polykay
+
+https://mathworld.wolfram.com/Chapman-KolmogorovEquation.html
+Detected category: markov~chain (score: 54)
+Wolfram  category: chapman-kolmogorov~equation
+
+https://mathworld.wolfram.com/LoessLocalRegression.html
+Detected category: bivariate (score: 63)
+Wolfram  category: loess~local~regression
+
+https://mathworld.wolfram.com/Moore-PenroseMatrixInverse.html
+Detected category: moore-penrose~matrix~inverse (score: 234)
+Wolfram  category: moore-penrose~matrix~inverse
+
+https://mathworld.wolfram.com/MomentalSkewness.html
+Detected category: skewness (score: 27)
+Wolfram  category: momental~skewness
+
+https://mathworld.wolfram.com/StandardizedMoment.html
+Detected category: moment (score: 27)
+Wolfram  category: standardized~moment
+
+https://mathworld.wolfram.com/RegressionCoefficient.html
+Detected category: cross-correlation~coefficient (score: 48)
+Wolfram  category: regression~coefficient
+
+https://mathworld.wolfram.com/LinearRegression.html
+Detected category: least~squares~fitting (score: 81)
+Wolfram  category: linear~regression
+
+https://mathworld.wolfram.com/ProbabilisticExperiment.html
+Detected category: pearson~system (score: 64)
+Wolfram  category: probabilistic~experiment
+
+https://mathworld.wolfram.com/R-Estimate.html
+Detected category: robust~estimation (score: 36)
+Wolfram  category: r-estimate
+
+https://mathworld.wolfram.com/TukeysTrimean.html
+Detected category: trimean (score: 18)
+Wolfram  category: tukeys~trimean
+
+https://mathworld.wolfram.com/FishersEstimatorInequality.html
+Detected category: estimator (score: 27)
+Wolfram  category: fishers~estimator~inequality
+
+https://mathworld.wolfram.com/Matrix1-Inverse.html
+Detected category: moore-penrose~matrix~inverse (score: 270)
+Wolfram  category: matrix~1-inverse
+
+https://mathworld.wolfram.com/Pseudoinverse.html
+Detected category: moore-penrose~matrix~inverse (score: 144)
+Wolfram  category: pseudoinverse
+
+https://mathworld.wolfram.com/RobbinsInequality.html
+Detected category: moment (score: 18)
+Wolfram  category: robbins~inequality
+
+https://mathworld.wolfram.com/BiasedEstimator.html
+Detected category: estimator (score: 63)
+Wolfram  category: biased~estimator
+
+https://mathworld.wolfram.com/EstimatorBias.html
+Detected category: estimator (score: 72)
+Wolfram  category: estimator~bias
+
+https://mathworld.wolfram.com/UnbiasedEstimator.html
+Detected category: estimator (score: 81)
+Wolfram  category: unbiased~estimator
+
+https://mathworld.wolfram.com/Gasser-MuellerTechnique.html
+Detected category: gasser-m&#252;ller~technique (score: 18)
+Wolfram  category: gasser-m&#252;ller~technique
+
+https://mathworld.wolfram.com/FactorialMoment.html
+Detected category: moment (score: 27)
+Wolfram  category: factorial~moment
+
+https://mathworld.wolfram.com/RMS.html
+Detected category: moment (score: 9)
+Wolfram  category: rms
+
+https://mathworld.wolfram.com/MarkoffChain.html
+Detected category: markov~chain (score: 36)
+Wolfram  category: markoff~chain
+
