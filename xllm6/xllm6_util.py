@@ -6,7 +6,7 @@ spell = Speller(lang='en')
 
 #--- [1] functions to read core tables (if not produced by you script)
 
-pwd = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm5/"
+pwd = "https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/llm6/"
 
 #--- [1.1] auxiliary functions
 
