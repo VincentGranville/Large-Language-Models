@@ -1,1 +1,1 @@
-For documentation, see project 8.2 in the project textbook. Download the (free) book <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/Projects4.pdf">here</a>. For a quick, high-level introduction, <a href="https://mltblog.com/3Ut9whN">read this article</a>.
+For documentation, see project 8.2 in the project textbook. Download this (free) book <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/Projects4.pdf">here</a>. For a quick, high-level introduction, <a href="https://mltblog.com/3Ut9whN">read this article</a>.
