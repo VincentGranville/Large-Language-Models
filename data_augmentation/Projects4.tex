@@ -4565,7 +4565,7 @@ as well as in the
 \label{fig:gretfg1009}
 \end{figure}
 
-\subsection{Solution}
+\subsection{Solution}\label{pureas}
 
 For convenience, this section contains the Python code for the Gaussian copula method based on grouping (\textcolor{red}{step 3}), my home-made GAN method
  (most useful to work on \textcolor{red}{step 7}), and the smart grid search related to \textcolor{red}{step 6} and \textcolor{index}{step 8}. The choice of the copula -- Gaussian or not -- has nothing to do with the observed distributions in the real data: most features are not Gaussian in my examples, some are multimodal and not symmetric. 
@@ -8428,11 +8428,13 @@ plt.show()
 
 %------------------------------
 
-\section{Taxonomy generation and evaluation for LLMs}
+\section{Building and evaluating a taxonomy-enriched LLM}\label{sec822}
 
 Section~\ref{sxllm5} and appendix~\ref{aasdaaqw} discuss \textcolor{index}{xLLM}\index{xLLM}, my multi-LLM architecture to deal with knowledge retrieval, referencing,  and summarization. It heavily relies on structures found in the corpus,
  such as taxonomies. I tested it on the Wolfram website, to create a specialized sub-LLM for the ``Probability \& Statistics" section. The  root directory is accessible  
 \href{https://mathworld.wolfram.com/topics/ProbabilityandStatistics.html}{here} on Wolfram. This is the starting point for crawling all the content. 
+Note that the strength of xLLM comes from using structured text such as taxonomies, consisting of concise, high-value text elements, 
+ superior to standard embeddings and tokens based on raw content only.
 
 
 \begin{table}[H]
@@ -8613,6 +8615,9 @@ the candidate category with the highest score is selected as the target category
  matched to their true Wolfram category. However, mismatch does not mean error: it means a close but not perfect match. Indeed, the
  reconstructed taxonomy may be superior to the true one, in the sense that the Wolfram page categorization is too granular.
 It also illustrates how evaluation metrics are subject to argumentation.
+
+A better evaluation metric would take into account the distance or similarity between the actual Wolfram category, and the reconstructed one. If the
+ reconstructed category is the parent (one level above) of the Wolfram category, the penalty for not having a perfect match, should be small. 
 
  
 
@@ -9071,12 +9076,116 @@ OUT.close()
 
 \end{lstlisting}
 
-\section{Scoring unstructured text with hidden decision trees}
+\section{Predicting article performance and clustering using LLMs}
 
-Under construction. %move to special project; replace by taxomoy creation wolfram
+The dataset consists of 4000 articles published between 2015 and 2020, on Data Science Central. For each article, the following information is available: 
+title, publication date, author, URL, type of article (forum question or blog post), and the number of pageviews measured at the end of the time period in question. The goal
+ is to identify patterns that lead to unusual pageview numbers, to automatically suggest great titles to contributing authors. The dataset does not contain the full 
+articles, only the titles. It would be useful to assess conversion rates (new subscribers) or sales based on the wording found in the subject and content, and the match between both, to maximize pageviews and conversions simultaneously. 
 
-%xxxyyy
-%xxxCaprixxx.xlsx  see Google drive
+Nevertheless, titles alone lead to very interesting results.
+ I also use efficient techniques to predict pageview numbers given the title and category, and to cluster high performing articles  into meaningful overlapping groups.  
+A category is defined as a combination of attributes: author if among the top 10, blog or forum question, and URL pointing either to Data Science Central or a satellite channel. The dataset is on GitHub, \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/Articles-Pageviews.txt}{here}.
+
+The methodology relies heavily on text processing and may be extended to much larger datasets. In this case, to boost efficiency, I recommend splitting the data into
+ multiple subsets treated separately: a subset may correspond to a specific channel. This approach is similar to the multi-LLM architecture discussed 
+ in section~\ref{sec822}. 
+
+\noindent The main concepts and notations are as follows:
+\vspace{1ex}
+\begin{itemize}
+\item Instead of vector or graph databases, tables are structured as \textcolor{index}{nested hashes}\index{hash table!nested hashes}. These are
+ key-value tables (dictionary in Python), where the value is also a hash. For instance, the 
+\textcolor{index}{distance matrix}\index{distance matrix} used in standard clustering algorithms 
+ is a nested hash transformed into a matrix. See lines \textcolor{gray}{314--330} in the code in section~\ref{vinigold}. Another useful operation is 
+\textcolor{index}{hash inversion}\index{hash table!inversion}, 
+see lines \textcolor{gray}{409--420} in the code.
+Nested hashes are very efficient to represent sparse data; they can be compared to matrices where both rows and columns have a variable number of elements. 
+Hash inversion is similar to matrix transposition. 
+\vspace{1ex}
+
+\item Tokens are replaced by \textcolor{index}{multi-tokens}\index{token!multi-token}, referred to as ``words" or 
+\textcolor{index}{contextual tokens}\index{token!contextual}. For instance, `data', `science', 
+ `data$\sim$science' and `data$^\wedge$science' are multi-tokens. Of course, the first two are also single tokens. In `data$^\wedge$science', the tokens `data' and `science' are not adjacent in the title; I use it to leverage large context, for titles that contain both tokens in arbitrary locations other than adjacent. But `data$\sim$science'  corresponds to the classical word
+ with adjacent tokens.
+\vspace{1ex}
+
+\item The pageview function is denoted as \texttt{pv}. At the basic level, $\texttt{pv}(A)$ is the pageview number of article $A$, based on its title and categorization. 
+It must be normalized, taking the logarithm: see lines \textcolor{gray}{122--123} in the code. Then, the most recent articles have a lower 
+\texttt{pv} because they have not accumulated much traffic yet. To correct for this, see lines \textcolor{gray}{127--136} in the code.  From now on,
+ \texttt{pv} refers to normalized pageview counts also adjusted for time. The pageview for a multi-token $t$ is then defined as
+\begin{equation}
+\texttt{pv}(t) = \frac{1}{|S(t)|}\cdot \sum_{A\in S(t)} \texttt{pv}(A), \label{mur28u}
+\end{equation}
+where $S(t)$ is the set of all article titles containing $t$, and $|\cdot|$ is the function that counts the number of elements in a set. Sometimes, two different
+ tokens $t_1, t_2$ have $S(t_1)=S(t_2)$. In this case, to reduce the number of tokens, I only keep the longest one. This is done
+ in lines \textcolor{gray}{193--196} in the code. 
+\vspace{1ex}
+
+\item Likewise, you can define $\texttt{pv}(C)$, the pageview count attached to a category $C$, by averaging \texttt{pv}'s over all articles assigned to that category. 
+Finally, $T(A)$ denotes the set of multi-tokens attached to an article $A$. 
+\end{itemize}
+\vspace{1ex}
+
+\noindent With the notations and terminology introduced so far, it is very easy to explain how to predict the pageview count 
+$\texttt{pv}_0(A)$ for an article $A$ inside or outside the training set. The formula is
+\begin{equation}
+\texttt{pv}_0(A) =  \frac{1}{W_A}\cdot \sum_{t\in T(A)} w_t \cdot \texttt{pv}(t), \label{poxewdyt}
+\end{equation}
+with:
+$$
+W_A  = \sum_{t\in T(A)} w_t, \quad
+w_t  = 0 \text{ if } |S(t)| \leq \alpha, \quad
+w_t  = \frac{1}{|S(t)|^\beta} \text{ if } |S(t)| > \alpha.  
+$$
+Here $\alpha, \beta > 0$ are parameters. I use $\alpha = 1$ and $\beta = 2$.  The algorithm puts more weights on rare tokens, but a large value of
+ $\beta$ or a small value of $\alpha$ leads to \textcolor{index}{overfitting}\index{overfitting}. Also, I use the notation
+ $\texttt{pv}_0$ for an estimated value or prediction, and $\texttt{pv}$ for an observed value.  In some cases, $T(A)$ is empty and thus
+ Formula~(\ref{poxewdyt}) is meaningless. The solution consists in replacing the predicted value by $\texttt{pv}_0(A) = \texttt{pv}(C_A)$, where
+ $C_A$ is the category attached to article $A$. 
+
+The prediction formula~(\ref{poxewdyt})  looks like a regression, but with no regression coefficients to estimate. Also, the dimension of 
+ the feature vector is variable: it depends on $A$. Despite not being a  minimization problem, thus the absence of loss function, gradient descent, or neural networks, the predictions are remarkably accurate, with a fairly small bias. It illustrates the power of \textcolor{index}{explainable AI}. You can further improve
+ the results using the recalibration technique in lines \textcolor{gray}{459--475} in the code. It involves one parameter, and the loss function is a fast
+ approximation to  the \textcolor{index}{Kolmogorov-Smirnov distance}\index{Kolmogorov-Smirnov distance} between 
+two \textcolor{index}{empirical distributions}\index{empirical distribution} (ECDF): one based on observed \texttt{pv}, and the other one on predicted \texttt{pv}. 
+
+I now describe the unsupervised clustering procedure, used to detect groups of articles that perform well.  First, you define a 
+\textcolor{index}{similarity metric}\index{similarity metric} 
+ $s(t_1, t_2)$ between
+ two multi-tokens $t_1, t_2$. You use one of the clustering methods to group the multi-tokens into clusters, based on the similarity. Then, for each 
+multi-token group $G$, you retrieve the list  $L(G)$ of articles belonging to $G$ with the formula
+\begin{equation}
+L(G) = \bigcup_{t\in G} S(t). \label{prozac4}
+\end{equation}
+The similarity metric is stored in the \texttt{hash\_pairs} table in the code, indexed by multi-token pairs: see lines \textcolor{gray}{276--301}. The hash structure is far more efficient than a matrix
+ because most pairs $\{t_1, t_2\}$ have $s(t_1, t_2)=0$ and are not even stored in the hash. But standard clustering procedures in Python libraries use a
+ distance matrix instead. I turned the similarity hash into a distance matrix with the formula $d(t_1, t_2) = 1- s(t_1, t_2)$. The resulting matrix 
+is big and extremely sparse, resulting in memory problems in some cases. The workaround is to use a different clustering technique,
+ such as my very fast \textcolor{index}{connected components}\index{connected components} algorithm (see section~\ref{pureas}), designed to work with hash tables rather than matrices. The similarity metric is defined as
+\begin{equation}
+s(t_1, t_2) = \frac{|S(t_1) \cap S(t_2)|}{|S(t_1) \cup S(t_2)|}  \in [0, 1].
+\end{equation}
+Note that the multi-token groups are not overlapping, but the article groups are. Finally, I tried two clustering methods: 
+ \textcolor{index}{hierarchical clustering}\index{hierarchical clustering} (also called agglomerative) from the \textcolor{index}{Sklearn}\index{Python library!Sklearn} library,
+ and \textcolor{index}{$k$-medoids}\index{$k$-medoids clustering}
+ [\href{https://en.wikipedia.org/wiki/K-medoids}{Wiki}] from the
+\textcolor{index}{Sklearn\_extra}\index{Python library!Sklearn\_extra} library. 
+The latter is a variant of \textcolor{index}{$k$-means }\index{$k$-means clustering} that works with any distance matrix. The detected clusters for both methods are on
+ GitHub, respectively \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/nlp_scoring_clusters_hierarchical.txt}{here} 
+ and \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/nlp_scoring_clusters_medoids.txt}{here}. 
+
+The remaining of this section is under construction... 
+
+%CI sample size xxx in questions // cross-validate
+
+%clustering python issue memory explosion, exercise: use connected components
+%add cluster examples + link to github
+%exercise1: identify bad and good titles, article series and play with the parameters/identify good categories 
+%exercise: split the large cluster
+%Under construction. %move to special project; replace by taxomoy creation wolfram
+
+
 
  % include scoring content / hidden decision trees / KW correls / smart crawling
 
@@ -9084,12 +9193,542 @@ Under construction. %move to special project; replace by taxomoy creation wolfra
 
 %Note that you can also search images, images similar to some image, search the news, videos and so on. 
 %----------------------------------------------------------------------}
-
-The goal here is to make predictions or synthetizations based on unstructured data repositories, mostly consisting of text, while scoring the input sources and
- the output. This is a less well-known aspect of large language models (\textcolor{index}{LLM}\index{LLM}), with a focus on structuring 
-\textcolor{index}{unstructured data}\index{unstructured data}, scoring content, and creating \textcolor{index}{taxonomies}\index{taxonomy creation}.
-
 %xxxyyyy
+
+\subsection{Python code}\label{vinigold}
+
+%xxx github ... 
+% 
+The code is also on GitHub, \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/nlp_scoring.py}{here}. 
+\vspace{1ex}
+
+\begin{lstlisting}[numbers=left]
+# nlp_scoring.py | vincentg@mltechniques.com
+
+import pandas as pd
+import numpy as np
+import matplotlib as mpl
+from matplotlib import pyplot as plt
+
+mpl.rcParams['lines.linewidth'] = 0.3
+mpl.rcParams['axes.linewidth'] = 0.5
+plt.rcParams['xtick.labelsize'] = 7
+plt.rcParams['ytick.labelsize'] = 7
+
+
+#--- [1] Read data
+
+# read data either from GitHub, or use local copy, depending on path
+
+# path = "https://raw.githubusercontent.com/VincentGranville/Statistical-Optimization/main/"
+path = ""
+filename = "Articles-Pageviews.txt"
+url  = path + filename
+
+data = pd.read_csv(url, sep='\t', engine='python', encoding='cp1252')
+header = ['Title', 'URL', 'Author', 'Page views', 'Creation date', 'Status']
+
+
+#--- [2] Core functions and tables
+
+# pv is aggregated normalized pageview; pv_rel is average pv for a specific group
+
+arr_titles = data['Title']       # article titles
+arr_status = data['Status']      # blog post, forum question, etc.
+arr_pv     = data['Page views']  # article absolute (un-normalized) pageviews 
+arr_url    = data['URL']         # article URL
+arr_author = data['Author']      # article author
+arr_categories = {}              # article category (combo of author, status, URL extracts) 
+
+category_pv    = {}     # key: article category; value: average pv per category
+category_count = {}     # key: article category; value: number of articles in that category
+hash_words_count = {}   # key: word; value: number of occurrences across all articles 
+hash_pv = {}            # key: word; value: aggregated pv across all those articles
+hash_titles = {}        # key: word; value: hash of articles containing word (value: pv)
+hash_authors_count = {} # key: author; 
+
+def compress_status(status):
+    status = status.lower()
+    if 'forum' in status:
+        status = 'forum_question'
+    elif 'resource' in status:
+        status = 'resource'
+    else:
+        status = 'blog'
+    return(status)
+
+def compress_url(url):
+    url = url.lower()
+    if 'datasciencecentral' in url:
+        url = 'DSC'
+    else:
+        url = 'Other'
+    return(url)
+
+def  update_hash(titleID, word, hash_words_count, hash_pv, hash_titles):
+
+    if word in hash_words_count:
+        hash_words_count[word] += 1
+        hash_pv[word] += pv    # what if words found twice in same title ??
+        hash = hash_titles[word]
+        hash[titleID] = pv
+        hash_titles[word] = hash
+    else:
+        hash_words_count[word] = 1
+        hash_pv[word] = pv
+        hash_titles[word] = { titleID : pv }
+    return(hash_words_count, hash_pv, hash_titles)
+
+def  update_single_tokens(titleID, words, hash_words_count, hash_pv, hash_titles):
+
+    # words is an array of words (found in title)
+
+    for word in words:
+        hash_words_count, hash_pv, hash_titles = update_hash(titleID, word, 
+                                   hash_words_count, hash_pv, hash_titles)
+    return(hash_words_count, hash_pv, hash_titles)
+
+def  update_joint_tokens(titleID, words, hash_words_count, hash_pv, hash_titles): 
+
+    # words is an array of words (found in title)
+    # capturing adjacent tokens
+
+    for idx in range(len(words)):
+        word = words[idx]
+        if idx < len(words)-1 and words[idx+1] != '':
+            word += "~" + words[idx+1]
+            hash_words_count, hash_pv, hash_titles = update_hash(titleID, word, 
+                                       hash_words_count, hash_pv, hash_titles)
+        if idx < len(words)-2 and words[idx+2] != '':
+            word += "~" + words[idx+2]
+            hash_words_count, hash_pv, hash_titles = update_hash(titleID, word, 
+                                       hash_words_count, hash_pv, hash_titles)
+    return(hash_words_count, hash_pv, hash_titles)
+
+def update_disjoint_tokens(titleID, words, hash_words_count, hash_pv, hash_titles):
+    
+    # words is an array of words (found in title)
+    # word1 and word2 cannot be adjacent: 
+    #    if they were, this is already captured in the update_joint_tokens function
+
+    param_D = 1   # word1 and word2 must be separated by at least param_D tokens
+
+    for k in range(len(words)):
+        for l in range(len(words)):
+            word1 = words[k]
+            word2 = words[l]
+            distance = abs(k - l)
+            if word1 < word2 and distance > param_D and word1 != '' and word2 != '':
+                word12 = word1 + "^" + word2
+                hash_words_count, hash_pv, hash_titles = update_hash(titleID, 
+                                  word12, hash_words_count, hash_pv, hash_titles)
+    return(hash_words_count, hash_pv, hash_titles)
+
+def get_article_pv(titleID, arr_pv):  
+    # using log: it gives a better normalization and fit than sqrt, for pv distribution
+    return(np.log(float(arr_pv[titleID])))
+
+
+#--- [3] De-trend pv 
+
+param_T1 = 0.80
+param_T2 = 0.11 
+arr_pv_new = np.zeros(len(arr_pv)) 
+
+for k in range(len(arr_pv)):
+    energy_boost = param_T1 * np.sqrt(k + param_T2 * len(arr_pv))
+    arr_pv_new[k] = arr_pv[k] * (1 + energy_boost) 
+arr_pv = np.copy(arr_pv_new)    
+
+
+#--- [4] Populate core tables 
+
+for k in range(len(data)):
+    author = arr_author[k]
+    if author in hash_authors_count:
+        hash_authors_count[author] +=1
+    else:
+        hash_authors_count[author] =1
+
+param_A = 50   # authors with fewer than param_A articles are bundled together
+
+for k in range(len(data)):
+
+    pv = get_article_pv(k, arr_pv) 
+    cstatus = compress_status(arr_status[k])
+    curl = compress_url(arr_url[k])
+    category = curl + "~" + cstatus
+    author = arr_author[k]
+    if hash_authors_count[author] > param_A:
+        arr_categories[k] = category + "~" + author
+    else:
+        arr_categories[k] = category
+
+    words = str(arr_titles[k]).replace(',',' ').replace(':',' ').replace('?', ' ')
+    words = words.replace('.',' ').replace('(',' ').replace(')', ' ')
+    words = words.replace('-',' ').replace('  ',' ').replace('\xa0', ' ') 
+    # words = words.lower() 
+    words = words.split(' ')
+
+    if 'DSC~resource' in category or 'DSC~blog' in category: 
+        hash_words_count, hash_pv, hash_titles = update_single_tokens(k, words, 
+                                   hash_words_count, hash_pv, hash_titles)
+        hash_words_count, hash_pv, hash_titles = update_joint_tokens(k, words, 
+                                   hash_words_count, hash_pv, hash_titles)
+        hash_words_count, hash_pv, hash_titles = update_disjoint_tokens(k, words, 
+                                   hash_words_count, hash_pv, hash_titles)
+
+mean_pv = sum(hash_pv.values()) / sum(hash_words_count.values())
+print("Mean pv: %6.3f" % (mean_pv))             
+
+
+#--- [5] Sort, normalize, and dedupe hash_pv
+
+# Words with identical pv are all attached to the same set of titles
+# We only keep one of them (the largest one) to reduce the number of words
+
+eps = 0.000000000001
+hash_pv_rel = {}
+
+for word in hash_pv:
+    hash_pv_rel[word] = hash_pv[word]/hash_words_count[word]
+
+hash_pv_rel = dict(sorted(hash_pv_rel.items(), key=lambda item: item[1], reverse=True))
+
+hash_pv_deduped = {}
+old_pv = -1
+old_word = ''
+for word in hash_pv_rel:
+    pv = hash_pv_rel[word]
+    if abs(pv - old_pv) > eps:
+        if old_pv != -1:
+            hash_pv_deduped[old_word] = old_pv 
+        old_word = word
+        old_pv = pv
+    else:
+        if len(word) > len(old_word):
+            old_word = word
+hash_pv_deduped[old_word] = old_pv
+
+print()
+print("=== DEDUPED WORDS: titles count, relative pv (avg = 1.00), word\n")
+input("> Press <Enter> to continue")
+
+for word in hash_pv_deduped: 
+    count = hash_words_count[word]
+    if count > 20 or count > 5 and '~' in word:
+        print("%6d %6.3f %s" %(count, hash_pv_rel[word]/mean_pv, word))
+
+
+#--- [6] Compute average pv per category
+
+# Needed to predict title pv, in addition to word pv's
+# Surprisingly, word pv's have much more predictive power than category pv's
+# For new titles with no decent word in historical tables, it is very useful
+
+for k in range(len(data)):
+    category = arr_categories[k]
+    pv = get_article_pv(k, arr_pv)
+    if category in category_count: 
+        category_pv[category] += pv
+        category_count[category] += 1
+    else:
+        category_pv[category] = pv
+        category_count[category] = 1
+
+print()
+input("> Press <Enter> to continue")
+print()
+print("=== CATEGORIES: titles count, pv, category name\n")
+
+for category in category_count:
+    count = category_count[category]
+    category_pv[category] /= count
+    print("%5d %6.3f %s" %(count, category_pv[category], category)) 
+print()
+
+
+#--- [7] Create short list of frequent words with great performance
+
+# This reduces the list of words for the word clustering algo in next step
+# Goal: In next steps, we cluster groups of words with good pv to
+#       categorize various sources of good performance
+
+short_list = {}
+keep = 'good'    # options: 'bad' or 'good'
+
+param_G1 = 1.10  # must be above 1, large value to get titles with highest pv
+parma_G2 = 0.90  # must be below 1, low value to get articles with lowest pv
+param_C1 = 10    # single-token word with count <= param_C1 not included in short_list
+param_C2 = 4     # multi-token words with count <= param_C2 not included in short_list
+
+for word in hash_pv_deduped: 
+    count = hash_words_count[word]
+    pv = hash_pv[word]/count
+    if keep == 'good':
+        flag = bool(pv > param_G1 * mean_pv)
+    elif keep == 'bad':
+        flag = bool(pv < param_G2 * mean_pv)  
+    if flag and (count > param_C1 or count > param_C2 and '~' in word): 
+        short_list[word] = 1
+
+
+#--- [8] compute similarity between words in short list, based on common titles
+
+# Find list of articles S1 and S2, containing respectively word1 and word2
+# word1 is similar to word2 if |S1 intersection S2| / |S1 union S2| is high
+
+hash_pairs = {}
+aux_list = {}
+param_S = 0.20  # if similarity score about this threshold, word1 and word2 are linked
+
+for word1 in short_list:
+    for word2 in short_list:
+
+        set1 = set()
+        for titleID1 in hash_titles[word1]:
+            set1.add(titleID1)
+        set2 = set()
+        for titleID2 in hash_titles[word2]:
+            set2.add(titleID2)
+
+        count1 = len(set1)
+        count2 = len(set2)
+        count12 = len(set.union(set1, set2))
+        similarity = len(set.intersection(set1, set2)) / count12
+
+        if similarity > param_S and word1 < word2: 
+            hash_pairs[(word1, word2)] = similarity
+            hash_pairs[(word2, word1)] = similarity
+            hash_pairs[(word1, word1)] = 1.00
+            hash_pairs[(word2, word2)] = 1.00
+            aux_list[word1] = 1
+            aux_list[word2] = 1 
+
+
+#--- [9] Turn hash_pairs{} into distance matrix dist_matrix, then perform clustering
+
+# Keyword clustering based on similarity metric computed in previous step 
+# Alternative to exploite sparse matrix: connected components algorithm on hash_pairs
+# Connected components is much faster, works with big graphs
+# In addition, not subject to deprecated parameters unlike Sklearn clustering
+# Source code for connected components:  https://mltblog.com/3UDJ2tR  
+
+param_N = 20  # prespecified number of clusters in word clustering
+n = len(aux_list)
+dist_matrix  = [[0 for x in range(n)] for y in range(n)] 
+arr_word = []
+
+i = 0
+for word1 in aux_list:
+    arr_word.append(word1)
+    j = 0
+    for word2 in aux_list:
+        key = (word1, word2)
+        if key in hash_pairs:
+            # hash_pairs is based on similarity; dist_matrix = 1 - hash_pairs is distance
+            dist_matrix[i][j] = 1 - hash_pairs[(word1, word2)]
+        else:
+            # assign maximum possible distance if i, j are not linked
+            dist_matrix[i][j] = 1.00   # maximum possible distance
+        j = j+1
+    i = i+1
+
+#- Clustering, two models: hierarchichal and k-medoids, based on distance matrix
+
+from sklearn.cluster import AgglomerativeClustering
+hierarch = AgglomerativeClustering(n_clusters=param_N,linkage='average').fit(dist_matrix)
+
+# !pip install scikit-learn-extra 
+from sklearn_extra.cluster import KMedoids
+kmedoids = KMedoids(n_clusters=param_N,random_state=0).fit(dist_matrix)
+
+#- Now showing the clusters obtained from each model 
+
+def show_clusters(model, hash_titles, arr_titles, arr_pv):
+
+    groups = model.labels_
+    hash_group_words = {}
+    for k in range(len(groups)):
+        group = groups[k]
+        word = arr_word[k]
+        if group in hash_group_words:
+            hash_group_words[group] = (*hash_group_words[group], word)
+        else:
+            hash_group_words[group] = (word,)
+
+    hash_group_titles = {}
+    for group in hash_group_words:
+        words = hash_group_words[group]
+        thash = {}
+        for word in words:
+            for titleID in hash_titles[word]: 
+                thash[titleID] = 1
+        hash_group_titles[group] = thash
+
+    for group in hash_group_words:
+        print("-------------------------------------------")
+        print("Group", group)
+        print()
+        print("keywords:", hash_group_words[group])
+        print()
+        print("Titles with normalized pv on the left:")
+        print()
+        for titleID in hash_group_titles[group]:
+            pv = get_article_pv(titleID, arr_pv)
+            print("%6.3f %s" %(pv, arr_titles[titleID]))
+        print("\n")
+ 
+    return(hash_group_words, hash_group_titles)
+
+print("\n\n=== CLUSTERS obtained via hierarchical clustering\n")
+input("> Press <Enter> to continue")
+show_clusters(hierarch, hash_titles, arr_titles, arr_pv)
+
+print("\n\n=== CLUSTERS obtained via k-medoid clustering\n")
+input("> Press <Enter> to continue")
+show_clusters(kmedoids, hash_titles, arr_titles, arr_pv)
+
+input(">Press <Enter> to continue")
+
+#- plot dendogram related to dist_matrix
+
+from scipy.cluster.hierarchy import dendrogram, linkage
+# Doc for Scipy dendograms: https://mltblog.com/3UG0C08
+
+Z = linkage(dist_matrix)    # Exercise: use Z to split the large group
+dendrogram(Z)  
+plt.show()
+
+
+#--- [10] Predicting pv 
+
+# Need to do cross-validation in the future
+# Influenced by: param_W1, param_W2, param_G1, param_C1, param_C2, param_A, param_D
+#                param_T1, param_T2
+# Not influenced by: param_N, param_S
+# Large param_W2 combined with small param_W1 may lead to overfitting
+
+# We need the build inverted ("transposed") hash_titles, named reversed_hash_titles
+
+reversed_hash_titles = {}
+
+for word in hash_titles:
+    pv_rel = hash_pv_rel[word]
+    hash = hash_titles[word]
+    for  titleID in hash:
+        if titleID in reversed_hash_titles:
+            rhash = reversed_hash_titles[titleID]
+        else:
+            rhash ={}
+        rhash[word] = pv_rel
+        reversed_hash_titles[titleID] = rhash
+
+# Now predicting pv
+
+observed = []
+predicted = []
+missed = 0
+n = 0
+param_W1 = 1     # low value increases overfitting, should be >= 1
+param_W2 = 2.00  # chosen to minimize error between pv and estimated_pv 
+
+for titleID in reversed_hash_titles:
+    pv = get_article_pv(titleID, arr_pv)
+    rhash = reversed_hash_titles[titleID]
+    n += 1
+    count = 0
+    sum = 0
+    for word in rhash:
+        weight = hash_words_count[word]
+        booster = 1.00
+        if '~' in word:
+            booster = 1.00  # test a different value
+        elif '^' in word:
+            booster = 1.00  # test a different value
+        if weight > param_W1:
+            count += booster * (1/weight)**param_W2
+            sum += booster * (1/weight)**param_W2 * rhash[word]
+    if count > 0:
+        estimated_pv = sum / count
+    else:
+        missed += 1
+        category = arr_categories[titleID]
+        estimated_pv = category_pv[category]
+    observed.append(pv)
+    predicted.append(estimated_pv)
+    
+observed = np.array(observed)
+predicted = np.array(predicted)
+mean_pv =  np.mean(observed)
+min_loss = 999999999.99
+param_Z = 0.00
+
+for test_param_Z in np.arange(-0.50, 0.50, 0.05):
+
+    scaled_predicted = predicted + test_param_Z * (predicted - mean_pv)
+    loss = 0
+    for q in (.10, .25, .50, .75, .90):
+        delta_ecdf = abs(np.quantile(observed,q)-np.quantile(scaled_predicted,q))
+        if delta_ecdf > loss:
+            loss = delta_ecdf
+    if loss < min_loss:
+        min_loss = loss
+        param_Z = test_param_Z
+
+predicted = predicted + param_Z * (predicted - mean_pv)
+loss = min_loss    
+mean_estimated_pv = np.mean(predicted)
+mean_error = np.mean(np.abs(observed-predicted))
+correl = np.corrcoef(observed, predicted)
+
+plt.axline((min(observed),min(observed)),(max(observed),max(observed)),c='red')
+plt.scatter(predicted, observed, s=0.2, c ="lightgray", alpha = 1.0)
+
+plt.show()
+
+print()
+print("=== PREDICTIONS\n")
+print("Predicted vs observed pageviews, for 4000 articles\n")
+print("Loss: %6.3f" %(loss))
+print("Missed titles [with pv estimared via category]: ",missed, "out of", n)
+print("Mean pv (observed) : %8.3f" %(mean_pv)) 
+print("Mean pv (estimated): %8.3f" %(mean_estimated_pv)) 
+print("Mean absolute error: %8.3f" %(mean_error)) 
+print("Correl b/w observed and estimated pv: %8.3f" %(correl[0][1]))
+print()
+print("Observed quantiles (left) vs prediction-based (right)")
+print("P.10: %8.3f %8.3f"  %(np.quantile(observed, .10), np.quantile(predicted, .10)))
+print("P.25: %8.3f %8.3f"  %(np.quantile(observed, .25), np.quantile(predicted, .25)))
+print("P.50: %8.3f %8.3f"  %(np.quantile(observed, .50), np.quantile(predicted, .50)))
+print("P.75: %8.3f %8.3f"  %(np.quantile(observed, .75), np.quantile(predicted, .75)))
+print("P.90: %8.3f %8.3f"  %(np.quantile(observed, .90), np.quantile(predicted, .90)))
+
+#- Plot normalized pv of articles over time
+
+y = np.zeros(len(arr_pv))
+for k in range(len(arr_pv)):
+   y[k] = get_article_pv(k, arr_pv)
+
+z = np.zeros(len(arr_pv))
+window = 120  # for moving average
+for k in range(len(arr_pv)):
+   if k-window < 0:
+       z[k] = np.mean(y[0:k+window])
+   elif k+window > len(arr_pv):
+       z[k] = np.mean(y[k-window:len(arr_pv)-1])
+   else:
+       z[k] = np.mean(y[k-window:k+window])
+   
+plt.plot(range(len(arr_pv)), y, linewidth = 0.2, alpha = 0.5)
+plt.plot(range(len(arr_pv)), z, linewidth = 0.8, c='red', alpha = 1.0)
+
+plt.xlim(0, len(arr_pv))
+#plt.ylim(7, 15)
+plt.grid(color='red', linewidth = 0.2, linestyle='--')
+plt.show()
+
+\end{lstlisting}
 
 
 
