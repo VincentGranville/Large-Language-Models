@@ -196,7 +196,7 @@
 \rule{0.90\textwidth}{.4pt}
 \end{center}
 \begin{center}
-Vincent Granville, Ph.D. $|$ \href{https://mltechniques.com/}{www.MLTechniques.com} $|$ Version 4.1, April 2024 
+Vincent Granville, Ph.D. $|$ \href{https://mltechniques.com/}{www.MLTechniques.com} $|$ Version 4.2, May 2024 
 \end{center}
 %\hrulefill
 
@@ -361,8 +361,8 @@ See also how I solve a new problem step by step and find the relevant code, in s
 \item \href{https://www.analyticsvidhya.com/}{AnalyticsVidhya} originally based in India
 \item \href{https://towardsdatascience.com/}{Towards Data Science} owned by Medium 
 \item \href{https://machinelearningmastery.com/}{Machine Learning Mastery} (popular blog, all in Python)  
-\item \href{https://datasetsearch.research.google.com/}{Google data sets}
-\item \href{https://www.kaggle.com/datasets/}{Kaggle data sets} 
+\item \href{https://datasetsearch.research.google.com/}{Google data sets}, \href{https://www.kaggle.com/datasets/}{Kaggle data sets} 
+\item \href{https://openai.com/}{OpenAI} and other GPT apps for Python code
 \end{itemize}
 
 %-----
@@ -5267,7 +5267,7 @@ More on this in my book on synthetic data and generative AI~\cite{vgelsevier}. S
 To avoid over-fitting, you assess the quality of the resulting synthetization using the \textcolor{index}{holdout method}\index{holdout method}. Say 50\% of your real data is used to train GAN or set up the copula, and the remaining 50\% (called validation set) used to compare with synthetic data. This cross-validation technique makes your comparison more meaningful. Sensitivity to the original distribution should not be too large unless you introduce a lot of noise to assess sensitivity to the point that the difference between $D_1$ and $D_2$ is larger than between $S_1$ and $D_1$ or $S_2$ and $D_2$. Here $D_1, D_2$ are the real data and real data after adding noise, while $S_1, S_2$ are the corresponding synthetizations.
 
 My own GAN is quite sensitive (compared to vendors) but there are ways to reduce this problem by choosing the loss function and other techniques. My copula is more robust than the open source SDV library, as SDV is a combo GAN/Copula and Lite SDV (the version tested) uses a fast but poor gradient descent algorithm for GAN. Some parameter fine-tuning might be needed to reduce sensitivity. On the circle data,  my GAN does better than the copula, with some vendors (YData.ai in particular) doing even much better, and some vendors including SDV Lite doing much worse. 
-\textcolor{index}{Wasserstein GANs}\index{Wasserstein GAN (WGAN)} [\href{https://en.wikipedia.org/wiki/Wasserstein_GAN}{Wiki}] is an alternative~\cite{ieeewgan}, also designed to avoid 
+\textcolor{index}{Wasserstein GANs}\index{Wasserstein GAN (WGAN)}\index{GAN (generative adversarial network)!Wasserstein (WGAN)} [\href{https://en.wikipedia.org/wiki/Wasserstein_GAN}{Wiki}] is an alternative~\cite{ieeewgan}, also designed to avoid 
 \textcolor{index}{mode collapse}\index{mode collapse}. This happens when the underlying \textcolor{index}{gradient descent}\index{gradient descent} method gets stuck in some local optimum. 
 See example of implementation, \href{https://machinelearningmastery.com/how-to-code-a-wasserstein-generative-adversarial-network-wgan-from-scratch/}{here}.
 
@@ -9104,7 +9104,8 @@ Nested hashes are very efficient to represent sparse data; they can be compared 
 Hash inversion is similar to matrix transposition. 
 \vspace{1ex}
 
-\item Tokens are replaced by \textcolor{index}{multi-tokens}\index{token!multi-token}, referred to as ``words" or 
+\item Tokens are replaced by \textcolor{index}{multi-tokens}\index{token!multi-token}~\cite{mtokens}, 
+referred to as ``words" or 
 \textcolor{index}{contextual tokens}\index{token!contextual}. For instance, `data', `science', 
  `data$\sim$science' and `data$^\wedge$science' are multi-tokens. Of course, the first two are also single tokens. In `data$^\wedge$science', the tokens `data' and `science' are not adjacent in the title; I use it to leverage large context, for titles that contain both tokens in arbitrary locations other than adjacent. But `data$\sim$science'  corresponds to the classical word
  with adjacent tokens.
@@ -9119,7 +9120,7 @@ It must be normalized, taking the logarithm: see lines \textcolor{gray}{122--123
 \end{equation}
 where $S(t)$ is the set of all article titles containing $t$, and $|\cdot|$ is the function that counts the number of elements in a set. Sometimes, two different
  tokens $t_1, t_2$ have $S(t_1)=S(t_2)$. In this case, to reduce the number of tokens, I only keep the longest one. This is done
- in lines \textcolor{gray}{193--196} in the code. 
+ in lines \textcolor{gray}{193--206} in the code. 
 \vspace{1ex}
 
 \item Likewise, you can define $\texttt{pv}(C)$, the pageview count attached to a category $C$, by averaging \texttt{pv}'s over all articles assigned to that category. 
@@ -9146,7 +9147,7 @@ Here $\alpha, \beta > 0$ are parameters. I use $\alpha = 1$ and $\beta = 2$.  Th
 
 The prediction formula~(\ref{poxewdyt})  looks like a regression, but with no regression coefficients to estimate. Also, the dimension of 
  the feature vector is variable: it depends on $A$. Despite not being a  minimization problem, thus the absence of loss function, gradient descent, or neural networks, the predictions are remarkably accurate, with a fairly small bias. It illustrates the power of \textcolor{index}{explainable AI}. You can further improve
- the results using the recalibration technique in lines \textcolor{gray}{459--475} in the code. It involves one parameter, and the loss function is a fast
+ the results using the recalibration technique in lines \textcolor{gray}{459--475} in the code. It now involves one parameter, and a \textcolor{index}{loss function}\index{loss function} that is a fast
  approximation to  the \textcolor{index}{Kolmogorov-Smirnov distance}\index{Kolmogorov-Smirnov distance} between 
 two \textcolor{index}{empirical distributions}\index{empirical distribution} (ECDF): one based on observed \texttt{pv}, and the other one on predicted \texttt{pv}. 
 
@@ -9175,13 +9176,181 @@ The latter is a variant of \textcolor{index}{$k$-means }\index{$k$-means cluster
  GitHub, respectively \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/nlp_scoring_clusters_hierarchical.txt}{here} 
  and \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/nlp_scoring_clusters_medoids.txt}{here}. 
 
-The remaining of this section is under construction... 
+\subsection{Project and solution} 
 
-%CI sample size xxx in questions // cross-validate
+The goal is not to write code from scratch to solve the problems discussed earlier. Instead, I invite you to read my code, understand it, and run it. Then identify and play with the parameters, the impact they have on various components, and avoid overfitting. In the end, you should be able to improve some of the algorithms, especially 
+ by replacing Python libraries used for clustering, with methods that can handle sparse graphs efficiently, such as connected components. 
+Other key points to consider: testing different loss functions, automating multi-feature category detection,  fine-tuning, sample size determination, confidence intervals for 
+predicted \texttt{pv}, 
+and trying other similarity metrics, tokens reduction and time-adjustment techniques. 
+\vspace{1ex}
+
+\noindent The project consists of the following steps:
+\vspace{1ex}
+
+\begin{itemize}
+\item[] {\bf Step 1:  High performance keywords}. Download and explore the input dataset available \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/Articles-Pageviews.txt}{here}, run my code, and identify keywords found in article titles, with either above or below average pageview counts. Understand 
+how I assign a category to a title. What are the best and worst performing categories? See lines \textcolor{gray}{224--243} in the code
+ in section~\ref{vinigold}. How are categories used to predict title \texttt{pv}?  Does it make sense to work with more granular categories? 
+ \vspace{1ex}
+\item[] {\bf Step 2:  Clustering articles}. What are the top parameters influencing the clustering algorithms in the code, besides \texttt{param\_N}
+ specifying the number of clusters? How do they influence the cluster structure? Note that one of the clusters is
+ very large, no matter which clustering method you use: see cluster with label 0, \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/nlp_scoring_clusters_hierarchical.txt}{here}. How would you fix this problem? Finally, replace the Python libraries used for clustering, by a far more
+ efficient procedure that efficiently handles sparse graphs. 
+\vspace{1ex}
+\item[] {\bf Step 3: Predictions, sample size, and evaluation}. How would you compute confidence intervals for each predicted \texttt{pv}, based on sample size?
+Predicted \texttt{pv} for each article are stored in the \texttt{predicted} array, and computed in lines \textcolor{gray}{431--454} in the code. The observed values are stored in the \texttt{observed} array.
+Finally, use \textcolor{index}{cross-validation}\index{cross-validation} to better assess the quality of predictions, and to detect when overfitting is present. 
+\vspace{1ex}
+\item[] {\bf Step 4: Fine-tuning}. Identify all the parameters that may have an impact on predicted \texttt{pv}: \texttt{param\_W1}, \texttt{param\_W2}, \texttt{param\_G} and so on. 
+To normalize \texttt{pv}, I use a log transform,  see lines \textcolor{gray}{122--124} in the code. Why? Then, to take into account the impact of time on \texttt{pv}, that is, 
+to work with time-adjusted \texttt{pv}, 
+I use a square root transform of the time with two parameters \texttt{param\_T1} and \texttt{param\_T2}, see lines \textcolor{gray}{133--136}. Finally, I use a linear transform with one parameter \texttt{param\_Z} to remove the bias in
+ predicted \texttt{pv}, see line \textcolor{gray}{474}. Try other parametric transforms. How would you find the best transforms and
+ best parameters?  
+\end{itemize}
+\vspace{1ex}
+
+\noindent Now, here is my answer to \textcolor{red}{Step 1}. Best performing keywords include: `cheat sheet', `free book', `learn Python', `machine learning algorithms', `R + Python',
+ `explained in one picture', `explained in simple English',  and `great articles'. Among the worst performers: 
+`data security', `IoT', 'Apache', `business data', `C++', `web scraping' and `big data'. Keep in mind that the data was collected in 2020.
+As for categories, blog posts do a lot better than forum questions. 
+
+The category table \texttt{nlp\_scoring\_categories.txt} is stored \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/nlp_scoring_categories.txt}{here} 
+on GitHub, and the multi-tokens table
+ \texttt{nlp\_scoring\_multi\_tokens.txt}, 
+\href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/nlp_scoring_multi_tokens.txt}{here} in the same folder. Due to the small number
+ of articles, I bundled all authors but the most prolific into one group. Also, it makes sense to further group small categories together.  
+Categories span across multiple categorical features, and are jointly encoded using the 
+\textcolor{index}{smart encoding}\index{encoding!smart encoding} technique described \href{https://docs.google.com/presentation/d/1kDlAhS8yh_-Yu19ICxFk0Hxfq3ZXc4iy/}{here}. 
+How much granularity you can afford depends on the sample size: here, about 4000. You want to make sure each category has at least 50 titles so
+ that its average \texttt{pv} is stable enough.  Categories with high \texttt{pv} variance should be split or re-arranged to keep variance low.  
+
+To answer \textcolor{red}{Step 2}, there are several parameters influencing the final number of multi-tokens, which in turn also impacts the clusters. But the one
+directly related to the clustering algorithm is \texttt{param\_S} in line  \textcolor{gray}{278}, taking a value between 0 and 1. The closer to 1, the more
+ homogeneous the clusters, and the smaller the dimension of the distance matrix. Finally, to split the large cluster, you need to access the 
+\textcolor{index}{dendrogram}\index{dendrogram} and linkage structure produced in line \textcolor{gray}{394}, or perform clustering on the large cluster to obtain subgroups, 
+ or use my connected components algorithm for clustering: the last option gives you full control over the clustering procedure. 
+
+Now moving to \textcolor{red}{Step 3}. A simple method to compute model-free 
+\textcolor{index}{confidence intervals}\index{confidence intervals} (CI), in this case for \texttt{pv}, consists of selecting 100 
+subsamples each with (say) $N=3000$ articles from the training set (out of 4000), and compute $\texttt{pv}_0(A)$ for each article $A$ in each subsample.
+ This gives you a range of values for $\texttt{pv}_0(A)$. The minimum and maximum determines your CI at level
+ $1 - 1/100 = 99\%$. This method is known as \textcolor{index}{bootstrapping}\index{bootstrapping} [\href{https://en.wikipedia.org/wiki/Bootstrapping_(statistics)}{Wiki}]. 
+The length $L_N$ of your CI depends on $N$, and in general, $L_N$ is almost proportional to $1/\sqrt{N}$. Despite the numerous computations involved, in this case
+ the procedure is very fast as there is no neural network involved. 
+
+Finally, regarding \textcolor{red}{Step 4}, see lines \textcolor{gray}{402--404} for the parameters influencing the predicted \texttt{pv}. 
+It is tempting to use a \textcolor{index}{gradient descent}\index{gradient descent} algorithm to optimize all parameters jointly by minimizing the \textcolor{index}{loss function}\index{loss function} defined in lines \textcolor{gray}{465-471}. However, this may lead to overfitting. It is better to decouple the problem:
+ separately optimize the parameters attached to time adjustment (lines \textcolor{gray}{129--136}), categorization (line \textcolor{gray}{148}), \texttt{pv} normalization (lines \textcolor{gray}{122--124}), and predictions 
+(see lines \textcolor{gray}{459--475}). Also, it is possible to replace the summation~(\ref{mur28u}) by a weighted sum as in~(\ref{poxewdyt}), for instance giving
+ a different weight to each article based on its category or on the title length. 
+
+
+
+\begin{table}[H]
+%\[\
+\begin{center}
+\scalebox{0.9}{
+\begin{tabular}{ll}
+\hline
+  \texttt{pv} & Title \\
+\hline
+ 9.042 &  AI vs Deep Learning vs Machine Learning \\
+ 8.242 &  Machine Learning vs. Traditional Statistics: Different philosophies, Different Approaches \\
+ 9.422 &   Machine Learning vs. Traditional Statistics: Different philosophies, Different Approaches \\
+ 5.635 &   A Comparative Roundup: Artificial Intelligence vs. Machine Learning vs. Deep Learning \\
+ 7.168 &   Artificial Intelligence vs. Machine Learning vs. Deep Learning \\
+ 6.715 &   AI vs. Machine Learning vs. Deep Learning: What is the Difference? \\ 
+ 7.717  &  Machine Learning vs Statistics vs Statistical Learning in One Picture \\
+ 7.855 &   Supervised Learning vs Unsupervised \& Semi Supervised in One Pi...\\
+ 9.185  &  Python vs R: 4 Implementations of Same Machine Learning Technique\\
+ 6.907 &   MS Data Science vs MS Machine Learning / AI vs MS Analytics \\
+\hline		
+\end{tabular}
+}
+%\]
+\caption{\label{fy76re09}Cluster linked to $\{$`Learning$\sim$vs', `Machine$^\wedge$vs', `Machine$\sim$Learning$\sim$vs'$\}$}
+\end{center}
+\end{table}
+
+The remaining of this project is devoted to visualizations pertaining to the various components discussed earlier. 
+Table~\ref{fy76re09} features one of the 20 article clusters based on hierarchical clustering of multi-tokens. 
+In this case, the multi-token group, automatically detected, is
+$\{$`Learning$\sim$vs', `Machine$^\wedge$vs', `Machine$\sim$Learning$\sim$vs'$\}$. It is a mix of standard and contextual tokens.
+The corresponding article cluster was automatically retrieved using Formula~(\ref{prozac4}). Note that two titles are identical but have
+ different \texttt{pv}'s. This is due to posting the same article twice; each has a different URL. 
+
+
+%-----------------------------vince/riemann2and3.mp4
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.93\textwidth]{dendo.PNG}
+\caption{Multi-tokens hierarchical clustering: dendrogram (20 groups, 104 multi-tokens)}
+\label{fig:z0m4rgv098}
+\end{figure}
+%imgpy9979_2and3.PNG
+%-------------------------
+
+\subsection{Visualizations and discussion}
+
+Figure~\ref{fig:z0m4rgv098} shows the dendrogram associated to the clustering algorithm. 
+The goal here was to cluster good performing articles, thus the number of multi-tokens is small (104) because I only
+ used those with highest \texttt{pv}'s. The rightmost group in brown is unusually large and could be split into 5 subgroups,
+ based on the dendrogram. Each multi-token -- a final node in the dendrogram tree -- has several articles connected to it: this is not shown in the picture, but see
+ Table~\ref{fy76re09} for an example combining 3 multi-tokens, corresponding to one of the small clusters in the dendrogram. 
+
+%-----------------------------vince/riemann2and3.mp4
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.50\textwidth]{pv_scatter.png}
+\caption{Scatterplot, observed vs predicted article \texttt{pv} (4000 articles)}
+\label{fig:z0m4rgv098cx}
+\end{figure}
+%imgpy9979_2and3.PNG
+%-------------------------
+
+Figure~\ref{fig:z0m4rgv098cx} shows predicted versus observed \texttt{pv}'s in a scatterplot. It is based on
+ the initial version of the algorithm, without parameters nor the loss function. You can barely see a small bias, with large \texttt{pv}'s
+ slightly underestimated, and smaller ones overestimated. I also observed the same bias in various tests. That was the reason
+ why I introduced the parameter \texttt{param\_Z} and a loss function to recalibrate the empirical distribution of predicted \texttt{pv}'s.  
+That said, the fit is pretty good even before the upgrade. Multi-tokens found in only one article were excluded to
+ avoid overfitting, by setting \texttt{param\_W1=1}. 
+
+In Figure~\ref{fig:z0m4rgv098cy}, the decline in pageviews over time is quite noticeable, but seems to taper off at the end. However, it is artificially created by the fact that the most recent articles haven't accumulated much traffic yet. Figure~\ref{fig:z0m4rgv098cz} shows the corrected numbers: it represents the reality more faithfully; the transform used here is non linear.  
+
+
+%-----------------------------vince/riemann2and3.mp4
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.66\textwidth]{pv_history.PNG}
+\caption{Article \texttt{pv} over time, before adjusting for time}
+\label{fig:z0m4rgv098cy}
+\end{figure}
+%imgpy9979_2and3.PNG
+%-------------------------
+
+%-----------------------------vince/riemann2and3.mp4
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.665\textwidth]{pv_history_detrend.PNG}
+\caption{Article \texttt{pv} over time, after time adjustment}
+\label{fig:z0m4rgv098cz}
+\end{figure}
+%imgpy9979_2and3.PNG
+%-------------------------
+
+
+
+%xxxx include images + cluster example
+% created discord community for xLLM , invite people to pay on OpenCollective
+% title of MLT article: Breakthough: First RAG/LLM Making Meaningful Predictions and Clustering 
+% answer to Q4: time-adjusted and log transform independent of loss function
+
 
 %clustering python issue memory explosion, exercise: use connected components
 %add cluster examples + link to github
-%exercise1: identify bad and good titles, article series and play with the parameters/identify good categories 
+%exercise1: identify bad and good titles, find "article series" and play with the parameters/identify good categories 
 %exercise: split the large cluster
 %Under construction. %move to special project; replace by taxomoy creation wolfram
 
@@ -9773,7 +9942,7 @@ The following list features the most important concepts related to tabular data 
  correlation between features, and empirical distributions. Also used to bin the data.\\
 \hline ECDF &  \textcolor{index}{Empirical cumulative distribution function}\index{ECDF} uniquely characterizing the underlying distribution in a dataset. Works with numerical and categorical features. The one-dimensional version is computed for each feature separately. \\
 \hline EPDF & \textcolor{index}{Empirical probability density function}\index{EPDF}\index{empirical probability function}. The discrete derivative of the ECDF, and more difficult to handle than ECDF. For discrete variables, there is a one-to-one mapping between ECDF and EPDF.\\
-\hline epoch & Also called iteration. One full run of your real data when training a \textcolor{index}{GAN}\index{GAN} model. 
+\hline epoch & Also called iteration. One full run of your real data when training a \textcolor{index}{GAN}\index{GAN (generative adversarial network)} model. 
 The \textcolor{index}{loss functions}\index{loss function} (generator and discriminator) are
  computed at each \textcolor{index}{epoch}\index{epoch (neural networks)} and should stabilize to low values after thousands of epochs, depending on the \textcolor{index}{hyperparameters}\index{hyperparameter}. \\
 \hline explainable AI \index{explainable AI} & Set of methods leading to easy interpretation, with simple explanations whenever the 
@@ -10036,7 +10205,7 @@ Even better: offer the user the ability to keep his favorite, self-customized se
 
 \vspace{1ex}
 \noindent{\bf Multi-agent system}. This is becoming a hot topic! Some say 2024 will be the year of the customized GPT. A 
-\textcolor{index}{multi-agent system}\index{multi-agent system} is simply a top layer in your system, controlling all the top categories and embedding tables. In short, it glues the various customized embeddings together, allowing them to “communicate” with each other. In other words, it controls the cross-interactions. It is similar to multimodal (blending images and text) but for text only (blending multiple top categories).
+\textcolor{index}{multi-agent system}\index{multi-agent system} is simply a top layer in your system, controlling all the top categories and embedding tables. In short, it glues the various customized embeddings together, allowing them to “communicate” with each other. In other words, it controls the cross-interactions. It is similar to multimodal (blending images and text) but for text only (blending multiple top categories). Related to \textcolor{index}{mixture of experts}\index{mixture of experts (LLMs)}~\cite{mexperts}. 
 
 
 
@@ -10555,7 +10724,7 @@ being further developed. I did not include the code in this book, but you can fi
 \begin{itemize}
 \item The introduction of multi-token words in embedding tables. The new embeddings, called
 \textcolor{index}{x-embeddings}\index{embeddings!x-embeddings}, are stored in a key-value table named \texttt{embeddings2} in the Python code.
-The key is a multi-token word, and the value is a key-value table itself. 
+The key is a \textcolor{index}{multi-token}\index{token!multi-token} word, and the value is a key-value table itself. 
 The old embeddings are still stored in the
  \texttt{embeddings} table with the same data structure; they may be discarded moving forward. 
 See the x-embeddings on GitHub, \href{https://raw.githubusercontent.com/VincentGranville/Large-Language-Models/main/xllm6/xllm6_embeddings2.txt}{here}, compared to the old embeddings, \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/xllm6_embeddings2.txt}{here}. 
