@@ -208,14 +208,14 @@ Vincent Granville, Ph.D. $|$ \href{https://mltechniques.com/}{www.MLTechniques.c
 
 \chapter*{Preface} %completed
 
-This book is for participants in my AI and machine learning certification program. However, it is now free and available to everyone. With tutorials, enterprise-grade projects and solutions, it covers state-of-the-art material on topics such as generative adversarial networks (GAN), specialized LLM, data synthetization, as well as classical machine learning. It is a work in progress, as I regularly add new projects and new techniques.
+With tutorials, enterprise-grade projects with solutions, and real-world case studies, this coursebook covers state-of-the-art material on GenAI, generative adversarial networks (GAN), data synthetization, and much more, in a compact format with many recent references. It includes deep dives into innovative, ground-breaking AI technologies such a xLLMs (extreme LLMs), invented by the author. 
 
-The focus is on fast, simple, and better methods, by comparison to vendor solutions. For instance: NoGAN, better evaluation metrics, xLLM (specialized multi-LLM with taxonomies and self-tuning), variable-length embeddings, generating observations outside the training set range, fast probabilistic vector search, or automated SQL generation and execution. In classical ML, I discuss alternatives to traditional methods, for instance to synthesize geo-spatial data or music. Also, I show how to increase automation, speed, size and quality without neural networks.
+The focus is on explainable AI with faster, simpler, high-performance, automated algorithms. For instance: NoGAN, new evaluation metrics, xLLM (self-tuned multi-LLM based on taxonomies with application to clustering and predictive analytics), variable-length embeddings, generating observations outside the training set range, fast probabilistic vector search, or Python-generated SQL queries. I also discuss alternatives to traditional methods, for instance to synthesize geo-spatial data or music. 
 
 %-----------------------------vince/riemann2and3.mp4
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{snap.png}   
+\fbox{\includegraphics[width=0.95\textwidth]{snap.png}}   
 \caption{The first three steps in the main xLLM project}
 \label{fig:scgh4aslo}
 \end{figure}
@@ -248,7 +248,7 @@ He  published in {\em Journal of Number Theory}, {\em Journal of the Royal Stati
 
 
 \hypersetup{linkcolor=red}
-\renewcommand{\baselinestretch}{1.00}\normalsize
+\renewcommand{\baselinestretch}{0.97}\normalsize
 \tableofcontents 
 \renewcommand{\baselinestretch}{1.00}\normalsize
 
@@ -2164,6 +2164,17 @@ significantly contribute to speeding up the algorithm.
  evaluation metric, I face the opposite problem: generating observations too similar to those in the training set. So instead of trying to achieve a low value
  for the Hellinger distance as in GAN, I must do the opposite:  preventing the Hellinger distance from being too low. This is
  accomplished by setting up constraints. I call my approach \textcolor{index}{constrained synthetization}\index{synthetic data!constrained}. 
+See Figure~\ref{fig:xc1oh6} where the Hellinger distance H between the synthetic data and training set (real data) is kept above 0.60 at all times.
+
+%-----------------------------vince/riemann2and3.mp4
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{nogan3b.png}   
+\caption{Synth. \hspace{-0.5ex}(H $>$ 0.6, red) vs real (blue) with \href{https://github.com/VincentGranville/Main/blob/main/NoGAN_Hellinger.py}{\texttt{NoGAN\_Hellinger.py}}}
+\label{fig:xc1oh6}
+\end{figure}
+%imgpy9979_2and3.PNG screen2e.png  
+%-------------------------
 
 \subsection{Project and solution}
 
@@ -2197,16 +2208,74 @@ Here the Hellinger distance is measured on the first two features both in the tr
 \noindent The above describes the first pass: that is, updating the second feature conditionally to the first one. In a second pass, you update the third feature conditionally to the first two ones. This time the Hellinger distance is computed on all 3 features. You have more passes if you have more than 3 features. In practice, each feature is actually a block of features. For simplicity, in this project I stop after the first pass.  
 
 You need to start with an initial synthetic dataset where each feature taken separately has about the same empirical distribution as its sister in the training set. 
-This is accomplished with lines \textcolor{gray}{106--109} in the code, using the option \texttt{mode='Quantiles'}. No matter the number of iterations, the final synthetic data set will be close but different to the training set: it is constrained on the initial synthetization. However, if you use the option
+This is accomplished with lines \textcolor{gray}{93--97} in the code, using the option \texttt{mode='Quantiles'}. No matter the number of iterations, the final synthetic data set will be close but different to the training set: it is constrained on the initial synthetization. However, if you use the option
  \texttt{mode='Shuffle'}, the program uses a scrambled version of the training set for the initial synthetization: each feature column is shuffled separately. 
 In this case, the only synthetization minimizing the Hellinger distance (up to a permutation of the rows) is the training set itself! You would think that it will
  take billions of years of computing time to reach it {\em exactly} given the probabilistic nature of the algorithm, albeit getting a very good approximation very quickly.  However, thanks to the small size of the training set (400 observations), it takes just 2 millions atomic updates (also called swaps) to reach the unique, known global optimum. This is faster than any other algorithm
  including neural networks. 
 
+\begin{table}[H]
+\small
+%\setlength\extrarowheight{-1pt}
+\[
+\begin{array}{lcccccc}
+\hline
+\text{Mode}	&	\text{Dim}	& \text{Iterations}	& \text{KS($S,T$)}	&	\text{KS($S_0, T$)}	&  \text{KS($S_0, S$)} & \text{Swaps}	\\
+\hline
+\text{Shuffle} &  2  & \num{2000000} & 0.0000 & 0.0525 & 0.0500 & \num{12429}\\
+\text{Quantiles} &  2  & \num{2000000} & 0.0350 & 0.0725 & 0.0500 & \num{17764}\\
+\text{Shuffle} &  3  & \num{2000000} & 0.0200 & 0.2275 & 0.2150 & \num{12177}\\
+\text{Quantiles} &  3  & \num{2000000} & 0.0475 & 0.2075 & 0.2025 & \num{12801}\\
+\hline
+\end{array}
+\]
+\caption{\label{gh5gf}KS stats: $S =$  synth., $S_0 =$ initial synth., and $T =$ training set}
+\end{table}
+
+
+
+Table~\ref{gh5gf} shows the quality of the synthetization $S$, depending on the dimension (the number of features), the number of iterations,
+ and whether the initial synthetization $S_0$ is independent from the training set $T$ (mode set to `Quantiles') or a scrambled version of the training set 
+(mode set to `Shuffle'). 
+The parameter \texttt{dim} is specified in line \textcolor{gray}{18} in the code. The values for \texttt{granularity} and \texttt{reset\_granularity}
+ depend on \texttt{dim} and are set in the code respectively in line \textcolor{gray}{151}  and \textcolor{gray}{149}. 
+The multivariate \textcolor{index}{Kolmogorov-Smirnov distance}\index{Kolmogorov-Smirnov distance} (KS) takes values
+ between 0 and 1, with zero for perfect match. It is computed in lines \textcolor{gray}{283--305} in the code, using the 
+\textcolor{index}{GenAI-evaluation}\index{Python library!GenAI-evaluation} Python library. The quality of the synthetization is assessed
+by comparing the base value KS($S_0,T$) with KS($S, T$). The lower the latter, the better the result.
+
+The training set used in the illustrations so far is the circle dataset available \href{https://github.com/VincentGranville/Main/blob/main/circle8d.csv}{here}. It has 9 features: the last one is categorical (binary) and the other ones
+ are concentrated in a tiny portion of the feature space. For instance, in the first two dimensions, the points are concentrated on two concentric circles. 
+Combined with the fact that it contains only 400 observations, it is a challenging set for synthetization purposes. All the cross-correlations are either 0, 1 or -1. 
+It tricks many synthesizers based on simple loss functions to generate points in a full 2-dimensional square rather than on the one-dimensional circles.   
+I compared the solutions offered by several vendors in an notorious article, available \href{https://mltblog.com/3qN7TPw}{here}.  
+
+% beware KS approx. not exact
+% put mixture.csv , mixture.py on GitHub
+% granul depend on dim
+% create new datasets/ explore existing ones
+% why is loss value meaningless?
+% can get stuck in local minima
+% explain why using hellinger2 rather than hellinger or nogan
+
 \noindent The project consists of the following steps:
 
-Under construction...
+\vspace{1ex}
 
+\begin{itemize}
+\item[] {\bf Step 1: Hyperparameters}.  Read xxx
+\vspace{1ex}
+\item[] {\bf Step 1: Higher dimensions}.  Read xxx
+\vspace{1ex}
+\item[] {\bf Step 1: Fine-tuning}.  Read xxx
+\vspace{1ex}
+\item[] {\bf Step 1: Comparing NoGAN algorithms}.  Read xxx
+\end{itemize}
+\vspace{1ex}
+
+Under construction...
+% more dimension, bigger data [mixtures]
+%video
 %version producing video: xxx_video.py
 % include table with KS1, KS2, KS3 and constrained picture from nogan3b
 % explain the init synth data with ref to line codes
@@ -2217,6 +2286,13 @@ Under construction...
 %circle data
 %genai library
 
+\subsection{Python code}\label{ferment}
+ 
+ Under construction...
+
+The code is also on GitHub, \href{https://github.com/VincentGranville/Main/blob/main/NoGAN_Hellinger2.py}{here}.
+\vspace{1ex}
+
 \begin{lstlisting}[numbers=left]
 import numpy as np
 import pandas as pd
@@ -2224,29 +2300,26 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 from matplotlib import pyplot
 
+
+#--- [1] Read data and select dim 
+
 # you can read data from URL below
 # https://raw.githubusercontent.com/VincentGranville/Main/main/circle8d.csv
-data = pd.read_csv('circle8d.csv')
+data = pd.read_csv('circle8d.csv') 
 features = list(data.columns.values)
-
-
-#--- [1] read data, build quantile structure 
-
 X = data.to_numpy()
 features = np.array(features)
 
 # use the first dim columns only
-dim = 2 
+dim = 2
 X = X[:, 0:dim] 
 features = features[0:dim]
 nobs_real, dim = X.shape
 
-# initial granularity
-granularity = 20   #  set to 2 if dim > 2, otherwise set to 20
-Hyperparam = np.full(dim, granularity) 
-grid_shift = np.zeros(dim)
 
-def create_quantile_table(x, Hyperparam, shift=grid_shift):
+#--- [2] Functions to build bin structure
+
+def create_quantile_table(x, Hyperparam, shift):
 
     arr_q = [] 
     for d in range(dim): 
@@ -2260,10 +2333,6 @@ def create_quantile_table(x, Hyperparam, shift=grid_shift):
         arr_q.append(arr_qd)
     return(arr_q)
 
-arr_q = create_quantile_table(X, Hyperparam)
-
-
-#--- [2] Build bin structure for real data
 
 def find_quantile_index(x, arr_quantiles):
     k = 0
@@ -2304,13 +2373,7 @@ def create_bin_structure(x, arr_q):
     return(hash_bins, hash_index, hash_bins_median)
 
 
-( hash_bins_real, 
-  hash_index_real, 
-  hash_bins_median_real
-) = create_bin_structure(X, arr_q)
-
-
-#--- [3] Generate nobs_synth obs, create initial bin structure for synth data  
+#--- [3] Generate nobs_synth obs
 
 # if nobs_synth > 1000, split in smaller batches, do one batch at a time
 nobs_synth = nobs_real 
@@ -2319,7 +2382,7 @@ np.random.seed(seed)
 
 # get initial synth. data with same marginal distributions as real data 
 
-mode = 'Shuffle'   # options: 'Shuffle', 'Quantiles' 
+mode = 'Shuffle'   # options: 'Shuffle', 'Quantiles'
 synth_X = np.empty(shape=(nobs_synth,dim))
 
 if mode == 'Quantiles':
@@ -2338,15 +2401,8 @@ elif mode == 'Shuffle':
 
 synth_X_init = np.copy(synth_X)
 
-# create bin structure for synth. data
 
-( hash_bins_synth, 
-  hash_index_synth,
-  hash_bins_median_synth,  # unused
-) = create_bin_structure(synth_X, arr_q)
-
-
-#--- [4] Main part: change synth obs to minimize Hellinger loss function
+#--- [4] Main part: create synth obs to minimize Hellinger loss function
 
 def in_bin(x, key, arr_q):
     # test if vector x is in bin attached to key
@@ -2364,26 +2420,47 @@ def array_to_tuple(arr):
         list = (*list, arr[k])
     return(list)
 
-
-n_iter = 2000000  
-Hellinger = 2.0  # maximum potential value (min is 0 and means perfect fit)
-swaps = 0
+Hellinger = 40.0   # arbitrary value
+swaps = 0  
+history_log_H = []
+history_log_swaps = []
+flist = []  # list of image filenames for the video
+frame = 0   # frame number, for video
 
 # to accelerate computations (pre-computed sqrt)
 sqrt_real = np.sqrt(nobs_real)
 sqrt_synth = np.sqrt(nobs_synth)
 n_sqrt = max(nobs_real, nobs_synth) 
 arr_sqrt = np.sqrt(np.arange(n_sqrt))
-cutoff = 10000   # 50000 if fim = 3, 10000 if dim = 2
+
+# visualization: graphic parameters
+mpl.rcParams['lines.linewidth'] = 0.3
+mpl.rcParams['axes.linewidth'] = 0.5
+plt.rcParams['xtick.labelsize'] = 7
+plt.rcParams['ytick.labelsize'] = 7
+
+video_mode = False
+
+# Hyperparameters
+reset_granularity = 10000  # set to 50000 if dim = 3, set to 10000 if dim = 2    
+reset_shift = 999999999999 
+granularity = 20   #  set to 2 if dim > 2, set to 20 if dim = 2 
+Hyperparam = np.full(dim, granularity) 
+shift = np.zeros(dim)
+n_iter = 2000000  
 
 
 for iter in range(n_iter):
 
-    if iter % cutoff == 0 and iter !=0:   
+    if iter % reset_granularity == 0 or iter % reset_shift == 0 or iter == 0:   
 
         # Get more granular Hellinger approximation
-        Hyperparam = 1 + Hyperparam   
-        arr_q = create_quantile_table(X, Hyperparam)
+
+        if iter % reset_granularity == 0: 
+            Hyperparam = 1 + Hyperparam    
+        if iter % reset_shift == 0: 
+            shift = np.random.uniform(0, 1, dim) 
+        arr_q = create_quantile_table(X, Hyperparam, shift) 
         ( hash_bins_real, 
           hash_index_real, 
           hash_bins_median_real 
@@ -2479,9 +2556,22 @@ for iter in range(n_iter):
         synth_X[k, d] = synth_X[l, d]
         synth_X[l, d] = aux
 
+        if video_mode and swaps % 25 == 0:
+
+            # save image for future inclusion in video
+            fname='nogan3_frame'+str(frame)+'.png'
+            flist.append(fname)
+            plt.scatter(synth_X[:,0], synth_X[:,1], s = 1.0) 
+            plt.savefig(fname, dpi = 200)
+            plt.close() 
+            frame += 1
+
     if iter % 1000 == 0:
+
         print("Iter: %7d | Loss: %9.6f | Swaps: %5d" 
               %(iter, Hellinger, swaps)) 
+        history_log_H.append(Hellinger)
+        history_log_swaps.append(swaps)
 
 
 #--- [5] Evaluation with KS distance
@@ -2511,25 +2601,27 @@ print("Base ECDF Kolmogorof-Smirnov dist. (init.  vs train.): %6.4f" %(ks_base))
 print("Diff ECDF Kolmogorof-Smirnov dist. (init.  vs synth.): %6.4f" %(ks_diff))
 
 
-#--- [6] Plot some result
+#--- [6] Plot some results and create video
 
-mpl.rcParams['lines.linewidth'] = 0.3
-mpl.rcParams['axes.linewidth'] = 0.5
-plt.rcParams['xtick.labelsize'] = 7
-plt.rcParams['ytick.labelsize'] = 7
-
-plt.scatter(synth_X[:,0],synth_X[:,1], c = 'red', s = 0.6)
-plt.scatter(synth_X_init[:,0],synth_X_init[:,1], c = 'green', s = 0.6)
-plt.scatter(X[:,0],X[:,1], c = 'blue', s = 0.6)
+mpl.rc('hatch', color='k', linewidth=0.3)
+plt.scatter(X[:,0],X[:,1],marker='o',c='deepskyblue',alpha=0.1,s=10) 
+plt.scatter(synth_X[:,0],synth_X[:,1],marker='o',c='coral',alpha=0.4,s=10, edgecolors='black',lw=0.2)
+plt.grid(linewidth = 0.4, alpha = 1)
 plt.show()
+
+x_axis = range(len(history_log_H))
+plt.plot(x_axis, history_log_H)
+plt.show()
+plt.plot(x_axis, history_log_swaps)
+plt.show()
+
+if video_mode:
+    import moviepy.video.io.ImageSequenceClip
+    clip = moviepy.video.io.ImageSequenceClip.ImageSequenceClip(flist, fps=6)
+    clip.write_videofile('nogan3.mp4')
 \end{lstlisting}
 
-\subsection{Python code}\label{ferment}
- 
- Under construction...
 
-The code is also on GitHub, \href{https://github.com/VincentGranville/Main/blob/main/NoGAN_Hellinger2.py}{here}.
-\vspace{1ex}
 
 
 
