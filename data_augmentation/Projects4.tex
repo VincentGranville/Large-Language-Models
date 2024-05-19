@@ -179,7 +179,7 @@
 \end{center}
 
 \begin{center}
-{\Huge \bf{Practical AI \& Machine Learning \vspace{0.3ex}\\ Projects and Datasets} }  
+{\Huge \bf{Practical GenAI, LLM, \& AI Projects and Datasets} }  
 \end{center}
 
 
@@ -196,7 +196,7 @@
 \rule{0.90\textwidth}{.4pt}
 \end{center}
 \begin{center}
-Vincent Granville, Ph.D. $|$ \href{https://mltechniques.com/}{www.MLTechniques.com} $|$ Version 4.2, May 2024 
+Vincent Granville, Ph.D. $|$ \href{https://mltechniques.com/}{www.MLTechniques.com} $|$ Version 4.3, May 2024 
 \end{center}
 %\hrulefill
 
@@ -779,7 +779,7 @@ Compared to GAN, this implementation requires very few library functions and onl
  incompatibilities between library versions, and increases the chance that you can run it ``as is" on any platform, without
  impacting your own environment. The code \texttt{NoGAN.py} is also available on GitHub, \href{https://github.com/VincentGranville/Main/blob/main/NoGAN.py}{here}. \vspace{1ex}
 
-\begin{lstlisting}
+\begin{lstlisting}[numbers=left]
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -2092,7 +2092,7 @@ plt.show()
 
 %-------------------------------
 
-\section{The best GenAI loss function: your evaluation metric!}
+\section{Spectacular use of GenAI evaluation as an adaptive  loss function}
 
 Most AI and GenAI algorithms aim at optimizing a criterion. The goal is to get good predictions (see~project~\ref{predxllm}), relevant 
  and exhaustive answers (LLMs) 
@@ -2123,8 +2123,10 @@ the distributions (\textcolor{index}{ECDF}). Easier said than done, as it brings
  with categorical features.
 
 The seminal idea consists of using more and more granular approximations to the EPDF as the iterative algorithm progresses, eventually converging to the exact yet
- singular EPDF. The resulting evaluation metric is a variant of the 
-\textcolor{index}{Hellinger distance}\index{Hellinger distance}, rather than KS. Then, I designed an experiment where I knew what the global optimum was. The result is spectacular: 
+ singular EPDF.  The resulting evaluation metric is a variant of the 
+\textcolor{index}{Hellinger distance}\index{Hellinger distance}, rather than KS. Thus, it amounts to using an 
+\textcolor{index}{adaptive loss function}\index{loss function!adaptive loss}~\cite{adaloss} that converges to the Hellinger distance. 
+Then, I tested the method using a special framework where the global optimum is known in advance, hoping to retrieve it. The result is spectacular: 
 \vspace{1ex}
 \begin{itemize}
 \item Brute-force combinatorial approach
@@ -2208,8 +2210,8 @@ Here the Hellinger distance is measured on the first two features both in the tr
 \noindent The above describes the first pass: that is, updating the second feature conditionally to the first one. In a second pass, you update the third feature conditionally to the first two ones. This time the Hellinger distance is computed on all 3 features. You have more passes if you have more than 3 features. In practice, each feature is actually a block of features. For simplicity, in this project I stop after the first pass.  
 
 You need to start with an initial synthetic dataset where each feature taken separately has about the same empirical distribution as its sister in the training set. 
-This is accomplished with lines \textcolor{gray}{93--97} in the code, using the option \texttt{mode='Quantiles'}. No matter the number of iterations, the final synthetic data set will be close but different to the training set: it is constrained on the initial synthetization. However, if you use the option
- \texttt{mode='Shuffle'}, the program uses a scrambled version of the training set for the initial synthetization: each feature column is shuffled separately. 
+This is accomplished with lines \textcolor{gray}{93--97} in the code, using the option \texttt{mode=\textquotesingle Quantiles\textquotesingle}. No matter the number of iterations, the final synthetic data set will be close but different to the training set: it is constrained on the initial synthetization. However, if you use the option
+ \texttt{mode=\textquotesingle Shuffle\textquotesingle}, the program uses a scrambled version of the training set for the initial synthetization: each feature column is shuffled separately. 
 In this case, the only synthetization minimizing the Hellinger distance (up to a permutation of the rows) is the training set itself! You would think that it will
  take billions of years of computing time to reach it {\em exactly} given the probabilistic nature of the algorithm, albeit getting a very good approximation very quickly.  However, thanks to the small size of the training set (400 observations), it takes just 2 millions atomic updates (also called swaps) to reach the unique, known global optimum. This is faster than any other algorithm
  including neural networks. 
@@ -2263,21 +2265,145 @@ I compared the solutions offered by several vendors in an notorious article, ava
 \vspace{1ex}
 
 \begin{itemize}
-\item[] {\bf Step 1: Hyperparameters}.  Read xxx
+\item[] {\bf Step 1: Hyperparameters and notations}.  There are four top parameters: \texttt{granularity}, \texttt{shift}, \texttt{reset\_granularity},
+ and \texttt{reset\_shift}, denoted respectively as 
+ $\gamma, \tau, \Delta_\gamma$ and $\Delta_\tau$. The grid determining the granularity of the multivariate bins is initialized as follows:
+ each feature is binned into $\gamma$ \textcolor{index}{quantile}\index{quantile} intervals of equal length. Every $\Delta_\gamma$ iterations, $\gamma$ is increased by one.  Then, in the main loop starting at line \textcolor{gray}{157}, the Hellinger distance (its square) between the synthetic data under construction and the training set, is discretized using the grid in question. Finally, the vector 
+ $\tau$ determines the location of the grid, that is, how much it is shifted from the origin, for each feature separately. It is 
+ initially set to zero (the origin)~and then changed to a random location every $\Delta_\tau$ iterations. 
+
+Depending on the number \texttt{dim} of features (the dimension), if you increase or decrease $\gamma, \Delta_\gamma$ or $\Delta_\tau$, what is the expected impact on the final results? Can you retrieve the values used
+to produce Table~\ref{gh5gf}, by running the code? Also, does it make sense to plot the values of the Hellinger loss function over time? Why not? Would this plot still convey some 
+useful information?
+
 \vspace{1ex}
-\item[] {\bf Step 1: Higher dimensions}.  Read xxx
+\item[] {\bf Step 2: Higher dimensions, bigger data}.  Create a training set consisting of 20 features and $\num{10000}$ observations, for instance a 
+\textcolor{index}{Gaussian mixture}\index{Gaussian mixture model}. Feel free to use \textcolor{index}{OpenAI}\index{OpenAI} to generate the code (I 
+did). Or use my code \texttt{mixture.py} or its output data \texttt{mixture.csv}, available on GitHub
+ respectively \href{https://github.com/VincentGranville/Main/blob/main/mixture.py}{here}
+and \href{https://github.com/VincentGranville/Main/blob/main/mixture.csv}{here}. When running the synthesizer 
+\texttt{NoGAN\_Hellinger2.py} (code in section~\ref{ferment}) on 
+ the mixture dataset,  what challenges are you facing when the dimension is larger than 10, and how to address them?  
+
+Note that when I asked OpenAI to produce \texttt{mixture.py}, the   
+\textcolor{index}{covariance matrices}\index{covariance matrix} in the mixture are not symmetric and 
+\textcolor{index}{positive semidefinite}\index{positive semidefinite (matrix)}\index{matrix!positive semidefinite}. I had to use a second prompt to fix it. 
+
 \vspace{1ex}
-\item[] {\bf Step 1: Fine-tuning}.  Read xxx
+\item[] {\bf Step 3: Fine-tuning and evaluation}.  It is easy to assess the impact of the hyperparameters, on the generated (synthetic) data. Design a scheme to efficiently test different combinations of values for $\gamma, \tau, \Delta_\gamma$ and $\Delta_\tau$.  Then, find combinations that do well, based on the number of features (the dimension). 
+What about the number of observations to synthesize? For example, when synthesizing a large number, it may be better to split the output 
+data into multiple batches generated separately. Assess the impact of the batch size on the results, especially the speed of convergence. How do you evaluate the results?
 \vspace{1ex}
-\item[] {\bf Step 1: Comparing NoGAN algorithms}.  Read xxx
+\item[] {\bf Step 4: Comparing NoGAN methods}.  That is, 
+\href{https://github.com/VincentGranville/Main/blob/main/NoGAN_Hellinger2.py}{\texttt{NoGAN\_hellinger2.py}} (the code in section~\ref{ferment}) with
+\href{https://github.com/VincentGranville/Main/blob/main/NoGAN_Hellinger.py}{\texttt{NoGAN\_hellinger.py}}  
+(also using Hellinger as the loss function), 
+\href{https://github.com/VincentGranville/Main/blob/main/DeepResampling_circle.py}{\texttt{DeepResampling\_circle.py}} 
+based on a traditional loss function (discussed in chapter 7 in~\cite{vgmloptim}), 
+and the original 
+\href{https://github.com/VincentGranville/Main/blob/main/NoGAN.py}{\texttt{NoGAN.py}} 
+described in section~\ref{genaiyert}. The latter has no loss function. Finally, also compare with 
+GAN-based 
+\href{https://github.com/VincentGranville/Main/blob/main/GAN\_circle8d.py}{\texttt{GAN\_circle8d.py}}
+ described in section~\ref{porgan2}. 
+Focus on quality, speed, and overfitting in particular.   
 \end{itemize}
 \vspace{1ex}
 
-Under construction...
+\noindent Now my answers. Regarding \textcolor{red}{Step 1}, I used $\gamma=20, \Delta_\gamma=\num{10000}$ in two dimensions,
+ and then $\gamma=2, \Delta_\gamma=\num{50000}$ in three dimensions, together with \texttt{mode=\textquotesingle Shuffle\textquotesingle} in line \textcolor{gray}{89} 
+to produce the results in Table~\ref{gh5gf}. I did not use the shift parameters $\tau,\Delta_\tau$ on the circle dataset.
+Starting with a high value for $\gamma$ speeds up convergence in low dimensions (2 or 3) but can get you stuck in higher dimensions.
+Use a lower value of $\gamma_\tau$ if you get stuck. Use $\Delta_\tau \leq 0.5 \times \gamma_\tau$ to visit
+ the feature space more thoroughly: it can speed up convergence and get you unstuck in higher dimensions. A new $\tau$ is similar to trying another
+ location or starting point in \textcolor{index}{gradient descent}\index{gradient descent} to avoid local minima. In higher dimensions,
+ use $\gamma=2, \Delta_\gamma > \num{100000}$ and $\Delta_\tau<\num{50000}$. 
+In general, the more swaps, the better. Since the loss function is different each time the value of $\gamma$ or $\tau$ changes, 
+its graph is meaningless. Still, it can help you identify when the moves (called {\em swaps}) are becoming rare or absent, to fix it: 
+see Figure~\ref{fig:xyerwsalk}, where the slope dramatically changes each time $\gamma$ is modified, that is, each time the loss stops decreasing fast enough.  
+
+%-----------------------------vince/riemann2and3.mp4
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{mixture2.png}   
+\caption{First 2 dimensions of mixture data (blue) with synthetization in orange}
+\label{fig:xcv2q6}
+\end{figure}
+%imgpy9979_2and3.PNG screen2e.png  
+%-------------------------
+
+As for \textcolor{red}{Step 2}, in dimensions above 10, it is customary to work with groups of features, one group at a time. Do the first 10, then 
+the next 10 conditionally on the first 10, then the next 10 conditionally on first 20, and so on. The computing time increases linearly with
+ the dimension, keeping the same number of iterations, say 2 million, regardless of dimension. This is similar to 
+neural networks, where computing time also increases linearly with the dimension, not exponentially. See details in chapter 7 in~\cite{vgmloptim}. 
+Finally, I used \texttt{mode=\textquotesingle Quantiles\textquotesingle} on the mixture dataset that I created, available \href{https://github.com/VincentGranville/Main/blob/main/mixture.csv}{here}, working with the first 8 features only. In Figure~\ref{fig:xcv2q6}, the training set has $\num{10000}$ observations. I generated 1000 synthetic ones, thus the reason why orange dots are much rarer than blue ones.
+
+\begin{table}[H]
+\small
+%\setlength\extrarowheight{-1pt}
+\[
+\begin{array}{cccccc}
+\hline
+\gamma & \Delta_\gamma & \Delta_\tau &\text{KS($S,T$)}	&	\text{KS($S_0, T$)} & \text{Swaps}	\\
+\hline
+ 2 & \num{200000} & \infty &  0.0537 & 0.1949 & 8758 \\
+ 4 & \infty & \num{50000} &  0.0425 & 0.1352 & \num{32786} \\
+ 2 & \num{200000} & \num{50000}  & 0.0536   & 0.1352 & \num{23127} \\
+
+\hline
+\end{array}
+\]
+\caption{\label{w09igh5gf}Hyperparam impact on KS, mixture dataset}
+\end{table}
+
+
+
+Now \textcolor{red}{Step 3}.  Why evaluate the results when the loss function is actually the evaluation metric? Yet,
+it still makes sense to have another evaluation with a different metric, if anything to confirm that all computations are done correctly. 
+In the code, I use the KS distance for final evaluation, see lines \textcolor{gray}{283--305}. 
+Table~\ref{w09igh5gf} is based on first 8 columns of the mixture dataset,
+ using \texttt{mode=\textquotesingle Quantiles\textquotesingle}. Here $S, S_0,T$ stand respectively for the final synthetization, initial synthetization, and the
+ training set.  
+The table features some of the best hyperparameter combinations that I tried.
+For a systematic approach to find these parameters, you can use \textcolor{index}{smart grid search}\index{grid search!smart grid search}, 
+described  in~\cite{vgsmart}. As in table~\ref{gh5gf}, I used 2 million iterations.
+
+%xxxyyy S T T_0 in table xxx quantile mode, dim 8 / smart grid search
+
+%-----------------------------vince/riemann2and3.mp4
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.66\textwidth]{loss.png}   
+\caption{Adaptive loss function: steps showing when $\gamma$ changed}
+\label{fig:xyerwsalk}
+\end{figure}
+%imgpy9979_2and3.PNG screen2e.png  
+%-------------------------
+
+Regarding \textcolor{red}{Step 4}, \texttt{NoGAN.py} is the best, followed by \texttt{NoGAN\_Hellinger.py} (a probabilistic version of the former). 
+This is because they generate observations directly into
+ the bin structure attached to the training set. The drawback is potential overfitting, which can be mitigated with 
+\textcolor{index}{constrained synthetization}\index{synthetic data!constrained} as discussed earlier. Then \texttt{NoGAN\_Hellinger2.py} usually beats \texttt{DeepResampling\_circle.py}
+ because the former uses the evaluation metric as the loss function, while the latter uses a proxy. Finally,
+ \texttt{GAN\_circle8d.py} is the last in my ranking: hard to train and fine-tune, 
+very sensitive to the seed and to the dataset (volatile results), non-replicable, and non-explainable AI. 
+
+Perhaps one of the greatest benefits of  \texttt{NoGAN\_Hellinger2.py} is its ability to test very fast new features that could be added to
+ deep neural networks, such as using the evaluation metric as the loss function. Also, by choosing
+\texttt{mode=\textquotesingle Shuffle\textquotesingle}, the ability to check whether the system can retrieve the known global optimum, and if not, how close it gets.
+Finally, an adaptive loss function may prevent you  from getting stuck in a local optimum, by changing $\gamma$ or $\Delta_\tau$
+when the loss stops decreasing: this is visible in Figure~\ref{fig:xyerwsalk}. 
+
+% swaps with little loss or early vs late loss
+%IMG for Q2, table for Q3
+%Q2 mode='quantiles'
+
+
 % more dimension, bigger data [mixtures]
-%video
-%version producing video: xxx_video.py
-% include table with KS1, KS2, KS3 and constrained picture from nogan3b
+%video //
+%alternate datasets on github to answer Q on big data
+% vi
+% include table with KS1, KS2, swaps in hyperparamer tuning Q + smart grid search
 % explain the init synth data with ref to line codes
 % geneval KS part of the exercise
 
@@ -2288,9 +2414,8 @@ Under construction...
 
 \subsection{Python code}\label{ferment}
  
- Under construction...
 
-The code is also on GitHub, \href{https://github.com/VincentGranville/Main/blob/main/NoGAN_Hellinger2.py}{here}.
+The code below (\texttt{NoGAN\_Hellinger2.py}) is also on GitHub, \href{https://github.com/VincentGranville/Main/blob/main/NoGAN_Hellinger2.py}{here}.
 \vspace{1ex}
 
 \begin{lstlisting}[numbers=left]
@@ -2373,7 +2498,7 @@ def create_bin_structure(x, arr_q):
     return(hash_bins, hash_index, hash_bins_median)
 
 
-#--- [3] Generate nobs_synth obs
+#--- [3] Generate initial nobs_synth obs
 
 # if nobs_synth > 1000, split in smaller batches, do one batch at a time
 nobs_synth = nobs_real 
@@ -2712,8 +2837,8 @@ where the $A_k, A'_k, \omega_k,\omega'_k,\varphi_k,\varphi'_k$ are the parameter
 $\varphi_k = \varphi_k'=0$ and re-parameterize. Hint: use the angle sum formula (Google it).\vspace{1ex}
 \item[] {\bf Step 6}: Try $10^6$ parameter configurations of the simplified model based on formula~(\ref{tyre}) 
 with $m=2$ and $\varphi_k=\varphi'_k=0$, to
- simulate time series via \textcolor{index}{Monte-Carlo simulations}\index{Monte-Carlo simulations}. For each simulated time series, measure how close it is to the ocean tide data (obtained by setting \texttt{mode='Data'} in the Python code), the functions $g(t)$ or $d_V(t)$ in this exercise, or the Riemann zeta function pictured in Figure~\ref{fig:zeta} (obtained by setting
-\texttt{mode='Math.Zeta'} in the Python code). Use a basic proximity metric of your choice to asses the quality of the fit, and use it 
+ simulate time series via \textcolor{index}{Monte-Carlo simulations}\index{Monte-Carlo simulations}. For each simulated time series, measure how close it is to the ocean tide data (obtained by setting \texttt{mode=\textquotesingle Data\textquotesingle} in the Python code), the functions $g(t)$ or $d_V(t)$ in this exercise, or the Riemann zeta function pictured in Figure~\ref{fig:zeta} (obtained by setting
+\texttt{mode=\textquotesingle Math.Zeta\textquotesingle} in the Python code). Use a basic proximity metric of your choice to asses the quality of the fit, and use it 
 on the transformed time series obtained after normalization (to get zero mean and unit variance). A possible comparison metric is
 a combination of  lag-1, lag-2 and lag-3 \textcolor{index}{autocorrelations}\index{autocorrelation} applied to the 32-day data (planets) or 16-min data (ocean tides), comparing simulated (synthetic) versus observed data. Also, autocorrelations don't require normalizing the data as they are already scale- and location-invariant.\vspace{1ex}
 \item[] {\bf Step 7}: Because of the \textcolor{index}{curse of dimensionality}\index{curse of dimensionality} [\href{https://en.wikipedia.org/wiki/Curse_of_dimensionality}{Wiki}], Monte-Carlo is a very poor technique here as we are dealing with $8$ parameters. On the other hand, you can get very good approximations with just 4 parameters, with a lower risk of overfitting. Read
@@ -2731,7 +2856,7 @@ In some sense, what you want to measure is the {\em stochastic} proximity. Anoth
 
 There is caveat with comparing datasets based on their estimated parameters: if the parameter set is redundant as in Step 5, you can have two perfectly identical datasets that have very different parameters attached to them. This is known as \textcolor{index}{model identifiability}\index{identifiability (statistics)} in statistics. 
 
-Finally, I encourage you to upgrade my Python code \texttt{interpol\_fourier.py} to include a sub-function that computes $g(t)$ defined in Step 3. And of course, you can test this program on your own data, not just the ocean tides or planet-related data. You should try \texttt{'mode=Math.Zeta'} and see if you find anything special about the time series generated. There is something very special about it! Don't forget to install the MPmath Python library to make it work.
+Finally, I encourage you to upgrade my Python code \texttt{interpol\_fourier.py} to include a sub-function that computes $g(t)$ defined in Step 3. And of course, you can test this program on your own data, not just the ocean tides or planet-related data. You should try \texttt{\textquotesingle mode=Math.Zeta\textquotesingle} and see if you find anything special about the time series generated. There is something very special about it! Don't forget to install the MPmath Python library to make it work.
 
 %--
 
@@ -2811,7 +2936,7 @@ plt.show()
 \subsubsection{Interpolation} 
 
 
-I use  \texttt{interpol\_fourier.py} to interpolate the distances for $g(t)$, using \texttt{mode='Data'} and \texttt{n=8} (the number of interpolation nodes) as for
+I use  \texttt{interpol\_fourier.py} to interpolate the distances for $g(t)$, using \texttt{mode=\textquotesingle Data\textquotesingle} and \texttt{n=8} (the number of interpolation nodes) as for
  the ocean tide dataset. Here the imput file was \texttt{gt\_distances.txt} created by the Python code in the previous section. 
 
 
@@ -3218,7 +3343,7 @@ The number of loops has been reduced to make the code run faster. In particular,
 The Python code, \texttt{interpol\_smooth.py}, is also on GitHub, 
  \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/interpol_smooth.py}{here}.\vspace{1ex}
 
-\begin{lstlisting}
+\begin{lstlisting}[numbers=left]
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -4303,7 +4428,7 @@ The use of synthetic functions is part of a general approach known as \textcolor
 
 
 \noindent The Python code in section~\ref{l4code} allows you to perform all the tasks except \textcolor{red}{Step 5}.
-In particular, for \textcolor{red}{Step 4}, set \texttt{mode='rn'} in the code. As for the curve fitting plot -- the bottom left plot in
+In particular, for \textcolor{red}{Step 4}, set \texttt{mode=\textquotesingle rn\textquotesingle} in the code. As for the curve fitting plot -- the bottom left plot in
  Figure~\ref{fig:lollog1xx} -- I multiplied both the target function $\delta_n(s)$ and the fitted curve by $\sqrt{n}$, here with $n = 1.25 \times 10^6$.
  Both tend to zero, but after multiplication by $\sqrt{n}$, they may or may not tend to a constant strictly above zero. Either way,
  it seems to indicate that the Euler product converges when $\sigma = 0.90$. What's more, the convergence looks strong, non-chaotic,
@@ -4449,12 +4574,12 @@ The implementation of the quantum derivatives is in section [4] in the following
  $\rho_n(s)$ is denoted as \texttt{r}, while the parameter $\gamma$ in table~\ref{tafghuh42s} is denoted as \texttt{mu}.
 In addition to addressing \textcolor{red}{Step 1} to \textcolor{red}{Step 4}, the computation of the Dirichlet-$L$ series  
  and the $Q_2$ function are in section [2.1]. For \textcolor{red}{Step 5}, see the Python code at the end of section~\ref{tuasbu5}.
-Finally, to use synthetic functions rather than $\chi_4$, set \texttt{mode='rn'}.
+Finally, to use synthetic functions rather than $\chi_4$, set \texttt{mode=\textquotesingle rn\textquotesingle}.
 The code is also on GitHub, 
 \href{https://github.com/VincentGranville/Experimental-Math-Number-Theory/blob/main/Source-Code/Dirichlet_L4_product_fitting.py}{here}.
 \vspace{1ex}
 
-\begin{lstlisting}
+\begin{lstlisting}[numbers=left]
 # DirichletL4_EulerProduct.py
 # On WolframAlpha: DirichletL[4,2,s], s = sigma + it
 #     returns Dirichlet L-function with character modulo k and index j.
@@ -5056,7 +5181,7 @@ Then, assess the improvement over using the same copula across all buckets. An e
 
 Another, possibly easier strategy, consists of computing the distance between the real and synthesized data, (say) every 50 
 \textcolor{index}{epochs}\index{epoch (neural networks)}, and stop
- when it is low enough. This is possible in my GAN by setting \texttt{mode='Enhanced'}. For instance, I use the distance (or loss function) 
+ when it is low enough. This is possible in my GAN by setting \texttt{mode=\textquotesingle Enhanced\textquotesingle }. For instance, I use the distance (or loss function) 
 $L = \Delta_{\text{avg}}$ 
 defined in section~\ref{holfghre3}, and implemented as the \texttt{GAN\_distance} function in the Python code. Modify the code to use 
  $L = \Delta_{\text{avg}}+K_{\text{avg}}$ instead. The first is the average \textcolor{index}{correlation distance}\index{correlation distance}, and the second is the average \textcolor{index}{Kolmogorov-Smirnov distance}\index{Kolmogorov-Smirnov distance}. Computation examples can be found in \texttt{insurance\_compare.py}, 
@@ -5201,7 +5326,7 @@ In this section, you will find the Python code for the Gaussian copula method wi
 This program generates synthetic observations for the insurance dataset, using a different copula for each group.  
 Groups are defined in step 3 in project~\ref{porgan2}. A detailed description of the code is in my Jupyter notebook, \href{https://github.com/VincentGranville/Notebooks/blob/main/copula_insurance_byGroup.ipynb}{here}, as well as in chapter 10 in my book~\cite{vgelsevier}. \vspace{1ex}
 
-\begin{lstlisting}
+\begin{lstlisting}[numbers=left]
 import pandas as pd
 from scipy.stats import norm
 import numpy as np
@@ -5321,9 +5446,9 @@ book~\cite{vgelsevier}, and in the corresponding Jupyter notebook, \href{https:/
 \href{https://github.com/VincentGranville/Main/blob/main/diabetes.csv}{here}. 
 
 The code does a lot more than training a standard GAN to produce synthetizations. It includes data cleaning, classifying patients as cancer or not  using random forests as a predictive model, evaluating the quality of the synthetizations, and stopping before reaching $\num{10000}$
-epochs  when \texttt{mode} is set to \texttt{'Enhanced'}. As usual, it produces some plots, in this case a time series of historical values for the loss functions, computed at each \textcolor{index}{epoch}\index{epoch (neural networks)}. \vspace{1ex}
+epochs  when \texttt{mode} is set to \texttt{\textquotesingle Enhanced\textquotesingle }. As usual, it produces some plots, in this case a time series of historical values for the loss functions, computed at each \textcolor{index}{epoch}\index{epoch (neural networks)}. \vspace{1ex}
 
-\begin{lstlisting}
+\begin{lstlisting}[numbers=left]
 import numpy as np
 import pandas as pd
 import os
@@ -5556,7 +5681,7 @@ The Python code below is also on GitHub, \href{https://github.com/VincentGranvil
 
 
 
-\begin{lstlisting}
+\begin{lstlisting}[numbers=left]
 import numpy as np
 
 #--- compute mean and stdev of ZetaGeom[p, a]
@@ -6020,7 +6145,7 @@ The code in section~\ref{refresa} produces both the video and Figure~\ref{ringer
 \vspace{1ex}
 \item {\bf Adaptive legend}.  In \texttt{plt.hist}, the option \texttt{label='v=\%6.4f'\%v}, combined in the following line~of code with the
 instruction \texttt{plt.legend(loc='upper right',prop=\{'size':6\})},  allows you to display  the legend in the upper right corner in each frame,
- with a different value of $v$ depending on the frame. The formatting (float with 4 digits) is specified by  \texttt{'v=\%6.4f'} while
+ with a different value of $v$ depending on the frame. The formatting (float with 4 digits) is specified by  \texttt{\textquotesingle v=\%6.4f\textquotesingle} while
  the actual argument $v$ ia passed via \texttt{\%v}. The argument \texttt{'size':6} specifies the size of the font.
 \vspace{1ex}
 \item {\bf Image transforms}. Images must have even dimensions (length and height, in pixels), and they must all have the same size,
@@ -6201,7 +6326,7 @@ for frame in range(0, nframes, increment):
 plt.show()
 \end{lstlisting}
 
-\section{Curve fitting in bulk}
+\section{Curve fitting in bulk}\label{assamero}
 
 I decided to include this material for two reasons. First, the underlying AI algorithm is a particular case of a generic technique that can perform any kind of regression, supervised or not, under one umbrella. In particular, there is no dependent variable in the example featured in this section.
  The technique uses \textcolor{index}{gradient descent}\index{gradient descent} with a \textcolor{index}{Lagrange multiplier}\index{Lagrange multiplier} to satisfy some arbitrary constraints on the regression coefficients. 
@@ -6594,9 +6719,325 @@ plt.show()
 
 
 
-\section{Gradient descent, grids, and maps}
+\section{Gradient descent: grid, orthogonal trajectories}\label{poures}
 
-Under construction.
+Gradient descent is one of the most fundamental algorithms used in AI and machine learning. The goal here is not to understand how it works, but instead,
+ to understand the visualizations and graphical elements used in the Python code, to be able to reuse them in other contexts. I already explained how to produce data videos in section~\ref{assamero},
+ so I do not discuss  the portion of the code producing the data animations. But it creates spectacular videos showing 2D gradient descent in action, starting with 100 locations
+ simultaneously: see video on YouTube, \href{https://www.youtube.com/watch?v=pqQsLpPkvbw}{here}. 
+The code is self-contained, producing the graphics (our focus) and also implementing a simple, math-free version of 
+\textcolor{index}{gradient descent}\index{gradient descent} (I will mostly ignore that part).   
+
+%----
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.68\textwidth]{RH4_ortho_zeta.png}   
+\caption{Yellow dots on a contour line (blue) and orthogonal trajectories (red)}
+\label{ringhouls}
+\end{figure}
+%---- 
+
+The mathematical background is explained in section 1.2 in~\cite{vgmloptim}. Contour lines and orthogonal trajectories are discussed in details in section 1.4.1, 
+while I describe video generation in section 1.4.2, all in the same book. You may ignore section 1.4.3. 
+
+Figure~\ref{ringhouls} shows all the important elements: the \textcolor{index}{contour lines}\index{contour line} in blue attached 
+to the function of interest (actually, a dataset, not an actual math function), and the 
+\textcolor{index}{orthogonal trajectories}\index{orthogonal trajectory}\index{orthogonal trajectory} in red perpendicular to 
+the contour lines. Each contour line corresponds to a particular \textcolor{index}{contour level}\index{contour level}, where the function takes the same value. Starting from any location
+ -- a yellow dot in this case -- the goal is to follow an orthogonal trajectory, also referred to as \textcolor{index}{gradient path}\index{gradient descent!gradient path},  
+until you reach a minimum: one of the two dots colored in cyan. Thus the goal is to find the local minima. 
+The background color in Figure~\ref{ringhouls} indicates the value of the function,
+ ranging from dark red (high value) to dark blue (low value), computed at a large number of locations on a very granular grid, giving the
+ impression to cover all possible locations whithin the window.  Before reading further, try to identify in the code where each of the aforementioned 
+elements is implemented. 
+
+\noindent The solution is as follows: 
+\vspace{1ex}
+
+\begin{itemize}
+\item To map the function to a grid \texttt{[xa,ya]} -- actually, the data points where the function is evaluated -- see lines \textcolor{gray}{31--39} in the code.
+ I use the Python function \texttt{meshgrid}. This grid is used as input to the contour plotting functions
+ in lines \textcolor{gray}{120} and \textcolor{gray}{145}. 
+Note that the \texttt{contour} and \texttt{contourf} functions produce two different visualizations to show the same information.
+Look at the arguments, in particular \texttt{cmap} for the color gradient, and \texttt{levels} specifying the number of contour levels.
+\item You can also extract data from the contour lines generated by Matplotlib. See how I do it in lines 
+\textcolor{gray}{234--241} from the contour object \texttt{CS} created in line \textcolor{gray}{120} or \textcolor{gray}{145}. 
+I use it to generate the yellow dots in Figure~\ref{ringhouls}, all located on a same contour line; I plot them 
+in line \textcolor{gray}{168} in the code.
+\end{itemize}
+\vspace{1ex}
+
+In practice, you don't need to store the whole grid in memory, but only a small, local moving window as you follow a descending path (orthogonal trajectory). 
+The reason to store the whole grid is due to starting~from 100 locations at the same time. Usually, you only start from one location. In that case,
+ you need far less memory, and the algorithm can easily be adapted to higher dimensions, although losing visual capabilities. 
+The source code below is on GitHub, \href{https://github.com/VincentGranville/Experimental-Math-Number-Theory/blob/main/Source-Code/gradient.py}{here}. 
+
+%get contour levels data from python
+
+\vspace{1ex}
+
+\begin{lstlisting}[numbers=left]
+import matplotlib.pyplot as plt
+from matplotlib import cm # color maps
+import numpy as np
+import mpmath
+
+View = 'Local'       # options: 'Local' or 'Global'
+Function = 'Sinh2'   # options: 'Zeta', 'Eta', 'Sinh1', 'Sinh2'
+Contour = 'Lines'    # options: 'Lines', 'Surface'
+Video = True         # options: True or False
+Granularity = 'Low'  # options: 'Low' or 'High'
+
+if View == 'Local':
+    min_t = 201.4    # for zeta, choose 201.0 
+    max_t = 202.601  # for zeta, choose 203.301 
+    min_sigma = 0.26 # for zeta, choose 0.25 
+    max_sigma = 0.85 # for zeta, choose 1.60 
+    if Granularity == 'High':
+        incr_t = 0.0025 # slow, also requires 4x more memory
+    elif Granularity == 'Low':
+        incr_t = 0.005  # 4x faster than 'High', less accurate 
+    incr_sigma = incr_t*(max_sigma - min_sigma)/(max_t - min_t)    
+elif View == 'Global':
+    min_t = 200
+    max_t = 300
+    min_sigma = 0.50
+    max_sigma = 1.10
+    incr_t = 0.05 
+    incr_sigma = 0.05
+nlevels = 180 # number of contour levels (120 for zeta)
+
+#--- Store values of bivariate function in grid za[( , )]
+#     xa[], y[a] are the x and y coordinates
+
+xa = np.arange(min_t, max_t, incr_t)
+ya = np.arange(min_sigma, max_sigma, incr_sigma)
+xa, ya = np.meshgrid(xa, ya)
+k_steps = 1 + int((max_t - min_t)/incr_t)
+h_steps = 1 + int((max_sigma - min_sigma)/incr_sigma)
+za = np.empty(shape=(len(xa),len(ya)))  # set dimensions for za
+
+k=0
+for t in np.arange(min_t, max_t, incr_t):
+    print("t=",t) 
+    h = 0
+    for sigma in np.arange(min_sigma, max_sigma, incr_sigma):    
+        if Function == 'Zeta':
+            z = mpmath.zeta(complex(sigma, t)) 
+        elif Function == 'Eta':
+            z = mpmath.altzeta(complex(sigma, t))
+        elif Function == 'Sinh2':
+            p = np.log(2)
+            z = mpmath.cosh(complex(sigma-0.5, t*np.log(t)/4))* \
+                   mpmath.cosh(complex(sigma-0.7, p*t)) 
+        elif Function == 'Sinh1':
+            z = mpmath.cosh(complex(sigma-0.5, t*np.log(t)/4))
+        modulus=np.sqrt(z.real*z.real + z.imag*z.imag)
+        za[h,k]=modulus
+        h = h + 1
+    k = k + 1
+
+#--- 3D surface plot 
+
+fig = plt.figure(figsize =(12, 8), dpi=240)
+axes = plt.axes(projection ='3d')
+axes.set_xlabel('t', fontsize=6)
+axes.set_ylabel('sigma',fontsize=6)
+axes.set_zlabel('Eta Modulus',fontsize=6)
+axes.tick_params(axis='both', which='major', labelsize=6)
+axes.tick_params(axis='both', which='minor', labelsize=6)
+axes.set_xlim3d(min_t, max_t)
+axes.set_ylim3d(min_sigma, max_sigma)
+axes.set_zlim3d(0.0, float(np.max(za)))
+
+surf = axes.plot_surface(xa, ya, za, cmap=cm.coolwarm,
+                       linewidth=1, antialiased=True)
+
+#--- Create video of 3D surface plot (rotate the plot)
+
+if Video:
+
+    import moviepy.video.io.ImageSequenceClip  # to produce mp4 video
+    from PIL import Image  # for some basic image processing
+
+    Nframes = 250 
+    flist=[]               # list of image filenames for the video
+    w, h, dpi = 4, 3, 300  # width and heigh in inches
+    fps=10                 # frames per second
+
+    for frame in range(0,Nframes): 
+        image='RH4_'+str(frame)+'.png' # filename of image in current frame
+        print("Creating image",image) # show progress on the screen
+        angle_vertical = 30 + 30 * np.sin(12*frame/Nframes)
+        angle_horizontal = 80+ frame * 360 / Nframes
+        axes.view_init(angle_vertical, angle_horizontal)
+        plt.savefig(image,bbox_inches='tight')
+        im = Image.open(image)
+        if frame == 0:  # all images must have the same size
+            width, height = im.size
+            width=2*int(width/2)
+            height=2*int(height/2)
+            fixedSize=(width,height)
+        im = im.resize(fixedSize) 
+        im.save(image,"PNG")
+        flist.append(image)
+
+    # output video 
+    clip = moviepy.video.io.ImageSequenceClip.ImageSequenceClip(flist, fps=fps) 
+    clip.write_videofile('RH4.mp4')
+
+#--- Create contour map
+
+fig = plt.figure(figsize =(12, 8), dpi=240)
+axes = plt.axes()
+fig.colorbar(surf, ax = axes, shrink = 0.5, aspect = 5)
+# Add horizontal dashed line at sigma = 0.5 (the 'critical line') 
+#     https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html
+plt.plot((min_t,max_t),(0.5,0.5),color='black',linestyle=(0,(15,15)),linewidth=0.2)
+
+if View == 'Global':
+    CS = axes.contourf(xa, ya, za, levels=nlevels, cmap=cm.coolwarm) 
+    plt.savefig('RH4_contours.png',bbox_inches='tight')
+    sigma_low  = 0.5 # must be > min_sigma
+    sigma_mid  = 0.7
+    sigma_high = 1.0   # must be < max_sigma (h_high < h_steps -1)
+    sigma_max  = max_sigma
+    h_low  = int(0.5+(sigma_low - min_sigma)/incr_sigma)
+    h_mid  = int(0.5+(sigma_mid - min_sigma)/incr_sigma)
+    h_high = int(0.5+(sigma_high - min_sigma)/incr_sigma)
+    h_max  = h_steps-2
+    OUT=open("gradient_LH.txt","w")
+    header="\tsigma=%f\tsigma=%f\tsigma=%f\tsigma=%f\n" \
+            % (sigma_low,sigma_mid,sigma_high,sigma_max)
+    OUT.write(header)
+    for k in range(k_steps-1):
+        t = min_t + incr_t*k
+        z_low  = za[h_low, k]
+        z_mid  = za[h_mid, k]
+        z_high = za[h_high, k]
+        z_max  = za[h_max, k]
+        line = str(t)+"\t"+str(z_low)+"\t"+str(z_mid)+"\t"+str(z_high)+"\t"+str(z_max)+"\n"
+        OUT.write(line)
+    OUT.close()
+    exit() 
+else:
+    CS = axes.contour(xa, ya, za, levels=nlevels, cmap=cm.coolwarm, linewidths=0.75) 
+    plt.savefig('RH4_contours.png',bbox_inches='tight')
+
+#--- Steepest descent on contour map: sample paths to minimum (a root of |Zeta|)
+#    requires: Granulary = 'High', View = 'Local'
+
+def gradient_descent(t, sigma, showStart, showEnd, showPath, mode, n_iter, \
+    learn_t, learn_sigma, type):
+
+#   mode = Ascent or Descent, starting point is (t, sigma)
+#   type = Gradient (orthogonal trajectory) or Contour
+#   learn = learning rate in gradient method; n_iter = number of iterations
+#   showStart, showEnd display start/end points if true, on the plot
+#   in all cases, the full path is displayed in red on the plot
+
+    x = []
+    y = []
+    x.append(t)
+    y.append(sigma)
+    h = int((sigma - min_sigma)/incr_sigma)
+    k = int((t - min_t)/incr_t)
+    old_z = za[h,k]
+    if showStart:
+        plt.plot(t, sigma, marker="o", markersize=5, markerfacecolor="yellow",color="black")
+    if mode == 'Descent': 
+        sign = +1
+    elif mode == 'Ascent':
+        sign = -1
+         
+    iter = 0
+    while iter < n_iter:
+        if type == 'Gradient':
+            t = t - learn_t * sign * dx[h,k]/incr_t    
+            sigma = sigma - learn_sigma * sign * dy[h,k]/incr_sigma     
+        elif type == 'Contour':
+            t = t - learn_t * sign * dy[h,k]/incr_sigma  
+            sigma = sigma + learn_sigma * sign * dx[h,k]/incr_t 
+        if t>min_t and t<max_t and sigma>min_sigma and sigma<max_sigma:   
+            x.append(t)
+            y.append(sigma)
+        old_z = za[h, k]
+        h = int(0.5+(sigma - min_sigma)/incr_sigma)
+        k = int(0.5+(t - min_t)/incr_t)             
+        if h<h_steps-2 and k<k_steps-2 and h>0 and k>0: 
+            z = za[h, k]
+        else:
+            iter = 99999999999
+            showEnd = False
+        iter = iter + 1
+
+    # smooth the path x, y
+    n = len(x)
+    if smooth > 0:
+        for i in range(1,n-2):
+            x[i] = np.mean(x[max(0,i-smooth):min(n-1,i+smooth)])
+            y[i] = np.mean(y[max(0,i-smooth):min(n-1,i+smooth)])
+
+    # plot path from intitial point to convergence
+    if showPath:
+        plt.plot(x,y,color='red',linewidth=0.2)
+    if showEnd:   
+        # show where the iteration converged
+        sigma=int(0.5+100*sigma)/100
+        t=int(0.5+100*t)/100
+        if t>min_t and t<max_t and sigma>min_sigma and sigma<max_sigma:
+            plt.plot(t, sigma, marker="o", markersize=5, markerfacecolor="palegreen",color="black")
+
+    return(x, y)  
+
+#--- Steepest descent: main part 
+
+
+dy, dx = np.gradient(za)      # matrices with same dim as za 
+norm = np.sqrt(dx*dx + dy*dy) # matrix with same dim as za
+angle = np.arctan2(dx,dy)     # angle of descent (unused)
+
+smooth = 0                    # integer, to smooth tajectories (0 = no smoothing)
+learn_t = incr_t              # learning parameter in gradient method  
+learn_sigma = incr_sigma      # learning parameter in gradient method 
+
+showStart = False
+showEnd   = False
+showPath  = False
+
+# sample points on a contour line
+#     need Ascent and Descent for full loop of contour line
+
+level = 40 # level=1 is the one with lowest za[,]. For zeta, set level=36 
+           # level must be an integer between 1 and nlevels
+lines = []  
+x = []
+y = []
+for line in CS.collections[level].get_paths():
+    lines.append(line.vertices)
+x = lines[0][:, 0]
+y = lines[0][:, 1]
+n = len(x)
+showStart = True
+showEnd   = False
+showPath  = True
+n_iter = 3000 
+step = 5 # for zeta choose step=10
+
+for i in range(0, n, step):  
+    t = x[i]
+    sigma = y[i]
+    # need Ascent and Descent for full path up and down
+    gradient_descent(t, sigma, showStart, showEnd, showPath, 'Descent', n_iter, \
+       learn_t, learn_sigma, 'Gradient')
+    gradient_descent(t, sigma, showStart, showEnd, showPath, 'Ascent', n_iter, \
+       learn_t, learn_sigma, 'Gradient')
+
+plt.savefig('RH4_ortho.png',bbox_inches='tight')
+\end{lstlisting}
+
+
+% gradient desct / geospatial interpolation
 %xxxyyy
 %##contour levels and orthogonal trajectories}
 
@@ -6609,15 +7050,136 @@ Under construction.
 
 % maps: georeshy
 
-\section{Supervised classification with image bitmaps}
 
-\section{Miscellaneous topics}\label{misc911}
 
-\subsection{Agent-based modeling: collision graphs}\label{graph911}
 
-\subsection{Terrain generation: image and palette morphing}
 
-\subsection{Mathematical art}
+
+\section{More spectacular videos and image generation}\label{misc911}
+
+You can zoom in or click on any picture in Figure~\ref{fig:hvge67f32}. Each one features new graphical elements summarized
+ in Table~\ref{souffre}, and not covered in other projects. When you click on a picture, it may lead to a YouTube video,
+ the Python source code used to generate it, or the corresponding reference and documentation.  
+
+%terrain: https://www.youtube.com/watch?v=RE3Lz559aM0
+%gradient: https://www.youtube.com/watch?v=pqQsLpPkvbw
+%3D: https://www.youtube.com/watch?v=Jpjw8wtoZrM
+%collision graph: https://www.youtube.com/watch?v=-kMJzCd8v0Q
+
+ 
+
+
+
+\begin{figure}[H]%
+    \centering
+    \subfloat[\centering Math]{\href{https://www.youtube.com/watch?v=H77ULp6HVsE}{\fbox{\includegraphics[width=.18\linewidth]{thumb1b.png}}} }%
+   \qquad
+   \subfloat[\centering Graphs]{\href{https://mltechniques.com/product/intuitive-machine-learning/}{\fbox{\includegraphics[width=.18\linewidth]{cliques.png}}} }%
+    \qquad
+    \subfloat[\centering Chaos]{\href{https://mltechniques.com/product/ebook-gentle-introduction-to-chaotic-dynamical-systems/}{\fbox{\includegraphics[width=.18\linewidth]{art3.png}}} }%
+  \qquad
+    \subfloat[\centering Dendrogram]{\href{https://mltechniques.com/2024/05/04/breakthrough-zero-weight-llm-for-accurate-predictions-and-high-performance-clustering/}{\fbox{\includegraphics[width=.18\linewidth]{vdendo.png}}} }%
+
+\hfill
+
+    \subfloat[\centering Clustering]{\href{https://www.youtube.com/watch?v=dNPSEh-X6uw}{\fbox{\includegraphics[width=.18\linewidth]{vpbcl2.png}}} }%
+    \qquad
+    \subfloat[\centering Geospatial]{\href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/kriging_temperatures_chicago.py}{\fbox{\includegraphics[width=.18\linewidth]{geo.png}}} }%
+    \qquad
+    \subfloat[\centering 3-Dim]{\href{https://www.youtube.com/watch?v=Jpjw8wtoZrM}{\fbox{\includegraphics[width=.18\linewidth]{v3d.png}}} }%
+  \qquad
+    \subfloat[\centering Geometry]{\href{https://www.youtube.com/watch?v=wl0vfOdaGD8}{\fbox{\includegraphics[width=.18\linewidth]{vcomet.png}}} }%
+
+\hfill
+
+    \subfloat[\centering Terrain]{\href{https://www.youtube.com/watch?v=RE3Lz559aM0}{\fbox{\includegraphics[width=.18\linewidth]{vterrain.png}}} }%
+    \qquad
+    \subfloat[\centering Diagrams]{\href{https://www.youtube.com/watch?v=-kMJzCd8v0Q}{\fbox{\includegraphics[width=.18\linewidth]{vgraph.png}}} }%
+    \qquad
+    \subfloat[\centering Gradient]{\href{https://www.youtube.com/watch?v=pqQsLpPkvbw}{\fbox{\includegraphics[width=.18\linewidth]{vgradient.png}}} }%
+ \qquad
+    \subfloat[\centering Interpolation]{\href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/interpol2.png}{\fbox{\includegraphics[width=.18\linewidth]{vgeo2.png}}} }%
+
+
+    \caption{Selection of clickable images and videos produced with Python libraries}%
+    \label{fig:hvge67f32}%
+\end{figure}
+
+%code not included but referenced
+%link to book section and github code
+%add dendogram
+%ellipses
+%interpol / dots
+
+%3D see also section 1
+
+%--------
+\begin{table}[H]
+%\[\
+\begin{center}
+\scalebox{0.9}{
+\begin{tabular}{p{\dimexpr2.5cm-2\tabcolsep}|p{\dimexpr10.5cm-2\tabcolsep}|c p{\dimexpr1.5cm-2\tabcolsep}}%{|l|l p{10cm}|l|}
+\hline
+  Name & Description & GitHub  \\
+\hline
+\hline
+Math & Successive approximations of the Dirichlet eta function in the complex plane, with special wavelets to represent pastel colors evolving harmoniously over time.   See chapter 4 in~\cite{vgmlbook2022}. & \href{https://github.com/VincentGranville/Visualizations/blob/main/Source-Code/image2R.py}{Link}\\
+\hline
+Graphs &  Nearest neighbors graph: built using fast connected components algorithm. See section 1.5.4 in~\cite{vgsimulnew}. & 
+ \href{https://github.com/VincentGranville/Point-Processes/blob/main/Source\%20Code/PB_NN_graph.py}{Link}\\
+\hline
+Chaos & Basins of attraction, discrete chaotic dynamical systems. See section 2.4 in~\cite{vgchaos}. & \href{https://github.com/VincentGranville/Stochastic-Processes/blob/master/basin.py}{Link}\\
+\hline
+Dendrogram & LLM hierarchical clustering based on keyword relationships. Figure~\ref{fig:z0m4rgv098} offers a larger version. Details in section~\ref{predxllm}. & \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/nlp_scoring.py}{Link}\\
+\hline
+Clustering & Features fractal clustering of tabular data, performed as a convolution filter using image filtering techniques in computer vision. See section 2.4.2
+ and 3.4.3
+ in~\cite{vgsimulnew}. Includes discussion on creating optimum palettes (cluster coloring scheme). & \href{https://github.com/VincentGranville/Point-Processes/blob/main/Videos/PB_clustering_video.py}{Link}\\
+\hline
+Geospatial & Map superimposed on the grid: temperature data, Chicago area. Interpolation via kriging. & \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/kriging_temperatures_chicago.py}{Link}\\
+\hline
+3-Dim& Video showing 3-D shapes changing over time, with contour levels and 3-D rotations. See section~\ref{porousbutane}.  & \href{https://github.com/VincentGranville/Visualizations/blob/main/Source-Code/contourvideoplotly.py}{Link}\\
+\hline
+Geometry & Elliptic orbits in progress (video). See chapter 4 in~\cite{vgmlbook2022}. & \href{https://github.com/VincentGranville/Visualizations/blob/main/Source-Code/image2.py}{Link}\\
+\hline
+Terrain &  Four videos running in parallel. Special terrain palette, GenAI, palette morphing. See chapter 14 in~\cite{vgelsevier}. & \href{https://github.com/VincentGranville/Visualizations/blob/main/Source-Code/terrain.py}{Link}\\
+\hline
+Diagrams & Collision graph representing stars colliding over time, in a synthetic galaxy. See section 15.3 in~\cite{vgelsevier}. Click on thumbnail to see how the galaxy evolves. & \href{https://github.com/VincentGranville/Visualizations/blob/main/Source-Code/nbody_graph.py}{Link}\\
+\hline
+Gradient & Gradient descent starting with 100 locations at once. Features grid, contour levels and orthogonal trajectories. See section~\ref{poures}. & \href{https://github.com/VincentGranville/Experimental-Math-Number-Theory/blob/main/Source-Code/gradient.py}{Link}\\
+\hline
+Interpolation &  Exact bivariate interpolation, Chicago temperature dataset, see section~\ref{georeshy}. Color gradient for the temperatures. Click on thumbnail to see the corresponding scatterplot,
+with round dots for training set locations, and + for validation set locations.  & \href{https://github.com/VincentGranville/Statistical-Optimization/blob/main/interpol_smooth.py}{Link}\\
+\hline		
+\end{tabular}
+}
+%\]
+\caption{\label{souffre} Details about the visualizations featured in Figure~\ref{fig:hvge67f32}}
+\end{center}
+\end{table}
+
+%\subsection{Supervised classification with image bitmaps}
+%
+%book : pb binomial or intuitive ML
+
+%\subsection{Geospatial data, with maps}
+
+%link to gradient descent
+
+%https://github.com/VincentGranville/Statistical-Optimization/blob/main/kriging_temperatures_chicago.py
+%interpol.py
+%fcontour python plot
+%section 4.3.2 in stats optim book (python code)
+%section 4.1.4 in same vooks for explanation
+%\cite{vgmloptim}
+
+%\subsection{Agent-based modeling: collision graphs}\label{graph911}
+
+%optimum palette
+
+%\subsection{Terrain generation: image and palette morphing}
+
+%\subsection{Mathematical art}
 
 
 %xxx
@@ -7122,7 +7684,7 @@ Regarding \textcolor{red}{Step 2}, sample page types can be found
 (non-terminal category page referred to as Type 1 in the code), 
 \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/sample-crawled-page-type-2.txt}{here} (terminal category page referred to as Type 2), and
 \href{https://github.com/VincentGranville/Large-Language-Models/blob/main/sample-crawled-page-type-3.txt}{here}
- (actual content page, with metadata at the top). The first two types require ad-hoc parsing to recursively build the categories and to extract the final URLs:  the actual content pages. For output file management, note the \texttt{encoding='utf-8'} directive to handle non-standard characters, 
+ (actual content page, with metadata at the top). The first two types require ad-hoc parsing to recursively build the categories and to extract the final URLs:  the actual content pages. For output file management, note the \texttt{encoding=\textquotesingle utf-8\textquotesingle} directive to handle non-standard characters, 
 and the use of the \texttt{flush} command to avoid buffering.
 
 As for \textcolor{red}{Step 3}, see the Python code below. Crawling the content pages (lines \textcolor{gray}{135} -- \textcolor{gray}{171}) can be done with a stand-alone script, as all the necessary input data is stored in a text file in lines
@@ -8643,7 +9205,7 @@ $x_{k_1}$ in $S$, keep two extra copies of $x_{k_1}$,
  say $x_{k_2}$ and $x_{k_3}$, in $S$. At any time in the iterative algorithm, flag any nearest neighbor assigned to one of the copies,  say $x_{k_2}$, as nonassignable to the two other copies, in this case $x_{k_1}$ and $x_{k_3}$. To do so, 
  add the nearest neighbor in question (its index in $T$) 
 to the lists \texttt{hask[$k_1$]} and \texttt{hash[$k_3]$} in line \textcolor{gray}{138} in the Python code
- in section~\ref{pyrhic}. You also need to set \texttt{optimize='speed'} in line \textcolor{gray}{117} so that \texttt{hash} is active. 
+ in section~\ref{pyrhic}. You also need to set \texttt{optimize=\textquotesingle speed\textquotesingle} in line \textcolor{gray}{117} so that \texttt{hash} is active. 
 In the code, the nearest neighbor to $x_{k_1}$ in $T$, is $y_j$ with $j=$\texttt{arr\_NN[$k_1$]}. Its index is $j$.
 
 For classification purposes, a new point $x_{k_1}$ in $S$, outside the training set $T$, gets assigned using majority vote, by looking at the class assigned to its nearest neighbors in $T$. For clustering (unsupervised classification) the same rule applies, but there is no class label: the end result is a clustering structure that groups points in unlabeled clusters based on proximity. 
@@ -8663,8 +9225,8 @@ simplify and test the code in section~\ref{pyrhic}, add features, and investigat
 \noindent The project consists of the following steps.
 \vspace{1ex}
 \begin{itemize}
-\item[] {\bf Step 1:  Accelerating speed}. Simplify the code by removing the acceleration mechanisms: get rid~of the overhead attached to \texttt{optimize='speed'} 
- (for instance, \texttt{hash}) and set \texttt{optimize='memory'}. Also,  comment out line \textcolor{gray}{80}, 
+\item[] {\bf Step 1:  Accelerating speed}. Simplify the code by removing the acceleration mechanisms: get rid~of the overhead attached to \texttt{optimize=\textquotesingle speed\textquotesingle} 
+ (for instance, \texttt{hash}) and set \texttt{optimize=\textquotesingle memory\textquotesingle}. Also,  comment out line \textcolor{gray}{80}, 
  lines \textcolor{gray}{170--171}, and replace line \textcolor{gray}{130} by \texttt{k=iter\%N}. Then you don't need the
  function \texttt{sort\_x\_by\_NNdist\_to\_y}. Finally, set \texttt{decay=0}. Also identify and remove all the code linked to producing the video,
  for instance \texttt{flist}, \texttt{frame}, the \texttt{save\_image} function, and lines \textcolor{gray}{158-168}.
@@ -8684,7 +9246,7 @@ $\Delta_t$ depends on $m$, the number of points in $T$: intuitively, the larger 
 
 \noindent To answer the second part of \textcolor{red}{Step 2}, in deep neural networks, the loss function is a proxy to the performance or quality metric.
 To the contrary, here the loss function and model evaluation metric are identical. Also, there is no risk in strictly decreasing the loss function at each iteration: eventually the algorithm must reach a global minimum. This is not true in deep neural networks, where you can get stuck in a local minimum if you don't allow the loss function to go up and down.   As for the terminology, a \texttt{swap} is when a change (nearest neighbor re-assignment) actually occurs during an iteration. Swaps become rarer and rarer over time. A \texttt{step} within an iteration is when a nearest neighbor candidate is not accepted (for instance, because it has already been rejected in the past), forcing the
- algorithm to choose another candidate. Steps are more numerous towards the end, and used only when \texttt{optimize} is set to \texttt{'speed'}. Otherwise steps
+ algorithm to choose another candidate. Steps are more numerous towards the end, and used only when \texttt{optimize} is set to \texttt{\textquotesingle speed\textquotesingle}. Otherwise steps
  and iterations are the same. 
 
 Regarding \textcolor{red}{Step 3}, if the points are independently and uniformly distributed in a $d$-dimensional feature space and $S = T$, then $\Delta_t$ is
@@ -9145,7 +9707,7 @@ In essence, this Python script uses the Wolfram taxonomy as external data to the
 
 Actually, for each page, the script assigns multiple categories, each with its relevancy score. In the end,
 the candidate category with the highest score is selected as the target category. Two different scoring mechanisms are offered, 
- determined by the tuning parameter \texttt{mode}. The best fit is obtained with \texttt{mode='depth'}, favoring deeper over general sub-categories 
+ determined by the tuning parameter \texttt{mode}. The best fit is obtained with \texttt{mode=\textquotesingle depth\textquotesingle}, favoring deeper over general sub-categories 
  to better mimic the way Wolfram assigns categories to pages.  Even then, only 141 URLs are perfectly
  matched to their true Wolfram category. However, mismatch does not mean error: it means a close but not perfect match. Indeed, the
  reconstructed taxonomy may be superior to the true one, in the sense that the Wolfram page categorization is too granular.
