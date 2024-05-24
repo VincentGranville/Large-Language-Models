@@ -1,5 +1,5 @@
 # LLM
-<i>To purchase the book <b>State of the Art in GenAI & LLMs - Creative Projects, with Solutions</b> describing the <b>xLLM</b> architecture and other GenAI apps featured on my GitHub repository, <a href="https://mltblog.com/3Kf0pez">follow this link</a>.</i>
+<i>To purchase the book <b>State of the Art in GenAI & LLMs - Creative Projects, with Solutions</b>, describing the <b>xLLM</b> architecture and other GenAI apps featured on my GitHub repository, <a href="https://mltblog.com/3Kf0pez">follow this link</a>.</i>
 
 This folder focuses on Large language Models (LLM). Browse the <a href="https://mathworld.wolfram.com/">Wolfram directory</a> and associated URLs (directory and content pages), to create the category structure and good word embeddings. The goal is to generate enriched prompts for GPT, Wikipedia, ArXiv, Google Scholar, Stack Exchange or Google search. The focus is on one subdiretory: Probability & Statistics. 
 <p>
