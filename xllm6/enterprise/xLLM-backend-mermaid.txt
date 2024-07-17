@@ -1,0 +1,154 @@
+flowchart LR
+
+%%{init: {'theme':'dark'}}%%
+
+A3("Stopwords")
+A("Sub-LLM\nCorpus")
+A1("Smart\nCrawl")
+A2("Backend\nParams")
+D1("Clean Text\nMultitokens")
+D("Sentences")
+B("Context")
+J("Actions")
+K("Distant\nMultitokens\n(Pairs)")
+K2("Related\nMultitokens\n(Pairs)")
+M("Embedding,\nRelevancy\nScores")
+N("Sorted\nn-grams")
+R("URLs\nImages\nPDFs\nTables")
+S("Context,\nKnowledge\nGraph,\nTaxonomy")
+W("Context\nTables")
+H("Multitoken\nDictionary")
+CT("Categories\nTags\nTitles\nBreadcrumb") 
+Z("Text")
+X(" ")
+X3(" ")
+X4(" ")
+
+subgraph head [ ]
+X4
+A3
+A
+A1
+A2
+end
+
+subgraph major [<font color=#ffcc00 size=+1>Content Parsing]
+X3
+subgraph init [ ]
+B
+Z
+end
+Z -- split --- D
+subgraph box1 [ ]
+subgraph yellow3 [ ]
+J
+CT
+R
+end
+D
+end
+subgraph grey [ ]
+D1
+S
+end
+end
+
+
+subgraph final ["<font color=#ffcc00 size=+1>Backend Tables</font>"]
+X
+subgraph orange [ ]
+subgraph pairs [ ]
+K
+K2
+end
+
+subgraph ctx [ ]
+W
+H
+end
+end
+
+subgraph green [ ]
+M 
+N
+end
+end
+
+A  --o init
+yellow3 --- S
+B -- map --- R
+CT --- D1
+B -- extract --- CT
+D1 --- K2
+K -- pmi --- M
+K2 -- pmi --- M 
+S --o orange
+D1 --- H
+
+%% real time fine-tuning of Enterprise LLMs
+%% queries subqueries autocorrect
+%% word pairs also uses categories tags
+%% llm router 
+%% contextual pairs
+%% scores
+%% subqueries, frontend hyperparameters, autocorrect
+
+H --- N
+B -- "cluster" --- J
+D -- stem --- D1
+
+style K  fill:#0000aa,color:#ffffff,stroke:#555555
+style K2 fill:#0000aa,color:#ffffff,stroke:#555555
+style W  fill:#006600,color:#ffffff,stroke:#555555
+style H  fill:#006600,color:#ffffff,stroke:#555555
+style N  fill:#990000,color:#ffffff,stroke:#555555
+style M  fill:#990000,color:#ffffff,stroke:#555555
+style CT fill:#0066aa,color:#ffffff,stroke:#555555
+style R  fill:#0066aa,color:#ffffff,stroke:#555555
+style J  fill:#0066aa,color:#ffffff,stroke:#555555
+style D  fill:#000000,color:#ffffff,stroke:#ffffff
+style A  fill:#000000,color:#ffffff,stroke:#ffffff
+style A1 fill:#000000,color:#ffffff,stroke:#ffffff
+style A2 fill:#000000,color:#ffffff,stroke:#ffffff
+style A3 fill:#000000,color:#ffffff,stroke:#ffffff
+
+style B  fill:#000000,color:#ffffff,stroke:#ffffff
+style Z  fill:#000000,color:#ffffff,stroke:#ffffff
+style S  fill:#000000,color:#ffffff,stroke:#ffffff
+style D1 fill:#000000,color:#ffffff,stroke:#ffffff
+
+style X4 fill:#000000,height:92px,font-size:0,stroke-width:0px
+style X3 fill:#000000,height:0px,font-size:0,stroke-width:0px
+style X  fill:#000000,height:32px,font-size:0,stroke-width:0px
+
+
+style head    fill:#000000,width:189.9px,height:692px,stroke:#000,stroke-width:0px,font-size:15px
+style major   fill:#000000,width:750px,height:692px,stroke:#000,stroke-width:0px,font-size:15px
+style final   fill:#000000,width:450px,height:692px,stroke:#000,stroke-width:0px,font-size:15px
+
+style yellow3 stroke:#ffffff
+style pairs   stroke:#ffffff
+style ctx     stroke:#ffffff
+style init    fill:#000000,stroke:#000,stroke-width:0px,font-size:15px
+style box1    fill:#000000,stroke:#000,stroke-width:0px,font-size:15px
+style grey    fill:#000000,stroke:#000,stroke-width:0px,font-size:15px
+style green   fill:#000000,stroke:#000,stroke-width:0px,font-size:15px
+style orange  fill:#000000,stroke:#000,stroke-width:0px,font-size:15px
+
+
+linkStyle 0 stroke:#FF0000,fill:none
+linkStyle 1 stroke:#FF0000,fill:none
+linkStyle 2 stroke:#FF0000,fill:none
+linkStyle 3 stroke:#FF0000,fill:none
+linkStyle 4 stroke:#FF0000,fill:none
+linkStyle 5 stroke:#FF0000,fill:none
+linkStyle 6 stroke:#FF0000,fill:none
+linkStyle 7 stroke:#FF0000,fill:none
+linkStyle 8 stroke:#FF0000,fill:none
+linkStyle 9 stroke:#FF0000,fill:none
+linkStyle 10 stroke:#FF0000,fill:none
+linkStyle 11 stroke:#FF0000,fill:none
+linkStyle 12 stroke:#FF0000,fill:none
+linkStyle 13 stroke:#FF0000,fill:none
+
+
