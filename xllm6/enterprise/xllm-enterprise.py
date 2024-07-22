@@ -19,7 +19,6 @@ def update_nestedHash(hash, key, value, count=1):
     if type(value) is not tuple: 
         value = (value,)
     for item in value:
-
         if item in local_hash:
             local_hash[item] += count
         else:
@@ -586,3 +585,22 @@ while len(input_) > 0:
 
     if len(input_) > 0 and flag:
         print_results(q_dictionary, q_embeddings, backendTables, frontendParams)
+
+
+#--- [5] Save backend tables
+
+save = False
+if save:
+    for tableName in backendTables:
+        table = backendTables[tableName]
+        OUT = open('backend_' + tableName + '.txt', "w")
+        OUT.write(str(table))
+        OUT.close()
+
+    OUT = open('backend_embeddings.txt', "w")
+    OUT.write(str(embeddings))
+    OUT.close()
+
+    OUT = open('backend_sorted_ngrams.txt', "w")
+    OUT.write(str(sorted_ngrams))
+    OUT.close()
