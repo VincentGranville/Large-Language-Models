@@ -23,7 +23,7 @@ def update_nestedHash(hash, key, value, count=1):
             local_hash[item] += count
         else:
             local_hash[item] = count
-        hash[key] = local_hash
+    hash[key] = local_hash
     return(hash)
 
 
