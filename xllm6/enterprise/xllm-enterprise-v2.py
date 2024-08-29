@@ -884,9 +884,6 @@ def create_KW_map(dictionary):
                     OUT.write(keyB + "\t" + key + "\n")
                 else:
                     OUT.write(key + "\t" + keyB + "\n")
-#########  map xxxing to xxx testing  to test /// xxxxed to xxxe with exceptions
-######### exclude: timeliness -> timelines // ds --> d
-######### practice [verb] ---> practices [noun]
     OUT.close()
     return()
 
