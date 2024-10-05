@@ -46,15 +46,24 @@ def update_tables(backendTables, word, hash_crawl, backendParams):
 
     extraWeights = backendParams['extraWeights']
     word = word.lower()  # add stemming
-    weight = 1.0         
+    weight = 1.0  
+    flag = ''        
     if word in category:   
         weight += extraWeights['category'] 
+        flag = '__'
     if word in tag_list:
         weight += extraWeights['tag_list']
+        flag = '__'
     if word in title:
         weight += extraWeights['title']
+        flag = '__'
     if word in meta:
         weight += extraWeights['meta']
+        flag = '__'
+
+    if flag != '':
+        gword = flag + word
+        update_hash(backendTables['dictionary'], gword, 1)
 
     update_hash(backendTables['dictionary'], word, weight)
     update_nestedHash(backendTables['hash_context1'], word, category) 
