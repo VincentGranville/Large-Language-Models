@@ -10,3 +10,5 @@ The doc for <code>xllm-enterprise-v2.py</code> is in xllm-enterprise-v2.pdf. The
     <code>xllm-enterprise-v2-dev.py</code> does not call the real-time fine-tuning function. The test prompts with correct answers are loaded from a text file: <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/enterprise/enterprise_sample_prompts.txt">enterprise_sample_prompts.txt</a>. A prompt and corresponding answer are in a same row, separated by " | ".
   </li>
 </ul>
+
+<b>Documentation</b>: see <a href="https://mltblog.com/47DisG5">here</a>.
