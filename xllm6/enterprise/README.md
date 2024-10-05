@@ -1,4 +1,4 @@
-The doc for <code>xllm-enterprise-v2.py</code> is in xllm-enterprise-v2.pdf. The previous version (xllm-enterprise.py) is no longer maintained. I also created a library <code>xllm_enterprise_util.py</code>. Both <code>xllm-enterprise-v2-user.py</code> and <code>xllm-enterprise-dev.py</code> use that library. The former is essentially the same as xllm-enterprise-v2.py but much shorter since all the functions have been moved to the library. The latter also uses the same algorithms and architecture with recent additions (relevancy scores) but it serves a different purpose: testing a large number of prompts.
+The tech doc for <code>xllm-enterprise-v2.py</code> is <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/enterprise/xllm-enterprise-v2.pdf">xllm-enterprise-v2.pdf</a>. The previous version (xllm-enterprise.py) is no longer maintained. I also created a library <code>xllm_enterprise_util.py</code>. Both <code>xllm-enterprise-v2-user.py</code> and <code>xllm-enterprise-dev.py</code> use that library. The former is essentially the same as xllm-enterprise-v2.py but much shorter since all the functions have been moved to the library. The latter also uses the same algorithms and architecture with recent additions (relevancy scores) but it serves a different purpose: testing a large number of prompts.
 
 <b>Notes</b>:
 
@@ -11,4 +11,9 @@ The doc for <code>xllm-enterprise-v2.py</code> is in xllm-enterprise-v2.pdf. The
   </li>
 </ul>
 
-<b>Documentation</b>: see <a href="https://mltblog.com/47DisG5">here</a>.
+<b>More documentation</b>: 
+<ul>
+  <li>
+See <a href="https://mltblog.com/47DisG5">here</a>.
+  </li>
+  <ul>
