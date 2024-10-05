@@ -1,1 +1,1 @@
-All the files are there. The documentation is coming soon. 
+The doc for xllm-enterprise-v2.py is in xllm-enterprise-v2.pdf. The previous version (xllm-enterprise.py) is no longer maintained. I also created a library xllm_enterprise_util.py. Both xllm-enterprise-v2-user.py amd xllm-enterprise-dev.py use that library. The former is essentially the same as xllm-enterprise-v2.py but much shorter since all the functions have been moved to the library. The latter also use the same algorithms and architecture but server a different purpose: testing a large number of prompts.
