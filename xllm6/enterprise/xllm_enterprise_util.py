@@ -63,7 +63,7 @@ def update_tables(backendTables, word, hash_crawl, backendParams):
 
     if flag != '':
         gword = flag + word
-        update_hash(backendTables['dictionary'], gword, 1)
+        update_nestedHash(backendTables['hash_ID'], gword, ID) 
 
     update_hash(backendTables['dictionary'], word, weight)
     update_nestedHash(backendTables['hash_context1'], word, category) 
