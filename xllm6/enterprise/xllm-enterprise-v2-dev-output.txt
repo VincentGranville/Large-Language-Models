@@ -1,0 +1,1366 @@
+------------------
+Prompt:  What is the role of geographical zones in the MLTxQuest hierarchy?
+Cleaned: ['geographical', 'hierarchy', 'mltxquest', 'role', 'zones']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2655    10 {'hierarchy': 1}
+     2919    10 {'hierarchy': 1}
+      433    10 {'hierarchy': 1}
+     2075    10 {'geographical': 1}
+     2479    10 {'geographical': 1}
+     2844    10 {'geographical': 1}
+     2154    11 {'zones': 1, 'mltxquest': 1}
+      135    12 {'zones': 1, '__zones': 1}
+     2076    13 {'role': 1, 'mltxquest': 1}
+     2142    13 {'role': 1, 'mltxquest': 1}
+
+Token count (via dictionary):
+
+      21 zones
+      23 role
+     383 mltxquest
+       3 hierarchy
+       3 geographical
+
+Top related tokens (via embeddings):
+
+     0.92 ('mltxquest', 'abi')
+     0.82 ('geographical', 'geographical~area')
+     0.82 ('geographical', 'lan')
+     0.73 ('mltxquest', 'mltxdat~product')
+     0.71 ('mltxquest', 'data~product')
+     0.67 ('geographical', 'rom')
+     0.66 ('mltxquest', 'mltxdat')
+     0.58 ('hierarchy', 'str')
+     0.58 ('hierarchy', 'str~org')
+     0.58 ('hierarchy', 'org~str')
+
+------------------
+Prompt:  How does the MLTxQuest hierarchy categorize Business domains?
+Cleaned: ['business', 'categorize', 'domain', 'hierarchy', 'mltxquest']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2837     5 {'categorize': 1}
+      107     5 {'mltxquest~business': 1}
+      151     5 {'business~domain': 1}
+     2655     7 {'hierarchy': 1}
+     2919     7 {'hierarchy': 1}
+      433     7 {'hierarchy': 1}
+
+Token count (via dictionary):
+
+       3 hierarchy
+       1 categorize
+       1 mltxquest~business
+       1 business~domain
+
+Top related tokens (via embeddings):
+
+     1.06 ('business~domain', 'domain')
+     1.00 ('categorize', 'account~spans')
+     1.00 ('categorize', 'account~spans~particular')
+     1.00 ('categorize', 'business~development')
+     1.00 ('categorize', 'business~development~companies')
+     1.00 ('categorize', 'strategic~customer~account')
+     1.00 ('categorize', 'customer~account~spans')
+     1.00 ('categorize', 'spans~particular')
+     1.00 ('categorize', 'particular~geographic')
+     1.00 ('categorize', 'spans~particular~geographic')
+
+------------------
+Prompt:  What is a Data Landing Zone (DLZ) in MLTxQuest?
+Cleaned: ['data', 'dlz', 'landing', 'mltxquest', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2154     7 {'landing~zone': 1, 'zone~landing': 1, 'dlz': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2029    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2039    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2343    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2434    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2524    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2589    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2944    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     3050    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+      433    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+
+Token count (via dictionary):
+
+      25 landing~zone
+       1 zone~landing
+       3 mltxquest~landing
+      11 dlz
+       1 mltxquest~data
+      11 data~landing
+      10 data~landing~zone
+
+Top related tokens (via embeddings):
+
+     2.00 ('mltxquest~landing', 'landing~page')
+     1.63 ('mltxquest~landing', 'mltxquest~landing~page')
+     1.61 ('landing~zone', 'landing')
+     1.29 ('landing~zone', 'zone')
+     1.21 ('mltxquest~landing', 'page')
+     1.20 ('landing~zone', 'data~landing~zone')
+     1.20 ('data~landing~zone', 'landing~zone')
+     1.15 ('mltxquest~landing', 'guide~mltxquest')
+     1.15 ('mltxquest~landing', 'show~summary')
+     1.15 ('mltxquest~landing', 'summary~content')
+
+------------------
+Prompt:  Which DLZ does the geographical zone APC belong to?
+Cleaned: ['apc', 'dlz', 'geographical', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2023     7 {'zone': 1, 'apc': 1}
+     2075    10 {'geographical': 1}
+     2479    10 {'geographical': 1}
+     2844    10 {'geographical': 1}
+     2154    11 {'zone': 1, 'dlz': 1}
+     2220    11 {'zone': 1, 'dlz': 1}
+      387    11 {'zone': 1, 'dlz': 1}
+      135    12 {'dlz': 1, '__dlz': 1}
+       45    14 {'dlz': 1}
+      321    14 {'dlz': 1}
+
+Token count (via dictionary):
+
+      58 zone
+       3 geographical
+      11 dlz
+       2 apc
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     0.83 ('zone', 'data~landing~zone')
+     0.82 ('geographical', 'geographical~area')
+     0.82 ('geographical', 'lan')
+     0.79 ('zone', 'data~landing')
+     0.67 ('geographical', 'rom')
+     0.63 ('dlz', 'alternate~approver')
+     0.59 ('dlz', 'zones~connected')
+     0.59 ('dlz', 'landing~zones~connected')
+
+------------------
+Prompt:  List the business domains under the AURORA DLZ.
+Cleaned: ['aurora', 'business', 'dlz', 'domain', 'list']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2030     7 {'aurora': 1, '__aurora': 1}
+      151     8 {'business~domain': 1}
+      135    10 {'dlz': 1, '__dlz': 1}
+     2029    10 {'aurora': 1}
+     3255    10 {'aurora': 1}
+     2154    12 {'dlz': 1}
+     2220    12 {'dlz': 1}
+       45    12 {'dlz': 1}
+      321    12 {'dlz': 1}
+      387    12 {'dlz': 1}
+
+Token count (via dictionary):
+
+      12 list
+      11 dlz
+       1 business~domain
+       8 aurora
+
+Top related tokens (via embeddings):
+
+     1.06 ('business~domain', 'domain')
+     1.00 ('business~domain', 'overview~business')
+     1.00 ('business~domain', 'comprehensive~overview~business')
+     1.00 ('business~domain', 'overview~business~data')
+     1.00 ('business~domain', 'data~domain')
+     1.00 ('business~domain', 'section~details')
+     1.00 ('business~domain', 'details~specific')
+     1.00 ('business~domain', 'section~details~specific')
+     1.00 ('business~domain', 'specific~domains')
+     1.00 ('business~domain', 'details~specific~domains')
+
+------------------
+Prompt:  What are the primary functions of the sales Business domain?
+Cleaned: ['business', 'domains', 'functions', 'primary', 'sales']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2837     5 {'sales~business': 1}
+     3163     5 {'business~sales': 1}
+     2663     5 {'primary~business': 1}
+     2838     5 {'business~functions': 1}
+       24     7 {'business~domains': 1}
+
+Token count (via dictionary):
+
+       1 sales~business
+       1 business~sales
+       1 primary~business
+       1 business~functions
+       2 business~domains
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('sales~business', 'account~spans')
+     1.00 ('sales~business', 'customer~account~spans')
+     1.00 ('sales~business', 'account~spans~particular')
+     1.00 ('sales~business', 'strategic~customer~account')
+     1.00 ('sales~business', 'spans~particular')
+
+------------------
+Prompt:  How are data assets classified within Business domains?
+Cleaned: ['assets', 'business', 'classified', 'data', 'domain']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      151     5 {'business~domain': 1, 'business~data~domain': 1}
+     2620     8 {'classified': 1}
+     2664     8 {'classified': 1}
+     2693     8 {'classified': 1}
+       42    10 {'data~assets': 1}
+       48    10 {'data~assets': 1}
+       90    10 {'data~assets': 1}
+       91    10 {'data~assets': 1}
+       92    10 {'data~assets': 1}
+      199    10 {'data~assets': 1}
+
+Token count (via dictionary):
+
+       3 classified
+       1 business~domain
+       1 business~data~domain
+       8 data~assets
+
+Top related tokens (via embeddings):
+
+     1.06 ('business~domain', 'domain')
+     1.06 ('business~data~domain', 'domain')
+     1.00 ('business~domain', 'overview~business')
+     1.00 ('business~domain', 'comprehensive~overview~business')
+     1.00 ('business~domain', 'overview~business~data')
+     1.00 ('business~domain', 'data~domain')
+     1.00 ('business~domain', 'section~details')
+     1.00 ('business~domain', 'details~specific')
+     1.00 ('business~domain', 'section~details~specific')
+     1.00 ('business~domain', 'specific~domains')
+
+------------------
+Prompt:  Which geographical zones are included in the BEES DLZ?
+Cleaned: ['bees', 'dlz', 'geographical', 'zones']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      135     7 {'zones': 1, '__zones': 1, 'dlz': 1, '__dlz': 1}
+     2075     8 {'geographical': 1}
+     2479     8 {'geographical': 1}
+     2844     8 {'geographical': 1}
+     2154     9 {'zones': 1, 'dlz': 1}
+     2220    12 {'dlz': 1}
+       45    12 {'dlz': 1}
+      321    12 {'dlz': 1}
+      387    12 {'dlz': 1}
+      411    12 {'dlz': 1}
+
+Token count (via dictionary):
+
+      21 zones
+       3 geographical
+      11 dlz
+      12 bees
+
+Top related tokens (via embeddings):
+
+     0.87 ('bees', 'subscription~bees')
+     0.82 ('geographical', 'geographical~area')
+     0.82 ('geographical', 'lan')
+     0.67 ('geographical', 'rom')
+     0.63 ('dlz', 'alternate~approver')
+     0.59 ('dlz', 'zones~connected')
+     0.59 ('dlz', 'landing~zones~connected')
+     0.59 ('dlz', 'servicenow~configure~alternate')
+     0.59 ('dlz', 'configure~alternate')
+     0.59 ('dlz', 'configure~alternate~approver')
+
+------------------
+Prompt:  What is the significance of the procurement Business domain?
+Cleaned: ['business', 'domains', 'procurement', 'significance']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2837     7 {'significance': 1}
+       44     7 {'significance': 1}
+     2767     7 {'procurement': 1, '__procurement': 1}
+       24     7 {'business~domains': 1}
+     2004     9 {'procurement': 1}
+     2005     9 {'procurement': 1}
+     2099     9 {'procurement': 1}
+     2100     9 {'procurement': 1}
+     2105     9 {'procurement': 1}
+     2126     9 {'procurement': 1}
+
+Token count (via dictionary):
+
+       2 significance
+      63 procurement
+       2 business~domains
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('business~domains', 'validate~given')
+     0.71 ('business~domains', 'validate')
+     0.71 ('significance', 'particular~geographic')
+     0.71 ('significance', 'particular~geographic~region')
+     0.71 ('significance', 'categorize')
+
+------------------
+Prompt:  Identify the DLZ that includes the geographical zone EUR.
+Cleaned: ['dlz', 'eur', 'geographical', 'identify', 'includes', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2268     7 {'zone': 1, 'eur': 1}
+     2075    10 {'geographical': 1}
+     2479    10 {'geographical': 1}
+     2844    10 {'geographical': 1}
+     2154    11 {'zone': 1, 'dlz': 1}
+     2220    11 {'zone': 1, 'dlz': 1}
+      387    11 {'zone': 1, 'dlz': 1}
+     2119    14 {'identify': 1}
+     2121    14 {'identify': 1}
+     2384    14 {'identify': 1}
+
+Token count (via dictionary):
+
+      58 zone
+      56 includes
+      11 identify
+       3 geographical
+       2 eur
+      11 dlz
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     0.83 ('zone', 'data~landing~zone')
+     0.82 ('geographical', 'geographical~area')
+     0.82 ('geographical', 'lan')
+     0.79 ('zone', 'data~landing')
+     0.71 ('eur', 'europe~zone')
+     0.67 ('geographical', 'rom')
+     0.63 ('dlz', 'alternate~approver')
+     0.59 ('dlz', 'zones~connected')
+
+------------------
+Prompt:  Which Data Landing Zone (DLZ) includes the Zones or geographical zones APC, GHQ, and SAZ?
+Cleaned: ['data', 'dlz', 'geographical', 'includes', 'landing', 'saz', 'zone', 'zones', 'zones']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2154     7 {'landing~zones': 1, 'landing~zone': 1, 'zone~landing': 1, 'dlz': 1, 'data~landing': 1, 'data~landing~zone': 1}
+       64    10 {'landing~zones': 1, 'data~landing': 1, 'data~landing~zones': 1}
+     2029    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2039    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2343    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2434    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2524    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2589    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2944    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     3050    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+
+Token count (via dictionary):
+
+       7 landing~zones
+      25 landing~zone
+       1 zone~landing
+      56 includes
+       3 geographical
+      11 dlz
+       2 data~saz
+      11 data~landing
+       1 data~landing~zones
+      10 data~landing~zone
+
+Top related tokens (via embeddings):
+
+     1.61 ('landing~zone', 'landing')
+     1.29 ('landing~zone', 'zone')
+     1.20 ('landing~zone', 'data~landing~zone')
+     1.20 ('data~landing~zone', 'landing~zone')
+     1.15 ('landing~zone', 'data~landing')
+     1.15 ('data~landing', 'landing~zone')
+     1.04 ('data~landing~zone', 'landing')
+     1.00 ('zone~landing', 'zones~connected')
+     1.00 ('zone~landing', 'landing~zones~connected')
+     1.00 ('zone~landing', 'connected~data')
+
+------------------
+Prompt:  What are some of the data assets under the 'procurement' Business domain in the MLTxQuest hierarchy?
+Cleaned: ['assets', 'business', 'data', 'domains', 'hierarchy', 'mltxquest', 'procurement']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      433     5 {'hierarchy': 1, 'domains~data': 1}
+       92     7 {'data~assets': 1, 'mltxquest~data~assets': 1}
+      107    10 {'mltxquest~business': 1}
+      151    10 {'business~data': 1}
+       24    12 {'business~domains': 1}
+     2655    14 {'hierarchy': 1}
+     2919    14 {'hierarchy': 1}
+     2540    14 {'data~procurement': 1}
+     2542    14 {'data~procurement': 1}
+     2543    14 {'data~procurement': 1}
+
+Token count (via dictionary):
+
+       3 hierarchy
+       3 data~procurement
+       1 domains~data
+       1 mltxquest~business
+       2 business~domains
+       1 business~data
+       8 data~assets
+       1 mltxquest~data~assets
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('domains~data', 'zone~zone')
+     1.00 ('domains~data', 'landing~zone~zone')
+     1.00 ('domains~data', 'zone~domains')
+     1.00 ('domains~data', 'zone~zone~domains')
+     1.00 ('domains~data', 'zone~domains~data')
+
+------------------
+Prompt:  Identify the parent DLZ of the geographical zone AFR in the MLTxQuest hierarchy.
+Cleaned: ['afr', 'dlz', 'geographical', 'hierarchy', 'identify', 'mltxquest', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2919     9 {'zone': 1, 'hierarchy': 1}
+      433     9 {'zone': 1, 'hierarchy': 1}
+     2012    10 {'zone': 1, 'mltxquest': 1, 'afr': 1}
+     2655    14 {'hierarchy': 1}
+     2075    14 {'geographical': 1}
+     2479    14 {'geographical': 1}
+     2844    14 {'geographical': 1}
+     3252    15 {'mltxquest': 1, 'afr': 1}
+     2154    16 {'zone': 1, 'mltxquest': 1, 'dlz': 1}
+     2220    19 {'zone': 1, 'dlz': 1}
+
+Token count (via dictionary):
+
+      58 zone
+     383 mltxquest
+      11 identify
+       3 hierarchy
+       3 geographical
+      11 dlz
+       4 afr
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     0.92 ('mltxquest', 'abi')
+     0.83 ('zone', 'data~landing~zone')
+     0.82 ('geographical', 'geographical~area')
+     0.82 ('geographical', 'lan')
+     0.79 ('zone', 'data~landing')
+     0.73 ('mltxquest', 'mltxdat~product')
+     0.71 ('mltxquest', 'data~product')
+     0.67 ('geographical', 'rom')
+
+------------------
+Prompt:  What Business domains are included in the EUR geographical zone?
+Cleaned: ['business', 'domain', 'eur', 'geographical', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      151     6 {'business~domain': 1}
+     2268     7 {'zone': 1, 'eur': 1}
+     2075    10 {'geographical': 1}
+     2479    10 {'geographical': 1}
+     2844    10 {'geographical': 1}
+     2012    12 {'zone': 1}
+     2020    12 {'zone': 1}
+     2023    12 {'zone': 1}
+     2029    12 {'zone': 1}
+     2039    12 {'zone': 1}
+
+Token count (via dictionary):
+
+      58 zone
+       3 geographical
+       2 eur
+       1 business~domain
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     1.06 ('business~domain', 'domain')
+     1.00 ('business~domain', 'overview~business')
+     1.00 ('business~domain', 'comprehensive~overview~business')
+     1.00 ('business~domain', 'overview~business~data')
+     1.00 ('business~domain', 'data~domain')
+     1.00 ('business~domain', 'section~details')
+     1.00 ('business~domain', 'details~specific')
+     1.00 ('business~domain', 'section~details~specific')
+
+------------------
+Prompt:  Which data assets are associated with the 'supply' Business domain?
+Cleaned: ['assets', 'business', 'data', 'domains', 'supply']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      433     7 {'domains~data': 1}
+      151     7 {'business~data': 1}
+       24     9 {'business~domains': 1}
+     3053    11 {'supply': 1, '__supply': 1}
+       42    11 {'data~assets': 1}
+       48    11 {'data~assets': 1}
+       90    11 {'data~assets': 1}
+       91    11 {'data~assets': 1}
+       92    11 {'data~assets': 1}
+      199    11 {'data~assets': 1}
+
+Token count (via dictionary):
+
+      91 supply
+       1 domains~data
+       2 business~domains
+       1 business~data
+       8 data~assets
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('domains~data', 'zone~zone')
+     1.00 ('domains~data', 'landing~zone~zone')
+     1.00 ('domains~data', 'zone~domains')
+     1.00 ('domains~data', 'zone~zone~domains')
+     1.00 ('domains~data', 'zone~domains~data')
+
+------------------
+Prompt:  Which Business domains are part of the MAZ geographical zone?
+Cleaned: ['business', 'domain', 'geographical', 'maz', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      151     6 {'business~domain': 1}
+     2075     8 {'geographical': 1}
+     2479     8 {'geographical': 1}
+     2844     8 {'geographical': 1}
+     2552     9 {'zone': 1, 'maz': 1}
+     2719    12 {'maz': 1}
+     3264    12 {'maz': 1}
+     3265    12 {'maz': 1}
+      247    12 {'maz': 1}
+      475    12 {'maz': 1}
+
+Token count (via dictionary):
+
+      58 zone
+      20 maz
+       3 geographical
+       1 business~domain
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     1.06 ('business~domain', 'domain')
+     1.00 ('business~domain', 'overview~business')
+     1.00 ('business~domain', 'comprehensive~overview~business')
+     1.00 ('business~domain', 'overview~business~data')
+     1.00 ('business~domain', 'data~domain')
+     1.00 ('business~domain', 'section~details')
+     1.00 ('business~domain', 'details~specific')
+     1.00 ('business~domain', 'section~details~specific')
+
+------------------
+Prompt:  What are some of the data assets associated with the 'sales' Business domain?
+Cleaned: ['assets', 'business', 'data', 'domains', 'sales']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      433     5 {'domains~data': 1}
+     2837     5 {'sales~business': 1}
+     3163     5 {'business~sales': 1}
+      151     5 {'business~data': 1}
+       24     7 {'business~domains': 1}
+     2138     9 {'sales~data': 1}
+     2613     9 {'sales~data': 1}
+     2930     9 {'sales~data': 1}
+       42    11 {'data~assets': 1}
+       48    11 {'data~assets': 1}
+
+Token count (via dictionary):
+
+       3 sales~data
+       1 domains~data
+       1 sales~business
+       1 business~sales
+       2 business~domains
+       1 business~data
+       8 data~assets
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('domains~data', 'zone~zone')
+     1.00 ('domains~data', 'landing~zone~zone')
+     1.00 ('domains~data', 'zone~domains')
+     1.00 ('domains~data', 'zone~zone~domains')
+     1.00 ('domains~data', 'zone~domains~data')
+
+------------------
+Prompt:  What Business domains are included in the FINANCE geographical zone?
+Cleaned: ['business', 'domain', 'finance', 'geographical', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      151     7 {'business~domain': 1}
+     2075     9 {'geographical': 1}
+     2479     9 {'geographical': 1}
+     2844     9 {'geographical': 1}
+     2012    11 {'zone': 1}
+     2020    11 {'zone': 1}
+     2023    11 {'zone': 1}
+     2029    11 {'zone': 1}
+     2039    11 {'zone': 1}
+     2122    11 {'zone': 1}
+
+Token count (via dictionary):
+
+      58 zone
+       3 geographical
+     160 finance
+       1 business~domain
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     1.06 ('business~domain', 'domain')
+     1.00 ('business~domain', 'overview~business')
+     1.00 ('business~domain', 'comprehensive~overview~business')
+     1.00 ('business~domain', 'overview~business~data')
+     1.00 ('business~domain', 'data~domain')
+     1.00 ('business~domain', 'section~details')
+     1.00 ('business~domain', 'details~specific')
+     1.00 ('business~domain', 'section~details~specific')
+
+------------------
+Prompt:  List some data assets under the 'people' Business domain.
+Cleaned: ['assets', 'business', 'data', 'domains', 'list', 'people']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+       24     7 {'business~domains': 1, 'business~domains~list': 1}
+      433    10 {'domains~data': 1}
+      151    10 {'business~data': 1}
+     2701    12 {'people': 1, '__people': 1}
+       42    12 {'data~assets': 1}
+       48    12 {'data~assets': 1}
+       90    12 {'data~assets': 1}
+       91    12 {'data~assets': 1}
+       92    12 {'data~assets': 1}
+      199    12 {'data~assets': 1}
+
+Token count (via dictionary):
+
+      73 people
+       1 domains~data
+       2 business~domains
+       1 business~domains~list
+       1 business~data
+       8 data~assets
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.41 ('business~domains~list', 'business~domains')
+     1.00 ('domains~data', 'zone~zone')
+     1.00 ('domains~data', 'landing~zone~zone')
+     1.00 ('domains~data', 'zone~domains')
+     1.00 ('domains~data', 'zone~zone~domains')
+
+------------------
+Prompt:  Which geographical zones are included in the BEES Data Landing Zone (DLZ)?
+Cleaned: ['bees', 'data', 'dlz', 'geographical', 'landing', 'zone', 'zones']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2154     7 {'landing~zones': 1, 'landing~zone': 1, 'zone~landing': 1, 'dlz': 1, 'data~landing': 1, 'data~landing~zone': 1}
+       64    11 {'landing~zones': 1, 'data~landing': 1, 'data~landing~zones': 1}
+     2039    12 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1, 'bees': 1}
+     2029    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2343    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2434    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2524    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2589    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2944    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     3050    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+
+Token count (via dictionary):
+
+       7 landing~zones
+      25 landing~zone
+       1 zone~landing
+       3 geographical
+      11 dlz
+      11 data~landing
+       1 data~landing~zones
+      10 data~landing~zone
+      12 bees
+
+Top related tokens (via embeddings):
+
+     1.61 ('landing~zone', 'landing')
+     1.29 ('landing~zone', 'zone')
+     1.20 ('landing~zone', 'data~landing~zone')
+     1.20 ('data~landing~zone', 'landing~zone')
+     1.15 ('landing~zone', 'data~landing')
+     1.15 ('data~landing', 'landing~zone')
+     1.04 ('data~landing~zone', 'landing')
+     1.00 ('zone~landing', 'zones~connected')
+     1.00 ('zone~landing', 'landing~zones~connected')
+     1.00 ('zone~landing', 'connected~data')
+
+------------------
+Prompt:  What Business domains are part of the NAZ geographical zone?
+Cleaned: ['business', 'domain', 'geographical', 'naz', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      151     6 {'business~domain': 1}
+     2075     8 {'geographical': 1}
+     2479     8 {'geographical': 1}
+     2844     8 {'geographical': 1}
+     2589     9 {'zone': 1, 'naz': 1}
+     2590     9 {'zone': 1, 'naz': 1}
+     3267    12 {'naz': 1}
+     2012    14 {'zone': 1}
+     2020    14 {'zone': 1}
+     2023    14 {'zone': 1}
+
+Token count (via dictionary):
+
+      58 zone
+       6 naz
+       3 geographical
+       1 business~domain
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     1.06 ('business~domain', 'domain')
+     1.00 ('business~domain', 'overview~business')
+     1.00 ('business~domain', 'comprehensive~overview~business')
+     1.00 ('business~domain', 'overview~business~data')
+     1.00 ('business~domain', 'data~domain')
+     1.00 ('business~domain', 'section~details')
+     1.00 ('business~domain', 'details~specific')
+     1.00 ('business~domain', 'section~details~specific')
+
+------------------
+Prompt:  Which data assets are associated with the 'finops' Business domain?
+Cleaned: ['assets', 'business', 'data', 'domains']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      433     5 {'domains~data': 1}
+      151     5 {'business~data': 1}
+       24     7 {'business~domains': 1}
+       42     9 {'data~assets': 1}
+       48     9 {'data~assets': 1}
+       90     9 {'data~assets': 1}
+       91     9 {'data~assets': 1}
+       92     9 {'data~assets': 1}
+      199     9 {'data~assets': 1}
+      259     9 {'data~assets': 1}
+
+Token count (via dictionary):
+
+       1 domains~data
+       2 business~domains
+       1 business~data
+       8 data~assets
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('domains~data', 'zone~zone')
+     1.00 ('domains~data', 'landing~zone~zone')
+     1.00 ('domains~data', 'zone~domains')
+     1.00 ('domains~data', 'zone~zone~domains')
+     1.00 ('domains~data', 'zone~domains~data')
+
+------------------
+Prompt:  Identify the parent DLZ of the geographical zone MAZ in the MLTxQuest hierarchy.
+Cleaned: ['dlz', 'geographical', 'hierarchy', 'identify', 'maz', 'mltxquest', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2919     9 {'zone': 1, 'hierarchy': 1}
+      433     9 {'zone': 1, 'hierarchy': 1}
+     2154    12 {'zone': 1, 'mltxquest': 1, 'dlz': 1}
+     2655    12 {'hierarchy': 1}
+     2075    12 {'geographical': 1}
+     2479    12 {'geographical': 1}
+     2844    12 {'geographical': 1}
+     2220    15 {'zone': 1, 'dlz': 1}
+      387    15 {'zone': 1, 'dlz': 1}
+     2552    16 {'zone': 1, 'mltxquest': 1, 'maz': 1}
+
+Token count (via dictionary):
+
+      58 zone
+     383 mltxquest
+      20 maz
+      11 identify
+       3 hierarchy
+       3 geographical
+      11 dlz
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     0.92 ('mltxquest', 'abi')
+     0.83 ('zone', 'data~landing~zone')
+     0.82 ('geographical', 'geographical~area')
+     0.82 ('geographical', 'lan')
+     0.79 ('zone', 'data~landing')
+     0.79 ('maz', 'infrastructure~code')
+     0.73 ('mltxquest', 'mltxdat~product')
+     0.71 ('mltxquest', 'data~product')
+
+------------------
+Prompt:  What Business domain is included in the GLOBAL geographical zone?
+Cleaned: ['business', 'domains', 'geographical', 'global', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      433     5 {'zone~domains': 1}
+       41     5 {'global~business': 1}
+       24     7 {'business~domains': 1}
+     2075     9 {'geographical': 1}
+     2479     9 {'geographical': 1}
+     2844     9 {'geographical': 1}
+
+Token count (via dictionary):
+
+       3 geographical
+       1 zone~domains
+       1 global~business
+       2 business~domains
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('zone~domains', 'dividend~data~landing')
+     1.00 ('zone~domains', 'landing~zone~zone')
+     1.00 ('zone~domains', 'zone~zone')
+     1.00 ('zone~domains', 'zone~zone~domains')
+     1.00 ('zone~domains', 'zone~domains~data')
+
+------------------
+Prompt:  What is the role of the 'intlog' Business domain within the INTLOG Zone?
+Cleaned: ['business', 'domains', 'intlog', 'intlog', 'role', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      433     8 {'zone~domains': 1}
+     2435     9 {'intlog': 1, '__intlog': 1}
+       24    10 {'business~domains': 1}
+       55    12 {'role': 1, '__role': 1}
+     2434    12 {'intlog': 1}
+     3261    12 {'intlog': 1}
+     2076    14 {'role': 1}
+     2142    14 {'role': 1}
+     2147    14 {'role': 1}
+     2164    14 {'role': 1}
+
+Token count (via dictionary):
+
+      23 role
+       6 intlog
+       1 zone~domains
+       2 business~domains
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('zone~domains', 'dividend~data~landing')
+     1.00 ('zone~domains', 'landing~zone~zone')
+     1.00 ('zone~domains', 'zone~zone')
+     1.00 ('zone~domains', 'zone~zone~domains')
+     1.00 ('zone~domains', 'zone~domains~data')
+
+------------------
+Prompt:  List some of the data assets under the 'commercial' Business domain.
+Cleaned: ['assets', 'business', 'commercial', 'data', 'domains', 'list']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+       24     5 {'business~domains': 1, 'business~domains~list': 1}
+      433     8 {'domains~data': 1}
+      151     8 {'business~data': 1}
+     2530     8 {'business~commercial': 1}
+       42    10 {'data~assets': 1}
+       48    10 {'data~assets': 1}
+       90    10 {'data~assets': 1}
+       91    10 {'data~assets': 1}
+       92    10 {'data~assets': 1}
+      199    10 {'data~assets': 1}
+
+Token count (via dictionary):
+
+       1 domains~data
+       2 business~domains
+       1 business~domains~list
+       1 business~data
+       1 business~commercial
+       8 data~assets
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.41 ('business~domains~list', 'business~domains')
+     1.00 ('domains~data', 'zone~zone')
+     1.00 ('domains~data', 'landing~zone~zone')
+     1.00 ('domains~data', 'zone~domains')
+     1.00 ('domains~data', 'zone~zone~domains')
+
+------------------
+Prompt:  Which Business domain does the 'model' data asset belong to?
+Cleaned: ['asset', 'business', 'data', 'domains', 'model']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      433     5 {'domains~data': 1}
+      151     5 {'business~data': 1}
+       24     7 {'business~domains': 1}
+     2143     7 {'data~asset': 1}
+       91     7 {'data~asset': 1}
+     2074     9 {'business~model': 1}
+     2206     9 {'business~model': 1}
+      385     9 {'business~model': 1}
+
+Token count (via dictionary):
+
+       1 domains~data
+       3 business~model
+       2 business~domains
+       1 business~data
+       2 data~asset
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('domains~data', 'zone~zone')
+     1.00 ('domains~data', 'landing~zone~zone')
+     1.00 ('domains~data', 'zone~domains')
+     1.00 ('domains~data', 'zone~zone~domains')
+     1.00 ('domains~data', 'zone~domains~data')
+
+------------------
+Prompt:  Identify the parent DLZ of the geographical zone GHQ in the MLTxQuest hierarchy.
+Cleaned: ['dlz', 'geographical', 'ghq', 'hierarchy', 'identify', 'mltxquest', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2353     8 {'zone': 1, 'mltxquest': 1, 'ghq': 1}
+     2919    11 {'zone': 1, 'hierarchy': 1}
+      433    11 {'zone': 1, 'hierarchy': 1}
+     2154    14 {'zone': 1, 'mltxquest': 1, 'dlz': 1}
+     2655    14 {'hierarchy': 1}
+     2075    14 {'geographical': 1}
+     2479    14 {'geographical': 1}
+     2844    14 {'geographical': 1}
+     2220    17 {'zone': 1, 'dlz': 1}
+      387    17 {'zone': 1, 'dlz': 1}
+
+Token count (via dictionary):
+
+      58 zone
+     383 mltxquest
+      11 identify
+       3 hierarchy
+       2 ghq
+       3 geographical
+      11 dlz
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     0.92 ('mltxquest', 'abi')
+     0.83 ('zone', 'data~landing~zone')
+     0.82 ('geographical', 'geographical~area')
+     0.82 ('geographical', 'lan')
+     0.79 ('zone', 'data~landing')
+     0.73 ('mltxquest', 'mltxdat~product')
+     0.71 ('mltxquest', 'data~product')
+     0.71 ('ghq', 'global~headquarters')
+
+------------------
+Prompt:  What geographical zones are included in the SUPCHN Data Landing Zone (DLZ)?
+Cleaned: ['data', 'dlz', 'geographical', 'landing', 'supchn', 'zone', 'zones']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2154     7 {'landing~zones': 1, 'landing~zone': 1, 'zone~landing': 1, 'dlz': 1, 'data~landing': 1, 'data~landing~zone': 1}
+       64    11 {'landing~zones': 1, 'data~landing': 1, 'data~landing~zones': 1}
+     3050    12 {'supchn': 1, 'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2029    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2039    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2343    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2434    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2524    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2589    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2944    15 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+
+Token count (via dictionary):
+
+       3 supchn
+       7 landing~zones
+      25 landing~zone
+       1 zone~landing
+       3 geographical
+      11 dlz
+      11 data~landing
+       1 data~landing~zones
+      10 data~landing~zone
+
+Top related tokens (via embeddings):
+
+     1.61 ('landing~zone', 'landing')
+     1.29 ('landing~zone', 'zone')
+     1.20 ('landing~zone', 'data~landing~zone')
+     1.20 ('data~landing~zone', 'landing~zone')
+     1.15 ('landing~zone', 'data~landing')
+     1.15 ('data~landing', 'landing~zone')
+     1.04 ('data~landing~zone', 'landing')
+     1.00 ('zone~landing', 'zones~connected')
+     1.00 ('zone~landing', 'landing~zones~connected')
+     1.00 ('zone~landing', 'connected~data')
+
+------------------
+Prompt:  Which Business domain is included in the COMMON geographical zone?
+Cleaned: ['business', 'common', 'domains', 'geographical', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      433     5 {'zone~domains': 1}
+       24     7 {'business~domains': 1}
+     2075     9 {'geographical': 1}
+     2479     9 {'geographical': 1}
+     2844     9 {'geographical': 1}
+     2236    11 {'common': 1}
+     2262    11 {'common': 1}
+     2263    11 {'common': 1}
+     2317    11 {'common': 1}
+     2339    11 {'common': 1}
+
+Token count (via dictionary):
+
+       3 geographical
+       1 zone~domains
+      18 common
+       2 business~domains
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('zone~domains', 'dividend~data~landing')
+     1.00 ('zone~domains', 'landing~zone~zone')
+     1.00 ('zone~domains', 'zone~zone')
+     1.00 ('zone~domains', 'zone~zone~domains')
+     1.00 ('zone~domains', 'zone~domains~data')
+
+------------------
+Prompt:  What Business domains are included in the SAZ geographical zone?
+Cleaned: ['business', 'domain', 'geographical', 'saz', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      151     6 {'business~domain': 1}
+     2075     8 {'geographical': 1}
+     2479     8 {'geographical': 1}
+     2844     8 {'geographical': 1}
+     2944     9 {'zone': 1, 'saz': 1}
+     2945     9 {'zone': 1, 'saz': 1}
+      379    12 {'saz': 1}
+      511    12 {'saz': 1}
+      513    12 {'saz': 1}
+     2012    14 {'zone': 1}
+
+Token count (via dictionary):
+
+      58 zone
+       8 saz
+       3 geographical
+       1 business~domain
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     1.06 ('business~domain', 'domain')
+     1.00 ('business~domain', 'overview~business')
+     1.00 ('business~domain', 'comprehensive~overview~business')
+     1.00 ('business~domain', 'overview~business~data')
+     1.00 ('business~domain', 'data~domain')
+     1.00 ('business~domain', 'section~details')
+     1.00 ('business~domain', 'details~specific')
+     1.00 ('business~domain', 'section~details~specific')
+
+------------------
+Prompt:  Which data assets are associated with the 'cws' Business domain?
+Cleaned: ['assets', 'business', 'data', 'domains']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+      433     5 {'domains~data': 1}
+      151     5 {'business~data': 1}
+       24     7 {'business~domains': 1}
+       42     9 {'data~assets': 1}
+       48     9 {'data~assets': 1}
+       90     9 {'data~assets': 1}
+       91     9 {'data~assets': 1}
+       92     9 {'data~assets': 1}
+      199     9 {'data~assets': 1}
+      259     9 {'data~assets': 1}
+
+Token count (via dictionary):
+
+       1 domains~data
+       2 business~domains
+       1 business~data
+       8 data~assets
+
+Top related tokens (via embeddings):
+
+     1.41 ('business~domains', 'given~business')
+     1.41 ('business~domains', 'validate~given~business')
+     1.41 ('business~domains', 'given~business~domains')
+     1.41 ('business~domains', 'domains~list')
+     1.41 ('business~domains', 'business~domains~list')
+     1.00 ('domains~data', 'zone~zone')
+     1.00 ('domains~data', 'landing~zone~zone')
+     1.00 ('domains~data', 'zone~domains')
+     1.00 ('domains~data', 'zone~zone~domains')
+     1.00 ('domains~data', 'zone~domains~data')
+
+------------------
+Prompt:  Identify the parent DLZ of the geographical zone EUR in the MLTxQuest hierarchy.
+Cleaned: ['dlz', 'eur', 'geographical', 'hierarchy', 'identify', 'mltxquest', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2268     8 {'zone': 1, 'mltxquest': 1, 'eur': 1}
+     2919    11 {'zone': 1, 'hierarchy': 1}
+      433    11 {'zone': 1, 'hierarchy': 1}
+     2154    14 {'zone': 1, 'mltxquest': 1, 'dlz': 1}
+     2655    14 {'hierarchy': 1}
+     2075    14 {'geographical': 1}
+     2479    14 {'geographical': 1}
+     2844    14 {'geographical': 1}
+     2220    17 {'zone': 1, 'dlz': 1}
+      387    17 {'zone': 1, 'dlz': 1}
+
+Token count (via dictionary):
+
+      58 zone
+     383 mltxquest
+      11 identify
+       3 hierarchy
+       3 geographical
+       2 eur
+      11 dlz
+
+Top related tokens (via embeddings):
+
+     1.29 ('zone', 'landing~zone')
+     1.08 ('zone', 'landing')
+     0.92 ('mltxquest', 'abi')
+     0.83 ('zone', 'data~landing~zone')
+     0.82 ('geographical', 'geographical~area')
+     0.82 ('geographical', 'lan')
+     0.79 ('zone', 'data~landing')
+     0.73 ('mltxquest', 'mltxdat~product')
+     0.71 ('mltxquest', 'data~product')
+     0.71 ('eur', 'europe~zone')
+
+------------------
+Prompt:  What Business domains are part of the GHQ geographical zone under the INTLOG Data Landing Zone (DLZ)?
+Cleaned: ['business', 'data', 'dlz', 'domain', 'geographical', 'ghq', 'intlog', 'landing', 'zone', 'zone']
+------------------
+Most relevant text entities:
+
+
+       ID wRank ID_Tokens
+     2154     8 {'landing~zone': 1, 'zone~landing~zone': 1, 'dlz': 1, 'data~landing': 1, 'data~landing~zone': 1}
+      433    13 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1, 'data~landing~zone~zone': 1}
+      151    13 {'business~domain': 1, 'business~data~domain': 1}
+     2434    15 {'landing~zone': 1, 'intlog': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2029    18 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2039    18 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2343    18 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2524    18 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2589    18 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+     2944    18 {'landing~zone': 1, 'data~landing': 1, 'data~landing~zone': 1}
+
+Token count (via dictionary):
+
+      25 landing~zone
+       1 zone~landing~zone
+       6 intlog
+       2 ghq
+       3 geographical
+      11 dlz
+      11 data~landing
+      10 data~landing~zone
+       1 data~landing~zone~zone
+       1 business~domain
+       1 business~data~domain
+
+Top related tokens (via embeddings):
+
+     1.61 ('landing~zone', 'landing')
+     1.29 ('landing~zone', 'zone')
+     1.20 ('landing~zone', 'data~landing~zone')
+     1.20 ('data~landing~zone', 'landing~zone')
+     1.15 ('landing~zone', 'data~landing')
+     1.15 ('data~landing', 'landing~zone')
+     1.06 ('business~domain', 'domain')
+     1.06 ('business~data~domain', 'domain')
+     1.04 ('data~landing~zone', 'landing')
+     1.00 ('zone~landing~zone', 'zones~connected')
+
+
