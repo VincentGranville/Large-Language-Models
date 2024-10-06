@@ -528,6 +528,7 @@ def default_frontendParams():
                        'bypassIgnoreList': False,
                        'ignoreList': ('data',),
                        'maxTokenCount': 1000,  # ignore generic tokens if large enough 
+                       'beta': 1.0, # used in text entity relevancy score to prompt
                        'show': { 
                                  # names of sections to display in output results
                                  'Embeddings': True,
