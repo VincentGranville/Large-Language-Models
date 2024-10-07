@@ -9,11 +9,16 @@ All input data (repository.txt augmented with repository2.txt) comes from one pa
   <code>xllm-enterprise-v2-user.py</code> calls the real-time fine-tuning function. The user enters one prompt at a time, from the keyboard, including command options.
 </li>
   <li>
-    <code>xllm-enterprise-v2-dev.py</code> does not call the real-time fine-tuning function. The test prompts with correct answers are loaded from a text file: <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/enterprise/enterprise_sample_prompts.txt">enterprise_sample_prompts.txt</a>. A prompt and corresponding answer are in a same row, separated by " | ".
+    <code>xllm-enterprise-v2-dev.py</code> does not call the real-time fine-tuning function. The test prompts with correct answers are loaded from a text file: <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/enterprise/enterprise_sample_prompts.txt">enterprise_sample_prompts.txt</a>. A prompt and corresponding answer are in a same row, separated by " | ". For documentation, see <a href="https://github.com/VincentGranville/Large-Language-Models/blob/main/xllm6/enterprise/LLM-scores.pdf">LLM-scores.pdf</a>.
   </li>
 </ul>
 
 <b>More documentation</b>: 
+
+All the material is documented in my book "Building Groundbreaking AI & LLM Apps from Scratch", coming soon. When published, it will be abailable on MLtechniques.com e-store, <a href="https://mltechniques.com/shop/">here</a>.
+
+Additional resources:
+
 <ul>
   <li>
 See <a href="https://mltblog.com/47DisG5">here</a>.
