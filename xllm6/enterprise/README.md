@@ -15,7 +15,7 @@ All input data (repository.txt augmented with repository2.txt) comes from one pa
 
 <b>More documentation</b>: 
 
-All the material is documented in my book "Building Groundbreaking AI & LLM Apps from Scratch", coming soon. When published, it will be abailable on MLtechniques.com e-store, <a href="https://mltechniques.com/shop/">here</a>.
+All the material is documented in my book "Building Disruptive AI & LLM Apps from Scratch", abailable on MLtechniques.com e-store, <a href="https://mltechniques.com/shop/">here</a>. S
 
 Additional resources:
 
