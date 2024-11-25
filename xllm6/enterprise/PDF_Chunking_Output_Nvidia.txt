@@ -1,0 +1,1510 @@
+
+----------------------------
+Processing page 0
+
+Title     0   -1 -1  0 88.0 16777215 NVIDIASans-Bold     Investor Presentation Q2 FY24                                                   
+Note      1   -1 -1  0 44.0 16777215 NVIDIASans-Regular  |August 28, 2023|                                                               
+
+Image (0, 1)    png size =  32746
+Image (0, 2)   jpeg size = 203220
+
+----------------------------
+Processing page 1
+
+Note      0   -1 -1  1 28.0 16777215 NVIDIASans-Regular  |Except for the historical information contained herein, certain matters in this presentation including, but not limited to, statements as to: our financial position; our markets, market|opportunity, demand and growth drivers; CSPs undertaking a generational transition to update their infrastructure for the new era of accelerated computing and AI; enterprises racing to|adopt generative AI; our belief that global end demand for gaming has returned to growth; the growing number of GPU cloud providers deploying in volume HGX systems based on our|Hopper and Ampere GPU architecture; our expectation that data center supply will increase each quarter through next year; a large upgrade opportunity ahead; the likelihood that the|seasonality of the overall gaming market will shift; RTX/DLSS ecosystem continuing to expand; the timing of a desktop workstation refresh; the expanding opportunity in Professional|Visualization for RTX technology; the impact of our partnership with MediaTek; our financial outlook, expectation of sequential growth to be driven largely by Data Center, with Gaming and|Professional Visualization also contributing, and our expected tax rates for the third quarter of fiscal 2024; the benefits, impact, performance, features and availability of our products and|technologies; the benefits, impact, features and timing of our collaborations or partnerships; NVIDIA accelerated computing being broadly recognized as the way to advance computing as|Moore's law ends; accelerated computing being needed to tackle the most impactful opportunities of our time; NVIDIA's expanding accelerated computing ecosystem; NVIDIA's value to|every stakeholder in the ecosystem; AI as the greatest technology force of our time; generative AI unlocking new opportunities; data centers across industries becoming AI factories; the|next wave of AI being robotics and industrial digitalization, and Omniverse being essential for robotics; NVIDIA's acceleration stacks and ecosystems helping to bring AI to the world's largest|industries; NVIDIA's AI expertise and scale helping to revolutionize businesses; NVIDIA software and services enabling the world's enterprises to revolutionize industries with AI; the cost and|time-to-solution savings of application speed-ups; our dividend program plan; our Automotive design win pipeline, ramp and production expectations; our aim to engage manufacturing|suppliers and goal of effecting supplier adoption of science-based environmental targets by fiscal 2026; and our plan for 100% renewable electricity for our operations and data centers by|fiscal 2025 and annually thereafter are forward-looking statements.|These forward-looking statements and any other forward-looking statements that go beyond historical facts that are made in this presentation are subject to risks and uncertainties that|may cause actual results to differ materially. Important factors that could cause actual results to differ materially include: global economic conditions; our reliance on third parties to|manufacture, assemble, package and test our products; the impact of technological development and competition; development of new products and technologies or enhancements to our|existing product and technologies; market acceptance of our products or our partners' products; design, manufacturing or software defects; changes in consumer preferences and|demands; changes in industry standards and interfaces; unexpected loss of performance of our products or technologies when integrated into systems and other factors.|NVIDIA has based these forward-looking statements largely on its current expectations and projections about future events and trends that it believes may affect its financial condition,|results of operations, business strategy, short-term and long-term business operations and objectives, and financial needs. These forward-looking statements are subject to a number of|risks and uncertainties, and you should not rely upon the forward-looking statements as predictions of future events. The future events and trends discussed in this presentation may not|occur and actual results could differ materially and adversely from those anticipated or implied in the forward-looking statements. Although NVIDIA believes that the expectations reflected|in the forward-looking statements are reasonable, the company cannot guarantee that future results, levels of activity, performance, achievements or events and circumstances reflected in|the forward-looking statements will occur. Except as required by law, NVIDIA disclaims any obligation to update these forward-looking statements to reflect future events or circumstances.|For a complete discussion of factors that could materially affect our financial results and operations, please refer to the reports we file from time to time with the SEC, including our most|recent Annual Report on Form 10-K, Quarterly Reports on Form 10-Q, and Current Reports on Form 8-K. Copies of reports we file with the SEC are posted on our website and are available|from NVIDIA without charge.|Many of the products and features described herein remain in various stages and will be offered on a when-and-if-available basis. The statements within are not intended to be, and should|not be interpreted as a commitment, promise, or legal obligation, and the development, release, and timing of any features or functionalities described for our products is subject to change|and remains at the sole discretion of NVIDIA. NVIDIA will have no liability for failure to deliver or delay in the delivery of any of the products, features or functions set forth herein.|NVIDIA uses certain non-GAAP measures in this presentation including non-GAAP gross profit, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP operating income, non-|GAAP operating margin, non-GAAP net income, non-GAAP diluted earnings per share, and free cash flow. NVIDIA believes the presentation of its non-GAAP financial measures enhances|investors' overall understanding of the company's historical financial performance. The presentation of the company's non-GAAP financial measures is not meant to be considered in|isolation or as a substitute for the company's financial results prepared in accordance with GAAP, and the company's non-GAAP measures may be different from non-GAAP measures used|by other companies. Further information relevant to the interpretation of non-GAAP financial measures, and reconciliations of these non-GAAP financial measures to the most comparable|GAAP measures, may be found in the slide titled "Reconciliation of Non-GAAP to GAAP Financial Measures".|
+
+Image (1, 1)    png size =  32746
+Image (1, 2)   jpeg size =  52454
+
+----------------------------
+Processing page 2
+
+List      0    0 -1  2 54.0  7780352 NVIDIASans-Light    • Q2 FY24 Earnings Summary                                                      
+List      0    1 -1  2 54.0  7780352 NVIDIASans-Light    • Key Announcements This Quarter                                                
+List      0    2 -1  2 54.0  7780352 NVIDIASans-Light    • NVIDIA Overview                                                               
+List      0    3 -1  2 54.0  7780352 NVIDIASans-Light    • Financials                                                                    
+List      0    4 -1  2 54.0  7780352 NVIDIASans-Light    • Reconciliation of Non-GAAP to GAAP Financial Measures                         
+Title     1    4 -1  2 96.0  7780352 NVIDIASans-Bold     Content                                                                         
+
+Image (2, 1)    png size =  32746
+Image (2, 2)   jpeg size = 100956
+
+----------------------------
+Processing page 3
+
+Title     0   -1 -1  3 90.0 16777215 NVIDIASans-Bold     Q2 FY24 Earnings Summary                                                        
+
+Image (3, 1)    png size =  32746
+Image (3, 2)   jpeg size = 139699
+Image (3, 3)   jpeg size = 293490
+
+----------------------------
+Processing page 4
+
+Title     0   -1 -1  4 72.0 16777215 NVIDIASans-Bold     Highlights                                                                      
+List      0    0 -1  4 44.0  7780352 ArialMT             • Exceptional growth driven by Data Center                                      
+SubList   0    0  0  4 40.0  7780352 ArialMT             • Total revenue up 101% Y/Y to $13.51B, above outlook of $11.00B +/- 2%         
+SubList   0    0  1  4 40.0  7780352 ArialMT             • Data Center up 171% Y/Y to $10.32B                                            
+SubList   0    0  2  4 40.0  7780352 ArialMT             • Gaming up 22% Y/Y to $2.49B                                                   
+List      0    1  2  4 44.0  7780352 ArialMT             • Record Data Center revenue on tremendous demand for NVIDIA accelerated computing and AI platforms
+SubList   0    1  3  4 40.0  7780352 ArialMT             • CSPs are undertaking a generational transition to upgrade their infrastructure for the new era of accelerated computing and AI
+SubList   0    1  4  4 40.0  7780352 ArialMT             • Consumer internet companies' investments in AI purpose-built data center infrastructure are already generating significant returns
+SubList   0    1  5  4 40.0  7780352 ArialMT             • Enterprises are racing to deploy generative AI, driving strong consumption of NVIDIA-powered instances in the cloud, as well as demand for on-prem infrastructure
+List      0    2  5  4 44.0  7780352 ArialMT             • Strong Gaming growth fueled by GeForce RTX 40 Series GPUs for laptops and desktops
+SubList   0    2  6  4 40.0  7780352 ArialMT             • End-customer demand was solid, and consistent with seasonality; believe global end demand has returned to growth
+SubList   0    2  7  4 40.0  7780352 ArialMT             • Laptop GPUs posted strong growth in the key back-to-school season, led by RTX 4060 GPUs
+SubList   0    2  8  4 40.0  7780352 ArialMT             • Launched GeForce RTX 4060 and 4060 Ti GPUs for desktops, bringing Ada Lovelace down to price points as low as $299
+
+Image (4, 1)    png size =  32746
+
+----------------------------
+Processing page 5
+
+Table (5, 0):
+['', 'GAAP', None, None, 'Non-GAAP', None, None]
+['', 'Q2 FY24', 'Y/Y', 'Q/Q', 'Q2 FY24', 'Y/Y', 'Q/Q']
+['Revenue', '$13,507', '+101%', '+88%', '$13,507', '+101%', '+88%']
+['Gross Margin', '70.1%', '+26.6 pts', '+5.5 pts', '71.2%', '+25.3 pts', '+4.4 pts']
+['Operating\nIncome', '$6,800', '+1,263%', '+218%', '$7,776', '+487%', '+155%']
+['Net Income', '$6,188', '+843%', '+203%', '$6,740', '+422%', '+148%']
+['Diluted EPS', '$2.48', '+854%', '+202%', '$2.70', '+429%', '+148%']
+['Cash Flow\nfrom Ops', '$6,348', '+400%', '+118%', '$6,348', '+400%', '+118%']
+
+Title     0   -1 -1  5 72.0 16777215 NVIDIASans-Bold     Q2 FY24 Financial Summary                                                       
+Note      1   -1 -1  5 22.0 10329501 NVIDIASans-Regular  |All dollar figures are in millions other than EPS. Refer to Appendix for reconciliation of Non-GAAP measures.|
+Note      2   -1 -1  5 28.0 16777215 NVIDIASans-Bold     |GAAP|Non-GAAP|Q2 FY24|Y/Y|Q/Q|Q2 FY24|Y/Y|Q/Q|Revenue|                         
+Data      3   -1 -1  5 28.0 16777215 NVIDIASans-Regular  |$13,507|+101%|+88%|$13,507|+101%|+88%|                                         
+Note      4   -1 -1  5 28.0 16777215 NVIDIASans-Bold     |Gross Margin|                                                                  
+Data      5   -1 -1  5 28.0 16777215 NVIDIASans-Regular  |70.1%|+26.6 pts|+5.5 pts|71.2%|+25.3 pts|+4.4 pts|                             
+Note      6   -1 -1  5 28.0 16777215 NVIDIASans-Bold     |Operating|Income|                                                              
+Data      7   -1 -1  5 28.0 16777215 NVIDIASans-Regular  |$6,800|+1,263%|+218%|$7,776|+487%|+155%|                                       
+Note      8   -1 -1  5 28.0 16777215 NVIDIASans-Bold     |Net Income|                                                                    
+Data      9   -1 -1  5 28.0 16777215 NVIDIASans-Regular  |$6,188|+843%|+203%|$6,740|+422%|+148%|                                         
+Note     10   -1 -1  5 28.0 16777215 NVIDIASans-Bold     |Diluted EPS|                                                                   
+Data     11   -1 -1  5 28.0 16777215 NVIDIASans-Regular  |$2.48|+854%|+202%|$2.70|+429%|+148%|                                           
+Note     12   -1 -1  5 28.0 16777215 NVIDIASans-Bold     |Cash Flow|from Ops|                                                            
+Data     13   -1 -1  5 28.0 16777215 NVIDIASans-Regular  |$6,348|+400%|+118%|$6,348|+400%|+118%|                                         
+Data     14   -1 -1  5 24.0 16777215 NVIDIASans-Regular  |$6,704|$5,931|$6,051|$7,192|$13,507|45.9%|56.1%|66.1%|66.8%|71.2%|40.0%|45.0%|50.0%|55.0%|60.0%|65.0%|70.0%|75.0%|80.0%|85.0%|90.0%|1,500|3,500|5,500|7,500|9,500|11,500|13,500|15,500|
+Note     15   -1 -1  5 24.0 16777215 NVIDIASans-Regular  |Q2 FY23|Q3 FY23|Q4 FY23|Q1 FY24|Q2 FY24|Revenue($M)|Non-GAAP GM|               
+
+Image (5, 1)    png size =  32746
+Image (5, 2)    png size =  23226
+
+----------------------------
+Processing page 6
+
+Note      0   -1 -1  6 36.0  7780352 NVIDIASans-Bold     |Highlights|                                                                    
+List      0    0 -1  6 36.0  7780352 ArialMT             • Data Center compute revenue nearly tripled year-on-year, driven primarily by accelerating demand from cloud service providers and large consumer internet companies for our HGX platform
+List      0    1 -1  6 36.0  7780352 ArialMT             • AWS, Google Cloud, Meta, Microsoft Azure, and Oracle Cloud and a growing number of GPU cloud providers are deploying in volume HGX systems based on our Hopper and Ampere GPU architecture
+List      0    2 -1  6 36.0  7780352 ArialMT             • Expect supply to increase each quarter through next year                      
+List      0    3 -1  6 36.0  7780352 ArialMT             • Data Center networking revenue almost doubled year-on-year, driven by our end-to-end InfiniBand networking platform
+List      0    4 -1  6 36.0  7780352 ArialMT             • BlueField-3 DPU is in qualification with all major OEMs and ramping across multiple CSPs and consumer internet companies
+Title     1    4 -1  6 72.0 16777215 NVIDIASans-Bold     Data Center                                                                     
+Note      3   -1 -1  6 40.0 16777215 NVIDIASans-Medium   |Revenue ($M)|                                                                  
+Data      4  TD0 -1  6 24.0 16777215 NVIDIASans-Regular  |$3,806|$3,833|$3,616|$4,284|$10,323|                                           
+Note      5  TL0 -1  6 24.0 16777215 NVIDIASans-Regular  |Q2 FY23|Q3 FY23|Q4 FY23|Q1 FY24|Q2 FY24|                                       
+Data      6   -1 -1  6 24.0 16777215 NVIDIASans-Bold     |171% Y/Y|                                                                      
+Note      7   -1 -1  6 24.0 16777215 NVIDIASans-Bold     |and|                                                                           
+Data      8   -1 -1  6 24.0 16777215 NVIDIASans-Bold     |141% Q/Q|                                                                      
+
+Image (6, 1)    png size =  32746
+Image (6, 2)    png size =  23226
+
+----------------------------
+Processing page 7
+
+Note      0   -1 -1  7 36.0  7780352 NVIDIASans-Bold     |Highlights|                                                                    
+List      0    0 -1  7 36.0  7780352 ArialMT             • Growth fueled by GeForce RTX 40 series GPUs for laptops and desktops          
+List      0    1 -1  7 36.0  7780352 ArialMT             • Large upgrade opportunity ahead: just 47% of installed base have upgraded to RTX; ~20% have a GPU with RTX 3060 or higher
+List      0    2 -1  7 36.0  7780352 ArialMT             • NVIDIA GPU-powered laptops have gained in popularity; shipments now outpace desktop GPUs in several regions around the world
+SubList   0    2  0  7 32.0  7780352 ArialMT             • Likely to shift overall Gaming seasonality a bit, with Q2 and Q3 stronger, reflecting the back-to-school and holiday build schedules
+List      0    3  0  7 36.0  7780352 ArialMT             • RTX/DLSS ecosystem continues to expand; 35 new games added DLSS support, including Diablo IV and Baldur's Gate 3; there are now over 330 RTX accelerated games and apps
+List      0    4  0  7 36.0  7780352 ArialMT             • Bringing generative AI to gaming with NVIDIA Avatar Cloud Engine (ACE) for Games
+Title     1    4  0  7 72.0 16777215 NVIDIASans-Bold     Gaming                                                                          
+Note      3   -1 -1  7 40.0 16777215 NVIDIASans-Medium   |Revenue ($M)|                                                                  
+Data      4  TD0 -1  7 24.0 16777215 NVIDIASans-Regular  |$2,042|$1,574|$1,831|$2,240|$2,486|                                            
+Note      5  TL0 -1  7 24.0 16777215 NVIDIASans-Regular  |Q2 FY23|Q3 FY23|Q4 FY23|Q1 FY24|Q2 FY24|                                       
+Data      6   -1 -1  7 24.0 16777215 NVIDIASans-Bold     |22% Y/Y|                                                                       
+Note      7   -1 -1  7 24.0 16777215 NVIDIASans-Bold     |and|                                                                           
+Data      8   -1 -1  7 24.0 16777215 NVIDIASans-Bold     |11% Q/Q|                                                                       
+
+Image (7, 1)    png size =  32746
+Image (7, 2)    png size =  23226
+
+----------------------------
+Processing page 8
+
+Data      0  TD0 -1  8 24.0 16777215 NVIDIASans-Regular  |$496|$200|$226|$295|$379|                                                      
+Note      1  TL0 -1  8 24.0 16777215 NVIDIASans-Regular  |Q2 FY23|Q3 FY23|Q4 FY23|Q1 FY24|Q2 FY24|                                       
+Note      2   -1 -1  8 36.0  7780352 NVIDIASans-Bold     |Highlights|                                                                    
+List      2    0 -1  8 36.0  7780352 ArialMT             • Ada architecture ramp drove strong growth, rolling out initially in laptop workstations
+List      2    1 -1  8 36.0  7780352 ArialMT             • Desktop workstations refresh coming in Q3                                     
+SubList   2    1  0  8 32.0  7780352 ArialMT             • Powerful new RTX systems with up to 4 NVIDIA RTX 6000 GPUs, configured with NVIDIA AI Enterprise or NVIDIA Omniverse Enterprise
+SubList   2    1  1  8 32.0  7780352 ArialMT             • Three new desktop workstation GPUs based on the Ada generation: NVIDIA RTX 5000, 4500, and 4000
+List      2    2  1  8 36.0  7780352 ArialMT             • New workloads in gen AI, LLM development and data science are expanding the opportunity in Pro Viz for RTX technology
+Title     3    2  1  8 72.0 16777215 NVIDIASans-Bold     Professional Visualization                                                      
+Note      5   -1 -1  8 40.0 16777215 NVIDIASans-Medium   |Revenue ($M)|                                                                  
+Data      6   -1 -1  8 24.0 16777215 NVIDIASans-Bold     |28% Q/Q|24% Y/Y|                                                               
+
+Image (8, 1)    png size =  32746
+Image (8, 2)    png size =  23226
+
+----------------------------
+Processing page 9
+
+Data      0  TD0 -1  9 24.0 16777215 NVIDIASans-Regular  |$220|$251|$294|$296|$253|                                                      
+Note      1  TL0 -1  9 24.0 16777215 NVIDIASans-Regular  |Q2 FY23|Q3 FY23|Q4 FY23|Q1 FY24|Q2 FY24|                                       
+Note      2   -1 -1  9 36.0  7780352 NVIDIASans-Bold     |Highlights|                                                                    
+List      2    0 -1  9 36.0  7780352 ArialMT             • Solid y/y growth driven by ramp of self-driving platforms based on NVIDIA DRIVE Orin SoC with several new energy vehicle makers
+List      2    1 -1  9 36.0  7780352 ArialMT             • Sequential decline reflects lower overall automotive demand, particularly in China
+List      2    2 -1  9 36.0  7780352 ArialMT             • Announced that NVIDIA DRIVE Orin is powering the new XPENG G6 Coupe SUV's intelligent advanced driver assistance system
+List      2    3 -1  9 36.0  7780352 ArialMT             • Partnered with MediaTek, which will develop automotive SoCs and integrate a new product line of NVIDIA's GPU chiplets
+Title     3    3 -1  9 72.0 16777215 NVIDIASans-Bold     Automotive                                                                      
+Note      5   -1 -1  9 40.0 16777215 NVIDIASans-Medium   |Revenue ($M)|                                                                  
+Data      6   -1 -1  9 24.0 16777215 NVIDIASans-Bold     |15% Y/Y|15% Q/Q|                                                               
+
+Image (9, 1)    png size =  32746
+Image (9, 2)    png size =  23226
+
+----------------------------
+Processing page 10
+
+Data      0  TD0 -1 10 24.0 16777215 NVIDIASans-Regular  |$1,270|$392|$2,249|$2,911|$6,348|                                              
+Note      1  TL0 -1 10 24.0 16777215 NVIDIASans-Regular  |Q2 FY23|Q3 FY23|Q4 FY23|Q1 FY24|Q2 FY24|                                       
+Note      2   -1 -1 10 36.0  7780352 NVIDIASans-Bold     |Highlights|                                                                    
+List      2    0 -1 10 36.0  7780352 ArialMT             • Y/Y and Q/Q growth were both driven by higher revenue                         
+List      2    1 -1 10 36.0  7780352 ArialMT             • Returned $3.4B to shareholders in the form of shares repurchased and cash dividends
+List      2    2 -1 10 36.0  7780352 ArialMT             • Invested $300M in capex (includes principal payments on PP&E)                 
+List      2    3 -1 10 36.0  7780352 ArialMT             • Ended the quarter with $16.0B in gross cash and $9.8B in debt; $6.2B in net cash
+List      2    4 -1 10 36.0  7780352 ArialMT             • Additional $25B in stock repurchases authorized, adding to $4B that remained as of end of Q2
+Title     3    4 -1 10 72.0 16777215 NVIDIASans-Bold     Sources & Uses of Cash                                                          
+Note      5   -1 -1 10 40.0 16777215 NVIDIASans-Medium   |Cash Flow from Operations ($M)|                                                
+Note      6   -1 -1 10 24.0 10329501 NVIDIASans-Italic   |Gross cash is defined as cash/cash equivalents & marketable securities.|Debt is defined as principal value of debt.|Net cash is defined as gross cash less debt.|
+Data      7   -1 -1 10 24.0 16777215 NVIDIASans-Bold     |400% Y/Y|                                                                      
+Note      8   -1 -1 10 24.0 16777215 NVIDIASans-Bold     |and|                                                                           
+Data      9   -1 -1 10 24.0 16777215 NVIDIASans-Bold     |118% Q/Q|                                                                      
+
+Image (10, 1)   png size =  32746
+Image (10, 2)   png size =  23226
+
+----------------------------
+Processing page 11
+
+Title     0   -1 -1 11 72.0 16777215 NVIDIASans-Bold     Q3 FY24 Outlook                                                                 
+Note      1   -1 -1 11 44.0 16777215 NVIDIASans-Medium   |Revenue|                                                                       
+Data      2   -1 -1 11 40.0  7780352 NVIDIASans-Bold     |$16.0 billion|                                                                 
+Note      3   -1 -1 11 40.0 16777215 NVIDIASans-Regular  |, plus or minus 2%|                                                            
+Note      4   -1 -1 11 27.0 16777215 NVIDIASans-Regular  |Expect sequential growth to be driven largely by Data Center, with Gaming and Pro Viz also contributing|
+Note      5   -1 -1 11 44.0 16777215 NVIDIASans-Medium   |Gross Margins|                                                                 
+Data      6   -1 -1 11 40.0  7780352 NVIDIASans-Bold     |71.5%|                                                                         
+Note      7   -1 -1 11 40.0 16777215 NVIDIASans-Regular  |GAAP and|                                                                      
+Data      8   -1 -1 11 40.0  7780352 NVIDIASans-Bold     |72.5%|                                                                         
+Note      9   -1 -1 11 40.0 16777215 NVIDIASans-Regular  |non-GAAP, plus or minus 50 basis points|                                       
+Note     10   -1 -1 11 44.0 16777215 NVIDIASans-Medium   |Operating Expense|                                                             
+Note     11   -1 -1 11 40.0 16777215 NVIDIASans-Regular  |Approximately|                                                                 
+Data     12   -1 -1 11 40.0  7780352 NVIDIASans-Bold     |$2.95 billion|                                                                 
+Note     13   -1 -1 11 40.0 16777215 NVIDIASans-Regular  |GAAP and|                                                                      
+Data     14   -1 -1 11 40.0  7780352 NVIDIASans-Bold     |$2.00 billion|                                                                 
+Note     15   -1 -1 11 40.0 16777215 NVIDIASans-Regular  |non-GAAP|                                                                      
+Note     16   -1 -1 11 44.0 16777215 NVIDIASans-Medium   |Other Income & Expense|                                                        
+Note     17   -1 -1 11 40.0 16777215 NVIDIASans-Regular  |Income of approximately|                                                       
+Data     18   -1 -1 11 40.0  7780352 NVIDIASans-Bold     |$100 million|                                                                  
+Note     19   -1 -1 11 40.0 16777215 NVIDIASans-Regular  |for GAAP and non-GAAP|                                                         
+Note     20   -1 -1 11 27.0 16777215 NVIDIASans-Regular  |Excluding gains and losses on non-affiliated investments|                      
+Note     21   -1 -1 11 44.0 16777215 NVIDIASans-Medium   |Tax Rate|                                                                      
+Data     22   -1 -1 11 40.0  7780352 NVIDIASans-Bold     |14.5%|                                                                         
+Note     23   -1 -1 11 40.0 16777215 NVIDIASans-Regular  |GAAP|and non-GAAP, plus or minus 1%, excluding discrete items|                 
+Note     24   -1 -1 11 22.0 10329501 NVIDIASans-Regular  |Refer to Appendix for reconciliation of Non-GAAP measures.|                    
+
+Image (11, 1)   png size =  32746
+
+----------------------------
+Processing page 12
+
+Title     0   -1 -1 12 90.0 16777215 NVIDIASans-Bold     Key Announcements This Quarter                                                  
+
+Image (12, 1)   png size =  32746
+Image (12, 2)  jpeg size = 139699
+Image (12, 3)  jpeg size = 293490
+
+----------------------------
+Processing page 13
+
+Table (13, 0):
+['NVIDIA Grace Hopper\nSuperchips Now Available\n• GH200 Grace Hopper Superchip combines our first\nArm-based Grace CPU with an H100 GPU\n• Using NVIDIA NVLink-C2C interconnect at 900GB/s\n(7X faster than PCIe Gen5), it delivers a CPU+GPU\ncoherent access to over 600GB of memory\n• Ideal for giant AI and HPC applications like Gen AI,\ndeep recommenders, and vector databases\n• GH200 delivers order-of-magnitude speed-ups\ncompared to x86 CPUs\n• 9X for vector databases\n• 12X for deep recommender inference\n• 284X for LLM (65B parameter) inference\n• Available now from leading server manufacturers\n• NVIDIA and SoftBank are collaborating on a platform\nbased on GH200 for Gen AI and 5G/6G', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 13 72.0 16777215 NVIDIASans-Bold     NVIDIA Grace Hopper Superchips Now Available                                    
+List      0    0 -1 13 40.0  7780352 NVIDIASans-Regular  • GH200 Grace Hopper Superchip combines our first Arm-based Grace CPU with an H100 GPU
+List      0    1 -1 13 40.0  7780352 NVIDIASans-Regular  • Using NVIDIA NVLink-C2C interconnect at 900GB/s (7X faster than PCIe Gen5), it delivers a CPU+GPU coherent access to over 600GB of memory
+List      0    2 -1 13 40.0  7780352 NVIDIASans-Regular  • Ideal for giant AI and HPC applications like Gen AI, deep recommenders, and vector databases
+List      0    3 -1 13 40.0  7780352 NVIDIASans-Regular  • GH200 delivers order-of-magnitude speed-ups compared to x86 CPUs              
+SubList   0    3  0 13 36.0  7780352 NVIDIASans-Regular  • 9X for vector databases                                                       
+SubList   0    3  1 13 36.0  7780352 NVIDIASans-Regular  • 12X for deep recommender inference                                            
+SubList   0    3  2 13 36.0  7780352 NVIDIASans-Regular  • 284X for LLM (65B parameter) inference                                        
+List      0    4  2 13 40.0  7780352 NVIDIASans-Regular  • Available now from leading server manufacturers                               
+List      0    5  2 13 40.0  7780352 NVIDIASans-Regular  • NVIDIA and SoftBank are collaborating on a platform based on GH200 for Gen AI and 5G/6G
+
+Image (13, 1)   png size =  32746
+Image (13, 2)   png size =  16554
+Image (13, 3)  jpeg size =  47193
+
+----------------------------
+Processing page 14
+
+Table (14, 0):
+['DGX GH200 AI Supercomputer\nExtends t he Frontier of LLMs\n• DGX GH200 is a new class of large-memory AI\nsupercomputer powered by 256 NVIDIA GH200 Grace\nHopper Superchips and the NVIDIA NVLink Switch System,\nwith massive, shared memory space\n• 1 exaflop of performance and 144TB of shared memory\nfor giant next-gen Gen AI language models, recommender\nsystems and data analytics workloads\n• The NVIDIA NVLink Switch System enables all 256 GPUs\nin a DGX GH200 to work together as one\n• Google Cloud, Meta and Microsoft are among the first\nto gain access to the DGX GH200\n• DGX GH200 supercomputers are expected to be available\nby the end of calendar 2023', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 14 72.0 16777215 NVIDIASans-Bold     DGX GH200 AI Supercomputer Extends the Frontier of LLMs                         
+List      0    0 -1 14 40.0  7780352 NVIDIASans-Regular  • DGX GH200 is a new class of large-memory AI supercomputer powered by 256 NVIDIA GH200 Grace Hopper Superchips and the NVIDIA NVLink Switch System, with massive, shared memory space
+List      0    1 -1 14 40.0  7780352 NVIDIASans-Regular  • 1 exaflop of performance and 144TB of shared memory for giant next-gen Gen AI language models, recommender systems and data analytics workloads
+List      0    2 -1 14 40.0  7780352 NVIDIASans-Regular  • The NVIDIA NVLink Switch System enables all 256 GPUs in a DGX GH200 to work together as one
+List      0    3 -1 14 40.0  7780352 NVIDIASans-Regular  • Google Cloud, Meta and Microsoft are among the first to gain access to the DGX GH200
+List      0    4 -1 14 40.0  7780352 NVIDIASans-Regular  • DGX GH200 supercomputers are expected to be available by the end of calendar 2023
+
+Image (14, 1)   png size =  32746
+Image (14, 2)  jpeg size =  67440
+Image (14, 3)  jpeg size = 168437
+
+----------------------------
+Processing page 15
+
+Table (15, 0):
+['NVIDIA Grace Hopper\nNext-Gen Platform wit h HBM3e\n• Announced the next-gen NVIDIA GH200 Grace Hopper\nplatform with HBM3e memory\n• Based on two Grace Hopper Superchips connected\nby NVIDIA NVLink interconnect technology\n• The new platform comprises a single server with 144 Arm\nNeoverse cores, eight petaflops of AI performance and\n282 gigabytes of HBM3e memory\n• Delivers up to 3.5X more memory capacity and 3X more\nbandwidth than its predecessor\n• Built for the most complex Gen AI workloads, LLMs,\nrecommender systems and vector databases\n• Servers from leading manufacturers using the next\ngeneration Grace Hopper platform with HBM3e are\nexpected to be available in Q2 of calendar 2024', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 15 72.0 16777215 NVIDIASans-Bold     NVIDIA Grace Hopper Next-Gen Platform with HBM3e                                
+List      0    0 -1 15 40.0  7780352 NVIDIASans-Regular  • Announced the next-gen NVIDIA GH200 Grace Hopper platform with HBM3e memory   
+List      0    1 -1 15 40.0  7780352 NVIDIASans-Regular  • Based on two Grace Hopper Superchips connected by NVIDIA NVLink interconnect technology
+List      0    2 -1 15 40.0  7780352 NVIDIASans-Regular  • The new platform comprises a single server with 144 Arm Neoverse cores, eight petaflops of AI performance and 282 gigabytes of HBM3e memory
+List      0    3 -1 15 40.0  7780352 NVIDIASans-Regular  • Delivers up to 3.5X more memory capacity and 3X more bandwidth than its predecessor
+List      0    4 -1 15 40.0  7780352 NVIDIASans-Regular  • Built for the most complex Gen AI workloads, LLMs, recommender systems and vector databases
+List      0    5 -1 15 40.0  7780352 NVIDIASans-Regular  • Servers from leading manufacturers using the next generation Grace Hopper platform with HBM3e are expected to be available in Q2 of calendar 2024
+
+Image (15, 1)   png size =  32746
+Image (15, 2)   png size =  16554
+Image (15, 3)  jpeg size =  38801
+
+----------------------------
+Processing page 16
+
+Table (16, 0):
+['New NVIDIA L40S GPU for Gen AI\nand Industrial Digitalization\n• NVIDIA L40S is a universal data center processor designed\nto accelerate the most compute-intensive applications,\nincluding\n• AI training and inference\n• 3D design and visualization\n• video processing\n• industrial digitalization\n• Available from leading server makers in a broad range of\nplatforms, including NVIDIA OVX and NVIDIA AI-ready\nservers with NVIDIA BlueField DPUs, beginning this quarter', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 16 72.0 16777215 NVIDIASans-Bold     New NVIDIA L40S GPU for Gen AI and Industrial Digitalization                    
+List      0    0 -1 16 40.0  7780352 NVIDIASans-Regular  • NVIDIA L40S is a universal data center processor designed to accelerate the most compute-intensive applications, including
+SubList   0    0  0 16 36.0  7780352 NVIDIASans-Regular  • AI training and inference                                                     
+SubList   0    0  1 16 36.0  7780352 NVIDIASans-Regular  • 3D design and visualization                                                   
+SubList   0    0  2 16 36.0  7780352 NVIDIASans-Regular  • video processing                                                              
+SubList   0    0  3 16 36.0  7780352 NVIDIASans-Regular  • industrial digitalization                                                     
+List      0    1  3 16 40.0  7780352 NVIDIASans-Regular  • Available from leading server makers in a broad range of platforms, including NVIDIA OVX and NVIDIA AI-ready servers with NVIDIA BlueField DPUs, beginning this quarter
+
+Image (16, 1)   png size =  32746
+Image (16, 2)  jpeg size =  54166
+
+----------------------------
+Processing page 17
+
+Table (17, 0):
+['MGX Server Reference Design\nfor Accelerated Computing\n• NVIDIA MGX server reference design is a scalable\nand open accelerated computing server architecture\n• Helps system manufacturers quickly and cost-effectively\nbuild more than 100 server variations to address diverse\nAI, HPC and Omniverse applications\n• Slashes development costs by up to three-quarters and\nreduces development time by two-thirds to just six\nmonths\n• Extends NVIDIA accelerated computing into virtually\nevery server segment of the $1T installed base of data\ncenter infrastructure\n• Will be adopted by ASRock Rack, ASUS, GIGABYTE,\nPegatron, QCT and Supermicro', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 17 72.0 16777215 NVIDIASans-Bold     MGX Server Reference Design for Accelerated Computing                           
+List      0    0 -1 17 40.0  7780352 NVIDIASans-Regular  • NVIDIA MGX server reference design is a scalable and open accelerated computing server architecture
+List      0    1 -1 17 40.0  7780352 NVIDIASans-Regular  • Helps system manufacturers quickly and cost-effectively build more than 100 server variations to address diverse AI, HPC and Omniverse applications
+List      0    2 -1 17 40.0  7780352 NVIDIASans-Regular  • Slashes development costs by up to three-quarters and reduces development time by two-thirds to just six months
+List      0    3 -1 17 40.0  7780352 NVIDIASans-Regular  • Extends NVIDIA accelerated computing into virtually every server segment of the $1T installed base of data center infrastructure
+List      0    4 -1 17 40.0  7780352 NVIDIASans-Regular  • Will be adopted by ASRock Rack, ASUS, GIGABYTE, Pegatron, QCT and Supermicro  
+
+Image (17, 1)   png size =  32746
+Image (17, 2)   png size =  16554
+Image (17, 3)  jpeg size =  59836
+Image (17, 4)  jpeg size =  51781
+Image (17, 5)  jpeg size =  41599
+
+----------------------------
+Processing page 18
+
+Table (18, 0):
+['Spectrum-X End -to -End\nEt hernet Platform\n• NVIDIA Spectrum-X is an end-to-end networking platform\ndesigned to optimize the performance and efficiency\nof Ethernet-based AI clouds\n• Combines NVIDIA Spectrum-4 switch, with NVIDIA\nBlueField-3 DPU, NVIDIA LinkX, and NVIDIA software\n• The world’s first Ethernet switch platform for AI\n• NVIDIA DOCA for BlueField DPU programmability\n• Spectrum-X achieves 1.7X better AI performance and\npower efficiency vs. traditional Ethernet\n• Shipping this quarter', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 18 72.0 16777215 NVIDIASans-Bold     Spectrum-X End-to-End Ethernet Platform                                         
+List      0    0 -1 18 40.0  7780352 NVIDIASans-Regular  • NVIDIA Spectrum-X is an end-to-end networking platform designed to optimize the performance and efficiency of Ethernet-based AI clouds
+List      0    1 -1 18 40.0  7780352 NVIDIASans-Regular  • Combines NVIDIA Spectrum-4 switch, with NVIDIA BlueField-3 DPU, NVIDIA LinkX, and NVIDIA software
+SubList   0    1  0 18 36.0  7780352 NVIDIASans-Regular  • The world's first Ethernet switch platform for AI                             
+SubList   0    1  1 18 36.0  7780352 NVIDIASans-Regular  • NVIDIA DOCA for BlueField DPU programmability                                 
+List      0    2  1 18 40.0  7780352 NVIDIASans-Regular  • Spectrum-X achieves 1.7X better AI performance and power efficiency vs. traditional Ethernet
+List      0    3  1 18 40.0  7780352 NVIDIASans-Regular  • Shipping this quarter                                                         
+
+Image (18, 1)   png size =  32746
+Image (18, 2)   png size =  16554
+Image (18, 3)  jpeg size =  73808
+Image (18, 4)  jpeg size =  52985
+Image (18, 5)  jpeg size =  52756
+
+----------------------------
+Processing page 19
+
+Table (19, 0):
+['NVIDIA AI Announcements to\nHelp Accelerate t he Adoption\nof Custom Gen AI by Enterprises\n• NVIDIA AI Workbench – a unified, easy-to-use workspace\nthat allows developers to quickly create, test and\ncustomize pretrained Gen AI models on a PC or\nworkstation - then scale them to virtually any data center,\npublic cloud or NVIDIA DGX Cloud\n• NVIDIA AI Enterprise 4.0 – the latest version of our\nenterprise software platform now includes support for\nNVIDIA NeMo, our cloud-native framework for creating\nand customizing LLM applications, providing a foundation\nfor production-ready Gen AI for customers\n• NVIDIA DGX Cloud Integration in Hugging Face –\npartnership to give developers one-click access to NVIDIA\nDGX Cloud AI supercomputing within the Hugging Face\nplatform to train and tune advanced AI models', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 19 72.0 16777215 NVIDIASans-Bold     NVIDIA AI Announcements to Help Accelerate the Adoption of Custom Gen AI by Enterprises
+List      0    0 -1 19 40.0  7780352 NVIDIASans-Regular  • NVIDIA AI Workbench -- a unified, easy-to-use workspace that allows developers to quickly create, test and customize pretrained Gen AI models on a PC or workstation - then scale them to virtually any data center, public cloud or NVIDIA DGX Cloud
+List      0    1 -1 19 40.0  7780352 NVIDIASans-Regular  • NVIDIA AI Enterprise 4.0 -- the latest version of our enterprise software platform now includes support for NVIDIA NeMo, our cloud-native framework for creating and customizing LLM applications, providing a foundation for production-ready Gen AI for customers
+List      0    2 -1 19 40.0  7780352 NVIDIASans-Regular  • NVIDIA DGX Cloud Integration in Hugging Face -- partnership to give developers one-click access to NVIDIA DGX Cloud AI supercomputing within the Hugging Face platform to train and tune advanced AI models
+
+Image (19, 1)   png size =  32746
+Image (19, 2)   png size =  16554
+Image (19, 3)  jpeg size =  31275
+Image (19, 4)  jpeg size = 234995
+Image (19, 5)  jpeg size =  42863
+Image (19, 6)  jpeg size =  64896
+
+----------------------------
+Processing page 20
+
+Table (20, 0):
+['VMware and NVIDIA Unlock\nGenerative AI for Enterprises\n• Announced a major new enterprise offering called VMware\nPrivate AI Foundation with NVIDIA\n• VMware Private AI Foundation is a fully integrated platform\nfeaturing NVIDIA AI software and accelerated computing\nwith multi-cloud software for enterprises running VMware\n• Gives enterprises access to infrastructure, AI and cloud\nmanagement software needed to customize models and\nrun Gen AI apps such as intelligent chatbots, assistants,\nsearch and summarization\n• NVIDIA AI Enterprise-ready servers are fully optimized for\nVMware Cloud Foundation and Private AI Foundation\n• Nearly 100 configurations will soon be available from Dell,\nHPE, and Lenovo', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 20 72.0 16777215 NVIDIASans-Bold     VMware and NVIDIA Unlock Generative AI for Enterprises                          
+List      0    0 -1 20 40.0  7780352 NVIDIASans-Regular  • Announced a major new enterprise offering called VMware Private AI Foundation with NVIDIA
+List      0    1 -1 20 40.0  7780352 NVIDIASans-Regular  • VMware Private AI Foundation is a fully integrated platform featuring NVIDIA AI software and accelerated computing with multi-cloud software for enterprises running VMware
+List      0    2 -1 20 40.0  7780352 NVIDIASans-Regular  • Gives enterprises access to infrastructure, AI and cloud management software needed to customize models and run Gen AI apps such as intelligent chatbots, assistants, search and summarization
+List      0    3 -1 20 40.0  7780352 NVIDIASans-Regular  • NVIDIA AI Enterprise-ready servers are fully optimized for VMware Cloud Foundation and Private AI Foundation
+SubList   0    3  0 20 36.0  7780352 NVIDIASans-Regular  • Nearly 100 configurations will soon be available from Dell, HPE, and Lenovo   
+
+Image (20, 1)   png size =  32746
+Image (20, 2)   png size =  16554
+Image (20, 3)   png size =  41521
+Image (20, 4)   png size =   9543
+
+----------------------------
+Processing page 21
+
+Table (21, 0):
+['Snowflake and NVIDIA Team to\nHelp Businesses Harness Their\nData for Gen AI in t he Data Cloud\n• Partnership with Snowflake to provide businesses with an\naccelerated path to create customized Gen AI applications\nusing their own proprietary data, all securely within the\nSnowflake Data Cloud\n• With the NVIDIA NeMo platform for developing LLMs and\nNVIDIA GPU-accelerated computing, Snowflake will enable\nenterprises to make custom LLMs for advanced Gen AI\nservices, including chatbots, search and summarization', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 21 72.0 16777215 NVIDIASans-Bold     Snowflake and NVIDIA Team to Help Businesses Harness Their Data for Gen AI in the Data Cloud
+List      0    0 -1 21 40.0  7780352 NVIDIASans-Regular  • Partnership with Snowflake to provide businesses with an accelerated path to create customized Gen AI applications using their own proprietary data, all securely within the Snowflake Data Cloud
+List      0    1 -1 21 40.0  7780352 NVIDIASans-Regular  • With the NVIDIA NeMo platform for developing LLMs and NVIDIA GPU-accelerated computing, Snowflake will enable enterprises to make custom LLMs for advanced Gen AI services, including chatbots, search and summarization
+
+Image (21, 1)   png size =  32746
+Image (21, 2)   png size =  16554
+Image (21, 3)   png size =  41521
+Image (21, 4)   png size =  40711
+
+----------------------------
+Processing page 22
+
+Table (22, 0):
+['WPP Partners Wit h NVIDIA to\nBuild Gen AI-Enabled Content\nEngine for Digital Advertising\n• NVIDIA and WPP are developing a content engine that\nharnesses NVIDIA Omniverse and AI to enable creative\nteams to produce high-quality commercial content faster,\nmore efficiently and at scale\n• The engine connects an ecosystem of 3D design,\nmanufacturing and creative supply chain tools\n• This includes Adobe Firefly, a family of creative Gen AI\nmodels, and exclusive visual content from Getty Images\ncreated using NVIDIA Picasso, a foundry for custom\nGen AI models for visual design\n• Soon available exclusively to WPP’s clients around\nthe world', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 22 72.0 16777215 NVIDIASans-Bold     WPP Partners With NVIDIA to Build Gen AI-Enabled Content Engine for Digital Advertising
+List      0    0 -1 22 40.0  7780352 NVIDIASans-Regular  • NVIDIA and WPP are developing a content engine that harnesses NVIDIA Omniverse and AI to enable creative teams to produce high-quality commercial content faster, more efficiently and at scale
+List      0    1 -1 22 40.0  7780352 NVIDIASans-Regular  • The engine connects an ecosystem of 3D design, manufacturing and creative supply chain tools
+List      0    2 -1 22 40.0  7780352 NVIDIASans-Regular  • This includes Adobe Firefly, a family of creative Gen AI models, and exclusive visual content from Getty Images created using NVIDIA Picasso, a foundry for custom Gen AI models for visual design
+List      0    3 -1 22 40.0  7780352 NVIDIASans-Regular  • Soon available exclusively to WPP's clients around the world                  
+
+Image (22, 1)   png size =  32746
+Image (22, 2)  jpeg size =  80076
+
+----------------------------
+Processing page 23
+
+Table (23, 0):
+['New NVIDIA RTX Ada GPUs to Power\nWorkstations for Gen AI and LLM,\nContent Creation, Data Science\n• Global systems builders, including BOXX, Dell\nTechnologies, HP and Lenovo, announced powerful\nnew workstations based on NVIDIA RTX 6000\n• Up to four GPUs in a single desktop workstation\n• Up to 5,828 TFLOPS of AI performance and 192GB\nof GPU memory\n• Can be configured with NVIDIA AI Enterprise\nor Omniverse Enterprise\n• Three new desktop workstation Ada GPUs — NVIDIA RTX\n5000, 4500 and 4000\n• Up to 2X the RT core throughput and up to 2X faster AI\ntraining performance versus prior gen\n• NVIDIA RTX 5000 GPU available now; NVIDIA RTX 6000,\n4500 and 4000 GPUs available in the fall', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 23 72.0 16777215 NVIDIASans-Bold     New NVIDIA RTX Ada GPUs to Power Workstations for Gen AI and LLM, Content Creation, Data Science
+List      0    0 -1 23 40.0  7780352 NVIDIASans-Regular  • Global systems builders, including BOXX, Dell Technologies, HP and Lenovo, announced powerful new workstations based on NVIDIA RTX 6000
+SubList   0    0  0 23 36.0  7780352 NVIDIASans-Regular  • Up to four GPUs in a single desktop workstation                               
+SubList   0    0  1 23 36.0  7780352 NVIDIASans-Regular  • Up to 5,828 TFLOPS of AI performance and 192GB of GPU memory                  
+SubList   0    0  2 23 36.0  7780352 NVIDIASans-Regular  • Can be configured with NVIDIA AI Enterprise or Omniverse Enterprise           
+List      0    1  2 23 40.0  7780352 NVIDIASans-Regular  • Three new desktop workstation Ada GPUs -- NVIDIA RTX 5000, 4500 and 4000      
+SubList   0    1  3 23 36.0  7780352 NVIDIASans-Regular  • Up to 2X the RT core throughput and up to 2X faster AI training performance versus prior gen
+List      0    2  3 23 40.0  7780352 NVIDIASans-Regular  • NVIDIA RTX 5000 GPU available now; NVIDIA RTX 6000, 4500 and 4000 GPUs available in the fall
+
+Image (23, 1)   png size =  32746
+Image (23, 2)  jpeg size =  53127
+
+----------------------------
+Processing page 24
+
+Table (24, 0):
+['NVIDIA, Pixar, Adobe, Apple and\nAutodesk Co -Founded t he\nAlliance for OpenUSD (AOUSD)\n• AOUSD was formed to promote the standardization,\ndevelopment, evolution, and growth of Pixar’s\nUniversal Scene Description technology\n• Standardize the 3D ecosystem by advancing the\ncapabilities of Open Universal Scene Description\n(OpenUSD)\n• Enable developers and content creators to describe,\ncompose, and simulate large-scale 3D projects and\nbuild 3D-enabled products and services with greater\ninteroperability of 3D tools and data\n• NVIDIA Omniverse is built on OpenUSD', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 24 72.0 16777215 NVIDIASans-Bold     NVIDIA, Pixar, Adobe, Apple and Autodesk Co-Founded the Alliance for OpenUSD (AOUSD)
+List      0    0 -1 24 40.0  7780352 NVIDIASans-Regular  • AOUSD was formed to promote the standardization, development, evolution, and growth of Pixar's Universal Scene Description technology
+List      0    1 -1 24 40.0  7780352 NVIDIASans-Regular  • Standardize the 3D ecosystem by advancing the capabilities of Open Universal Scene Description (OpenUSD)
+List      0    2 -1 24 40.0  7780352 NVIDIASans-Regular  • Enable developers and content creators to describe, compose, and simulate large-scale 3D projects and build 3D-enabled products and services with greater interoperability of 3D tools and data
+List      0    3 -1 24 40.0  7780352 NVIDIASans-Regular  • NVIDIA Omniverse is built on OpenUSD                                          
+
+Image (24, 1)   png size =  32746
+Image (24, 2)  jpeg size =  55115
+
+----------------------------
+Processing page 25
+
+Table (25, 0):
+['New NVIDIA Generative AI\nOmniverse Cloud APIs\n• Enable developers to more seamlessly implement and\ndeploy OpenUSD pipelines and applications\n• ChatUSD – LLM copilot for USD developers that can answer\nUSD knowledge questions or generate Python-USD code\nscripts\n• RunUSD – translates OpenUSD files into fully path-traced\nrendered images and generates renders with Omniverse\nCloud\n• DeepSearch – LLM agent enabling fast semantic search\nthrough massive databases of untagged assets\n• USD-GDN Publisher – one-click service for publishing\nand streaming high-fidelity, OpenUSD-based experiences\nthrough NVIDIA’s Graphics Delivery Network', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 25 72.0 16777215 NVIDIASans-Bold     New NVIDIA Generative AI Omniverse Cloud APIs                                   
+List      0    0 -1 25 40.0  7780352 NVIDIASans-Regular  • Enable developers to more seamlessly implement and deploy OpenUSD pipelines and applications
+SubList   0    0  0 25 36.0  7780352 NVIDIASans-Regular  • ChatUSD -- LLM copilot for USD developers that can answer USD knowledge questions or generate Python-USD code scripts
+SubList   0    0  1 25 36.0  7780352 NVIDIASans-Regular  • RunUSD -- translates OpenUSD files into fully path-traced rendered images and generates renders with Omniverse Cloud
+SubList   0    0  2 25 36.0  7780352 NVIDIASans-Regular  • DeepSearch -- LLM agent enabling fast semantic search through massive databases of untagged assets
+SubList   0    0  3 25 36.0  7780352 NVIDIASans-Regular  • USD-GDN Publisher -- one-click service for publishing and streaming high-fidelity, OpenUSD-based experiences through NVIDIA's Graphics Delivery Network
+
+Image (25, 1)   png size =  32746
+Image (25, 2)  jpeg size = 120983
+
+----------------------------
+Processing page 26
+
+Table (26, 0):
+['MediaTek Partners Wit h NVIDIA\nto Transform Automobiles Wit h\nAI and Accelerated Computing\n• MediaTek will develop mainstream automotive SoCs for\nglobal OEMs that integrate new NVIDIA GPU chiplet IP for\nAl and graphics\n• The combination of MediaTek’s SoC with NVIDIA’s GPU\nand AI software will enable new experiences, enhanced\nsafety and new connected services\n• The chiplets are connected by an ultra-fast and coherent\nchiplet interconnect technology\n• MediaTek will run the NVIDIA DRIVE OS, DRIVE IX, CUDA\nand TensorRT software on these new SoCs\n• The partnership covers a wide range of vehicle segments,\nfrom luxury to entry-level', '', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 26 72.0 16777215 NVIDIASans-Bold     MediaTek Partners With NVIDIA to Transform Automobiles With AI and Accelerated Computing
+List      0    0 -1 26 40.0  7780352 NVIDIASans-Regular  • MediaTek will develop mainstream automotive SoCs for global OEMs that integrate new NVIDIA GPU chiplet IP for Al and graphics
+List      0    1 -1 26 40.0  7780352 NVIDIASans-Regular  • The combination of MediaTek's SoC with NVIDIA's GPU and AI software will enable new experiences, enhanced safety and new connected services
+List      0    2 -1 26 40.0  7780352 NVIDIASans-Regular  • The chiplets are connected by an ultra-fast and coherent chiplet interconnect technology
+List      0    3 -1 26 40.0  7780352 NVIDIASans-Regular  • MediaTek will run the NVIDIA DRIVE OS, DRIVE IX, CUDA and TensorRT software on these new SoCs
+List      0    4 -1 26 40.0  7780352 NVIDIASans-Regular  • The partnership covers a wide range of vehicle segments, from luxury to entry-level
+
+Image (26, 1)   png size =  32746
+Image (26, 2)  jpeg size =  48562
+
+----------------------------
+Processing page 27
+
+Title     0   -1 -1 27 90.0 16777215 NVIDIASans-Bold     NVIDIA Overview                                                                 
+
+Image (27, 1)   png size =  32746
+Image (27, 2)  jpeg size = 139699
+Image (27, 3)  jpeg size = 293490
+
+----------------------------
+Processing page 28
+
+Table (28, 0):
+['', 'NVIDIA pioneered accelerated computing to help solve impactful\nchallenges classical computers cannot. A quarter of a century in the\nmaking, NVIDIA accelerated computing is broadly recognized as the\nway to advance computing as Moore’s law ends and AI lifts off.\nNVIDIA’s platform is installed in several hundred million computers,\nis available in every cloud and from every server maker, powers 74%\nof the TOP500 supercomputers, and boasts over 4 million developers.\nHeadquarters: Santa Clara, CA']
+
+Note      0   -1 -1 28 44.0 16777215 NVIDIASans-Regular  |NVIDIA pioneered accelerated computing to help solve impactful|challenges classical computers cannot. A quarter of a century in the|making, NVIDIA accelerated computing is broadly recognized as the|way to advance computing as Moore's law ends and AI lifts off.|NVIDIA's platform is installed in several hundred million computers,|is available in every cloud and from every server maker, powers 74%|of the TOP500 supercomputers, and boasts over 4 million developers.|Headquarters: Santa Clara, CA|
+
+Image (28, 1)   png size =   2912
+Image (28, 2)  jpeg size = 189860
+Image (28, 3)  jpeg size = 1527209
+
+----------------------------
+Processing page 29
+
+Table (29, 0):
+['What Is Accelerated Computing?\nA full-stack approach: silicon, systems, software\nNot just a superfast chip – accelerated computing\nis a full-stack combination of:\n• Chip(s) with specialized processors\n• Algorithms in acceleration libraries\n• Domain experts to refactor applications\nTo speed-up compute-intensive parts of an application.', '', 'Amdahl’s law:\nThe overall system speed-up (S) gained by optimizing a\nsingle part of a system by a factor (s) is limited by the\nproportion of execution time of that part (p).\n1\n𝑆 =\n𝑝\n1 − 𝑝 +\n𝑠\nFor example:\n• If 90% of the runtime can be accelerated by 100X,\nthe application is sped up 9X\n• If 99% of the runtime can be accelerated by 100X,\nthe application is sped up 50X\n• If 80% of the runtime can be accelerated by 500X,\nor even 1000X, the application is sped up 5X', None, None]
+[None, None, None, '', None]
+['', None, None, None, '']
+
+Title     0   -1 -1 29 72.0 16777215 NVIDIASans-Bold     What Is Accelerated Computing?                                                  
+Note      1   -1 -1 29 44.0 16777215 NVIDIASans-Regular  |Not just a superfast chip -- accelerated computing|is a full-stack combination of:|
+List      1    0 -1 29 44.0  7780352 ArialMT             • Chip(s) with specialized processors                                           
+List      1    1 -1 29 44.0  7780352 ArialMT             • Algorithms in acceleration libraries                                          
+List      1    2 -1 29 44.0  7780352 ArialMT             • Domain experts to refactor applications To speed-up compute-intensive parts of an application.
+Note      3   -1 -1 29 48.0  7780352 NVIDIASans-Regular  |A full-stack approach: silicon, systems, software|                             
+Note      4   -1 -1 29 44.0 16777215 NVIDIASans-Regular  |For example:|                                                                  
+List      4    0 -1 29 44.0  7780352 ArialMT             • If 90% of the runtime can be accelerated by 100X, the application is sped up 9X
+List      4    1 -1 29 44.0  7780352 ArialMT             • If 99% of the runtime can be accelerated by 100X, the application is sped up 50X
+List      4    2 -1 29 44.0  7780352 ArialMT             • If 80% of the runtime can be accelerated by 500X, or even 1000X, the application is sped up 5X
+Note      6   -1 -1 29 48.0 16777215 NVIDIASans-Bold     |Amdahl's law:|                                                                 
+Note      7   -1 -1 29 44.0 16777215 NVIDIASans-Regular  |The overall system speed-up (S) gained by optimizing a|single part of a system by a factor (s) is limited by the|proportion of execution time of that part (p).|
+Note      8   -1 -1 29 60.0 16777215 CambriaMath         |\U0001d446=|                                                                   
+Data      9  TD0 -1 29 60.0 16777215 CambriaMath         |1|1 \u2212\U0001d45d+|                                                         
+Note     10  TL0 -1 29 60.0 16777215 CambriaMath         |\U0001d45d|\U0001d460|                                                         
+
+Image (29, 1)   png size =  32746
+
+----------------------------
+Processing page 30
+
+Table (30, 0):
+['Why Accelerated Computing?\nAdvancing computing in the post-Moore’s Law era\nAccelerated computing is needed to tackle the most\nimpactful opportunities of our time —like AI, climate\nsimulation, drug discovery, ray tracing, and robotics.\nNVIDIA is uniquely dedicated to accelerated computing\n—working top-to-bottom—refactoring applications and\ncreating new algorithms, and bottom-to-top—inventing\nnew specialized processors, like RT Core and Tensor Core.\n“It’s the end of Moore’s Law as we know it.”\n- John Hennessy Oct 23, 2018\n“Moore’s Law is dead.”\n- Jensen Huang, GTC 2013', None, '109\n)', None, None]
+[None, '', '(TOPS\n108\nSecond\nGPU-Computing perf\n107\n1000X\n2X per year\nIn 10 years\nper\n106\nOperations\n105\n1.1X per year\n104\nof\nTrillions\n103\n1.5X perf per year\n102\nSingle-threaded CPU perf\n1980 1990 2000 2010 2020 2030', None, None]
+[None, None, '', None, None]
+[None, None, None, '', None]
+['', None, None, None, '']
+
+Title     0   -1 -1 30 72.0 16777215 NVIDIASans-Bold     Why Accelerated Computing?                                                      
+Note      1   -1 -1 30 44.0 16777215 NVIDIASans-Regular  |Accelerated computing is needed to tackle the most|impactful opportunities of our time--like AI, climate|simulation, drug discovery, ray tracing, and robotics.|NVIDIA is uniquely dedicated to accelerated computing|--working top-to-bottom--refactoring applications and|creating new algorithms, and bottom-to-top--inventing|new specialized processors, like RT Core and Tensor Core.|"|It's the end of Moore's Law as we know it.|"|
+Note      2   -1 -1 30 32.0 16777215 NVIDIASans-Regular  |- John Hennessy Oct 23, 2018|                                                  
+Note      3   -1 -1 30 44.0  7780352 NVIDIASans-Regular  |"|Moore's Law is dead.|"|                                                      
+Note      4   -1 -1 30 32.0 16777215 NVIDIASans-Regular  |- Jensen Huang, GTC 2013|                                                      
+Note      5   -1 -1 30 48.0  7780352 NVIDIASans-Regular  |Advancing computing in the post-Moore's Law era|                               
+Data      6   -1 -1 30 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data      7   -1 -1 30 16.0 16777215 NVIDIASans-Regular  |2|                                                                             
+Data      8   -1 -1 30 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data      9   -1 -1 30 16.0 16777215 NVIDIASans-Regular  |3|                                                                             
+Data     10   -1 -1 30 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     11   -1 -1 30 16.0 16777215 NVIDIASans-Regular  |4|                                                                             
+Data     12   -1 -1 30 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     13   -1 -1 30 16.0 16777215 NVIDIASans-Regular  |5|                                                                             
+Data     14   -1 -1 30 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     15   -1 -1 30 16.0 16777215 NVIDIASans-Regular  |6|                                                                             
+Data     16   -1 -1 30 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     17   -1 -1 30 16.0 16777215 NVIDIASans-Regular  |7|                                                                             
+Data     18   -1 -1 30 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     19   -1 -1 30 16.0 16777215 NVIDIASans-Regular  |9|                                                                             
+Data     20   -1 -1 30 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     21   -1 -1 30 16.0 16777215 NVIDIASans-Regular  |8|                                                                             
+Data     22   -1 -1 30 28.0 16777215 NVIDIASans-Regular  |1980|1990|2000|2010|2020|2030|                                                 
+Note     23   -1 -1 30 28.0  7780352 NVIDIASans-Regular  |GPU-Computing perf|                                                            
+Data     24  TD0 -1 30 28.0  7780352 NVIDIASans-Regular  |2X per year|1000X|                                                             
+Note     25  TL0 -1 30 28.0 16777215 NVIDIASans-Regular  |In 10 years|Single-threaded CPU perf|                                          
+Data     26  TD0 -1 30 28.0    28608 NVIDIASans-Regular  |1.5X perf per year|1.1X per year|                                              
+Note     27   -1 -1 30 28.0 10329501 NVIDIASans-Regular  |Trillions of Operations per Second (TOPS)|                                     
+
+Image (30, 1)   png size =  32746
+
+----------------------------
+Processing page 31
+
+Title     0   -1 -1 31 72.0 16777215 NVIDIASans-Bold     NVIDIA's Accelerated Computing Platform                                         
+Note      1   -1 -1 31 48.0  7780352 NVIDIASans-Regular  |Full-stack innovation across silicon, systems and software|                    
+Note      2   -1 -1 31 40.0 16777215 NVIDIASans-Regular  |With nearly three decades of a singular|focus, NVIDIA is expert at accelerating|software and scaling compute by a|Million-X, going well beyond Moore's law.|Accelerated computing is a full-stack|challenge, demanding deep understanding|of the problem domain, optimizing across|every layer of computing, and all three chips|--GPU, CPU, and DPU.|Scaling across multi-GPUs and multi-nodes|is a data center-scale challenge and requires|treating the network and storage as part of|the computing fabric.|Our platform extends from PCs to|supercomputing centers, enterprise data|centers, cloud and edge environments.|
+Note      3   -1 -1 31 20.0 16777215 NVIDIASans-Regular  |cuNumeric|CV-CUDA|cuQuantum|Parabricks|Sionna|Jetpack|RAPIDS|Spark|cuDNN|cuGraph|TensorRT|Triton|Deepstream|Flare|DOCA|Mag IO|Aerial|
+Note      4   -1 -1 31 24.0 16777215 NVIDIASans-Regular  |NVIDIA HPC|NVIDIA AI|NVIDIA Omniverse|                                         
+Note      5   -1 -1 31 20.0 16777215 NVIDIASans-Regular  |RTX|DGX|HGX|EGX|OVX|AGX|Super|POD|IGX|                                         
+Note      6   -1 -1 31 24.0 16777215 NVIDIASans-Regular  |DPU|CPU|GPU|                                                                   
+Data      7   -1 -1 31 28.0 16777215 NVIDIASans-Medium   |3-CHIPS|                                                                       
+Note      8   -1 -1 31 28.0 16777215 NVIDIASans-Medium   |PLATFORMS|AI APPLICATION FRAMEWORK|ACCELERATION|LIBRARIES|CLOUD-TO-EDGE|DATACENTER-TO-|ROBOTIC SYSTEMS|
+
+Image (31, 1)   png size =  32746
+Image (31, 2)   png size =   2776
+Image (31, 3)   png size =  14011
+Image (31, 4)   png size =  13662
+Image (31, 5)  jpeg size =  21368
+Image (31, 6)  jpeg size =  18342
+Image (31, 7)  jpeg size =  19656
+Image (31, 8)  jpeg size =  15314
+Image (31, 9)  jpeg size =  10080
+Image (31, 10) jpeg size =  14219
+Image (31, 11) jpeg size =  12405
+Image (31, 12) jpeg size =  13757
+Image (31, 13) jpeg size =  22136
+Image (31, 14) jpeg size =  24294
+Image (31, 15) jpeg size =  14254
+Image (31, 16) jpeg size =   8343
+Image (31, 17) jpeg size =  11530
+Image (31, 18) jpeg size =  20499
+
+----------------------------
+Processing page 32
+
+Title     0   -1 -1 32 72.0 16777215 NVIDIASans-Bold     NVIDIA's Expanding Accelerated Computing Ecosystem                              
+Data      1   -1 -1 32 60.0 16777215 NVIDIASans-Medium   |300|                                                                           
+Note      2   -1 -1 32 60.0 16777215 NVIDIASans-Regular  |                                                                               
+Note      3   -1 -1 32 48.0 16777215 NVIDIASans-Light    |Libraries|                                                                     
+Data      4   -1 -1 32 60.0 16777215 NVIDIASans-Medium   |400|                                                                           
+Note      5   -1 -1 32 60.0 16777215 NVIDIASans-Regular  |                                                                               
+Note      6   -1 -1 32 48.0 16777215 NVIDIASans-Light    |AI Models|                                                                     
+Data      7   -1 -1 32 24.0 16777215 NVIDIASans-Medium   |2020|2023|                                                                     
+Note      8   -1 -1 32 36.0 16777215 NVIDIASans-Medium   |AI Startups|                                                                   
+Data      9   -1 -1 32 36.0 16777215 NVIDIASans-Medium   |6K|                                                                            
+Data     10   -1 -1 32 44.0 16777215 NVIDIASans-Medium   |14K|                                                                           
+Note     11   -1 -1 32 36.0 16777215 NVIDIASans-Medium   |Developers|                                                                    
+Data     12   -1 -1 32 24.0 16777215 NVIDIASans-Medium   |2020|2023|                                                                     
+Data     13   -1 -1 32 44.0 16777215 NVIDIASans-Medium   |4M|                                                                            
+Data     14   -1 -1 32 36.0 16777215 NVIDIASans-Medium   |1.8M|                                                                          
+Data     15   -1 -1 32 32.0 16777215 NVIDIASans-Regular  |100 Updated in the Last Year|                                                  
+Data     16   -1 -1 32 24.0 16777215 NVIDIASans-Medium   |2020|2023|                                                                     
+Note     17   -1 -1 32 36.0 16777215 NVIDIASans-Medium   |CUDA Downloads*|                                                               
+Data     18   -1 -1 32 44.0 16777215 NVIDIASans-Medium   |40M|                                                                           
+Data     19   -1 -1 32 36.0 16777215 NVIDIASans-Medium   |20M|                                                                           
+Note     20   -1 -1 32 20.0 16777215 NVIDIASans-Italic   |*Cumulative|                                                                   
+Data     21  TD0 -1 32 24.0 16777215 NVIDIASans-Medium   |2020|2023|                                                                     
+Note     22  TL0 -1 32 36.0 16777215 NVIDIASans-Medium   |GPU-Accelerated|Applications|                                                  
+Data     23   -1 -1 32 44.0 16777215 NVIDIASans-Medium   |3,000|                                                                         
+Data     24   -1 -1 32 36.0 16777215 NVIDIASans-Medium   |700|                                                                           
+
+Image (32, 1)   png size =  32746
+Image (32, 2)   png size =   6858
+Image (32, 3)   png size =   5467
+Image (32, 4)   png size =  14869
+Image (32, 5)   png size =   5962
+Image (32, 6)   png size =  14817
+Image (32, 7)   png size =   7661
+Image (32, 8)   png size =  14783
+Image (32, 9)   png size =   2943
+
+----------------------------
+Processing page 33
+
+Title     0   -1 -1 33 72.0 16777215 NVIDIASans-Bold     NVIDIA's Multi-Sided Platform and Flywheel                                      
+Note      1   -1 -1 33 44.0 16777215 NVIDIASans-Regular  |NVIDIA is valued by every stakeholder in the ecosystem:|                       
+List      1    0 -1 33 44.0  7780352 ArialMT             • For developers -- NVIDIA's one Architecture and large installed base give developer's software the best performance and greatest reach
+List      1    1 -1 33 44.0  7780352 ArialMT             • For computer makers and CSPs -- NVIDIA's rich suite of Acceleration Platforms lets partners build one offering to address large markets including media & entertainment, healthcare, transportation, energy, financial services, manufacturing, retail, and more
+List      1    2 -1 33 44.0  7780352 ArialMT             • For customers -- NVIDIA is offered by virtually every computing provider and accelerates the most impactful applications from cloud to edge
+List      1    3 -1 33 44.0  7780352 ArialMT             • For NVIDIA -- Deep engagement with developers, computing providers, and customers in diverse industries enables unmatched expertise, scale, and speed of innovation across the entire accelerated computing stack -- propelling the flywheel
+Note      3   -1 -1 33 36.0 16777215 NVIDIASans-Regular  |4 Million|Developers|Global Computer|Makers and CSPs|                          
+Data      4   -1 -1 33 36.0 16777215 NVIDIASans-Regular  |35,000|                                                                        
+Note      5   -1 -1 33 36.0 16777215 NVIDIASans-Regular  |Organizations|Across Industries|NVIDIA|Accelerated|Computing|                  
+Note      6   -1 -1 33 32.0 16777215 NVIDIASans-Regular  |Full-Stack|Expertise and Scale|CUDA|Installed Base|Wealth of|Accelerated|Apps|Demand and|New|Opportunities|
+Data      7   -1 -1 33 32.0 16777215 NVIDIASans-Regular  |100's of Systems|                                                              
+Note      8   -1 -1 33 32.0 16777215 NVIDIASans-Regular  |CSPs Worldwide|Full-Stack|Acceleration for|Largest Industries|                 
+
+Image (33, 1)   png size =  32746
+Image (33, 2)   png size =   4489
+
+----------------------------
+Processing page 34
+
+Title     0   -1 -1 34 72.0 16777215 NVIDIASans-Bold     Full-Stack & Data Center Scale Acceleration                                     
+Note      1   -1 -1 34 48.0  7780352 NVIDIASans-Regular  |Drive Significant Cost Savings and Workload Scaling|                           
+Note      2   -1 -1 34 44.0 16777215 NVIDIASans-Medium   |Classical Computing|--960 CPU-only servers|Accelerated Computing|--2 GPU servers|
+Data      3   -1 -1 34 40.0 16777215 NVIDIASans-Medium   |25X lower cost|84X better energy-efficiency|                                   
+Note      4   -1 -1 34 36.0 16777215 NVIDIASans-Regular  |Application|Application|Re-Engineered for Acceleration|Magnum IO|CUDA-X Acceleration Libraries|CPU server racks|
+Note      5   -1 -1 34 20.0 10329501 NVIDIASans-Italic   |LLM Workload: Bert-Large Training and Inference|CPU Server: Dual-EYPC 7763|GPU Server: Dual-EPYC 7763 + 8X H100 PCIe GPUs|
+
+Image (34, 1)   png size =  32746
+Image (34, 2)   png size =   9787
+Image (34, 3)   png size =   5431
+Image (34, 4)   png size =   5552
+Image (34, 5)   png size =   2683
+Image (34, 6)   png size =   3068
+Image (34, 7)   png size =   2404
+Image (34, 8)   png size =   1683
+
+----------------------------
+Processing page 35
+
+Title     0   -1 -1 35 72.0 16777215 NVIDIASans-Bold     Training & Inference -- One Architecture                                        
+Note      1   -1 -1 35 48.0  7780352 NVIDIASans-Regular  |Cloud|On-Prem|Edge|                                                            
+Note      2   -1 -1 35 28.0 16777215 NVIDIASans-Medium   |TRAINING|                                                                      
+Note      3   -1 -1 35 20.0 16777215 NVIDIASans-Regular  |AI FACTORIES|                                                                  
+Note      4   -1 -1 35 40.0 16777215 NVIDIASans-Medium   |TRAINING|INFERENCE|                                                            
+Note      5   -1 -1 35 28.0 16777215 NVIDIASans-Medium   |IN THE DATA CENTER|NVIDIA L40|Image Generation|NVIDIA L4|AI Video|NVIDIA H100 NVL|Large Language Models|NVIDIA Grace Hopper|Recommendation Models|AGX|Functionally-Safe System|for Autonomous Vehicles|IGX|Industrial-Grade System|for Healthcare, Logistics,|Manufacturing|AT THE EDGE|AI FACTORIES|
+
+Image (35, 1)   png size =  32746
+Image (35, 2)   png size =    676
+Image (35, 3)   png size =    590
+Image (35, 4)   png size =  17065
+Image (35, 5)   png size =  17232
+Image (35, 6)  jpeg size = 484616
+Image (35, 7)  jpeg size =  14623
+Image (35, 8)   png size =   1231
+Image (35, 9)   png size =   1542
+
+----------------------------
+Processing page 36
+
+Title     0   -1 -1 36 72.0 16777215 NVIDIASans-Bold     AI Is the Greatest Technology Force of Our Time                                 
+Note      1   -1 -1 36 48.0  7780352 NVIDIASans-Regular  |Data centers across industries will become AI factories|                       
+Note      2  TL0 -1 36 32.0 16777215 NVIDIASans-Medium   |Meeting Transcription|Contact Center AI|                                       
+Data      3  TD0 -1 36 24.0 16777215 NVIDIASans-Regular  |3B Meeting Minutes / Day|500M Calls / Day|                                     
+Note      4   -1 -1 36 32.0 16777215 NVIDIASans-Medium   |Public Safety|                                                                 
+Note      5   -1 -1 36 24.0 16777215 NVIDIASans-Regular  |>1B Smart City Cameras Deployed|                                               
+Note      6   -1 -1 36 32.0 16777215 NVIDIASans-Medium   |Retail Asset Protection|                                                       
+Data      7   -1 -1 36 24.0 16777215 NVIDIASans-Regular  |$94.5B Inventory Loss / Year|                                                  
+Note      8   -1 -1 36 32.0 16777215 NVIDIASans-Medium   |Industrial Inspection|Medical Imaging|                                         
+Data      9   -1 -1 36 24.0 16777215 NVIDIASans-Regular  |$32M Vision Sensors Installed by|2025|10M Diagnostic Scans / Day|              
+Note     10   -1 -1 36 32.0 16777215 NVIDIASans-Medium   |Transportation|                                                                
+Data     11   -1 -1 36 24.0 16777215 NVIDIASans-Regular  |10T Miles / Year|                                                              
+Note     12   -1 -1 36 32.0 16777215 NVIDIASans-Medium   |Credit Card Fraud|                                                             
+Data     13   -1 -1 36 24.0 16777215 NVIDIASans-Regular  |1.28B Credit Transactions / Day|                                               
+Note     14   -1 -1 36 32.0 16777215 NVIDIASans-Medium   |Product Recommendations|                                                       
+Data     15   -1 -1 36 24.0 16777215 NVIDIASans-Regular  |1B E-Commerce Visitors / Day|                                                  
+Note     16   -1 -1 36 40.0 16777215 NVIDIASans-Regular  |AI has fundamentally changed what software can|make and how you make software.|Companies are processing & refining their data,|making AI software--becoming intelligence|manufacturers. Their data centers are AI factories.|The first wave of AI was learned perception and|inference, like recognizing images, understanding|speech, recommending a video, or an item to buy.|In late 2022, ChatGPT ushered in Generative AI --|unlocking new opportunities for AI to generate|text, images, video, code, or proteins.|The next wave of AI is robotics and industrial|digitalization -- robots, avatars, and digital twins --|where AI interacts with the physical world.|NVIDIA's acceleration stacks and ecosystems help|bring AI to the world's largest industries.|NVIDIA's world-class AI expertise and scale can|help revolutionize businesses.|
+Note     17   -1 -1 36 20.0 10329501 NVIDIASans-Italic   |Source: Nilson Report, IHS Markit, Similar Web, NRF, WHO, ABI and NVIDIA internal analysis|
+
+Image (36, 1)   png size =  32746
+Image (36, 2)  jpeg size =  28134
+Image (36, 3)  jpeg size =  25229
+Image (36, 4)  jpeg size =  49468
+Image (36, 5)  jpeg size =  30030
+Image (36, 6)  jpeg size =  38227
+Image (36, 7)  jpeg size =  45342
+Image (36, 8)  jpeg size =  28730
+Image (36, 9)  jpeg size =  23617
+Image (36, 10) jpeg size =  22291
+
+----------------------------
+Processing page 37
+
+Table (37, 0):
+['Advancing Industrial Digitalization\nEfforts with NVIDIA Omniverse\nNVIDIA OVX servers | RTX workstations\nEnterprise software | Cloud services\n• NVIDIA Omniverse is a software platform helping to power\nindustrial digitalization.\n• Our initial focus is on industrial digital twins used to\nemulate the behavior of products or factories in the\nphysical world.\n• Omniverse uses a real-time, large-scale 3D database that\nconnects to 3D worlds via the USD (Universal Scene\nDescriptor) framework.\n• Just as the internet connects websites over HTML,\nOmniverse connects 3D worlds over USD.\n• Omniverse is essential for the next wave of\nAI—robotics—where AI interacts with the physical world.\n• Applications built to run on Omniverse are like portals into\nthe Omniverse virtual world.', 'FACTORY ROBOTICS WAREHOUSE\nDIGITAL TWIN DIGITAL TWIN DIGITAL TWIN\nDESIGN PERFORMANCE AV\nDIGITAL TWIN DIGITAL TWIN DIGITAL TWIN\nNVIDIA OMNIVERSE CLOUD', None, None]
+[None, None, '', None]
+['', None, None, '']
+
+Title     0   -1 -1 37 66.0 16777215 NVIDIASans-Bold     Advancing Industrial Digitalization Efforts with NVIDIA Omniverse               
+List      0    0 -1 37 40.0  7780352 NVIDIASans-Regular  • NVIDIA Omniverse is a software platform helping to power industrial digitalization.
+List      0    1 -1 37 40.0  7780352 NVIDIASans-Regular  • Our initial focus is on industrial digital twins used to emulate the behavior of products or factories in the physical world.
+List      0    2 -1 37 40.0  7780352 NVIDIASans-Regular  • Omniverse uses a real-time, large-scale 3D database that connects to 3D worlds via the USD (Universal Scene Descriptor) framework.
+List      0    3 -1 37 40.0  7780352 NVIDIASans-Regular  • Just as the internet connects websites over HTML, Omniverse connects 3D worlds over USD.
+List      0    4 -1 37 40.0  7780352 NVIDIASans-Regular  • Omniverse is essential for the next wave of AI--robotics--where AI interacts with the physical world.
+List      0    5 -1 37 40.0  7780352 NVIDIASans-Regular  • Applications built to run on Omniverse are like portals into the Omniverse virtual world.
+Note      2   -1 -1 37 48.0  7780352 NVIDIASans-Regular  |NVIDIA OVX servers|RTX workstations |Enterprise software|Cloud services|       
+Note      3   -1 -1 37 28.0 16777215 NVIDIASans-Regular  |NVIDIA OMNIVERSE CLOUD|                                                        
+Note      4   -1 -1 37 18.0 16777215 NVIDIASans-Regular  |DESIGN|DIGITAL TWIN|PERFORMANCE|DIGITAL TWIN|AV|DIGITAL TWIN|FACTORY|DIGITAL TWIN|ROBOTICS|DIGITAL TWIN|WAREHOUSE|DIGITAL TWIN|
+
+Image (37, 1)   png size =  32746
+Image (37, 2)   png size =  16554
+Image (37, 3)  jpeg size =  59180
+Image (37, 4)  jpeg size =  52120
+Image (37, 5)  jpeg size =  95258
+Image (37, 6)  jpeg size = 118012
+Image (37, 7)   png size =   4232
+Image (37, 8)  jpeg size =  98116
+Image (37, 9)  jpeg size =  60522
+Image (37, 10) jpeg size =  43588
+Image (37, 11)  png size =   4162
+Image (37, 12)  png size =   4235
+
+----------------------------
+Processing page 38
+
+Note      0   -1 -1 38 28.0 16777215 NVIDIASans-Regular  |A platform for designing, building, and operating|                             
+Data      1   -1 -1 38 28.0 16777215 NVIDIASans-Regular  |3D and virtual world simulations.|                                             
+Note      2   -1 -1 38 28.0 16777215 NVIDIASans-Regular  |Consists of a virtual world engine, USD connectors,    |and portals browsing the virtual world simulation.|Omniverse is an enterprise application that connects|architects, designers, hardware and software engineers, |marketers, to supply-chain and factory planners.|The operating engine of AI for end-to-end data-driven      |software development.|One engine license accelerates end-to-end modern AI |and data science.|One engine license unlocks wealth of data processing, AI,      |and robotics frameworks and applications -- e.g., RAPIDS,    |Spark, Merlin, Monai, Metropolis, cuOpt, Morpheus, Tokkio.|NVIDIA-hosted cloud service for building generative   |AI--powered visual applications.|Enterprises, software creators, and service providers    |can run inference on their models, train NVIDIA Edify|foundation models on proprietary data, or start from|pretrained models to generate image, video, and 3D|content from text prompts.|Picasso service is fully optimized for GPUs and|streamlines training, optimization, and inference.|NVIDIA-hosted cloud service for training and deploying        |large biomolecular models that understand the language       |of chemistry, proteins, RNA, and DNA.|BioNeMo can help researchers, biotech, and pharma|companies to process chemical and biological datasets    |to accelerate drug discovery.|NVIDIA-hosted cloud service for training Large Language|Models to perform specific task s-- e.g., summarize legal|documents, write marketing copy, analyze market|sentiment, chatbot to support customers, search|documents, write and document code, paraphrase.|NeMo can help thousands of companies, train language|AI's to do hundreds of tasks, in 10's of languages.|
+Title     3   -1 -1 38 72.0 16777215 NVIDIASans-Bold     NVIDIA Software and Services                                                    
+Note      4   -1 -1 38 48.0  7780352 NVIDIASans-Regular  |Enabling the world's enterprises to revolutionize industries with AI|          
+Note      5   -1 -1 38 40.0 16777215 NVIDIASans-Medium   |NVIDIA NeMo LLM|NVIDIA BioNeMo|NVIDIA Picasso|NVIDIA AI Enterprise|NVIDIA Omniverse|
+
+Image (38, 1)   png size =  32746
+Image (38, 2)   png size =   7083
+Image (38, 3)   png size =   7083
+
+----------------------------
+Processing page 39
+
+Title     0   -1 -1 39 72.0 16777215 NVIDIASans-Bold     NVIDIA Cloud Services                                                           
+Note      1   -1 -1 39 48.0  7780352 NVIDIASans-Regular  |Engaging with customers at every layer|                                        
+Note      2   -1 -1 39 36.0 16777215 NVIDIASans-Medium   |CUSTOM AI MODEL MAKING SERVICE|PLATFORM-AS-A-SERVICE|                          
+Note      3   -1 -1 39 28.0        0 NVIDIASans-Regular  |NEMO|PICASSO|BIONEMO|                                                          
+Note      4   -1 -1 39 36.0 16777215 NVIDIASans-Medium   |AI INFRASTRUCTURE-AS-A-SERVICE|                                                
+Note      5   -1 -1 39 32.0 16777215 NVIDIASans-Regular  |DGX|ON PREM|HYBRID CLOUD|MULTI|CLOUD|NVIDIA|AI|NVIDIA|Omniverse|               
+Note      6   -1 -1 39 24.0 16777215 NVIDIASans-Regular  |DGX Cloud|                                                                     
+
+Image (39, 1)   png size =  32746
+Image (39, 2)   png size =   7953
+Image (39, 3)   png size =    904
+Image (39, 4)   png size =   7939
+Image (39, 5)   png size =    798
+Image (39, 6)   png size =    714
+Image (39, 7)  jpeg size =   7792
+Image (39, 8)  jpeg size =   6595
+Image (39, 9)   png size =    658
+Image (39, 10)  png size =   2016
+Image (39, 11)  png size =   1338
+Image (39, 12)  png size =   7689
+Image (39, 13)  png size =   2700
+Image (39, 14)  png size =   3279
+Image (39, 15)  png size =   6283
+Image (39, 16)  png size =    836
+
+----------------------------
+Processing page 40
+
+Title     0   -1 -1 40 72.0 16777215 NVIDIASans-Bold     NVIDIA Go-to-Market Across Cloud and On-Premises                                
+Note      1   -1 -1 40 48.0  7780352 NVIDIASans-Regular  |Reaching customers everywhere|                                                 
+Note      2   -1 -1 40 32.0 16777215 NVIDIASans-Regular  |INFERENCE|NeMo|Picasso|BioNeMo|DGX|                                            
+Note      3   -1 -1 40 40.0 16777215 NVIDIASans-Medium   |CLOUD|ON-PREM|                                                                 
+Note      4   -1 -1 40 32.0 16777215 NVIDIASans-Regular  |EGX|AGX|IGX|HGX|                                                               
+Note      5   -1 -1 40 24.0 16777215 NVIDIASans-Regular  |DGX Cloud|                                                                     
+Note      6   -1 -1 40 40.0 16777215 NVIDIASans-Medium   |PARTNERS|                                                                      
+
+Image (40, 1)   png size =  32746
+Image (40, 2)   png size =  18901
+Image (40, 3)   png size =   1117
+Image (40, 4)   png size =    611
+Image (40, 5)   png size =   3993
+Image (40, 6)   png size =   1027
+Image (40, 7)   png size =  11553
+Image (40, 8)   png size =    583
+Image (40, 9)   png size =    550
+Image (40, 10)  png size =    548
+Image (40, 11)  png size =   1754
+Image (40, 12)  png size =   7936
+Image (40, 13)  png size =   2101
+Image (40, 14)  png size =   2016
+Image (40, 15)  png size =   7689
+Image (40, 16)  png size =   2700
+Image (40, 17)  png size =   3279
+Image (40, 18)  png size =   6283
+Image (40, 19)  png size =    836
+Image (40, 20)  png size =   4450
+Image (40, 21)  png size =   3650
+Image (40, 22)  png size =   6928
+Image (40, 23)  png size =   1034
+Image (40, 24)  png size =   2726
+
+----------------------------
+Processing page 41
+
+Title     0   -1 -1 41 72.0 16777215 NVIDIASans-Bold     Giant Market Opportunity                                                        
+Note      1   -1 -1 41 36.0 16777215 NVIDIASans-Medium   |Gaming|                                                                        
+Title     2   -1 -1 41 66.0  7780352 NVIDIASans-Medium   $100B                                                                           
+Note      3   -1 -1 41 36.0 16777215 NVIDIASans-Medium   |Automotive|                                                                    
+Title     4   -1 -1 41 66.0  7780352 NVIDIASans-Medium   $300B                                                                           
+Note      5   -1 -1 41 36.0 16777215 NVIDIASans-Medium   |Chips & Systems|                                                               
+Title     6   -1 -1 41 72.0  7780352 NVIDIASans-Medium   $300B                                                                           
+Note      7   -1 -1 41 36.0 16777215 NVIDIASans-Medium   |NVIDIA AI|Enterprise|Software|                                                 
+Title     8   -1 -1 41 66.0  7780352 NVIDIASans-Medium   $150B                                                                           
+Note      9   -1 -1 41 36.0 16777215 NVIDIASans-Medium   |Omniverse|Enterprise|Software|                                                 
+Title    10   -1 -1 41 66.0  7780352 NVIDIASans-Medium   $150B                                                                           
+Data     11   -1 -1 41 44.0 16777215 NVIDIASans-Medium   |$1 Trillion Opportunity|                                                       
+Note     12   -1 -1 41 32.0 16777215 NVIDIASans-Medium   |Healthcare|Manufacturing|Retail|Logistics|Transportation|Financial Services|Gaming|Gaming|Over 3B gamers and creators, a quarter of them spending over|
+Data     13   -1 -1 41 32.0 16777215 NVIDIASans-Regular  |$100/year for GPUs in desktops, laptops, cloud or consoles|                    
+Note     14   -1 -1 41 32.0  7780352 NVIDIASans-Bold     |NVIDIA AI Enterprise Software|                                                 
+Data     15   -1 -1 41 32.0 16777215 NVIDIASans-Regular  |50M enterprise server installed base; per-server, per-year|                    
+Note     16   -1 -1 41 32.0 16777215 NVIDIASans-Regular  |subscription price|Omniverse Enterprise Software|Over 45M designers and creators; 10s of millions of digital twins|--per-user/digital twin, per-year subscription price|Chips and Systems|~20M servers/year--GPUs, CPUs, DPUs, NICs, switches|Automotive|
+Data     17   -1 -1 41 32.0 16777215 NVIDIASans-Regular  |100M vehicles/year hardware opportunity; 100s of millions of|                  
+Note     18   -1 -1 41 32.0 16777215 NVIDIASans-Regular  |AV vehicles installed base software opportunity|                               
+
+Image (41, 1)   png size =  32746
+Image (41, 2)   png size =   4684
+Image (41, 3)   png size =   6829
+Image (41, 4)   png size =   4950
+Image (41, 5)   png size =   2862
+Image (41, 6)   png size =   2788
+Image (41, 7)   png size =   2163
+Image (41, 8)  jpeg size =  20791
+Image (41, 9)   png size =  32231
+Image (41, 10) jpeg size =  24406
+Image (41, 11)  png size =  13093
+Image (41, 12)  png size =  11125
+Image (41, 13)  png size =  14615
+Image (41, 14)  png size =  17109
+
+----------------------------
+Processing page 42
+
+Table (42, 0):
+['', None, None, None, None]
+['Operating Income (Non-GAAP, $M) Operating Margin (Non-GAAP)\n$15,000 70%\n$12,690\n$12,000\n$10,828\n60%\n$9,040\n52%\n$9,000\n$6,803\n47% 50%\n$6,000\n$4,407 41%\n$3,735\n40%\n34%\n$3,000\n38%\n34%\n$0 30%\nFY19 FY20 FY21 FY22 FY23 1H FY24', None, None, None, None]
+[None, 'FY19 F', 'Y20 FY21', 'FY22 FY23 1H FY24', None]
+['', '', '', '', '']
+[None, 'al year ends in January. Refer to Appe', 'ndix for reconciliation of', 'Non-GAAP measures. Operating margins rounded to the nearest perce', None]
+['', '1H FY21\n4\n4\n7\n42', '43', '1H FY24\n31\n3\n23 Gaming\nData Center\nProViz\nAuto\nOEM & Other\n70', '']
+[None, '3 financial metrics reflect a $2.2B cha', 'rge for inventory and rel', 'ated reserves primarily related to Data Center and Gaming.', None]
+
+Data      0   -1 -1 42 24.0 16777215 NVIDIASans-Regular  |43|42|7|4|4|23|70|3|3|1|                                                       
+Note      1   -1 -1 42 24.0 16777215 NVIDIASans-Regular  |Gaming|Data Center|ProViz|Auto|OEM & Other|                                    
+Title     2   -1 -1 42 72.0 16777215 NVIDIASans-Bold     Driving Strong & Profitable Growth                                              
+Data      3   -1 -1 42 28.0 16777215 NVIDIASans-Regular  |$11,716|$10,918|$16,675|$26,914|$26,974|$20,699|                               
+Note      4   -1 -1 42 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data      5   -1 -1 42 28.0 16777215 NVIDIASans-Regular  |1H FY24|                                                                       
+Note      6   -1 -1 42 40.0 16777215 NVIDIASans-Medium   |Revenue ($M)|                                                                  
+Note      7   -1 -1 42 20.0 10329501 NVIDIASans-Italic   |Fiscal year ends in January. Refer to Appendix for reconciliation of Non-GAAP measures. Operating margins rounded to the nearest percent.|FY23 financial metrics reflect a $2.2B charge for inventory and related reserves primarily related to Data Center and Gaming.|
+Data      8   -1 -1 42 20.0 16777215 NVIDIASans-Regular  |$4,407|$3,735|$6,803|$12,690|$9,040|$10,828|38%|34%|41%|47%|34%|52%|           
+Data      9   -1 -1 42 22.0 16777215 NVIDIASans-Regular  |30%|40%|50%|60%|70%|$0|$3,000|$6,000|$9,000|$12,000|$15,000|                   
+Note     10   -1 -1 42 22.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data     11   -1 -1 42 22.0 16777215 NVIDIASans-Regular  |1H FY24|                                                                       
+Note     12  TL0 -1 42 22.0 16777215 NVIDIASans-Regular  |Operating Income (Non-GAAP, $M)|Operating Margin (Non-GAAP)|                   
+Data     13  TD0 -1 42 24.0 16777215 NVIDIASans-Medium   |1H FY24|1H FY21|                                                               
+
+Image (42, 1)   png size =  32746
+Image (42, 2)   png size =   2751
+Image (42, 3)   png size =    292
+Image (42, 4)   png size =    292
+Image (42, 5)   png size =    332
+Image (42, 6)   png size =    332
+Image (42, 7)   png size =    332
+Image (42, 8)   png size =    292
+Image (42, 9)   png size =    292
+Image (42, 10)  png size =    332
+Image (42, 11)  png size =    332
+Image (42, 12)  png size =    332
+Image (42, 13)  png size =   4484
+
+----------------------------
+Processing page 43
+
+Data      0   -1 -1 43 28.0 16777215 NVIDIASans-Regular  |$7,233|$6,821|$10,947|$17,969|$15,965|$14,417|62%|63%|66%|67%|59%|70%|         
+Data      1   -1 -1 43 20.0        0 NVIDIASans-Regular  |55%|60%|65%|70%|75%|80%|$0|$6,000|$12,000|$18,000|                             
+Note      2   -1 -1 43 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data      3   -1 -1 43 28.0 16777215 NVIDIASans-Regular  |1H FY24|                                                                       
+Note      4   -1 -1 43 28.0 16777215 NVIDIASans-Regular  |Gross Profit (Non-GAAP, $M)|Gross Margin (Non-GAAP)|                           
+Note      5   -1 -1 43 20.0 10329501 NVIDIASans-Italic   |Cost comparison example based on latest available NVIDIA A100 GPU and Intel CPU inference results in the commercially available category of|the MLPerf industry benchmark; includes related infrastructure costs such as networking.|
+Title     6   -1 -1 43 72.0 16777215 NVIDIASans-Bold     NVIDIA Gross Margins Reflect Value of Acceleration                              
+Note      7   -1 -1 43 20.0 10329501 NVIDIASans-Italic   |FY23 financial metrics reflect a $2.2B charge for inventory and related reserves primarily related to Data Center and Gaming.|Fiscal year ends in January. Refer to Appendix for reconciliation of Non-GAAP measures. Gross margins are rounded to the nearest percent.|
+Note      8   -1 -1 43 44.0 16777215 NVIDIASans-Regular  |Accelerated computing requires full-stack and data|center-scale innovation across silicon, systems,|algorithms and applications.|Significant expertise and effort are required, but|application speed-ups can be incredible, resulting|in dramatic cost and time-to-solution savings.|
+Note      9   -1 -1 43 40.0 16777215 NVIDIASans-Regular  |For example, 10 NVIDIA HGX nodes with 80 NVIDIA|A100 GPUs that cost $4M can replace 920 nodes of|CPU servers that cost over $50M for AI inference.|
+Note     10   -1 -1 43 44.0 16777215 NVIDIASans-Regular  |NVIDIA chips carry the value of the full-stack,|not just the chip.|            
+
+Image (43, 1)   png size =  32746
+Image (43, 2)   png size =   5196
+
+----------------------------
+Processing page 44
+
+Title     0   -1 -1 44 72.0 16777215 NVIDIASans-Bold     Strong Cash Flow Generation                                                     
+Note      1   -1 -1 44 20.0 10329501 NVIDIASans-Italic   |Fiscal year ends in January. Refer to Appendix for reconciliation of Non-GAAP measures.|
+Data      2   -1 -1 44 13.5 10329501 NVIDIASans-Italic   |1|                                                                             
+Note      3   -1 -1 44 20.0 10329501 NVIDIASans-Italic   |Subject to continuing determination by our Board of Directors.|                
+Data      4   -1 -1 44 28.0 16777215 NVIDIASans-Regular  |$3.1B|$4.3B|$4.7B|$8.0B|$3.8B|$8.7B|                                           
+Note      5   -1 -1 44 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data      6   -1 -1 44 28.0 16777215 NVIDIASans-Regular  |1H FY24|                                                                       
+Note      7   -1 -1 44 40.0  7780352 NVIDIASans-Medium   |Share Repurchase|                                                              
+Data      8   -1 -1 44 36.0 16777215 NVIDIASans-Regular  |$10B repurchased in FY23|                                                      
+Note      9   -1 -1 44 36.0 16777215 NVIDIASans-Regular  |Additional $25B in stock repurchases authorized,|adding to $4B which remained as of end of Q2|
+Note     10   -1 -1 44 40.0  7780352 NVIDIASans-Medium   |Dividend|                                                                      
+Data     11   -1 -1 44 36.0 16777215 NVIDIASans-Regular  |$398M in FY 2023|                                                              
+Note     12   -1 -1 44 36.0 16777215 NVIDIASans-Regular  |Plan to Maintain|                                                              
+Data     13   -1 -1 44 24.0 16777215 NVIDIASans-Regular  |1|                                                                             
+Note     14   -1 -1 44 40.0  7780352 NVIDIASans-Medium   |Strategic Investments|                                                         
+Note     15   -1 -1 44 36.0 16777215 NVIDIASans-Regular  |Growing Our Talent|Platform Reach & Ecosystem|                                 
+Note     16   -1 -1 44 40.0 16777215 NVIDIASans-Medium   |Free Cash Flow (Non-GAAP)|Capital Allocation|                                  
+
+Image (44, 1)   png size =  32746
+Image (44, 2)   png size =   8787
+
+----------------------------
+Processing page 45
+
+Title     0   -1 -1 45 72.0 16777215 NVIDIASans-Bold     Our Market Platforms at a Glance                                                
+Note      1   -1 -1 45 32.0 16777215 NVIDIASans-Bold     |FY23 Revenue $15.0B|                                                           
+Data      2   -1 -1 45 32.0 16777215 NVIDIASans-Regular  |5-yr CAGR 51%|                                                                 
+Note      3   -1 -1 45 32.0 16777215 NVIDIASans-Bold     |FY23 Revenue $9.1B|                                                            
+Data      4   -1 -1 45 32.0 16777215 NVIDIASans-Regular  |5-yr CAGR 10%|                                                                 
+Note      5   -1 -1 45 32.0 16777215 NVIDIASans-Bold     |FY23 Revenue $1.5B|                                                            
+Data      6   -1 -1 45 32.0 16777215 NVIDIASans-Regular  |5-yr CAGR 11%|                                                                 
+Note      7   -1 -1 45 32.0 16777215 NVIDIASans-Bold     |FY23 Revenue $0.9B|                                                            
+Data      8   -1 -1 45 32.0 16777215 NVIDIASans-Regular  |5-yr CAGR 10%|                                                                 
+Note      9   -1 -1 45 32.0 16777215 NVIDIASans-Regular  |DGX/HGX/EGX/IGX systems|GPU|CPU|DPU|Networking|NVIDIA AI software|GeForce GPUs for PC gaming|GeForce NOW cloud gaming|DRIVE Hyperion sensor architecture|with AGX compute|DRIVE AV & IX full stack software|for ADAS, AV & AI cockpit|Quadro/NVIDIA RTX GPUs|for workstations|Omniverse software|
+Note     10  TL0 -1 45 40.0  7780352 NVIDIASans-Medium   |Data Center|Gaming|Professional Visualization|Automotive|                      
+Data     11  TD0 -1 45 28.0 16777215 NVIDIASans-Regular  |33% of FY23 revenue|56% of FY23 revenue|6% of FY23 revenue|3% of FY23 revenue| 
+
+Image (45, 1)   png size =  32746
+Image (45, 2)  jpeg size = 414864
+Image (45, 3)  jpeg size = 203910
+Image (45, 4)  jpeg size =  44287
+Image (45, 5)  jpeg size =  51082
+
+----------------------------
+Processing page 46
+
+Data      0   -1 -1 46 28.0 16777215 NVIDIASans-Regular  |$2,932|$2,983|$6,696|$10,613|$15,005|$14,607|                                  
+Note      1   -1 -1 46 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data      2   -1 -1 46 28.0 16777215 NVIDIASans-Regular  |1H FY24|                                                                       
+Title     3   -1 -1 46 72.0 16777215 NVIDIASans-Bold     Data Center                                                                     
+Note      4   -1 -1 46 48.0  7780352 NVIDIASans-Regular  |The leading computing platform for AI, HPC & graphics|                         
+Data      5   -1 -1 46 32.0 16777215 NVIDIASans-Medium   |51% 5-YR CAGR|                                                                 
+Note      6   -1 -1 46 32.0 16777215 NVIDIASans-Medium   |Through FY23|                                                                  
+Note      7   -1 -1 46 40.0 16777215 NVIDIASans-Medium   |Revenue ($M)|Leader in AI & HPC|                                               
+Note      8   -1 -1 46 36.0 16777215 NVIDIASans-Regular  |#1 in AI training and inference|Used by all hyperscale & major cloud computing|providers and 35,000 organizations|Powers 74% of the TOP500 supercomputers|
+Note      9   -1 -1 46 40.0  7780352 NVIDIASans-Bold     |Growth Drivers|                                                                
+Note     10   -1 -1 46 36.0 16777215 NVIDIASans-Regular  |Rapid AI adoption across industries|Full-stack AI|Software|Three chip strategy -- GPU|CPU|DPU|Rising computation requirements for modern AI|Data-center scale innovation|Omniverse|
+
+Image (46, 1)   png size =  32746
+Image (46, 2)   png size =   6787
+
+----------------------------
+Processing page 47
+
+Title     0   -1 -1 47 72.0 16777215 NVIDIASans-Bold     Modern AI is a Data Center Scale Computing Workload                             
+Note      1   -1 -1 47 48.0  7780352 NVIDIASans-Regular  |Data centers are becoming AI factories: data as input, intelligence as output| 
+Note      2   -1 -1 47 32.0 16777215 NVIDIASans-Regular  |Large Language Models, based on the Transformer architecture, are one of|today's most important advanced AI technologies, involving up to trillions of|parameters that learn from text.|Developing them is an expensive, time-consuming process that demands deep|technical expertise, distributed data center-scale infrastructure, and a full-stack|accelerated computing approach.|
+Data      3   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data      4   -1 -1 47 16.0 16777215 NVIDIASans-Regular  |2|                                                                             
+Data      5   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data      6   -1 -1 47 16.0 16777215 NVIDIASans-Regular  |3|                                                                             
+Data      7   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data      8   -1 -1 47 16.0 16777215 NVIDIASans-Regular  |4|                                                                             
+Data      9   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     10   -1 -1 47 16.0 16777215 NVIDIASans-Regular  |5|                                                                             
+Data     11   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     12   -1 -1 47 16.0 16777215 NVIDIASans-Regular  |6|                                                                             
+Data     13   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     14   -1 -1 47 16.0 16777215 NVIDIASans-Regular  |7|                                                                             
+Data     15   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     16   -1 -1 47 16.0 16777215 NVIDIASans-Regular  |8|                                                                             
+Data     17   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     18   -1 -1 47 16.0 16777215 NVIDIASans-Regular  |9|                                                                             
+Data     19   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Data     20   -1 -1 47 16.0 16777215 NVIDIASans-Regular  |10|                                                                            
+Note     21   -1 -1 47 24.0  4435711 NVIDIASans-Regular  |AlexNet|VGG-19|Seq2Seq|Resnet|InceptionV3|Xception|ResNeXt|DenseNet201|ELMo|MoCo ResNet50|Wav2Vec 2.0|Transformer|GPT-1|BERT Large|GPT-2|XLNet|Megatron|Microsoft T-NLG|GPT-3|Megatron-Turing|NLG 530B|
+Data     22   -1 -1 47 24.0 16777215 NVIDIASans-Regular  |2012|2013|2014|2015|2016|2017|2018|2019|2020|2021|2022|                        
+Note     23   -1 -1 47 28.0  4435711 NVIDIASans-Regular  |All AI Models Excluding Transformers: 8X / 2yrs|Transformer AI Models: 275X / 2yrs|
+Note     24   -1 -1 47 24.0 10329501 NVIDIASans-Regular  |Training Compute (petaFLOPS)|                                                  
+Note     25   -1 -1 47 40.0 16777215 NVIDIASans-Medium   |AI Training Computational Requirements|Fueling Giant-Scale AI Infrastructure|  
+Note     26   -1 -1 47 28.0 16777215 NVIDIASans-Regular  |NVIDIA compute & networking GPU|DPU|CPU|                                       
+
+Image (47, 1)   png size =  32746
+Image (47, 2)  jpeg size = 691311
+
+----------------------------
+Processing page 48
+
+Title     0   -1 -1 48 72.0 16777215 NVIDIASans-Bold     Gaming                                                                          
+Note      1   -1 -1 48 48.0  7780352 NVIDIASans-Regular  |GeForce -- the world's largest gaming platform|                                
+Data      2   -1 -1 48 28.0 16777215 NVIDIASans-Regular  |$6,246|$5,518|$7,759|$12,462|$9,067|$4,726|                                    
+Note      3   -1 -1 48 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data      4   -1 -1 48 28.0 16777215 NVIDIASans-Regular  |1H FY24|                                                                       
+Data      5   -1 -1 48 32.0 16777215 NVIDIASans-Medium   |10% 5-YR CAGR|                                                                 
+Note      6   -1 -1 48 32.0 16777215 NVIDIASans-Medium   |Through FY23|                                                                  
+Note      7   -1 -1 48 40.0 16777215 NVIDIASans-Medium   |Revenue ($M)|Leader in PC Gaming|                                              
+Note      8   -1 -1 48 36.0 16777215 NVIDIASans-Regular  |Strong #1 market position|                                                     
+Data      9   -1 -1 48 36.0 16777215 NVIDIASans-Regular  |15 of the top 15 most popular GPUs on Steam|                                   
+Note     10   -1 -1 48 36.0 16777215 NVIDIASans-Regular  |Leading performance & innovation|                                              
+Data     11   -1 -1 48 36.0 16777215 NVIDIASans-Regular  |200M+ gamers on GeForce|                                                       
+Note     12   -1 -1 48 40.0  7780352 NVIDIASans-Bold     |Growth Drivers|                                                                
+Note     13   -1 -1 48 36.0 16777215 NVIDIASans-Regular  |Rising adoption of NVIDIA RTX in games|Expanding universe of gamers & creators|Gaming laptops & Gen AI on PCs|GeForce NOW Cloud gaming|
+
+Image (48, 1)   png size =  32746
+Image (48, 2)   png size =   2924
+
+----------------------------
+Processing page 49
+
+Title     0   -1 -1 49 72.0 16777215 NVIDIASans-Bold     GeForce Extends Growth, Large Upgrade Opportunity                               
+Note      1   -1 -1 49 40.0 16777215 NVIDIASans-Medium   |More Gamers, Richer Mix|Installed Base Needs Upgrade|Ada: 3X Turing Ramp at $699+|
+Note      2   -1 -1 49 32.0 16777215 NVIDIASans-Regular  |FY20|FY23|                                                                     
+Data      3   -1 -1 49 40.0 16777215 NVIDIASans-Regular  |3YR CAGR|                                                                      
+Note      4   -1 -1 49 32.0 16777215 NVIDIASans-Regular  |ASP|                                                                           
+Data      5   -1 -1 49 32.0 16777215 NVIDIASans-Regular  |10%|                                                                           
+Note      6   -1 -1 49 32.0 16777215 NVIDIASans-Regular  |Units 9%|                                                                      
+Data      7   -1 -1 49 40.0 16777215 NVIDIASans-Regular  |47% RTX|20% RTX3060+|                                                          
+Note      8   -1 -1 49 40.0 16777215 NVIDIASans-Regular  |Performance|                                                                   
+Data      9   -1 -1 49 40.0 16777215 NVIDIASans-Regular  |$699+ Cumulative Sell-Through $|20% CAGR|                                      
+Data     10   -1 -1 49 20.0 16777215 Calibri             |0|1|2|3|4|5|6|7|8|9 10 11 12 13 14 15 16 17 18 19 20|                          
+Note     11   -1 -1 49 32.0 16777215 NVIDIASans-Regular  |NVIDIA|Ampere|NVIDIA|Ada|Weeks After Launch|NVIDIA|Turing|                     
+Note     12   -1 -1 49 24.0 10329501 NVIDIASans-Italic   |Source: NVIDIA estimates|                                                      
+Note     13   -1 -1 49 40.0 16777215 NVIDIASans-Regular  |GeForce Gaming Revenue|Installed Base|                                         
+Note     14   -1 -1 49 32.0 16777215 NVIDIASans-Regular  |RTX|                                                                           
+Data     15   -1 -1 49 32.0 16777215 NVIDIASans-Regular  |3060+|                                                                         
+
+Image (49, 1)   png size =  32746
+
+----------------------------
+Processing page 50
+
+Table (50, 0):
+['', 'Revenue ($M)\n11% 5-YR CAGR\nThrough FY23\n$2,111\n$1,544\n$1,212\n$1,130\n$1,053\n$674\nFY19 FY20 FY21 FY22 FY23 1H FY24']
+
+Title     0   -1 -1 50 72.0 16777215 NVIDIASans-Bold     Professional Visualization                                                      
+Note      1   -1 -1 50 48.0  7780352 NVIDIASans-Regular  |Workstation graphics|                                                          
+Note      2   -1 -1 50 40.0  7780352 NVIDIASans-Bold     |Leader in Workstation Graphics|                                                
+Data      3   -1 -1 50 36.0 16777215 NVIDIASans-Regular  |90%+ market share in graphics|                                                 
+Note      4   -1 -1 50 36.0 16777215 NVIDIASans-Regular  |for workstations|                                                              
+Data      5   -1 -1 50 36.0 16777215 NVIDIASans-Regular  |45M Designers and Creators|                                                    
+Note      6   -1 -1 50 36.0 16777215 NVIDIASans-Regular  |Strong software ecosystem with over 100|supported applications|                
+Note      7   -1 -1 50 40.0  7780352 NVIDIASans-Bold     |Growth Drivers|                                                                
+Note      8   -1 -1 50 36.0 16777215 NVIDIASans-Regular  |Ray Tracing and AI revolutionizing design|Expanding universe of designers and creators|Collaborative 3D design / Omniverse|Hybrid work environments|
+Data      9   -1 -1 50 28.0 16777215 NVIDIASans-Regular  |$1,130|$1,212|$1,053|$2,111|$1,544|$674|                                       
+Note     10   -1 -1 50 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data     11   -1 -1 50 28.0 16777215 NVIDIASans-Regular  |1H FY24|                                                                       
+Data     12   -1 -1 50 32.0 16777215 NVIDIASans-Medium   |11% 5-YR CAGR|                                                                 
+Note     13   -1 -1 50 32.0 16777215 NVIDIASans-Medium   |Through FY23|                                                                  
+Note     14   -1 -1 50 40.0 16777215 NVIDIASans-Medium   |Revenue ($M)|                                                                  
+
+Image (50, 1)   png size =  32746
+Image (50, 2)   png size =   3775
+
+----------------------------
+Processing page 51
+
+Title     0   -1 -1 51 72.0 16777215 NVIDIASans-Bold     Automotive                                                                      
+Note      1   -1 -1 51 48.0  7780352 NVIDIASans-Regular  |Autonomous Vehicles (AV) & AI Cockpit|                                         
+Data      2   -1 -1 51 28.0 16777215 NVIDIASans-Regular  |$641|$700|$536|$566|$903|$549|                                                 
+Note      3   -1 -1 51 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data      4   -1 -1 51 28.0 16777215 NVIDIASans-Regular  |1H FY24|                                                                       
+Note      5   -1 -1 51 40.0  7780352 NVIDIASans-Bold     |Leader in Autonomous Driving|                                                  
+Note      6   -1 -1 51 36.0 16777215 NVIDIASans-Regular  |Historical revenue driven largely by infotainment|Future growth primarily fueled by NVIDIA DRIVE, our AV and AI|cockpit platform with full software stack|Next-generation DRIVE Thor to ramp in FY26|
+Note      7   -1 -1 51 40.0  7780352 NVIDIASans-Bold     |Growth Drivers|                                                                
+Note      8   -1 -1 51 36.0 16777215 NVIDIASans-Regular  |Adoption of centralized car computing and|software-defined vehicle architectures|AV software and services:|Mercedes Benz|Jaguar Land Rover|
+Note      9   -1 -1 51 40.0 16777215 NVIDIASans-Medium   |Revenue ($M)|                                                                  
+Data     10   -1 -1 51 32.0 16777215 NVIDIASans-Medium   |10% 5-YR CAGR|                                                                 
+Note     11   -1 -1 51 32.0 16777215 NVIDIASans-Medium   |Through FY23|                                                                  
+
+Image (51, 1)   png size =  32746
+Image (51, 2)   png size =   2360
+
+----------------------------
+Processing page 52
+
+Title     0   -1 -1 52 72.0 16777215 NVIDIASans-Bold     Growing NVIDIA DRIVE Pipeline                                                   
+Data      1   -1 -1 52 48.0  7780352 NVIDIASans-Regular  |$14B Design Win Pipeline -- 6 Year Horizon|                                    
+Note      2   -1 -1 52 54.0 16777215 Arial-BoldMT        |NETA|                                                                          
+Data      3   -1 -1 52 40.0 10329501 NVIDIASans-Regular  |2023|                                                                          
+
+Image (52, 1)   png size =  32746
+Image (52, 2)   png size =   6358
+Image (52, 3)   png size =   3750
+Image (52, 4)   png size =   2405
+Image (52, 5)   png size =   6377
+Image (52, 6)   png size =   8405
+Image (52, 7)   png size =   1989
+Image (52, 8)   png size =  10518
+Image (52, 9)   png size =   6665
+Image (52, 10)  png size =   7621
+Image (52, 11)  png size =   6271
+Image (52, 12)  png size =   5232
+Image (52, 13)  png size =   1947
+Image (52, 14)  png size =   7195
+Image (52, 15)  png size =   5922
+Image (52, 16)  png size =   3469
+Image (52, 17)  png size =   7125
+Image (52, 18)  png size =   3643
+Image (52, 19)  png size =   4573
+Image (52, 20)  png size =   2943
+Image (52, 21)  png size =   3246
+Image (52, 22) jpeg size =  13837
+Image (52, 23) jpeg size =  18368
+Image (52, 24)  png size =   8152
+Image (52, 25)  png size =  55022
+
+----------------------------
+Processing page 53
+
+Title     0   -1 -1 53 90.0 16777215 NVIDIASans-Bold     Financials                                                                      
+
+Image (53, 1)   png size =  32746
+Image (53, 2)  jpeg size = 139699
+Image (53, 3)  jpeg size = 293490
+
+----------------------------
+Processing page 54
+
+Table (54, 0):
+[None, '', None]
+['', 'Operating Cash Flow — $M\n9,108\n5,822\n5,641\n4,761\n3,743\nFY19 FY20 FY21 FY22 FY23', '']
+
+Title     0   -1 -1 54 72.0 16777215 NVIDIASans-Bold     Annual Cash & Cash Flow Metrics                                                 
+Note      1   -1 -1 54 40.0 16777215 NVIDIASans-Medium   |Free Cash Flow (Non-GAAP) -- $M|Cash Balance -- $M|Operating Income (Non-GAAP) -- $M|Operating Cash Flow -- $M|
+Data      2  TD0 -1 54 28.0 16777215 NVIDIASans-Regular  |3,743|4,761|5,822|9,108|5,641|                                                 
+Note      3  TL0 -1 54 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data      4  TD0 -1 54 28.0 16777215 NVIDIASans-Regular  |4,407|3,735|6,803|12,690|9,040|                                                
+Note      5  TL0 -1 54 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data      6  TD0 -1 54 28.0 16777215 NVIDIASans-Regular  |3,143|4,272|4,677|8,049|3,750|                                                 
+Note      7  TL0 -1 54 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Data      8  TD0 -1 54 28.0 16777215 NVIDIASans-Regular  |7,422|10,897|11,561|21,208|13,296|                                             
+Note      9  TL0 -1 54 28.0 16777215 NVIDIASans-Regular  |FY19|FY20|FY21|FY22|FY23|                                                      
+Note     10   -1 -1 54 24.0 10329501 NVIDIASans-Italic   |Cash balance is defined as cash and cash equivalents plus marketable securities|Refer to Appendix for reconciliation of non-GAAP measures|
+
+Image (54, 1)   png size =  32746
+
+----------------------------
+Processing page 55
+
+Title     0   -1 -1 55 72.0 16777215 NVIDIASans-Bold     Corporate Responsibility                                                        
+Note      1   -1 -1 55 32.0 16777215 NVIDIASans-Regular  |Time Magazine's 100 Most Influential|Companies|Fast Company's Best Workplaces for|Innovators|Fortune's World's Most Admired Companies|Wall Street Journal's Management|Top 250 All-Stars|"America's Most Just Companies"|CNBC|"100 Best Companies to Work For"|FORTUNE|"Most Responsible Companies"|NEWSWEEK|"Best Places to Work for LGBT Equality"|HUMAN RIGHTS CAMPAIGN|
+Note      2   -1 -1 55 28.0 16777215 NVIDIASans-Regular  |NVIDIA GPUs are typically 20X more energy efficient for|certain AI and HPC workloads than traditional CPUs|Plan to achieve & maintain 100% renewable electricity for our|operations and data centers by FY25 and annually thereafter|
+Note      3   -1 -1 55 40.0  7780352 NVIDIASans-Medium   |A Place For People To Do Their Life's Work|Environmentally Conscious|          
+Note      4   -1 -1 55 28.0 16777215 NVIDIASans-Regular  |By FY26, aim to engage manufacturing suppliers comprising at|least 67% of NVIDIA's scope 3 category 1 GHG emissions with|goal of effecting supplier adoption of science-based targets|
+Note      5   -1 -1 55 40.0  7780352 NVIDIASans-Medium   |Management|                                                                    
+Data      6   -1 -1 55 32.0 16777215 NVIDIASans-Regular  |43% of Board is Gender, Racially,|                                             
+Note      7   -1 -1 55 32.0 16777215 NVIDIASans-Regular  |or Ethnically Diverse|                                                         
+Data      8   -1 -1 55 32.0 16777215 NVIDIASans-Regular  |93% of Directors are independent|                                              
+Note      9   -1 -1 55 40.0  7780352 NVIDIASans-Medium   |Corporate Governance|                                                          
+
+Image (55, 1)   png size =  32746
+Image (55, 2)   png size =   3036
+Image (55, 3)   png size =   3588
+Image (55, 4)   png size =   4809
+Image (55, 5)   png size =   2453
+
+----------------------------
+Processing page 56
+
+Title     0   -1 -1 56 90.0 16777215 NVIDIASans-Bold     Reconciliation of Non-GAAP to GAAP Financial Measures                           
+
+Image (56, 1)   png size =  32746
+Image (56, 2)  jpeg size = 139699
+Image (56, 3)  jpeg size = 293490
+
+----------------------------
+Processing page 57
+
+Table (57, 0):
+['', 'Non-GAAP', 'Acquisition-Related\nand Other Costs\n(A)', 'Stock-Based\nCompensation\n(B)', 'IP-Related\nCosts', 'Other\n(C)', 'Tax Impact of\nAdjustments', 'GAAP']
+[None, '', '', '', '', '', '', None]
+[None, '$9,614', '(119)', '(31)', '(2)', '—', '—', None]
+[None, '71.2%', '(0.9)', '(0.2)', '—', '—', '—', None]
+[None, '$7,776', '(137)', '(842)', '(2)', '5', '—', None]
+[None, '$6,740', '(137)', '(842)', '(2)', '66', '363', None]
+[None, '2,499', '—', '—', '—', '—', '—', None]
+[None, '$2.70', '—', '—', '—', '—', '—', None]
+
+Title     0   -1 -1 57 72.0 16777215 NVIDIASans-Bold     Reconciliation of Non-GAAP to GAAP Financial Measures                           
+Note      1   -1 -1 57 36.0 16777215 NVIDIASans-Medium   |Non-GAAP|Acquisition-Related|and Other Costs|(A)|Stock-Based|Compensation|(B)|IP-Related|Costs|Other|(C)|Tax Impact of|Adjustments|GAAP|Q2|FY24|Gross margin|($ in million)|
+Data      2   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |$9,614|                                                                        
+Note      3   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |(119)|(31)|(2)|--|--|                                                          
+Data      4   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |$9,462|71.2%|                                                                  
+Note      5   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |(0.9)|(0.2)|--|--|--|                                                          
+Data      6   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |70.1%|                                                                         
+Note      7   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |Operating income|($ in million)|                                               
+Data      8   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |$7,776|                                                                        
+Note      9   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |(137)|(842)|(2)|                                                               
+Data     10   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |5|                                                                             
+Note     11   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |--|                                                                            
+Data     12   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |$6,800|                                                                        
+Note     13   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |Net income|($ in million)|                                                     
+Data     14   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |$6,740|                                                                        
+Note     15  TL0 -1 57 36.0 16777215 NVIDIASans-Regular  |(137)|(842)|(2)|                                                               
+Data     16  TD0 -1 57 36.0 16777215 NVIDIASans-Regular  |66|363|$6,188|                                                                 
+Note     17  TL0 -1 57 36.0 16777215 NVIDIASans-Regular  |Shares used in diluted|per share calculation|(millions)|                       
+Data     18   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |2,499|                                                                         
+Note     19   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |--|--|--|--|--|                                                                
+Data     20   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |2,499|                                                                         
+Note     21   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |Diluted EPS|                                                                   
+Data     22   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |$2.70|                                                                         
+Note     23   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |--|--|--|--|--|                                                                
+Data     24   -1 -1 57 36.0 16777215 NVIDIASans-Regular  |$2.48|                                                                         
+Note     25   -1 -1 57 20.0 10329501 NVIDIASans-Italic   |A. Consists of amortization of intangible assets, transaction costs, and certain compensation charges.|B. Stock-based compensation charge was allocated to cost of goods sold, research and development expense, and sales, general and administrative expense.|C. Other comprises of assets held for sale related adjustments and net gains from non-affiliated investments|
+
+Image (57, 1)   png size =  32746
+
+----------------------------
+Processing page 58
+
+Table (58, 0):
+['Gross Margin', 'Non-GAAP', 'Acquisition-Related\nand Other Costs\n(A)', 'Stock-Based\nCompensation\n(B)', 'IP-Related\nCosts', 'GAAP']
+[None, '45.9%', '(1.8)', '(0.6)', '—', None]
+[None, '56.1%', '(2.0)', '(0.5)', '—', None]
+[None, '66.1%', '(2.0)', '(0.5)', '(0.3)', None]
+[None, '66.8%', '(1.7)', '(0.4)', '(0.1)', None]
+
+Title     0   -1 -1 58 72.0 16777215 NVIDIASans-Bold     Reconciliation of Non-GAAP to GAAP Financial Measures (contd.)                  
+Note      1   -1 -1 58 40.0 16777215 NVIDIASans-Medium   |Gross Margin|Non-GAAP|Acquisition-Related|and Other Costs|(A)|Stock-Based|Compensation|(B)|IP-Related|Costs|GAAP|
+Note      2   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |Q2 FY2023|                                                                     
+Data      3   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |45.9%|                                                                         
+Note      4   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |(1.8)|(0.6)|--|                                                                
+Data      5   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |43.5%|                                                                         
+Note      6   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |Q3 FY2023|                                                                     
+Data      7   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |56.1%|                                                                         
+Note      8   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |(2.0)|(0.5)|--|                                                                
+Data      9   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |53.6%|                                                                         
+Note     10   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |Q4 FY2023|                                                                     
+Data     11   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |66.1%|                                                                         
+Note     12   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |(2.0)|(0.5)|(0.3)|                                                             
+Data     13   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |63.3%|                                                                         
+Note     14   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |Q1 FY2024|                                                                     
+Data     15   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |66.8%|                                                                         
+Note     16   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |(1.7)|(0.4)|(0.1)|                                                             
+Data     17   -1 -1 58 36.0 16777215 NVIDIASans-Regular  |64.6%|                                                                         
+Note     18   -1 -1 58 20.0 10329501 NVIDIASans-Italic   |A. Consists of amortization of intangible assets|B. Stock-based compensation charge was allocated to cost of goods sold|
+
+Image (58, 1)   png size =  32746
+
+----------------------------
+Processing page 59
+
+Table (59, 0):
+['Gross Margin\n($ in Millions &\nMargin Percentage)', 'Non-GAAP', 'Acquisition-Related\nand Other Costs\n(A)', 'Stock-Based\nCompensation\n(B)', 'IP-Related Costs', 'GAAP']
+[None, '$7,233', '—', '(27)', '(35)', None]
+[None, '61.7%', '—', '(0.2)', '(0.3)', None]
+[None, '$6,821', '—', '(39)', '(14)', None]
+[None, '62.5%', '—', '(0.4)', '(0.1)', None]
+[None, '$10,947', '(425)', '(88)', '(38)', None]
+[None, '65.6%', '(2.6)', '(0.5)', '(0.2)', None]
+[None, '$17,969', '(344)', '(141)', '(9)', None]
+[None, '66.8%', '(1.4)', '(0.5)', '—', None]
+[None, '$15,965', '(455)', '(138)', '(16)', None]
+[None, '59.2%', '(1.7)', '(0.5)', '(0.1)', None]
+[None, '$8,636', '(214)', '(76)', '—', None]
+[None, '57.6%', '(1.4)', '(0.5)', '—', None]
+[None, '$14,417', '(239)', '(58)', '(10)', None]
+[None, '69.7%', '(1.2)', '(0.3)', '—', None]
+
+Title     0   -1 -1 59 72.0 16777215 NVIDIASans-Bold     Reconciliation of Non-GAAP to GAAP Financial Measures (contd.)                  
+Note      1   -1 -1 59 40.0 16777215 NVIDIASans-Medium   |Gross Margin|                                                                  
+Note      2   -1 -1 59 26.0 16777215 NVIDIASans-Medium   |($ in Millions &|Margin Percentage)|                                           
+Note      3   -1 -1 59 40.0 16777215 NVIDIASans-Medium   |Non-GAAP|Acquisition-Related|and Other Costs|(A)|Stock-Based|Compensation|(B)|IP-Related Costs|GAAP|
+Note      4   -1 -1 59 36.0 16777215 NVIDIASans-Medium   |FY 2019|                                                                       
+Data      5   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$7,233|                                                                        
+Note      6   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |--|(27)|(35)|                                                                  
+Data      7   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$7,171|61.7%|                                                                  
+Note      8   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |--|(0.2)|(0.3)|                                                                
+Data      9   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |61.2%|                                                                         
+Note     10   -1 -1 59 36.0 16777215 NVIDIASans-Medium   |FY 2020|                                                                       
+Data     11   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$6,821|                                                                        
+Note     12   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |--|(39)|(14)|                                                                  
+Data     13   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$6,768|62.5%|                                                                  
+Note     14   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |--|(0.4)|(0.1)|                                                                
+Data     15   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |62.0%|                                                                         
+Note     16   -1 -1 59 36.0 16777215 NVIDIASans-Medium   |FY 2021|                                                                       
+Data     17   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$10,947|                                                                       
+Note     18   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |(425)|(88)|(38)|                                                               
+Data     19   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$10,396|65.6%|                                                                 
+Note     20   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |(2.6)|(0.5)|(0.2)|                                                             
+Data     21   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |62.3%|                                                                         
+Note     22   -1 -1 59 36.0 16777215 NVIDIASans-Medium   |FY 2022|                                                                       
+Data     23   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$17,969|                                                                       
+Note     24   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |(344)|(141)|(9)|                                                               
+Data     25   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$17,475|66.8%|                                                                 
+Note     26   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |(1.4)|(0.5)|--|                                                                
+Data     27   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |64.9%|                                                                         
+Note     28   -1 -1 59 36.0 16777215 NVIDIASans-Medium   |FY 2023|                                                                       
+Data     29   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$15,965|                                                                       
+Note     30   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |(455)|(138)|(16)|                                                              
+Data     31   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$15,356|59.2%|                                                                 
+Note     32  TL0 -1 59 36.0 16777215 NVIDIASans-Regular  |(1.7)|(0.5)|(0.1)|                                                             
+Data     33  TD0 -1 59 36.0 16777215 NVIDIASans-Regular  |56.9%|1H FY 2023|$8,636|                                                       
+Note     34  TL0 -1 59 36.0 16777215 NVIDIASans-Regular  |(214)|(76)|--|                                                                 
+Data     35   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$8,346|57.6%|                                                                  
+Note     36  TL1 -1 59 36.0 16777215 NVIDIASans-Regular  |(1.4)|(0.5)|--|                                                                
+Data     37  TD1 -1 59 36.0 16777215 NVIDIASans-Regular  |55.7%|1H FY 2024|$14,417|                                                      
+Note     38  TL1 -1 59 36.0 16777215 NVIDIASans-Regular  |(239)|(58)|(10)|                                                               
+Data     39   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |$14,110|69.7%|                                                                 
+Note     40   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |(1.2)|(0.3)|--|                                                                
+Data     41   -1 -1 59 36.0 16777215 NVIDIASans-Regular  |68.2%|                                                                         
+Note     42   -1 -1 59 20.0 10329501 NVIDIASans-Italic   |A. Consists of amortization of intangible assets and inventory step-up|B. Stock-based compensation charge was allocated to cost of goods sold|
+
+Image (59, 1)   png size =  32746
+
+----------------------------
+Processing page 60
+
+Table (60, 0):
+['Operating Income\nand Margin\n($ in Millions &\nMargin Percentage)', 'Non-GAAP', 'Acquisition\nTermination Cost', 'Acquisition-Related\nand Other Costs\n(A)', 'Stock-Based\nCompensation\n(B)', 'IP-Related\nCosts', 'Other\n(C)', 'GAAP']
+[None, '$4,407', '—', '(2)', '(557)', '(35)', '(9)', None]
+[None, '37.6%', '—', '—', '(4.7)', '(0.3)', '(0.1)', None]
+[None, '$3,735', '—', '(31)', '(844)', '(14)', '—', None]
+[None, '34.2%', '—', '(0.3)', '(7.7)', '(0.1)', '—', None]
+[None, '$6,803', '—', '(836)', '(1,397)', '(38)', '—', None]
+[None, '40.8%', '—', '(5.0)', '(8.4)', '(0.2)', '—', None]
+[None, '$12,690', '—', '(636)', '(2,004)', '(9)', '—', None]
+[None, '47.2%', '—', '(2.5)', '(7.4)', '—', '—', None]
+[None, '$9,040', '(1,353)', '(674)', '(2,710)', '(16)', '(63)', None]
+[None, '33.5%', '(5.0)', '(2.5)', '(10.0)', '(0.1)', '(0.2)', None]
+[None, '$5,280', '(1,353)', '(324)', '(1,227)', '—', '(9)', None]
+[None, '35.2%', '(9.0)', '(2.2)', '(8.2)', '—', '—', None]
+[None, '$10,828', '—', '(311)', '(1,576)', '(10)', '10', None]
+[None, '52.3%', '—', '(1.5)', '(7.6)', '—', '—', None]
+
+Title     0   -1 -1 60 72.0 16777215 NVIDIASans-Bold     Reconciliation of Non-GAAP to GAAP Financial Measures (contd.)                  
+Note      1   -1 -1 60 36.0 16777215 NVIDIASans-Medium   |Operating Income|and Margin|                                                   
+Note      2   -1 -1 60 26.0 16777215 NVIDIASans-Medium   |($ in Millions &|Margin Percentage)|                                           
+Note      3   -1 -1 60 36.0 16777215 NVIDIASans-Medium   |Non-GAAP|Acquisition|Termination Cost|Acquisition-Related|and Other Costs|(A)|Stock-Based|Compensation|(B)|IP-Related|Costs|Other|(C)|GAAP|FY 2019|
+Data      4   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$4,407|                                                                        
+Note      5   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|(2)|(557)|(35)|(9)|                                                         
+Data      6   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$3,804|37.6%|                                                                  
+Note      7   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|--|(4.7)|(0.3)|(0.1)|                                                       
+Data      8   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |32.5%|                                                                         
+Note      9   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |FY 2020|                                                                       
+Data     10   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$3,735|                                                                        
+Note     11   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|(31)|(844)|(14)|--|                                                         
+Data     12   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$2,846|34.2%|                                                                  
+Note     13   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|(0.3)|(7.7)|(0.1)|--|                                                       
+Data     14   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |26.1%|                                                                         
+Note     15   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |FY 2021|                                                                       
+Data     16   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$6,803|                                                                        
+Note     17   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|(836)|(1,397)|(38)|--|                                                      
+Data     18   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$4,532|40.8%|                                                                  
+Note     19   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|(5.0)|(8.4)|(0.2)|--|                                                       
+Data     20   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |27.2%|                                                                         
+Note     21   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |FY 2022|                                                                       
+Data     22   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$12,690|                                                                       
+Note     23   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|(636)|(2,004)|(9)|--|                                                       
+Data     24   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$10,041|47.2%|                                                                 
+Note     25   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|(2.5)|(7.4)|--|--|                                                          
+Data     26   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |37.3%|                                                                         
+Note     27   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |FY 2023|                                                                       
+Data     28   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$9,040|                                                                        
+Note     29   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |(1,353)|(674)|(2,710)|(16)|(63)|                                               
+Data     30   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$4,224|33.5%|                                                                  
+Note     31   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |(5.0)|(2.5)|(10.0)|(0.1)|(0.2)|                                                
+Data     32   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |15.7%|1H FY 2023|$5,280|                                                       
+Note     33   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |(1,353)|(324)|(1,227)|--|(9)|                                                  
+Data     34   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |$2,367|35.2%|                                                                  
+Note     35   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |(9.0)|(2.2)|(8.2)|--|--|                                                       
+Data     36   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |15.8%|1H FY 2024|$10,828|                                                      
+Note     37   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|(311)|(1,576)|(10)|                                                         
+Data     38   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |10|$8,941|52.3%|                                                               
+Note     39   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |--|(1.5)|(7.6)|--|--|                                                          
+Data     40   -1 -1 60 36.0 16777215 NVIDIASans-Regular  |43.2%|                                                                         
+Note     41   -1 -1 60 20.0 10329501 NVIDIASans-Italic   |A. Consists of amortization of acquisition-related intangible assets, inventory step-up, transaction costs, compensation charges, and other costs|B. Stock-based compensation charge was allocated to cost of goods sold, research and development expense, and sales, general and administrative expense|C. Comprises of legal settlement costs, contributions, restructuring costs and assets held for sale related adjustments|
+
+Image (60, 1)   png size =  32746
+
+----------------------------
+Processing page 61
+
+Table (61, 0):
+['($ in Millions)', 'Free Cash Flow', 'Purchases Related to\nProperty and Equipment\nand Intangible Assets', 'Principal Payments\non Property\nand Equipment and\nIntangible Assets', 'Net Cash\nProvided by\nOperating Activities']
+[None, '$3,143', '600', '—', None]
+[None, '$4,272', '489', '—', None]
+[None, '$4,677', '1,128', '17', None]
+[None, '$8,049', '976', '83', None]
+[None, '$3,750', '1,833', '58', None]
+[None, '$2,171', '794', '36', None]
+[None, '$8,691', '537', '31', None]
+
+Title     0   -1 -1 61 72.0 16777215 NVIDIASans-Bold     Reconciliation of Non-GAAP to GAAP Financial Measures (contd.)                  
+Note      1   -1 -1 61 36.0 16777215 NVIDIASans-Medium   |($ in Millions)|Free Cash Flow|Purchases Related to|Property and Equipment|and Intangible Assets|Principal Payments|on Property|and Equipment and|Intangible Assets|Net Cash|Provided by|Operating Activities|FY 2019|
+Data      2   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |$3,143|600|                                                                    
+Note      3   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |--|                                                                            
+Data      4   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |$3,743|                                                                        
+Note      5   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |FY 2020|                                                                       
+Data      6   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |$4,272|489|                                                                    
+Note      7   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |--|                                                                            
+Data      8   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |$4,761|                                                                        
+Note      9   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |FY 2021|                                                                       
+Data     10   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |$4,677|1,128|17|$5,822|                                                        
+Note     11   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |FY 2022|                                                                       
+Data     12   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |$8,049|976|83|$9,108|                                                          
+Note     13   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |FY 2023|                                                                       
+Data     14   -1 -1 61 36.0 16777215 NVIDIASans-Regular  |$3,750|1,833|58|$5,641|1H FY 2023|$2,171|794|36|$3,001|1H FY 2024|$8,691|537|31|$9,259|
+
+Image (61, 1)   png size =  32746
+
+----------------------------
+Processing page 62
+
+Table (62, 0):
+['($ in Millions)', 'Q3 FY24 Outlook']
+
+Title     0   -1 -1 62 72.0 16777215 NVIDIASans-Bold     Reconciliation of Non-GAAP to GAAP Financial Measures                           
+Note      1   -1 -1 62 40.0 16777215 NVIDIASans-Medium   |($ in Millions)|Q3 FY24 Outlook|                                               
+Note      2   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |Non-GAAP gross margin|                                                         
+Data      3   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |72.5%|                                                                         
+Note      4   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |Impact of stock-based compensation expense, acquisition-related costs, and other costs|(1.0%)|GAAP gross margin|
+Data      5   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |71.5%|                                                                         
+Note      6   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |Non-GAAP operating expenses|                                                   
+Data      7   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |$2,000|                                                                        
+Note      8   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |Impact of stock-based compensation expense, acquisition-related costs, and other costs|
+Data      9   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |950|                                                                           
+Note     10   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |GAAP operating expenses|                                                       
+Data     11   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |$2,950|                                                                        
+
+Image (62, 1)   png size =  32746
+
+----------------------------
+Processing page 63
+
+Title     0   -1 -1 62 72.0 16777215 NVIDIASans-Bold     Reconciliation of Non-GAAP to GAAP Financial Measures                           
+Note      1   -1 -1 62 40.0 16777215 NVIDIASans-Medium   |($ in Millions)|Q3 FY24 Outlook|                                               
+Note      2   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |Non-GAAP gross margin|                                                         
+Data      3   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |72.5%|                                                                         
+Note      4   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |Impact of stock-based compensation expense, acquisition-related costs, and other costs|(1.0%)|GAAP gross margin|
+Data      5   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |71.5%|                                                                         
+Note      6   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |Non-GAAP operating expenses|                                                   
+Data      7   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |$2,000|                                                                        
+Note      8   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |Impact of stock-based compensation expense, acquisition-related costs, and other costs|
+Data      9   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |950|                                                                           
+Note     10   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |GAAP operating expenses|                                                       
+Data     11   -1 -1 62 36.0 16777215 NVIDIASans-Regular  |$2,950|                                                                        
+
+Image (63, 1)   png size =  32746
+Image (63, 2)  jpeg size = 214673
