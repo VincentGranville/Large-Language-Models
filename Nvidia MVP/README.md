@@ -1,1 +1,1 @@
-xyz
+Contains the backend tables for the Nvidia MVP. The code, documentation, and related data (corpus and so on) are available via clickable links, in my technical paper entitled "Blueprint: Next-Gen Enterprise RAG & LLM, with Nvidia PDFs Use Case". This paper is shared upon request with clients potentially interested in our technology. To get a copy, contact Vincent Granville at  <a href="vincentg@mltechniques.com">vincentg@mltechniques.com</a>.   
