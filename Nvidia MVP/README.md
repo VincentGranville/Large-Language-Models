@@ -1,4 +1,4 @@
-This folder contains the backend tables for the Nvidia MVP. The code, documentation, and related data (corpus, PDF multimodal agentic parser, Enterprise xLLM code and so on) are available via clickable links, in my technical paper entitled <b>Blueprint: Next-Gen Enterprise RAG & LLM, with Nvidia PDFs Use Case</b>. This paper is shared upon request with clients potentially interested in our technology. 
+This folder contains the backend tables for our Nvidia MVP. The code, documentation, and related data (corpus, PDF multimodal agentic parser, Enterprise xLLM code and so on) are available via clickable links, in my technical paper entitled <b>Blueprint: Next-Gen Enterprise RAG & LLM, with Nvidia PDFs Use Case</b>. This paper is shared upon request with clients potentially interested in our technology. 
 
 To get a copy, contact Vincent Granville at  <a href="vincentg@mltechniques.com">vincentg@mltechniques.com</a>, or on LinkedIn, <a href="https://www.linkedin.com/in/vincentg/">here</a>. 
 
